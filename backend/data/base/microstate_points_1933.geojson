@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "AND",
+        "name": "Andorra",
+        "label": "Andorra",
+        "centerLon": 1.6,
+        "centerLat": 42.55,
+        "fallbackPoint": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6,
+          42.55
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "MCO",
+        "name": "Monaco",
+        "label": "Monaco",
+        "centerLon": 7.42,
+        "centerLat": 43.74,
+        "fallbackPoint": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.42,
+          43.74
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "LIE",
+        "name": "Liechtenstein",
+        "label": "Liechtenstein",
+        "centerLon": 9.55,
+        "centerLat": 47.16,
+        "fallbackPoint": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.55,
+          47.16
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "SMR",
+        "name": "San Marino",
+        "label": "San Marino",
+        "centerLon": 12.46,
+        "centerLat": 43.94,
+        "fallbackPoint": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.46,
+          43.94
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "VAT",
+        "name": "Vatican",
+        "label": "Vatican",
+        "centerLon": 12.45,
+        "centerLat": 41.9,
+        "fallbackPoint": true
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.45,
+          41.9
+        ]
+      }
+    }
+  ]
+}

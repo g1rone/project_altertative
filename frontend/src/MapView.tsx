@@ -139,11 +139,11 @@ export default function MapView({ state, selectedTag, onSelectCountry }: Props) 
     const map = mapRef.current
     if (!map) return
 
-    const visibility = showProvinces ? 'visible' : 'none'
-    for (const layer of ['province-fill', 'province-border']) {
-      if (map.getLayer(layer)) {
-        map.setLayoutProperty(layer, 'visibility', visibility)
-      }
+    if (map.getLayer('province-fill')) {
+      map.setLayoutProperty('province-fill', 'visibility', 'none')
+    }
+    if (map.getLayer('province-border')) {
+      map.setLayoutProperty('province-border', 'visibility', showProvinces ? 'visible' : 'none')
     }
   }, [showProvinces])
 
@@ -264,8 +264,8 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     source: 'regions-1933',
     paint: {
       'line-color': '#334155',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 3, 0, 4, 0.4, 6, 1.2],
-      'line-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0, 4, 0.25, 6, 0.65],
+      'line-width': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5, 0.25, 7, 0.8],
+      'line-opacity': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5, 0.18, 7, 0.45],
     },
   } as any)
 
@@ -318,7 +318,7 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     source: 'region-labels-1933',
     layout: {
       'text-field': ['get', 'label'],
-      'text-size': ['interpolate', ['linear'], ['zoom'], 3, 0, 4, ['get', 'labelSize'], 6, ['+', ['get', 'labelSize'], 2]],
+      'text-size': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5, ['get', 'labelSize'], 7, ['+', ['get', 'labelSize'], 2]],
       'text-font': ['Open Sans Regular'],
       'text-allow-overlap': false,
       'text-ignore-placement': false,
@@ -329,7 +329,7 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
       'text-color': '#f8fafc',
       'text-halo-color': '#020617',
       'text-halo-width': 1.5,
-      'text-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0, 4, 0.65, 5, 0.95, 7, 1],
+      'text-opacity': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5, 0.75, 7, 1],
     },
   } as any)
 
@@ -338,7 +338,7 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     type: 'circle',
     source: 'microstates-1933',
     paint: {
-      'circle-radius': ['interpolate', ['linear'], ['zoom'], 2, 2, 5, 4, 8, 6],
+      'circle-radius': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5, 4, 8, 6],
       'circle-color': ['get', 'color'],
       'circle-stroke-color': '#f8fafc',
       'circle-stroke-width': 1,
@@ -352,7 +352,7 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     layout: {
       'text-field': ['get', 'label'],
       'text-font': ['Open Sans Regular'],
-      'text-size': ['interpolate', ['linear'], ['zoom'], 3, 0, 5, 10, 8, 12],
+      'text-size': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5, 10, 8, 12],
       'text-offset': [0, 0.8],
       'text-allow-overlap': true,
     },

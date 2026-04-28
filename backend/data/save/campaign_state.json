@@ -5920,14 +5920,6 @@
       "organization": 80,
       "movementTarget": null
     },
-    "AND_DIV_001": {
-      "id": "AND_DIV_001",
-      "ownerTag": "AND",
-      "provinceId": "AND_001",
-      "strength": 100,
-      "organization": 80,
-      "movementTarget": null
-    },
     "ANG_DIV_001": {
       "id": "ANG_DIV_001",
       "ownerTag": "ANG",
@@ -6400,14 +6392,6 @@
       "organization": 80,
       "movementTarget": null
     },
-    "GRL_DIV_001": {
-      "id": "GRL_DIV_001",
-      "ownerTag": "GRL",
-      "provinceId": "GRL_001",
-      "strength": 100,
-      "organization": 80,
-      "movementTarget": null
-    },
     "GUA_DIV_001": {
       "id": "GUA_DIV_001",
       "ownerTag": "GUA",
@@ -6640,14 +6624,6 @@
       "organization": 80,
       "movementTarget": null
     },
-    "LIE_DIV_001": {
-      "id": "LIE_DIV_001",
-      "ownerTag": "LIE",
-      "provinceId": "LIE_001",
-      "strength": 100,
-      "organization": 80,
-      "movementTarget": null
-    },
     "LIT_DIV_001": {
       "id": "LIT_DIV_001",
       "ownerTag": "LIT",
@@ -6716,14 +6692,6 @@
       "id": "MAU_DIV_002",
       "ownerTag": "MAU",
       "provinceId": "MAU_002",
-      "strength": 100,
-      "organization": 80,
-      "movementTarget": null
-    },
-    "MCO_DIV_001": {
-      "id": "MCO_DIV_001",
-      "ownerTag": "MCO",
-      "provinceId": "MCO_001",
       "strength": 100,
       "organization": 80,
       "movementTarget": null
@@ -6992,14 +6960,6 @@
       "organization": 80,
       "movementTarget": null
     },
-    "SMR_DIV_001": {
-      "id": "SMR_DIV_001",
-      "ownerTag": "SMR",
-      "provinceId": "SMR_001",
-      "strength": 100,
-      "organization": 80,
-      "movementTarget": null
-    },
     "SOL_DIV_001": {
       "id": "SOL_DIV_001",
       "ownerTag": "SOL",
@@ -7216,14 +7176,6 @@
       "organization": 80,
       "movementTarget": null
     },
-    "VAT_DIV_001": {
-      "id": "VAT_DIV_001",
-      "ownerTag": "VAT",
-      "provinceId": "VAT_001",
-      "strength": 100,
-      "organization": 80,
-      "movementTarget": null
-    },
     "VEN_DIV_001": {
       "id": "VEN_DIV_001",
       "ownerTag": "VEN",
@@ -7276,6 +7228,54 @@
       "id": "ZIM_DIV_001",
       "ownerTag": "ZIM",
       "provinceId": "ZIM_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "AND_DIV_001": {
+      "id": "AND_DIV_001",
+      "ownerTag": "AND",
+      "provinceId": "AND_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GRL_DIV_001": {
+      "id": "GRL_DIV_001",
+      "ownerTag": "GRL",
+      "provinceId": "GRL_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LIE_DIV_001": {
+      "id": "LIE_DIV_001",
+      "ownerTag": "LIE",
+      "provinceId": "LIE_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MCO_DIV_001": {
+      "id": "MCO_DIV_001",
+      "ownerTag": "MCO",
+      "provinceId": "MCO_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SMR_DIV_001": {
+      "id": "SMR_DIV_001",
+      "ownerTag": "SMR",
+      "provinceId": "SMR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "VAT_DIV_001": {
+      "id": "VAT_DIV_001",
+      "ownerTag": "VAT",
+      "provinceId": "VAT_001",
       "strength": 100,
       "organization": 80,
       "movementTarget": null

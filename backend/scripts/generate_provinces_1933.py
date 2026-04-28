@@ -27,6 +27,7 @@ SOURCE_COUNTRIES_PATH = DATA_DIR / "europe_1933.geojson"
 PROVINCES_PATH = BASE_DIR / "provinces_1933.geojson"
 REGIONS_PATH = BASE_DIR / "regions_1933.json"
 ADJACENCY_PATH = BASE_DIR / "province_adjacency_1933.json"
+MICROSTATE_POINTS_PATH = BASE_DIR / "microstate_points_1933.geojson"
 CAMPAIGN_PATH = SAVE_DIR / "campaign_state.json"
 STATE_PATHS = [
     DATA_DIR / "game_state_1933.json",
@@ -44,14 +45,15 @@ IMPORTANT_TERRITORIES = [
     "Danzig",
 ]
 
-FALLBACK_COUNTRIES = [
-    ("GRL", "Greenland", (-73.5, 59.8, -12.0, 83.7)),
-    ("AND", "Andorra", (1.4, 42.4, 1.8, 42.7)),
-    ("MCO", "Monaco", (7.38, 43.72, 7.45, 43.76)),
-    ("LIE", "Liechtenstein", (9.47, 47.05, 9.65, 47.27)),
-    ("SMR", "San Marino", (12.38, 43.88, 12.55, 44.0)),
-    ("VAT", "Vatican", (12.44, 41.9, 12.46, 41.91)),
+FALLBACK_MICROSTATE_POINTS = [
+    ("AND", "Andorra", 1.6, 42.55),
+    ("MCO", "Monaco", 7.42, 43.74),
+    ("LIE", "Liechtenstein", 9.55, 47.16),
+    ("SMR", "San Marino", 12.46, 43.94),
+    ("VAT", "Vatican", 12.45, 41.9),
 ]
+
+# TODO: real Greenland geometry should come from Natural Earth/Admin-0 map units later.
 
 SPECIAL_REGIONS = [
     {
@@ -147,12 +149,12 @@ def main() -> None:
     BASE_DIR.mkdir(parents=True, exist_ok=True)
     SAVE_DIR.mkdir(parents=True, exist_ok=True)
 
-    if not COUNTRIES_PATH.exists():
-        shutil.copyfile(SOURCE_COUNTRIES_PATH, COUNTRIES_PATH)
+    shutil.copyfile(SOURCE_COUNTRIES_PATH, COUNTRIES_PATH)
 
     with COUNTRIES_PATH.open("r", encoding="utf-8") as f:
         countries = json.load(f)
-    add_fallback_countries(countries)
+
+    microstate_points = build_fallback_microstate_points(countries)
 
     provinces: list[dict[str, Any]] = []
     regions: dict[str, dict[str, Any]] = {}
@@ -242,15 +244,21 @@ def main() -> None:
     write_json(PROVINCES_PATH, {"type": "FeatureCollection", "features": provinces})
     write_json(REGIONS_PATH, {"regions": regions})
     write_json(ADJACENCY_PATH, adjacency)
+    write_json(MICROSTATE_POINTS_PATH, microstate_points)
     write_json(CAMPAIGN_PATH, campaign_state)
     update_game_states(provinces, countries)
 
     country_names = [feature.get("properties", {}).get("name", "") for feature in countries.get("features", [])]
-    missing_important = [
-        name
-        for name in IMPORTANT_TERRITORIES
-        if not any(name.lower() in str(country_name).lower() for country_name in country_names)
-    ]
+    fallback_point_names = {
+        feature.get("properties", {}).get("name", "")
+        for feature in microstate_points.get("features", [])
+    }
+    missing_important = []
+    for name in IMPORTANT_TERRITORIES:
+        in_countries = any(name.lower() in str(country_name).lower() for country_name in country_names)
+        in_fallback_points = name in fallback_point_names
+        if not in_countries and not in_fallback_points:
+            missing_important.append(name)
 
     print(f"countries read: {len(countries.get('features', []))}")
     print(f"raw cells created: {raw_cells_created}")
@@ -351,32 +359,36 @@ def polygonal_geometry(geometry: Any) -> Any | None:
     return None
 
 
-def add_fallback_countries(countries: dict[str, Any]) -> None:
-    features = countries.setdefault("features", [])
+def build_fallback_microstate_points(countries: dict[str, Any]) -> dict[str, Any]:
+    features = countries.get("features", [])
     existing_names = {
         str(feature.get("properties", {}).get("name", "")).lower()
         for feature in features
     }
-    existing_tags = {
-        str(feature.get("properties", {}).get("tag", "")).upper()
-        for feature in features
-    }
+    point_features = []
 
-    for tag, name, bbox in FALLBACK_COUNTRIES:
+    for tag, name, center_lon, center_lat in FALLBACK_MICROSTATE_POINTS:
         if any(name.lower() in existing for existing in existing_names):
             continue
-        features.append(
+        point_features.append(
             {
                 "type": "Feature",
                 "properties": {
                     "tag": tag,
                     "name": name,
-                    "isMicrostate": bbox_area(bbox) < 1,
-                    "smallCountry": bbox_area(bbox) < 4,
+                    "label": name,
+                    "centerLon": center_lon,
+                    "centerLat": center_lat,
+                    "fallbackPoint": True,
                 },
-                "geometry": bbox_polygon(bbox),
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [center_lon, center_lat],
+                },
             }
         )
+
+    return {"type": "FeatureCollection", "features": point_features}
 
 
 def province_target_count(tag: str, area: float, bbox_size: float) -> int:

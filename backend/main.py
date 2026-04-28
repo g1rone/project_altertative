@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-import json
 import hashlib
+import json
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -19,7 +19,56 @@ MAP_PATH = DATA_DIR / "europe_1933.geojson"
 BASE_PROVINCES_PATH = BASE_DATA_DIR / "provinces_1933.geojson"
 BASE_REGIONS_PATH = BASE_DATA_DIR / "regions_1933.json"
 PROVINCE_ADJACENCY_PATH = BASE_DATA_DIR / "province_adjacency_1933.json"
+MICROSTATE_POINTS_PATH = BASE_DATA_DIR / "microstate_points_1933.geojson"
 CAMPAIGN_STATE_PATH = SAVE_DATA_DIR / "campaign_state.json"
+SAFE_LABEL_TAGS = {
+    "GER",
+    "FRA",
+    "GBR",
+    "ITA",
+    "POL",
+    "SOV",
+    "ESP",
+    "TUR",
+    "USA",
+    "UNI",
+    "CHI",
+    "CHN",
+    "JAP",
+    "CAN",
+    "BRA",
+    "IND",
+}
+LABEL_NAMES = {
+    "GER": "GERMANY",
+    "FRA": "FRANCE",
+    "GBR": "UNITED KINGDOM",
+    "ITA": "ITALY",
+    "POL": "POLAND",
+    "SOV": "SOVIET UNION",
+    "ESP": "SPAIN",
+    "TUR": "TURKEY",
+    "USA": "UNITED STATES",
+    "UNI": "UNITED STATES",
+    "CHI": "CHINA",
+    "CHN": "CHINA",
+    "JAP": "JAPAN",
+    "CAN": "CANADA",
+    "BRA": "BRAZIL",
+    "IND": "INDIA",
+}
+SAFE_REGION_LABEL_IDS = {
+    "GER_RHINELAND",
+    "GER_BAVARIA",
+    "GER_SAXONY",
+    "GER_EAST_PRUSSIA",
+    "POL_DANZIG",
+    "FRA_ALSACE_LORRAINE",
+    "SOV_UKRAINE",
+    "ITA_LOMBARDY",
+    "GBR_ENGLAND",
+    "TUR_ANATOLIA",
+}
 
 
 app = FastAPI(title="Pax 1933 Backend", version="0.1.0")
@@ -165,50 +214,19 @@ def apply_campaign_ownership_to_provinces() -> dict:
 
 
 def build_current_countries_from_provinces() -> dict:
-    provinces = apply_campaign_ownership_to_provinces()
-    if province_data_looks_rectangular(provinces):
-        return color_country_features(read_json(MAP_PATH))
-
-    state = load_state()
-    grouped: dict[str, list[dict]] = {}
-
-    for province in provinces.get("features", []):
-        owner = province.get("properties", {}).get("ownerTag", "UNK")
-        grouped.setdefault(owner, []).append(province)
-
-    features = []
-    for tag, owned_provinces in sorted(grouped.items()):
-        country_state = state.countries.get(tag)
-        geometries = [province["geometry"] for province in owned_provinces if province.get("geometry")]
-        if not geometries:
-            continue
-        region_count = len({province["properties"].get("regionId") for province in owned_provinces})
-        features.append(
-            {
-                "type": "Feature",
-                "properties": {
-                    "tag": tag,
-                    "name": country_state.name if country_state else tag,
-                    "displayName": (country_state.name if country_state else tag).upper(),
-                    "color": country_state.color if country_state else stable_color(tag),
-                    "provinceCount": len(owned_provinces),
-                    "regionCount": region_count,
-                },
-                "geometry": collect_geometries(geometries),
-            }
-        )
-
-    return {"type": "FeatureCollection", "features": features}
+    return color_country_features(read_json(MAP_PATH))
 
 
 def color_country_features(countries: dict) -> dict:
+    state = load_state()
     features = []
     for feature in countries.get("features", []):
         copied = json.loads(json.dumps(feature))
         props = copied.setdefault("properties", {})
         tag = props.get("tag", "UNK")
-        country = load_state().countries.get(tag)
-        props["displayName"] = (country.name if country else props.get("name", tag)).upper()
+        country = state.countries.get(tag)
+        props["name"] = country.name if country else props.get("name", tag)
+        props["displayName"] = LABEL_NAMES.get(tag, props["name"].upper())
         props["color"] = country.color if country else stable_color(tag)
         features.append(copied)
     return {"type": "FeatureCollection", "features": features}
@@ -237,34 +255,55 @@ def province_data_looks_rectangular(provinces: dict) -> bool:
 
 def build_current_country_label_lines() -> dict:
     countries = build_current_countries_from_provinces()
-    features = []
+    candidates: dict[str, tuple[float, dict]] = {}
 
     for country in countries.get("features", []):
+        tag = country.get("properties", {}).get("tag")
+        if tag not in SAFE_LABEL_TAGS:
+            continue
+
         bbox = geometry_bbox(country.get("geometry"))
         if not bbox:
             continue
         min_lon, min_lat, max_lon, max_lat = bbox
         width = max_lon - min_lon
         height = max_lat - min_lat
-        if width * height < 3:
+        area = width * height
+        if area < 8:
             continue
+        if width > 120:
+            continue
+        if tag in candidates and candidates[tag][0] >= area:
+            continue
+        candidates[tag] = (area, country)
+
+    features = []
+    for tag, (_, country) in sorted(candidates.items()):
+        bbox = geometry_bbox(country.get("geometry"))
+        if not bbox:
+            continue
+        min_lon, min_lat, max_lon, max_lat = bbox
+        width = max_lon - min_lon
+        height = max_lat - min_lat
         center_lat = (min_lat + max_lat) / 2
-        label_size = max(12, min(30, 10 + width / 5))
+        center_lon = (min_lon + max_lon) / 2
+        label_size = max(12, min(26, 10 + width / 6))
+        line_width = min(width * 0.5, 30)
         features.append(
             {
                 "type": "Feature",
                 "properties": {
-                    "tag": country["properties"]["tag"],
-                    "label": country["properties"]["displayName"],
+                    "tag": tag,
+                    "label": LABEL_NAMES.get(tag, country["properties"]["displayName"]),
                     "labelSize": label_size,
-                    "labelSpacing": 0.12 if width > height else 0.04,
+                    "labelSpacing": 0.08 if width > height else 0.03,
                     "labelRank": 1,
                 },
                 "geometry": {
                     "type": "LineString",
                     "coordinates": [
-                        [min_lon + width * 0.15, center_lat],
-                        [max_lon - width * 0.15, center_lat],
+                        [center_lon - line_width / 2, center_lat],
+                        [center_lon + line_width / 2, center_lat],
                     ],
                 },
             }
@@ -317,6 +356,8 @@ def build_region_labels() -> dict:
     for region in regions_geojson.get("features", []):
         props = region.get("properties", {})
         region_data = regions.get(props.get("regionId"), {})
+        if props.get("regionId") not in SAFE_REGION_LABEL_IDS:
+            continue
         features.append(
             {
                 "type": "Feature",
@@ -360,6 +401,10 @@ def build_microstate_points() -> dict:
                 },
             }
         )
+
+    if MICROSTATE_POINTS_PATH.exists():
+        fallback_points = read_json(MICROSTATE_POINTS_PATH)
+        features.extend(fallback_points.get("features", []))
 
     return {"type": "FeatureCollection", "features": features}
 
