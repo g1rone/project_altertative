@@ -1,0 +1,9068 @@
+{
+  "year": 1933,
+  "turn": 1,
+  "provinceOwnership": {
+    "UNI_001": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "ALA_001": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "HAW_001": {
+      "ownerTag": "HAW",
+      "controllerTag": "HAW"
+    },
+    "PUE_001": {
+      "ownerTag": "PUE",
+      "controllerTag": "PUE"
+    },
+    "CAN_001": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "NEW_001": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "BAH_001": {
+      "ownerTag": "BAH",
+      "controllerTag": "BAH"
+    },
+    "CUB_001": {
+      "ownerTag": "CUB",
+      "controllerTag": "CUB"
+    },
+    "HAI_001": {
+      "ownerTag": "HAI",
+      "controllerTag": "HAI"
+    },
+    "DOM_001": {
+      "ownerTag": "DOM",
+      "controllerTag": "DOM"
+    },
+    "JAM_001": {
+      "ownerTag": "JAM",
+      "controllerTag": "JAM"
+    },
+    "TRI_001": {
+      "ownerTag": "TRI",
+      "controllerTag": "TRI"
+    },
+    "BAR_001": {
+      "ownerTag": "BAR",
+      "controllerTag": "BAR"
+    },
+    "GUA_001": {
+      "ownerTag": "GUA",
+      "controllerTag": "GUA"
+    },
+    "MAR_001": {
+      "ownerTag": "MAR",
+      "controllerTag": "MAR"
+    },
+    "MEX_001": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "BEL_001": {
+      "ownerTag": "BEL",
+      "controllerTag": "BEL"
+    },
+    "GUA_002": {
+      "ownerTag": "GUA",
+      "controllerTag": "GUA"
+    },
+    "HON_001": {
+      "ownerTag": "HON",
+      "controllerTag": "HON"
+    },
+    "ELS_001": {
+      "ownerTag": "ELS",
+      "controllerTag": "ELS"
+    },
+    "NIC_001": {
+      "ownerTag": "NIC",
+      "controllerTag": "NIC"
+    },
+    "COS_001": {
+      "ownerTag": "COS",
+      "controllerTag": "COS"
+    },
+    "PAN_001": {
+      "ownerTag": "PAN",
+      "controllerTag": "PAN"
+    },
+    "COL_001": {
+      "ownerTag": "COL",
+      "controllerTag": "COL"
+    },
+    "VEN_001": {
+      "ownerTag": "VEN",
+      "controllerTag": "VEN"
+    },
+    "GUY_001": {
+      "ownerTag": "GUY",
+      "controllerTag": "GUY"
+    },
+    "SUR_001": {
+      "ownerTag": "SUR",
+      "controllerTag": "SUR"
+    },
+    "FRE_001": {
+      "ownerTag": "FRE",
+      "controllerTag": "FRE"
+    },
+    "ECU_001": {
+      "ownerTag": "ECU",
+      "controllerTag": "ECU"
+    },
+    "PER_001": {
+      "ownerTag": "PER",
+      "controllerTag": "PER"
+    },
+    "BRA_001": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BOL_001": {
+      "ownerTag": "BOL",
+      "controllerTag": "BOL"
+    },
+    "PAR_001": {
+      "ownerTag": "PAR",
+      "controllerTag": "PAR"
+    },
+    "CHI_001": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "ARG_001": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "URU_001": {
+      "ownerTag": "URU",
+      "controllerTag": "URU"
+    },
+    "GBR_001": {
+      "ownerTag": "GBR",
+      "controllerTag": "GBR"
+    },
+    "IRE_001": {
+      "ownerTag": "IRE",
+      "controllerTag": "IRE"
+    },
+    "NLD_001": {
+      "ownerTag": "NLD",
+      "controllerTag": "NLD"
+    },
+    "BEL_002": {
+      "ownerTag": "BEL",
+      "controllerTag": "BEL"
+    },
+    "LUX_001": {
+      "ownerTag": "LUX",
+      "controllerTag": "LUX"
+    },
+    "FRA_001": {
+      "ownerTag": "FRA",
+      "controllerTag": "FRA"
+    },
+    "SWI_001": {
+      "ownerTag": "SWI",
+      "controllerTag": "SWI"
+    },
+    "ESP_001": {
+      "ownerTag": "ESP",
+      "controllerTag": "ESP"
+    },
+    "POR_001": {
+      "ownerTag": "POR",
+      "controllerTag": "POR"
+    },
+    "GER_001": {
+      "ownerTag": "GER",
+      "controllerTag": "GER"
+    },
+    "POL_001": {
+      "ownerTag": "POL",
+      "controllerTag": "POL"
+    },
+    "DAN_001": {
+      "ownerTag": "DAN",
+      "controllerTag": "DAN"
+    },
+    "AUS_001": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "HUN_001": {
+      "ownerTag": "HUN",
+      "controllerTag": "HUN"
+    },
+    "CZE_001": {
+      "ownerTag": "CZE",
+      "controllerTag": "CZE"
+    },
+    "ITA_001": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "MAL_001": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "ALB_001": {
+      "ownerTag": "ALB",
+      "controllerTag": "ALB"
+    },
+    "YUG_001": {
+      "ownerTag": "YUG",
+      "controllerTag": "YUG"
+    },
+    "GRE_001": {
+      "ownerTag": "GRE",
+      "controllerTag": "GRE"
+    },
+    "CYP_001": {
+      "ownerTag": "CYP",
+      "controllerTag": "CYP"
+    },
+    "BUL_001": {
+      "ownerTag": "BUL",
+      "controllerTag": "BUL"
+    },
+    "ROM_001": {
+      "ownerTag": "ROM",
+      "controllerTag": "ROM"
+    },
+    "SOV_001": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "EST_001": {
+      "ownerTag": "EST",
+      "controllerTag": "EST"
+    },
+    "LAT_001": {
+      "ownerTag": "LAT",
+      "controllerTag": "LAT"
+    },
+    "LIT_001": {
+      "ownerTag": "LIT",
+      "controllerTag": "LIT"
+    },
+    "FIN_001": {
+      "ownerTag": "FIN",
+      "controllerTag": "FIN"
+    },
+    "SWE_001": {
+      "ownerTag": "SWE",
+      "controllerTag": "SWE"
+    },
+    "NOR_001": {
+      "ownerTag": "NOR",
+      "controllerTag": "NOR"
+    },
+    "DEN_001": {
+      "ownerTag": "DEN",
+      "controllerTag": "DEN"
+    },
+    "ICE_001": {
+      "ownerTag": "ICE",
+      "controllerTag": "ICE"
+    },
+    "CAP_001": {
+      "ownerTag": "CAP",
+      "controllerTag": "CAP"
+    },
+    "GUI_001": {
+      "ownerTag": "GUI",
+      "controllerTag": "GUI"
+    },
+    "EQU_001": {
+      "ownerTag": "EQU",
+      "controllerTag": "EQU"
+    },
+    "GAM_001": {
+      "ownerTag": "GAM",
+      "controllerTag": "GAM"
+    },
+    "MAL_002": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "SEN_001": {
+      "ownerTag": "SEN",
+      "controllerTag": "SEN"
+    },
+    "BEN_001": {
+      "ownerTag": "BEN",
+      "controllerTag": "BEN"
+    },
+    "MAU_001": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "NIG_001": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "COT_001": {
+      "ownerTag": "COT",
+      "controllerTag": "COT"
+    },
+    "GUI_002": {
+      "ownerTag": "GUI",
+      "controllerTag": "GUI"
+    },
+    "LIB_001": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "SIE_001": {
+      "ownerTag": "SIE",
+      "controllerTag": "SIE"
+    },
+    "GHA_001": {
+      "ownerTag": "GHA",
+      "controllerTag": "GHA"
+    },
+    "TOG_001": {
+      "ownerTag": "TOG",
+      "controllerTag": "TOG"
+    },
+    "BRI_001": {
+      "ownerTag": "BRI",
+      "controllerTag": "BRI"
+    },
+    "CAM_001": {
+      "ownerTag": "CAM",
+      "controllerTag": "CAM"
+    },
+    "BRI_002": {
+      "ownerTag": "BRI",
+      "controllerTag": "BRI"
+    },
+    "NIG_002": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "GAB_001": {
+      "ownerTag": "GAB",
+      "controllerTag": "GAB"
+    },
+    "CEN_001": {
+      "ownerTag": "CEN",
+      "controllerTag": "CEN"
+    },
+    "CHA_001": {
+      "ownerTag": "CHA",
+      "controllerTag": "CHA"
+    },
+    "CON_001": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_002": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "UGA_001": {
+      "ownerTag": "UGA",
+      "controllerTag": "UGA"
+    },
+    "KEN_001": {
+      "ownerTag": "KEN",
+      "controllerTag": "KEN"
+    },
+    "TAN_001": {
+      "ownerTag": "TAN",
+      "controllerTag": "TAN"
+    },
+    "ZAN_001": {
+      "ownerTag": "ZAN",
+      "controllerTag": "ZAN"
+    },
+    "RWA_001": {
+      "ownerTag": "RWA",
+      "controllerTag": "RWA"
+    },
+    "BRI_003": {
+      "ownerTag": "BRI",
+      "controllerTag": "BRI"
+    },
+    "DJI_001": {
+      "ownerTag": "DJI",
+      "controllerTag": "DJI"
+    },
+    "ETH_001": {
+      "ownerTag": "ETH",
+      "controllerTag": "ETH"
+    },
+    "ERI_001": {
+      "ownerTag": "ERI",
+      "controllerTag": "ERI"
+    },
+    "ANG_001": {
+      "ownerTag": "ANG",
+      "controllerTag": "ANG"
+    },
+    "MOZ_001": {
+      "ownerTag": "MOZ",
+      "controllerTag": "MOZ"
+    },
+    "ZAM_001": {
+      "ownerTag": "ZAM",
+      "controllerTag": "ZAM"
+    },
+    "ZIM_001": {
+      "ownerTag": "ZIM",
+      "controllerTag": "ZIM"
+    },
+    "MAL_003": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "SOU_001": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "NAM_001": {
+      "ownerTag": "NAM",
+      "controllerTag": "NAM"
+    },
+    "LES_001": {
+      "ownerTag": "LES",
+      "controllerTag": "LES"
+    },
+    "BOT_001": {
+      "ownerTag": "BOT",
+      "controllerTag": "BOT"
+    },
+    "SWA_001": {
+      "ownerTag": "SWA",
+      "controllerTag": "SWA"
+    },
+    "MAD_001": {
+      "ownerTag": "MAD",
+      "controllerTag": "MAD"
+    },
+    "REU_001": {
+      "ownerTag": "REU",
+      "controllerTag": "REU"
+    },
+    "MAU_002": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "MOR_001": {
+      "ownerTag": "MOR",
+      "controllerTag": "MOR"
+    },
+    "SPA_001": {
+      "ownerTag": "SPA",
+      "controllerTag": "SPA"
+    },
+    "SPA_002": {
+      "ownerTag": "SPA",
+      "controllerTag": "SPA"
+    },
+    "ALG_001": {
+      "ownerTag": "ALG",
+      "controllerTag": "ALG"
+    },
+    "TUN_001": {
+      "ownerTag": "TUN",
+      "controllerTag": "TUN"
+    },
+    "LIB_002": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "SUD_001": {
+      "ownerTag": "SUD",
+      "controllerTag": "SUD"
+    },
+    "IRN_001": {
+      "ownerTag": "IRN",
+      "controllerTag": "IRN"
+    },
+    "TUR_001": {
+      "ownerTag": "TUR",
+      "controllerTag": "TUR"
+    },
+    "IRQ_001": {
+      "ownerTag": "IRQ",
+      "controllerTag": "IRQ"
+    },
+    "EGY_001": {
+      "ownerTag": "EGY",
+      "controllerTag": "EGY"
+    },
+    "SYR_001": {
+      "ownerTag": "SYR",
+      "controllerTag": "SYR"
+    },
+    "LEB_001": {
+      "ownerTag": "LEB",
+      "controllerTag": "LEB"
+    },
+    "JOR_001": {
+      "ownerTag": "JOR",
+      "controllerTag": "JOR"
+    },
+    "PAL_001": {
+      "ownerTag": "PAL",
+      "controllerTag": "PAL"
+    },
+    "SAU_001": {
+      "ownerTag": "SAU",
+      "controllerTag": "SAU"
+    },
+    "YEM_001": {
+      "ownerTag": "YEM",
+      "controllerTag": "YEM"
+    },
+    "QAT_001": {
+      "ownerTag": "QAT",
+      "controllerTag": "QAT"
+    },
+    "UNI_002": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "OMA_001": {
+      "ownerTag": "OMA",
+      "controllerTag": "OMA"
+    },
+    "AFG_001": {
+      "ownerTag": "AFG",
+      "controllerTag": "AFG"
+    },
+    "CHI_002": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "TIB_001": {
+      "ownerTag": "TIB",
+      "controllerTag": "TIB"
+    },
+    "MON_001": {
+      "ownerTag": "MON",
+      "controllerTag": "MON"
+    },
+    "TAI_001": {
+      "ownerTag": "TAI",
+      "controllerTag": "TAI"
+    },
+    "KOR_001": {
+      "ownerTag": "KOR",
+      "controllerTag": "KOR"
+    },
+    "JAP_001": {
+      "ownerTag": "JAP",
+      "controllerTag": "JAP"
+    },
+    "IND_001": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "BHU_001": {
+      "ownerTag": "BHU",
+      "controllerTag": "BHU"
+    },
+    "SRI_001": {
+      "ownerTag": "SRI",
+      "controllerTag": "SRI"
+    },
+    "MAL_004": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "NEP_001": {
+      "ownerTag": "NEP",
+      "controllerTag": "NEP"
+    },
+    "THA_001": {
+      "ownerTag": "THA",
+      "controllerTag": "THA"
+    },
+    "CAM_002": {
+      "ownerTag": "CAM",
+      "controllerTag": "CAM"
+    },
+    "LAO_001": {
+      "ownerTag": "LAO",
+      "controllerTag": "LAO"
+    },
+    "VIE_001": {
+      "ownerTag": "VIE",
+      "controllerTag": "VIE"
+    },
+    "FED_001": {
+      "ownerTag": "FED",
+      "controllerTag": "FED"
+    },
+    "UNF_001": {
+      "ownerTag": "UNF",
+      "controllerTag": "UNF"
+    },
+    "SAB_001": {
+      "ownerTag": "SAB",
+      "controllerTag": "SAB"
+    },
+    "SAR_001": {
+      "ownerTag": "SAR",
+      "controllerTag": "SAR"
+    },
+    "STR_001": {
+      "ownerTag": "STR",
+      "controllerTag": "STR"
+    },
+    "BRU_001": {
+      "ownerTag": "BRU",
+      "controllerTag": "BRU"
+    },
+    "PHI_001": {
+      "ownerTag": "PHI",
+      "controllerTag": "PHI"
+    },
+    "IND_002": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "EAS_001": {
+      "ownerTag": "EAS",
+      "controllerTag": "EAS"
+    },
+    "AUS_002": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "PAP_001": {
+      "ownerTag": "PAP",
+      "controllerTag": "PAP"
+    },
+    "NEW_002": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_003": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_004": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "SOL_001": {
+      "ownerTag": "SOL",
+      "controllerTag": "SOL"
+    },
+    "FIJ_001": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FRE_002": {
+      "ownerTag": "FRE",
+      "controllerTag": "FRE"
+    },
+    "INI_001": {
+      "ownerTag": "INI",
+      "controllerTag": "INI"
+    },
+    "ITA_002": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "SOU_002": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "GRL_001": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "AND_001": {
+      "ownerTag": "AND",
+      "controllerTag": "AND"
+    },
+    "MCO_001": {
+      "ownerTag": "MCO",
+      "controllerTag": "MCO"
+    },
+    "LIE_001": {
+      "ownerTag": "LIE",
+      "controllerTag": "LIE"
+    },
+    "SMR_001": {
+      "ownerTag": "SMR",
+      "controllerTag": "SMR"
+    },
+    "VAT_001": {
+      "ownerTag": "VAT",
+      "controllerTag": "VAT"
+    },
+    "UNI_003": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_004": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_005": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_006": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_007": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_008": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_009": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_010": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_011": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_012": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_013": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_014": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_015": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_016": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_017": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_018": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_019": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_020": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_021": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_022": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_023": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_024": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_025": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_026": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_027": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_028": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_029": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_030": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_031": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_032": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_033": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_034": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_035": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_036": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "ALA_002": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_003": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_004": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_005": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_006": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_007": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_008": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_009": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_010": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_011": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_012": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_013": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_014": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_015": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_016": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_017": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_018": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_019": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_020": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "ALA_021": {
+      "ownerTag": "ALA",
+      "controllerTag": "ALA"
+    },
+    "HAW_002": {
+      "ownerTag": "HAW",
+      "controllerTag": "HAW"
+    },
+    "HAW_003": {
+      "ownerTag": "HAW",
+      "controllerTag": "HAW"
+    },
+    "HAW_004": {
+      "ownerTag": "HAW",
+      "controllerTag": "HAW"
+    },
+    "CAN_002": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_003": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_004": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_005": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_006": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_007": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_008": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_009": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_010": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_011": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_012": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_013": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_014": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_015": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_016": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_017": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_018": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_019": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_020": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_021": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_022": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_023": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_024": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_025": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_026": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_027": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_028": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_029": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_030": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_031": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_032": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_033": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_034": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_035": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "CAN_036": {
+      "ownerTag": "CAN",
+      "controllerTag": "CAN"
+    },
+    "NEW_005": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_006": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_007": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_008": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_009": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_010": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_011": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_012": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "BAH_002": {
+      "ownerTag": "BAH",
+      "controllerTag": "BAH"
+    },
+    "BAH_003": {
+      "ownerTag": "BAH",
+      "controllerTag": "BAH"
+    },
+    "BAH_004": {
+      "ownerTag": "BAH",
+      "controllerTag": "BAH"
+    },
+    "BAH_005": {
+      "ownerTag": "BAH",
+      "controllerTag": "BAH"
+    },
+    "BAH_006": {
+      "ownerTag": "BAH",
+      "controllerTag": "BAH"
+    },
+    "CUB_002": {
+      "ownerTag": "CUB",
+      "controllerTag": "CUB"
+    },
+    "CUB_003": {
+      "ownerTag": "CUB",
+      "controllerTag": "CUB"
+    },
+    "CUB_004": {
+      "ownerTag": "CUB",
+      "controllerTag": "CUB"
+    },
+    "CUB_005": {
+      "ownerTag": "CUB",
+      "controllerTag": "CUB"
+    },
+    "CUB_006": {
+      "ownerTag": "CUB",
+      "controllerTag": "CUB"
+    },
+    "CUB_007": {
+      "ownerTag": "CUB",
+      "controllerTag": "CUB"
+    },
+    "CUB_008": {
+      "ownerTag": "CUB",
+      "controllerTag": "CUB"
+    },
+    "DOM_002": {
+      "ownerTag": "DOM",
+      "controllerTag": "DOM"
+    },
+    "DOM_003": {
+      "ownerTag": "DOM",
+      "controllerTag": "DOM"
+    },
+    "DOM_004": {
+      "ownerTag": "DOM",
+      "controllerTag": "DOM"
+    },
+    "MEX_002": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_003": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_004": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_005": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_006": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_007": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_008": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_009": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_010": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_011": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_012": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_013": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_014": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_015": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_016": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_017": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "MEX_018": {
+      "ownerTag": "MEX",
+      "controllerTag": "MEX"
+    },
+    "GUA_003": {
+      "ownerTag": "GUA",
+      "controllerTag": "GUA"
+    },
+    "GUA_004": {
+      "ownerTag": "GUA",
+      "controllerTag": "GUA"
+    },
+    "GUA_005": {
+      "ownerTag": "GUA",
+      "controllerTag": "GUA"
+    },
+    "HON_002": {
+      "ownerTag": "HON",
+      "controllerTag": "HON"
+    },
+    "HON_003": {
+      "ownerTag": "HON",
+      "controllerTag": "HON"
+    },
+    "HON_004": {
+      "ownerTag": "HON",
+      "controllerTag": "HON"
+    },
+    "NIC_002": {
+      "ownerTag": "NIC",
+      "controllerTag": "NIC"
+    },
+    "NIC_003": {
+      "ownerTag": "NIC",
+      "controllerTag": "NIC"
+    },
+    "NIC_004": {
+      "ownerTag": "NIC",
+      "controllerTag": "NIC"
+    },
+    "COS_002": {
+      "ownerTag": "COS",
+      "controllerTag": "COS"
+    },
+    "COS_003": {
+      "ownerTag": "COS",
+      "controllerTag": "COS"
+    },
+    "COS_004": {
+      "ownerTag": "COS",
+      "controllerTag": "COS"
+    },
+    "PAN_002": {
+      "ownerTag": "PAN",
+      "controllerTag": "PAN"
+    },
+    "PAN_003": {
+      "ownerTag": "PAN",
+      "controllerTag": "PAN"
+    },
+    "COL_002": {
+      "ownerTag": "COL",
+      "controllerTag": "COL"
+    },
+    "COL_003": {
+      "ownerTag": "COL",
+      "controllerTag": "COL"
+    },
+    "COL_004": {
+      "ownerTag": "COL",
+      "controllerTag": "COL"
+    },
+    "COL_005": {
+      "ownerTag": "COL",
+      "controllerTag": "COL"
+    },
+    "COL_006": {
+      "ownerTag": "COL",
+      "controllerTag": "COL"
+    },
+    "COL_007": {
+      "ownerTag": "COL",
+      "controllerTag": "COL"
+    },
+    "COL_008": {
+      "ownerTag": "COL",
+      "controllerTag": "COL"
+    },
+    "COL_009": {
+      "ownerTag": "COL",
+      "controllerTag": "COL"
+    },
+    "COL_010": {
+      "ownerTag": "COL",
+      "controllerTag": "COL"
+    },
+    "COL_011": {
+      "ownerTag": "COL",
+      "controllerTag": "COL"
+    },
+    "COL_012": {
+      "ownerTag": "COL",
+      "controllerTag": "COL"
+    },
+    "VEN_002": {
+      "ownerTag": "VEN",
+      "controllerTag": "VEN"
+    },
+    "VEN_003": {
+      "ownerTag": "VEN",
+      "controllerTag": "VEN"
+    },
+    "VEN_004": {
+      "ownerTag": "VEN",
+      "controllerTag": "VEN"
+    },
+    "VEN_005": {
+      "ownerTag": "VEN",
+      "controllerTag": "VEN"
+    },
+    "VEN_006": {
+      "ownerTag": "VEN",
+      "controllerTag": "VEN"
+    },
+    "VEN_007": {
+      "ownerTag": "VEN",
+      "controllerTag": "VEN"
+    },
+    "VEN_008": {
+      "ownerTag": "VEN",
+      "controllerTag": "VEN"
+    },
+    "VEN_009": {
+      "ownerTag": "VEN",
+      "controllerTag": "VEN"
+    },
+    "VEN_010": {
+      "ownerTag": "VEN",
+      "controllerTag": "VEN"
+    },
+    "VEN_011": {
+      "ownerTag": "VEN",
+      "controllerTag": "VEN"
+    },
+    "VEN_012": {
+      "ownerTag": "VEN",
+      "controllerTag": "VEN"
+    },
+    "GUY_002": {
+      "ownerTag": "GUY",
+      "controllerTag": "GUY"
+    },
+    "GUY_003": {
+      "ownerTag": "GUY",
+      "controllerTag": "GUY"
+    },
+    "GUY_004": {
+      "ownerTag": "GUY",
+      "controllerTag": "GUY"
+    },
+    "GUY_005": {
+      "ownerTag": "GUY",
+      "controllerTag": "GUY"
+    },
+    "GUY_006": {
+      "ownerTag": "GUY",
+      "controllerTag": "GUY"
+    },
+    "SUR_002": {
+      "ownerTag": "SUR",
+      "controllerTag": "SUR"
+    },
+    "SUR_003": {
+      "ownerTag": "SUR",
+      "controllerTag": "SUR"
+    },
+    "SUR_004": {
+      "ownerTag": "SUR",
+      "controllerTag": "SUR"
+    },
+    "ECU_002": {
+      "ownerTag": "ECU",
+      "controllerTag": "ECU"
+    },
+    "ECU_003": {
+      "ownerTag": "ECU",
+      "controllerTag": "ECU"
+    },
+    "ECU_004": {
+      "ownerTag": "ECU",
+      "controllerTag": "ECU"
+    },
+    "ECU_005": {
+      "ownerTag": "ECU",
+      "controllerTag": "ECU"
+    },
+    "ECU_006": {
+      "ownerTag": "ECU",
+      "controllerTag": "ECU"
+    },
+    "ECU_007": {
+      "ownerTag": "ECU",
+      "controllerTag": "ECU"
+    },
+    "ECU_008": {
+      "ownerTag": "ECU",
+      "controllerTag": "ECU"
+    },
+    "PER_002": {
+      "ownerTag": "PER",
+      "controllerTag": "PER"
+    },
+    "PER_003": {
+      "ownerTag": "PER",
+      "controllerTag": "PER"
+    },
+    "PER_004": {
+      "ownerTag": "PER",
+      "controllerTag": "PER"
+    },
+    "PER_005": {
+      "ownerTag": "PER",
+      "controllerTag": "PER"
+    },
+    "PER_006": {
+      "ownerTag": "PER",
+      "controllerTag": "PER"
+    },
+    "PER_007": {
+      "ownerTag": "PER",
+      "controllerTag": "PER"
+    },
+    "PER_008": {
+      "ownerTag": "PER",
+      "controllerTag": "PER"
+    },
+    "PER_009": {
+      "ownerTag": "PER",
+      "controllerTag": "PER"
+    },
+    "PER_010": {
+      "ownerTag": "PER",
+      "controllerTag": "PER"
+    },
+    "PER_011": {
+      "ownerTag": "PER",
+      "controllerTag": "PER"
+    },
+    "PER_012": {
+      "ownerTag": "PER",
+      "controllerTag": "PER"
+    },
+    "BRA_002": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_003": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_004": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_005": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_006": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_007": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_008": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_009": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_010": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_011": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_012": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_013": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_014": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_015": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_016": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_017": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_018": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_019": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_020": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_021": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_022": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_023": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_024": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_025": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_026": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_027": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_028": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_029": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_030": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_031": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_032": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_033": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_034": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_035": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BRA_036": {
+      "ownerTag": "BRA",
+      "controllerTag": "BRA"
+    },
+    "BOL_002": {
+      "ownerTag": "BOL",
+      "controllerTag": "BOL"
+    },
+    "BOL_003": {
+      "ownerTag": "BOL",
+      "controllerTag": "BOL"
+    },
+    "BOL_004": {
+      "ownerTag": "BOL",
+      "controllerTag": "BOL"
+    },
+    "BOL_005": {
+      "ownerTag": "BOL",
+      "controllerTag": "BOL"
+    },
+    "BOL_006": {
+      "ownerTag": "BOL",
+      "controllerTag": "BOL"
+    },
+    "BOL_007": {
+      "ownerTag": "BOL",
+      "controllerTag": "BOL"
+    },
+    "BOL_008": {
+      "ownerTag": "BOL",
+      "controllerTag": "BOL"
+    },
+    "BOL_009": {
+      "ownerTag": "BOL",
+      "controllerTag": "BOL"
+    },
+    "BOL_010": {
+      "ownerTag": "BOL",
+      "controllerTag": "BOL"
+    },
+    "BOL_011": {
+      "ownerTag": "BOL",
+      "controllerTag": "BOL"
+    },
+    "BOL_012": {
+      "ownerTag": "BOL",
+      "controllerTag": "BOL"
+    },
+    "PAR_002": {
+      "ownerTag": "PAR",
+      "controllerTag": "PAR"
+    },
+    "PAR_003": {
+      "ownerTag": "PAR",
+      "controllerTag": "PAR"
+    },
+    "PAR_004": {
+      "ownerTag": "PAR",
+      "controllerTag": "PAR"
+    },
+    "PAR_005": {
+      "ownerTag": "PAR",
+      "controllerTag": "PAR"
+    },
+    "PAR_006": {
+      "ownerTag": "PAR",
+      "controllerTag": "PAR"
+    },
+    "CHI_003": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_004": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_005": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_006": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_007": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_008": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_009": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_010": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_011": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_012": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_013": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_014": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_015": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_016": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_017": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_018": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_019": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_020": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_021": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_022": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_023": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_024": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_025": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_026": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_027": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_028": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_029": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_030": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_031": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_032": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_033": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_034": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_035": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_036": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "ARG_002": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_003": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_004": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_005": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_006": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_007": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_008": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_009": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_010": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_011": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_012": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_013": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_014": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_015": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_016": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_017": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "ARG_018": {
+      "ownerTag": "ARG",
+      "controllerTag": "ARG"
+    },
+    "URU_002": {
+      "ownerTag": "URU",
+      "controllerTag": "URU"
+    },
+    "URU_003": {
+      "ownerTag": "URU",
+      "controllerTag": "URU"
+    },
+    "URU_004": {
+      "ownerTag": "URU",
+      "controllerTag": "URU"
+    },
+    "GBR_002": {
+      "ownerTag": "GBR",
+      "controllerTag": "GBR"
+    },
+    "GBR_003": {
+      "ownerTag": "GBR",
+      "controllerTag": "GBR"
+    },
+    "GBR_004": {
+      "ownerTag": "GBR",
+      "controllerTag": "GBR"
+    },
+    "GBR_005": {
+      "ownerTag": "GBR",
+      "controllerTag": "GBR"
+    },
+    "GBR_006": {
+      "ownerTag": "GBR",
+      "controllerTag": "GBR"
+    },
+    "IRE_002": {
+      "ownerTag": "IRE",
+      "controllerTag": "IRE"
+    },
+    "IRE_003": {
+      "ownerTag": "IRE",
+      "controllerTag": "IRE"
+    },
+    "IRE_004": {
+      "ownerTag": "IRE",
+      "controllerTag": "IRE"
+    },
+    "NLD_002": {
+      "ownerTag": "NLD",
+      "controllerTag": "NLD"
+    },
+    "NLD_003": {
+      "ownerTag": "NLD",
+      "controllerTag": "NLD"
+    },
+    "NLD_004": {
+      "ownerTag": "NLD",
+      "controllerTag": "NLD"
+    },
+    "FRA_002": {
+      "ownerTag": "FRA",
+      "controllerTag": "FRA"
+    },
+    "FRA_003": {
+      "ownerTag": "FRA",
+      "controllerTag": "FRA"
+    },
+    "FRA_004": {
+      "ownerTag": "FRA",
+      "controllerTag": "FRA"
+    },
+    "FRA_005": {
+      "ownerTag": "FRA",
+      "controllerTag": "FRA"
+    },
+    "FRA_006": {
+      "ownerTag": "FRA",
+      "controllerTag": "FRA"
+    },
+    "FRA_007": {
+      "ownerTag": "FRA",
+      "controllerTag": "FRA"
+    },
+    "FRA_008": {
+      "ownerTag": "FRA",
+      "controllerTag": "FRA"
+    },
+    "FRA_009": {
+      "ownerTag": "FRA",
+      "controllerTag": "FRA"
+    },
+    "FRA_010": {
+      "ownerTag": "FRA",
+      "controllerTag": "FRA"
+    },
+    "FRA_011": {
+      "ownerTag": "FRA",
+      "controllerTag": "FRA"
+    },
+    "FRA_012": {
+      "ownerTag": "FRA",
+      "controllerTag": "FRA"
+    },
+    "SWI_002": {
+      "ownerTag": "SWI",
+      "controllerTag": "SWI"
+    },
+    "SWI_003": {
+      "ownerTag": "SWI",
+      "controllerTag": "SWI"
+    },
+    "ESP_002": {
+      "ownerTag": "ESP",
+      "controllerTag": "ESP"
+    },
+    "ESP_003": {
+      "ownerTag": "ESP",
+      "controllerTag": "ESP"
+    },
+    "ESP_004": {
+      "ownerTag": "ESP",
+      "controllerTag": "ESP"
+    },
+    "ESP_005": {
+      "ownerTag": "ESP",
+      "controllerTag": "ESP"
+    },
+    "ESP_006": {
+      "ownerTag": "ESP",
+      "controllerTag": "ESP"
+    },
+    "ESP_007": {
+      "ownerTag": "ESP",
+      "controllerTag": "ESP"
+    },
+    "ESP_008": {
+      "ownerTag": "ESP",
+      "controllerTag": "ESP"
+    },
+    "ESP_009": {
+      "ownerTag": "ESP",
+      "controllerTag": "ESP"
+    },
+    "ESP_010": {
+      "ownerTag": "ESP",
+      "controllerTag": "ESP"
+    },
+    "ESP_011": {
+      "ownerTag": "ESP",
+      "controllerTag": "ESP"
+    },
+    "ESP_012": {
+      "ownerTag": "ESP",
+      "controllerTag": "ESP"
+    },
+    "POR_002": {
+      "ownerTag": "POR",
+      "controllerTag": "POR"
+    },
+    "POR_003": {
+      "ownerTag": "POR",
+      "controllerTag": "POR"
+    },
+    "POR_004": {
+      "ownerTag": "POR",
+      "controllerTag": "POR"
+    },
+    "POR_005": {
+      "ownerTag": "POR",
+      "controllerTag": "POR"
+    },
+    "POR_006": {
+      "ownerTag": "POR",
+      "controllerTag": "POR"
+    },
+    "POR_007": {
+      "ownerTag": "POR",
+      "controllerTag": "POR"
+    },
+    "POR_008": {
+      "ownerTag": "POR",
+      "controllerTag": "POR"
+    },
+    "POR_009": {
+      "ownerTag": "POR",
+      "controllerTag": "POR"
+    },
+    "POR_010": {
+      "ownerTag": "POR",
+      "controllerTag": "POR"
+    },
+    "GER_002": {
+      "ownerTag": "GER",
+      "controllerTag": "GER"
+    },
+    "GER_003": {
+      "ownerTag": "GER",
+      "controllerTag": "GER"
+    },
+    "GER_004": {
+      "ownerTag": "GER",
+      "controllerTag": "GER"
+    },
+    "GER_005": {
+      "ownerTag": "GER",
+      "controllerTag": "GER"
+    },
+    "GER_006": {
+      "ownerTag": "GER",
+      "controllerTag": "GER"
+    },
+    "GER_007": {
+      "ownerTag": "GER",
+      "controllerTag": "GER"
+    },
+    "GER_008": {
+      "ownerTag": "GER",
+      "controllerTag": "GER"
+    },
+    "GER_009": {
+      "ownerTag": "GER",
+      "controllerTag": "GER"
+    },
+    "GER_010": {
+      "ownerTag": "GER",
+      "controllerTag": "GER"
+    },
+    "POL_002": {
+      "ownerTag": "POL",
+      "controllerTag": "POL"
+    },
+    "POL_003": {
+      "ownerTag": "POL",
+      "controllerTag": "POL"
+    },
+    "POL_004": {
+      "ownerTag": "POL",
+      "controllerTag": "POL"
+    },
+    "POL_005": {
+      "ownerTag": "POL",
+      "controllerTag": "POL"
+    },
+    "POL_006": {
+      "ownerTag": "POL",
+      "controllerTag": "POL"
+    },
+    "AUS_003": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "HUN_002": {
+      "ownerTag": "HUN",
+      "controllerTag": "HUN"
+    },
+    "HUN_003": {
+      "ownerTag": "HUN",
+      "controllerTag": "HUN"
+    },
+    "CZE_002": {
+      "ownerTag": "CZE",
+      "controllerTag": "CZE"
+    },
+    "CZE_003": {
+      "ownerTag": "CZE",
+      "controllerTag": "CZE"
+    },
+    "CZE_004": {
+      "ownerTag": "CZE",
+      "controllerTag": "CZE"
+    },
+    "CZE_005": {
+      "ownerTag": "CZE",
+      "controllerTag": "CZE"
+    },
+    "CZE_006": {
+      "ownerTag": "CZE",
+      "controllerTag": "CZE"
+    },
+    "CZE_007": {
+      "ownerTag": "CZE",
+      "controllerTag": "CZE"
+    },
+    "CZE_008": {
+      "ownerTag": "CZE",
+      "controllerTag": "CZE"
+    },
+    "CZE_009": {
+      "ownerTag": "CZE",
+      "controllerTag": "CZE"
+    },
+    "CZE_010": {
+      "ownerTag": "CZE",
+      "controllerTag": "CZE"
+    },
+    "ITA_003": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_004": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_005": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_006": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_007": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_008": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_009": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_010": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_011": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_012": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "YUG_002": {
+      "ownerTag": "YUG",
+      "controllerTag": "YUG"
+    },
+    "YUG_003": {
+      "ownerTag": "YUG",
+      "controllerTag": "YUG"
+    },
+    "YUG_004": {
+      "ownerTag": "YUG",
+      "controllerTag": "YUG"
+    },
+    "YUG_005": {
+      "ownerTag": "YUG",
+      "controllerTag": "YUG"
+    },
+    "YUG_006": {
+      "ownerTag": "YUG",
+      "controllerTag": "YUG"
+    },
+    "GRE_002": {
+      "ownerTag": "GRE",
+      "controllerTag": "GRE"
+    },
+    "GRE_003": {
+      "ownerTag": "GRE",
+      "controllerTag": "GRE"
+    },
+    "GRE_004": {
+      "ownerTag": "GRE",
+      "controllerTag": "GRE"
+    },
+    "GRE_005": {
+      "ownerTag": "GRE",
+      "controllerTag": "GRE"
+    },
+    "GRE_006": {
+      "ownerTag": "GRE",
+      "controllerTag": "GRE"
+    },
+    "BUL_002": {
+      "ownerTag": "BUL",
+      "controllerTag": "BUL"
+    },
+    "BUL_003": {
+      "ownerTag": "BUL",
+      "controllerTag": "BUL"
+    },
+    "BUL_004": {
+      "ownerTag": "BUL",
+      "controllerTag": "BUL"
+    },
+    "ROM_002": {
+      "ownerTag": "ROM",
+      "controllerTag": "ROM"
+    },
+    "ROM_003": {
+      "ownerTag": "ROM",
+      "controllerTag": "ROM"
+    },
+    "ROM_004": {
+      "ownerTag": "ROM",
+      "controllerTag": "ROM"
+    },
+    "ROM_005": {
+      "ownerTag": "ROM",
+      "controllerTag": "ROM"
+    },
+    "ROM_006": {
+      "ownerTag": "ROM",
+      "controllerTag": "ROM"
+    },
+    "SOV_002": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_003": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_004": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_005": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_006": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_007": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_008": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_009": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_010": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_011": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_012": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_013": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_014": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_015": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_016": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_017": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_018": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_019": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_020": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_021": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_022": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_023": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_024": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_025": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_026": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_027": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_028": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_029": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_030": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_031": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_032": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_033": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_034": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_035": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_036": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_037": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_038": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_039": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_040": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_041": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_042": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_043": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_044": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_045": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_046": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_047": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_048": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_049": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_050": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "SOV_051": {
+      "ownerTag": "SOV",
+      "controllerTag": "SOV"
+    },
+    "EST_002": {
+      "ownerTag": "EST",
+      "controllerTag": "EST"
+    },
+    "EST_003": {
+      "ownerTag": "EST",
+      "controllerTag": "EST"
+    },
+    "LAT_002": {
+      "ownerTag": "LAT",
+      "controllerTag": "LAT"
+    },
+    "LAT_003": {
+      "ownerTag": "LAT",
+      "controllerTag": "LAT"
+    },
+    "LIT_002": {
+      "ownerTag": "LIT",
+      "controllerTag": "LIT"
+    },
+    "LIT_003": {
+      "ownerTag": "LIT",
+      "controllerTag": "LIT"
+    },
+    "FIN_002": {
+      "ownerTag": "FIN",
+      "controllerTag": "FIN"
+    },
+    "FIN_003": {
+      "ownerTag": "FIN",
+      "controllerTag": "FIN"
+    },
+    "FIN_004": {
+      "ownerTag": "FIN",
+      "controllerTag": "FIN"
+    },
+    "FIN_005": {
+      "ownerTag": "FIN",
+      "controllerTag": "FIN"
+    },
+    "FIN_006": {
+      "ownerTag": "FIN",
+      "controllerTag": "FIN"
+    },
+    "FIN_007": {
+      "ownerTag": "FIN",
+      "controllerTag": "FIN"
+    },
+    "FIN_008": {
+      "ownerTag": "FIN",
+      "controllerTag": "FIN"
+    },
+    "FIN_009": {
+      "ownerTag": "FIN",
+      "controllerTag": "FIN"
+    },
+    "FIN_010": {
+      "ownerTag": "FIN",
+      "controllerTag": "FIN"
+    },
+    "FIN_011": {
+      "ownerTag": "FIN",
+      "controllerTag": "FIN"
+    },
+    "FIN_012": {
+      "ownerTag": "FIN",
+      "controllerTag": "FIN"
+    },
+    "SWE_002": {
+      "ownerTag": "SWE",
+      "controllerTag": "SWE"
+    },
+    "SWE_003": {
+      "ownerTag": "SWE",
+      "controllerTag": "SWE"
+    },
+    "SWE_004": {
+      "ownerTag": "SWE",
+      "controllerTag": "SWE"
+    },
+    "SWE_005": {
+      "ownerTag": "SWE",
+      "controllerTag": "SWE"
+    },
+    "SWE_006": {
+      "ownerTag": "SWE",
+      "controllerTag": "SWE"
+    },
+    "SWE_007": {
+      "ownerTag": "SWE",
+      "controllerTag": "SWE"
+    },
+    "SWE_008": {
+      "ownerTag": "SWE",
+      "controllerTag": "SWE"
+    },
+    "SWE_009": {
+      "ownerTag": "SWE",
+      "controllerTag": "SWE"
+    },
+    "SWE_010": {
+      "ownerTag": "SWE",
+      "controllerTag": "SWE"
+    },
+    "SWE_011": {
+      "ownerTag": "SWE",
+      "controllerTag": "SWE"
+    },
+    "SWE_012": {
+      "ownerTag": "SWE",
+      "controllerTag": "SWE"
+    },
+    "NOR_002": {
+      "ownerTag": "NOR",
+      "controllerTag": "NOR"
+    },
+    "NOR_003": {
+      "ownerTag": "NOR",
+      "controllerTag": "NOR"
+    },
+    "NOR_004": {
+      "ownerTag": "NOR",
+      "controllerTag": "NOR"
+    },
+    "NOR_005": {
+      "ownerTag": "NOR",
+      "controllerTag": "NOR"
+    },
+    "NOR_006": {
+      "ownerTag": "NOR",
+      "controllerTag": "NOR"
+    },
+    "NOR_007": {
+      "ownerTag": "NOR",
+      "controllerTag": "NOR"
+    },
+    "NOR_008": {
+      "ownerTag": "NOR",
+      "controllerTag": "NOR"
+    },
+    "NOR_009": {
+      "ownerTag": "NOR",
+      "controllerTag": "NOR"
+    },
+    "NOR_010": {
+      "ownerTag": "NOR",
+      "controllerTag": "NOR"
+    },
+    "NOR_011": {
+      "ownerTag": "NOR",
+      "controllerTag": "NOR"
+    },
+    "NOR_012": {
+      "ownerTag": "NOR",
+      "controllerTag": "NOR"
+    },
+    "DEN_002": {
+      "ownerTag": "DEN",
+      "controllerTag": "DEN"
+    },
+    "DEN_003": {
+      "ownerTag": "DEN",
+      "controllerTag": "DEN"
+    },
+    "ICE_002": {
+      "ownerTag": "ICE",
+      "controllerTag": "ICE"
+    },
+    "ICE_003": {
+      "ownerTag": "ICE",
+      "controllerTag": "ICE"
+    },
+    "ICE_004": {
+      "ownerTag": "ICE",
+      "controllerTag": "ICE"
+    },
+    "ICE_005": {
+      "ownerTag": "ICE",
+      "controllerTag": "ICE"
+    },
+    "ICE_006": {
+      "ownerTag": "ICE",
+      "controllerTag": "ICE"
+    },
+    "ICE_007": {
+      "ownerTag": "ICE",
+      "controllerTag": "ICE"
+    },
+    "ICE_008": {
+      "ownerTag": "ICE",
+      "controllerTag": "ICE"
+    },
+    "ICE_009": {
+      "ownerTag": "ICE",
+      "controllerTag": "ICE"
+    },
+    "ICE_010": {
+      "ownerTag": "ICE",
+      "controllerTag": "ICE"
+    },
+    "EQU_002": {
+      "ownerTag": "EQU",
+      "controllerTag": "EQU"
+    },
+    "EQU_003": {
+      "ownerTag": "EQU",
+      "controllerTag": "EQU"
+    },
+    "EQU_004": {
+      "ownerTag": "EQU",
+      "controllerTag": "EQU"
+    },
+    "EQU_005": {
+      "ownerTag": "EQU",
+      "controllerTag": "EQU"
+    },
+    "EQU_006": {
+      "ownerTag": "EQU",
+      "controllerTag": "EQU"
+    },
+    "MAL_005": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "MAL_006": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "MAL_007": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "MAL_008": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "MAL_009": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "MAL_010": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "MAL_011": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "MAL_012": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "MAL_013": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "SEN_002": {
+      "ownerTag": "SEN",
+      "controllerTag": "SEN"
+    },
+    "SEN_003": {
+      "ownerTag": "SEN",
+      "controllerTag": "SEN"
+    },
+    "SEN_004": {
+      "ownerTag": "SEN",
+      "controllerTag": "SEN"
+    },
+    "BEN_002": {
+      "ownerTag": "BEN",
+      "controllerTag": "BEN"
+    },
+    "BEN_003": {
+      "ownerTag": "BEN",
+      "controllerTag": "BEN"
+    },
+    "MAU_003": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "MAU_004": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "MAU_005": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "MAU_006": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "MAU_007": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "MAU_008": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "MAU_009": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "MAU_010": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "MAU_011": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "MAU_012": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "NIG_003": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "NIG_004": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "NIG_005": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "NIG_006": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "NIG_007": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "NIG_008": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "NIG_009": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "NIG_010": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "NIG_011": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "NIG_012": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "COT_002": {
+      "ownerTag": "COT",
+      "controllerTag": "COT"
+    },
+    "COT_003": {
+      "ownerTag": "COT",
+      "controllerTag": "COT"
+    },
+    "COT_004": {
+      "ownerTag": "COT",
+      "controllerTag": "COT"
+    },
+    "COT_005": {
+      "ownerTag": "COT",
+      "controllerTag": "COT"
+    },
+    "COT_006": {
+      "ownerTag": "COT",
+      "controllerTag": "COT"
+    },
+    "GUI_003": {
+      "ownerTag": "GUI",
+      "controllerTag": "GUI"
+    },
+    "GUI_004": {
+      "ownerTag": "GUI",
+      "controllerTag": "GUI"
+    },
+    "GUI_005": {
+      "ownerTag": "GUI",
+      "controllerTag": "GUI"
+    },
+    "GUI_006": {
+      "ownerTag": "GUI",
+      "controllerTag": "GUI"
+    },
+    "GUI_007": {
+      "ownerTag": "GUI",
+      "controllerTag": "GUI"
+    },
+    "LIB_003": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "LIB_004": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "SIE_002": {
+      "ownerTag": "SIE",
+      "controllerTag": "SIE"
+    },
+    "SIE_003": {
+      "ownerTag": "SIE",
+      "controllerTag": "SIE"
+    },
+    "SIE_004": {
+      "ownerTag": "SIE",
+      "controllerTag": "SIE"
+    },
+    "GHA_002": {
+      "ownerTag": "GHA",
+      "controllerTag": "GHA"
+    },
+    "GHA_003": {
+      "ownerTag": "GHA",
+      "controllerTag": "GHA"
+    },
+    "TOG_002": {
+      "ownerTag": "TOG",
+      "controllerTag": "TOG"
+    },
+    "TOG_003": {
+      "ownerTag": "TOG",
+      "controllerTag": "TOG"
+    },
+    "CAM_003": {
+      "ownerTag": "CAM",
+      "controllerTag": "CAM"
+    },
+    "CAM_004": {
+      "ownerTag": "CAM",
+      "controllerTag": "CAM"
+    },
+    "CAM_005": {
+      "ownerTag": "CAM",
+      "controllerTag": "CAM"
+    },
+    "CAM_006": {
+      "ownerTag": "CAM",
+      "controllerTag": "CAM"
+    },
+    "BRI_004": {
+      "ownerTag": "BRI",
+      "controllerTag": "BRI"
+    },
+    "BRI_005": {
+      "ownerTag": "BRI",
+      "controllerTag": "BRI"
+    },
+    "BRI_006": {
+      "ownerTag": "BRI",
+      "controllerTag": "BRI"
+    },
+    "BRI_007": {
+      "ownerTag": "BRI",
+      "controllerTag": "BRI"
+    },
+    "NIG_013": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "NIG_014": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "NIG_015": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "NIG_016": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "NIG_017": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "NIG_018": {
+      "ownerTag": "NIG",
+      "controllerTag": "NIG"
+    },
+    "GAB_002": {
+      "ownerTag": "GAB",
+      "controllerTag": "GAB"
+    },
+    "GAB_003": {
+      "ownerTag": "GAB",
+      "controllerTag": "GAB"
+    },
+    "GAB_004": {
+      "ownerTag": "GAB",
+      "controllerTag": "GAB"
+    },
+    "GAB_005": {
+      "ownerTag": "GAB",
+      "controllerTag": "GAB"
+    },
+    "GAB_006": {
+      "ownerTag": "GAB",
+      "controllerTag": "GAB"
+    },
+    "CEN_002": {
+      "ownerTag": "CEN",
+      "controllerTag": "CEN"
+    },
+    "CEN_003": {
+      "ownerTag": "CEN",
+      "controllerTag": "CEN"
+    },
+    "CEN_004": {
+      "ownerTag": "CEN",
+      "controllerTag": "CEN"
+    },
+    "CEN_005": {
+      "ownerTag": "CEN",
+      "controllerTag": "CEN"
+    },
+    "CEN_006": {
+      "ownerTag": "CEN",
+      "controllerTag": "CEN"
+    },
+    "CHA_002": {
+      "ownerTag": "CHA",
+      "controllerTag": "CHA"
+    },
+    "CHA_003": {
+      "ownerTag": "CHA",
+      "controllerTag": "CHA"
+    },
+    "CHA_004": {
+      "ownerTag": "CHA",
+      "controllerTag": "CHA"
+    },
+    "CHA_005": {
+      "ownerTag": "CHA",
+      "controllerTag": "CHA"
+    },
+    "CHA_006": {
+      "ownerTag": "CHA",
+      "controllerTag": "CHA"
+    },
+    "CHA_007": {
+      "ownerTag": "CHA",
+      "controllerTag": "CHA"
+    },
+    "CHA_008": {
+      "ownerTag": "CHA",
+      "controllerTag": "CHA"
+    },
+    "CHA_009": {
+      "ownerTag": "CHA",
+      "controllerTag": "CHA"
+    },
+    "CHA_010": {
+      "ownerTag": "CHA",
+      "controllerTag": "CHA"
+    },
+    "CHA_011": {
+      "ownerTag": "CHA",
+      "controllerTag": "CHA"
+    },
+    "CHA_012": {
+      "ownerTag": "CHA",
+      "controllerTag": "CHA"
+    },
+    "CON_003": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_004": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_005": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_006": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_007": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_008": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_009": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_010": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_011": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_012": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_013": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_014": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_015": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_016": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_017": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "CON_018": {
+      "ownerTag": "CON",
+      "controllerTag": "CON"
+    },
+    "UGA_002": {
+      "ownerTag": "UGA",
+      "controllerTag": "UGA"
+    },
+    "UGA_003": {
+      "ownerTag": "UGA",
+      "controllerTag": "UGA"
+    },
+    "UGA_004": {
+      "ownerTag": "UGA",
+      "controllerTag": "UGA"
+    },
+    "UGA_005": {
+      "ownerTag": "UGA",
+      "controllerTag": "UGA"
+    },
+    "UGA_006": {
+      "ownerTag": "UGA",
+      "controllerTag": "UGA"
+    },
+    "KEN_002": {
+      "ownerTag": "KEN",
+      "controllerTag": "KEN"
+    },
+    "KEN_003": {
+      "ownerTag": "KEN",
+      "controllerTag": "KEN"
+    },
+    "KEN_004": {
+      "ownerTag": "KEN",
+      "controllerTag": "KEN"
+    },
+    "KEN_005": {
+      "ownerTag": "KEN",
+      "controllerTag": "KEN"
+    },
+    "KEN_006": {
+      "ownerTag": "KEN",
+      "controllerTag": "KEN"
+    },
+    "TAN_002": {
+      "ownerTag": "TAN",
+      "controllerTag": "TAN"
+    },
+    "TAN_003": {
+      "ownerTag": "TAN",
+      "controllerTag": "TAN"
+    },
+    "TAN_004": {
+      "ownerTag": "TAN",
+      "controllerTag": "TAN"
+    },
+    "TAN_005": {
+      "ownerTag": "TAN",
+      "controllerTag": "TAN"
+    },
+    "TAN_006": {
+      "ownerTag": "TAN",
+      "controllerTag": "TAN"
+    },
+    "BRI_008": {
+      "ownerTag": "BRI",
+      "controllerTag": "BRI"
+    },
+    "BRI_009": {
+      "ownerTag": "BRI",
+      "controllerTag": "BRI"
+    },
+    "BRI_010": {
+      "ownerTag": "BRI",
+      "controllerTag": "BRI"
+    },
+    "BRI_011": {
+      "ownerTag": "BRI",
+      "controllerTag": "BRI"
+    },
+    "ETH_002": {
+      "ownerTag": "ETH",
+      "controllerTag": "ETH"
+    },
+    "ETH_003": {
+      "ownerTag": "ETH",
+      "controllerTag": "ETH"
+    },
+    "ETH_004": {
+      "ownerTag": "ETH",
+      "controllerTag": "ETH"
+    },
+    "ETH_005": {
+      "ownerTag": "ETH",
+      "controllerTag": "ETH"
+    },
+    "ETH_006": {
+      "ownerTag": "ETH",
+      "controllerTag": "ETH"
+    },
+    "ETH_007": {
+      "ownerTag": "ETH",
+      "controllerTag": "ETH"
+    },
+    "ETH_008": {
+      "ownerTag": "ETH",
+      "controllerTag": "ETH"
+    },
+    "ETH_009": {
+      "ownerTag": "ETH",
+      "controllerTag": "ETH"
+    },
+    "ETH_010": {
+      "ownerTag": "ETH",
+      "controllerTag": "ETH"
+    },
+    "ETH_011": {
+      "ownerTag": "ETH",
+      "controllerTag": "ETH"
+    },
+    "ETH_012": {
+      "ownerTag": "ETH",
+      "controllerTag": "ETH"
+    },
+    "ERI_002": {
+      "ownerTag": "ERI",
+      "controllerTag": "ERI"
+    },
+    "ERI_003": {
+      "ownerTag": "ERI",
+      "controllerTag": "ERI"
+    },
+    "ERI_004": {
+      "ownerTag": "ERI",
+      "controllerTag": "ERI"
+    },
+    "ERI_005": {
+      "ownerTag": "ERI",
+      "controllerTag": "ERI"
+    },
+    "ERI_006": {
+      "ownerTag": "ERI",
+      "controllerTag": "ERI"
+    },
+    "ANG_002": {
+      "ownerTag": "ANG",
+      "controllerTag": "ANG"
+    },
+    "ANG_003": {
+      "ownerTag": "ANG",
+      "controllerTag": "ANG"
+    },
+    "ANG_004": {
+      "ownerTag": "ANG",
+      "controllerTag": "ANG"
+    },
+    "ANG_005": {
+      "ownerTag": "ANG",
+      "controllerTag": "ANG"
+    },
+    "ANG_006": {
+      "ownerTag": "ANG",
+      "controllerTag": "ANG"
+    },
+    "ANG_007": {
+      "ownerTag": "ANG",
+      "controllerTag": "ANG"
+    },
+    "ANG_008": {
+      "ownerTag": "ANG",
+      "controllerTag": "ANG"
+    },
+    "ANG_009": {
+      "ownerTag": "ANG",
+      "controllerTag": "ANG"
+    },
+    "ANG_010": {
+      "ownerTag": "ANG",
+      "controllerTag": "ANG"
+    },
+    "ANG_011": {
+      "ownerTag": "ANG",
+      "controllerTag": "ANG"
+    },
+    "ANG_012": {
+      "ownerTag": "ANG",
+      "controllerTag": "ANG"
+    },
+    "MOZ_002": {
+      "ownerTag": "MOZ",
+      "controllerTag": "MOZ"
+    },
+    "MOZ_003": {
+      "ownerTag": "MOZ",
+      "controllerTag": "MOZ"
+    },
+    "MOZ_004": {
+      "ownerTag": "MOZ",
+      "controllerTag": "MOZ"
+    },
+    "MOZ_005": {
+      "ownerTag": "MOZ",
+      "controllerTag": "MOZ"
+    },
+    "MOZ_006": {
+      "ownerTag": "MOZ",
+      "controllerTag": "MOZ"
+    },
+    "MOZ_007": {
+      "ownerTag": "MOZ",
+      "controllerTag": "MOZ"
+    },
+    "MOZ_008": {
+      "ownerTag": "MOZ",
+      "controllerTag": "MOZ"
+    },
+    "MOZ_009": {
+      "ownerTag": "MOZ",
+      "controllerTag": "MOZ"
+    },
+    "MOZ_010": {
+      "ownerTag": "MOZ",
+      "controllerTag": "MOZ"
+    },
+    "MOZ_011": {
+      "ownerTag": "MOZ",
+      "controllerTag": "MOZ"
+    },
+    "MOZ_012": {
+      "ownerTag": "MOZ",
+      "controllerTag": "MOZ"
+    },
+    "ZAM_002": {
+      "ownerTag": "ZAM",
+      "controllerTag": "ZAM"
+    },
+    "ZAM_003": {
+      "ownerTag": "ZAM",
+      "controllerTag": "ZAM"
+    },
+    "ZAM_004": {
+      "ownerTag": "ZAM",
+      "controllerTag": "ZAM"
+    },
+    "ZAM_005": {
+      "ownerTag": "ZAM",
+      "controllerTag": "ZAM"
+    },
+    "ZAM_006": {
+      "ownerTag": "ZAM",
+      "controllerTag": "ZAM"
+    },
+    "ZIM_002": {
+      "ownerTag": "ZIM",
+      "controllerTag": "ZIM"
+    },
+    "ZIM_003": {
+      "ownerTag": "ZIM",
+      "controllerTag": "ZIM"
+    },
+    "ZIM_004": {
+      "ownerTag": "ZIM",
+      "controllerTag": "ZIM"
+    },
+    "ZIM_005": {
+      "ownerTag": "ZIM",
+      "controllerTag": "ZIM"
+    },
+    "ZIM_006": {
+      "ownerTag": "ZIM",
+      "controllerTag": "ZIM"
+    },
+    "MAL_014": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "MAL_015": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "MAL_016": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "SOU_003": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_004": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_005": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_006": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_007": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_008": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_009": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_010": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_011": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_012": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_013": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_014": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_015": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_016": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_017": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_018": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_019": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_020": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "NAM_002": {
+      "ownerTag": "NAM",
+      "controllerTag": "NAM"
+    },
+    "NAM_003": {
+      "ownerTag": "NAM",
+      "controllerTag": "NAM"
+    },
+    "NAM_004": {
+      "ownerTag": "NAM",
+      "controllerTag": "NAM"
+    },
+    "NAM_005": {
+      "ownerTag": "NAM",
+      "controllerTag": "NAM"
+    },
+    "NAM_006": {
+      "ownerTag": "NAM",
+      "controllerTag": "NAM"
+    },
+    "NAM_007": {
+      "ownerTag": "NAM",
+      "controllerTag": "NAM"
+    },
+    "NAM_008": {
+      "ownerTag": "NAM",
+      "controllerTag": "NAM"
+    },
+    "NAM_009": {
+      "ownerTag": "NAM",
+      "controllerTag": "NAM"
+    },
+    "NAM_010": {
+      "ownerTag": "NAM",
+      "controllerTag": "NAM"
+    },
+    "NAM_011": {
+      "ownerTag": "NAM",
+      "controllerTag": "NAM"
+    },
+    "NAM_012": {
+      "ownerTag": "NAM",
+      "controllerTag": "NAM"
+    },
+    "BOT_002": {
+      "ownerTag": "BOT",
+      "controllerTag": "BOT"
+    },
+    "BOT_003": {
+      "ownerTag": "BOT",
+      "controllerTag": "BOT"
+    },
+    "BOT_004": {
+      "ownerTag": "BOT",
+      "controllerTag": "BOT"
+    },
+    "BOT_005": {
+      "ownerTag": "BOT",
+      "controllerTag": "BOT"
+    },
+    "BOT_006": {
+      "ownerTag": "BOT",
+      "controllerTag": "BOT"
+    },
+    "MAD_002": {
+      "ownerTag": "MAD",
+      "controllerTag": "MAD"
+    },
+    "MAD_003": {
+      "ownerTag": "MAD",
+      "controllerTag": "MAD"
+    },
+    "MAD_004": {
+      "ownerTag": "MAD",
+      "controllerTag": "MAD"
+    },
+    "MAD_005": {
+      "ownerTag": "MAD",
+      "controllerTag": "MAD"
+    },
+    "MAD_006": {
+      "ownerTag": "MAD",
+      "controllerTag": "MAD"
+    },
+    "MAU_013": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "MAU_014": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "MAU_015": {
+      "ownerTag": "MAU",
+      "controllerTag": "MAU"
+    },
+    "MOR_002": {
+      "ownerTag": "MOR",
+      "controllerTag": "MOR"
+    },
+    "MOR_003": {
+      "ownerTag": "MOR",
+      "controllerTag": "MOR"
+    },
+    "MOR_004": {
+      "ownerTag": "MOR",
+      "controllerTag": "MOR"
+    },
+    "MOR_005": {
+      "ownerTag": "MOR",
+      "controllerTag": "MOR"
+    },
+    "MOR_006": {
+      "ownerTag": "MOR",
+      "controllerTag": "MOR"
+    },
+    "SPA_003": {
+      "ownerTag": "SPA",
+      "controllerTag": "SPA"
+    },
+    "SPA_004": {
+      "ownerTag": "SPA",
+      "controllerTag": "SPA"
+    },
+    "SPA_005": {
+      "ownerTag": "SPA",
+      "controllerTag": "SPA"
+    },
+    "SPA_006": {
+      "ownerTag": "SPA",
+      "controllerTag": "SPA"
+    },
+    "SPA_007": {
+      "ownerTag": "SPA",
+      "controllerTag": "SPA"
+    },
+    "SPA_008": {
+      "ownerTag": "SPA",
+      "controllerTag": "SPA"
+    },
+    "SPA_009": {
+      "ownerTag": "SPA",
+      "controllerTag": "SPA"
+    },
+    "SPA_010": {
+      "ownerTag": "SPA",
+      "controllerTag": "SPA"
+    },
+    "SPA_011": {
+      "ownerTag": "SPA",
+      "controllerTag": "SPA"
+    },
+    "SPA_012": {
+      "ownerTag": "SPA",
+      "controllerTag": "SPA"
+    },
+    "ALG_002": {
+      "ownerTag": "ALG",
+      "controllerTag": "ALG"
+    },
+    "ALG_003": {
+      "ownerTag": "ALG",
+      "controllerTag": "ALG"
+    },
+    "ALG_004": {
+      "ownerTag": "ALG",
+      "controllerTag": "ALG"
+    },
+    "ALG_005": {
+      "ownerTag": "ALG",
+      "controllerTag": "ALG"
+    },
+    "ALG_006": {
+      "ownerTag": "ALG",
+      "controllerTag": "ALG"
+    },
+    "ALG_007": {
+      "ownerTag": "ALG",
+      "controllerTag": "ALG"
+    },
+    "ALG_008": {
+      "ownerTag": "ALG",
+      "controllerTag": "ALG"
+    },
+    "ALG_009": {
+      "ownerTag": "ALG",
+      "controllerTag": "ALG"
+    },
+    "ALG_010": {
+      "ownerTag": "ALG",
+      "controllerTag": "ALG"
+    },
+    "ALG_011": {
+      "ownerTag": "ALG",
+      "controllerTag": "ALG"
+    },
+    "ALG_012": {
+      "ownerTag": "ALG",
+      "controllerTag": "ALG"
+    },
+    "TUN_002": {
+      "ownerTag": "TUN",
+      "controllerTag": "TUN"
+    },
+    "TUN_003": {
+      "ownerTag": "TUN",
+      "controllerTag": "TUN"
+    },
+    "LIB_005": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "LIB_006": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "LIB_007": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "LIB_008": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "LIB_009": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "LIB_010": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "LIB_011": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "LIB_012": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "LIB_013": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "LIB_014": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "LIB_015": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "LIB_016": {
+      "ownerTag": "LIB",
+      "controllerTag": "LIB"
+    },
+    "SUD_002": {
+      "ownerTag": "SUD",
+      "controllerTag": "SUD"
+    },
+    "SUD_003": {
+      "ownerTag": "SUD",
+      "controllerTag": "SUD"
+    },
+    "SUD_004": {
+      "ownerTag": "SUD",
+      "controllerTag": "SUD"
+    },
+    "SUD_005": {
+      "ownerTag": "SUD",
+      "controllerTag": "SUD"
+    },
+    "SUD_006": {
+      "ownerTag": "SUD",
+      "controllerTag": "SUD"
+    },
+    "SUD_007": {
+      "ownerTag": "SUD",
+      "controllerTag": "SUD"
+    },
+    "SUD_008": {
+      "ownerTag": "SUD",
+      "controllerTag": "SUD"
+    },
+    "SUD_009": {
+      "ownerTag": "SUD",
+      "controllerTag": "SUD"
+    },
+    "SUD_010": {
+      "ownerTag": "SUD",
+      "controllerTag": "SUD"
+    },
+    "SUD_011": {
+      "ownerTag": "SUD",
+      "controllerTag": "SUD"
+    },
+    "SUD_012": {
+      "ownerTag": "SUD",
+      "controllerTag": "SUD"
+    },
+    "IRN_002": {
+      "ownerTag": "IRN",
+      "controllerTag": "IRN"
+    },
+    "IRN_003": {
+      "ownerTag": "IRN",
+      "controllerTag": "IRN"
+    },
+    "IRN_004": {
+      "ownerTag": "IRN",
+      "controllerTag": "IRN"
+    },
+    "IRN_005": {
+      "ownerTag": "IRN",
+      "controllerTag": "IRN"
+    },
+    "IRN_006": {
+      "ownerTag": "IRN",
+      "controllerTag": "IRN"
+    },
+    "IRN_007": {
+      "ownerTag": "IRN",
+      "controllerTag": "IRN"
+    },
+    "IRN_008": {
+      "ownerTag": "IRN",
+      "controllerTag": "IRN"
+    },
+    "IRN_009": {
+      "ownerTag": "IRN",
+      "controllerTag": "IRN"
+    },
+    "IRN_010": {
+      "ownerTag": "IRN",
+      "controllerTag": "IRN"
+    },
+    "IRN_011": {
+      "ownerTag": "IRN",
+      "controllerTag": "IRN"
+    },
+    "IRN_012": {
+      "ownerTag": "IRN",
+      "controllerTag": "IRN"
+    },
+    "TUR_002": {
+      "ownerTag": "TUR",
+      "controllerTag": "TUR"
+    },
+    "TUR_003": {
+      "ownerTag": "TUR",
+      "controllerTag": "TUR"
+    },
+    "TUR_004": {
+      "ownerTag": "TUR",
+      "controllerTag": "TUR"
+    },
+    "TUR_005": {
+      "ownerTag": "TUR",
+      "controllerTag": "TUR"
+    },
+    "TUR_006": {
+      "ownerTag": "TUR",
+      "controllerTag": "TUR"
+    },
+    "TUR_007": {
+      "ownerTag": "TUR",
+      "controllerTag": "TUR"
+    },
+    "TUR_008": {
+      "ownerTag": "TUR",
+      "controllerTag": "TUR"
+    },
+    "TUR_009": {
+      "ownerTag": "TUR",
+      "controllerTag": "TUR"
+    },
+    "TUR_010": {
+      "ownerTag": "TUR",
+      "controllerTag": "TUR"
+    },
+    "TUR_011": {
+      "ownerTag": "TUR",
+      "controllerTag": "TUR"
+    },
+    "TUR_012": {
+      "ownerTag": "TUR",
+      "controllerTag": "TUR"
+    },
+    "IRQ_002": {
+      "ownerTag": "IRQ",
+      "controllerTag": "IRQ"
+    },
+    "IRQ_003": {
+      "ownerTag": "IRQ",
+      "controllerTag": "IRQ"
+    },
+    "IRQ_004": {
+      "ownerTag": "IRQ",
+      "controllerTag": "IRQ"
+    },
+    "IRQ_005": {
+      "ownerTag": "IRQ",
+      "controllerTag": "IRQ"
+    },
+    "IRQ_006": {
+      "ownerTag": "IRQ",
+      "controllerTag": "IRQ"
+    },
+    "EGY_002": {
+      "ownerTag": "EGY",
+      "controllerTag": "EGY"
+    },
+    "EGY_003": {
+      "ownerTag": "EGY",
+      "controllerTag": "EGY"
+    },
+    "EGY_004": {
+      "ownerTag": "EGY",
+      "controllerTag": "EGY"
+    },
+    "EGY_005": {
+      "ownerTag": "EGY",
+      "controllerTag": "EGY"
+    },
+    "EGY_006": {
+      "ownerTag": "EGY",
+      "controllerTag": "EGY"
+    },
+    "SYR_002": {
+      "ownerTag": "SYR",
+      "controllerTag": "SYR"
+    },
+    "SYR_003": {
+      "ownerTag": "SYR",
+      "controllerTag": "SYR"
+    },
+    "SYR_004": {
+      "ownerTag": "SYR",
+      "controllerTag": "SYR"
+    },
+    "SYR_005": {
+      "ownerTag": "SYR",
+      "controllerTag": "SYR"
+    },
+    "SYR_006": {
+      "ownerTag": "SYR",
+      "controllerTag": "SYR"
+    },
+    "JOR_002": {
+      "ownerTag": "JOR",
+      "controllerTag": "JOR"
+    },
+    "JOR_003": {
+      "ownerTag": "JOR",
+      "controllerTag": "JOR"
+    },
+    "JOR_004": {
+      "ownerTag": "JOR",
+      "controllerTag": "JOR"
+    },
+    "SAU_002": {
+      "ownerTag": "SAU",
+      "controllerTag": "SAU"
+    },
+    "SAU_003": {
+      "ownerTag": "SAU",
+      "controllerTag": "SAU"
+    },
+    "SAU_004": {
+      "ownerTag": "SAU",
+      "controllerTag": "SAU"
+    },
+    "SAU_005": {
+      "ownerTag": "SAU",
+      "controllerTag": "SAU"
+    },
+    "SAU_006": {
+      "ownerTag": "SAU",
+      "controllerTag": "SAU"
+    },
+    "SAU_007": {
+      "ownerTag": "SAU",
+      "controllerTag": "SAU"
+    },
+    "SAU_008": {
+      "ownerTag": "SAU",
+      "controllerTag": "SAU"
+    },
+    "SAU_009": {
+      "ownerTag": "SAU",
+      "controllerTag": "SAU"
+    },
+    "SAU_010": {
+      "ownerTag": "SAU",
+      "controllerTag": "SAU"
+    },
+    "SAU_011": {
+      "ownerTag": "SAU",
+      "controllerTag": "SAU"
+    },
+    "SAU_012": {
+      "ownerTag": "SAU",
+      "controllerTag": "SAU"
+    },
+    "YEM_002": {
+      "ownerTag": "YEM",
+      "controllerTag": "YEM"
+    },
+    "YEM_003": {
+      "ownerTag": "YEM",
+      "controllerTag": "YEM"
+    },
+    "YEM_004": {
+      "ownerTag": "YEM",
+      "controllerTag": "YEM"
+    },
+    "UNI_037": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_038": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_039": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_040": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_041": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_042": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_043": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_044": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_045": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_046": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_047": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_048": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_049": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_050": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_051": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_052": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_053": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_054": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_055": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_056": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_057": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_058": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_059": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_060": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_061": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_062": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_063": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_064": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_065": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_066": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_067": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_068": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_069": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_070": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_071": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_072": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_073": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_074": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_075": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_076": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_077": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "UNI_078": {
+      "ownerTag": "UNI",
+      "controllerTag": "UNI"
+    },
+    "OMA_002": {
+      "ownerTag": "OMA",
+      "controllerTag": "OMA"
+    },
+    "OMA_003": {
+      "ownerTag": "OMA",
+      "controllerTag": "OMA"
+    },
+    "OMA_004": {
+      "ownerTag": "OMA",
+      "controllerTag": "OMA"
+    },
+    "OMA_005": {
+      "ownerTag": "OMA",
+      "controllerTag": "OMA"
+    },
+    "OMA_006": {
+      "ownerTag": "OMA",
+      "controllerTag": "OMA"
+    },
+    "AFG_002": {
+      "ownerTag": "AFG",
+      "controllerTag": "AFG"
+    },
+    "AFG_003": {
+      "ownerTag": "AFG",
+      "controllerTag": "AFG"
+    },
+    "AFG_004": {
+      "ownerTag": "AFG",
+      "controllerTag": "AFG"
+    },
+    "AFG_005": {
+      "ownerTag": "AFG",
+      "controllerTag": "AFG"
+    },
+    "AFG_006": {
+      "ownerTag": "AFG",
+      "controllerTag": "AFG"
+    },
+    "AFG_007": {
+      "ownerTag": "AFG",
+      "controllerTag": "AFG"
+    },
+    "AFG_008": {
+      "ownerTag": "AFG",
+      "controllerTag": "AFG"
+    },
+    "AFG_009": {
+      "ownerTag": "AFG",
+      "controllerTag": "AFG"
+    },
+    "AFG_010": {
+      "ownerTag": "AFG",
+      "controllerTag": "AFG"
+    },
+    "AFG_011": {
+      "ownerTag": "AFG",
+      "controllerTag": "AFG"
+    },
+    "AFG_012": {
+      "ownerTag": "AFG",
+      "controllerTag": "AFG"
+    },
+    "CHI_037": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_038": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_039": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_040": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_041": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_042": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_043": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_044": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_045": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_046": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_047": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_048": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_049": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_050": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_051": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_052": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_053": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_054": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_055": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_056": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_057": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_058": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_059": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_060": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_061": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_062": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_063": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_064": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_065": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_066": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_067": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_068": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_069": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_070": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_071": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_072": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_073": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_074": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_075": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "CHI_076": {
+      "ownerTag": "CHI",
+      "controllerTag": "CHI"
+    },
+    "TIB_002": {
+      "ownerTag": "TIB",
+      "controllerTag": "TIB"
+    },
+    "TIB_003": {
+      "ownerTag": "TIB",
+      "controllerTag": "TIB"
+    },
+    "TIB_004": {
+      "ownerTag": "TIB",
+      "controllerTag": "TIB"
+    },
+    "TIB_005": {
+      "ownerTag": "TIB",
+      "controllerTag": "TIB"
+    },
+    "TIB_006": {
+      "ownerTag": "TIB",
+      "controllerTag": "TIB"
+    },
+    "TIB_007": {
+      "ownerTag": "TIB",
+      "controllerTag": "TIB"
+    },
+    "TIB_008": {
+      "ownerTag": "TIB",
+      "controllerTag": "TIB"
+    },
+    "TIB_009": {
+      "ownerTag": "TIB",
+      "controllerTag": "TIB"
+    },
+    "TIB_010": {
+      "ownerTag": "TIB",
+      "controllerTag": "TIB"
+    },
+    "TIB_011": {
+      "ownerTag": "TIB",
+      "controllerTag": "TIB"
+    },
+    "TIB_012": {
+      "ownerTag": "TIB",
+      "controllerTag": "TIB"
+    },
+    "MON_002": {
+      "ownerTag": "MON",
+      "controllerTag": "MON"
+    },
+    "MON_003": {
+      "ownerTag": "MON",
+      "controllerTag": "MON"
+    },
+    "MON_004": {
+      "ownerTag": "MON",
+      "controllerTag": "MON"
+    },
+    "MON_005": {
+      "ownerTag": "MON",
+      "controllerTag": "MON"
+    },
+    "MON_006": {
+      "ownerTag": "MON",
+      "controllerTag": "MON"
+    },
+    "MON_007": {
+      "ownerTag": "MON",
+      "controllerTag": "MON"
+    },
+    "MON_008": {
+      "ownerTag": "MON",
+      "controllerTag": "MON"
+    },
+    "MON_009": {
+      "ownerTag": "MON",
+      "controllerTag": "MON"
+    },
+    "MON_010": {
+      "ownerTag": "MON",
+      "controllerTag": "MON"
+    },
+    "MON_011": {
+      "ownerTag": "MON",
+      "controllerTag": "MON"
+    },
+    "MON_012": {
+      "ownerTag": "MON",
+      "controllerTag": "MON"
+    },
+    "KOR_002": {
+      "ownerTag": "KOR",
+      "controllerTag": "KOR"
+    },
+    "KOR_003": {
+      "ownerTag": "KOR",
+      "controllerTag": "KOR"
+    },
+    "KOR_004": {
+      "ownerTag": "KOR",
+      "controllerTag": "KOR"
+    },
+    "KOR_005": {
+      "ownerTag": "KOR",
+      "controllerTag": "KOR"
+    },
+    "KOR_006": {
+      "ownerTag": "KOR",
+      "controllerTag": "KOR"
+    },
+    "JAP_002": {
+      "ownerTag": "JAP",
+      "controllerTag": "JAP"
+    },
+    "JAP_003": {
+      "ownerTag": "JAP",
+      "controllerTag": "JAP"
+    },
+    "JAP_004": {
+      "ownerTag": "JAP",
+      "controllerTag": "JAP"
+    },
+    "JAP_005": {
+      "ownerTag": "JAP",
+      "controllerTag": "JAP"
+    },
+    "JAP_006": {
+      "ownerTag": "JAP",
+      "controllerTag": "JAP"
+    },
+    "JAP_007": {
+      "ownerTag": "JAP",
+      "controllerTag": "JAP"
+    },
+    "JAP_008": {
+      "ownerTag": "JAP",
+      "controllerTag": "JAP"
+    },
+    "JAP_009": {
+      "ownerTag": "JAP",
+      "controllerTag": "JAP"
+    },
+    "JAP_010": {
+      "ownerTag": "JAP",
+      "controllerTag": "JAP"
+    },
+    "JAP_011": {
+      "ownerTag": "JAP",
+      "controllerTag": "JAP"
+    },
+    "JAP_012": {
+      "ownerTag": "JAP",
+      "controllerTag": "JAP"
+    },
+    "IND_003": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_004": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_005": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_006": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_007": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_008": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_009": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_010": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_011": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_012": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_013": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_014": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_015": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_016": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_017": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_018": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_019": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_020": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_021": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_022": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_023": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_024": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_025": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_026": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_027": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_028": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_029": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_030": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_031": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_032": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_033": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_034": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_035": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_036": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_037": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_038": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_039": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_040": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_041": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_042": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "SRI_002": {
+      "ownerTag": "SRI",
+      "controllerTag": "SRI"
+    },
+    "SRI_003": {
+      "ownerTag": "SRI",
+      "controllerTag": "SRI"
+    },
+    "MAL_017": {
+      "ownerTag": "MAL",
+      "controllerTag": "MAL"
+    },
+    "NEP_002": {
+      "ownerTag": "NEP",
+      "controllerTag": "NEP"
+    },
+    "NEP_003": {
+      "ownerTag": "NEP",
+      "controllerTag": "NEP"
+    },
+    "NEP_004": {
+      "ownerTag": "NEP",
+      "controllerTag": "NEP"
+    },
+    "NEP_005": {
+      "ownerTag": "NEP",
+      "controllerTag": "NEP"
+    },
+    "NEP_006": {
+      "ownerTag": "NEP",
+      "controllerTag": "NEP"
+    },
+    "THA_002": {
+      "ownerTag": "THA",
+      "controllerTag": "THA"
+    },
+    "THA_003": {
+      "ownerTag": "THA",
+      "controllerTag": "THA"
+    },
+    "THA_004": {
+      "ownerTag": "THA",
+      "controllerTag": "THA"
+    },
+    "THA_005": {
+      "ownerTag": "THA",
+      "controllerTag": "THA"
+    },
+    "THA_006": {
+      "ownerTag": "THA",
+      "controllerTag": "THA"
+    },
+    "THA_007": {
+      "ownerTag": "THA",
+      "controllerTag": "THA"
+    },
+    "THA_008": {
+      "ownerTag": "THA",
+      "controllerTag": "THA"
+    },
+    "THA_009": {
+      "ownerTag": "THA",
+      "controllerTag": "THA"
+    },
+    "THA_010": {
+      "ownerTag": "THA",
+      "controllerTag": "THA"
+    },
+    "CAM_007": {
+      "ownerTag": "CAM",
+      "controllerTag": "CAM"
+    },
+    "CAM_008": {
+      "ownerTag": "CAM",
+      "controllerTag": "CAM"
+    },
+    "CAM_009": {
+      "ownerTag": "CAM",
+      "controllerTag": "CAM"
+    },
+    "CAM_010": {
+      "ownerTag": "CAM",
+      "controllerTag": "CAM"
+    },
+    "LAO_002": {
+      "ownerTag": "LAO",
+      "controllerTag": "LAO"
+    },
+    "LAO_003": {
+      "ownerTag": "LAO",
+      "controllerTag": "LAO"
+    },
+    "LAO_004": {
+      "ownerTag": "LAO",
+      "controllerTag": "LAO"
+    },
+    "LAO_005": {
+      "ownerTag": "LAO",
+      "controllerTag": "LAO"
+    },
+    "LAO_006": {
+      "ownerTag": "LAO",
+      "controllerTag": "LAO"
+    },
+    "VIE_002": {
+      "ownerTag": "VIE",
+      "controllerTag": "VIE"
+    },
+    "VIE_003": {
+      "ownerTag": "VIE",
+      "controllerTag": "VIE"
+    },
+    "VIE_004": {
+      "ownerTag": "VIE",
+      "controllerTag": "VIE"
+    },
+    "VIE_005": {
+      "ownerTag": "VIE",
+      "controllerTag": "VIE"
+    },
+    "VIE_006": {
+      "ownerTag": "VIE",
+      "controllerTag": "VIE"
+    },
+    "FED_002": {
+      "ownerTag": "FED",
+      "controllerTag": "FED"
+    },
+    "FED_003": {
+      "ownerTag": "FED",
+      "controllerTag": "FED"
+    },
+    "FED_004": {
+      "ownerTag": "FED",
+      "controllerTag": "FED"
+    },
+    "UNF_002": {
+      "ownerTag": "UNF",
+      "controllerTag": "UNF"
+    },
+    "UNF_003": {
+      "ownerTag": "UNF",
+      "controllerTag": "UNF"
+    },
+    "UNF_004": {
+      "ownerTag": "UNF",
+      "controllerTag": "UNF"
+    },
+    "SAB_002": {
+      "ownerTag": "SAB",
+      "controllerTag": "SAB"
+    },
+    "SAB_003": {
+      "ownerTag": "SAB",
+      "controllerTag": "SAB"
+    },
+    "SAB_004": {
+      "ownerTag": "SAB",
+      "controllerTag": "SAB"
+    },
+    "SAR_002": {
+      "ownerTag": "SAR",
+      "controllerTag": "SAR"
+    },
+    "SAR_003": {
+      "ownerTag": "SAR",
+      "controllerTag": "SAR"
+    },
+    "SAR_004": {
+      "ownerTag": "SAR",
+      "controllerTag": "SAR"
+    },
+    "STR_002": {
+      "ownerTag": "STR",
+      "controllerTag": "STR"
+    },
+    "STR_003": {
+      "ownerTag": "STR",
+      "controllerTag": "STR"
+    },
+    "STR_004": {
+      "ownerTag": "STR",
+      "controllerTag": "STR"
+    },
+    "PHI_002": {
+      "ownerTag": "PHI",
+      "controllerTag": "PHI"
+    },
+    "PHI_003": {
+      "ownerTag": "PHI",
+      "controllerTag": "PHI"
+    },
+    "PHI_004": {
+      "ownerTag": "PHI",
+      "controllerTag": "PHI"
+    },
+    "PHI_005": {
+      "ownerTag": "PHI",
+      "controllerTag": "PHI"
+    },
+    "PHI_006": {
+      "ownerTag": "PHI",
+      "controllerTag": "PHI"
+    },
+    "PHI_007": {
+      "ownerTag": "PHI",
+      "controllerTag": "PHI"
+    },
+    "PHI_008": {
+      "ownerTag": "PHI",
+      "controllerTag": "PHI"
+    },
+    "PHI_009": {
+      "ownerTag": "PHI",
+      "controllerTag": "PHI"
+    },
+    "PHI_010": {
+      "ownerTag": "PHI",
+      "controllerTag": "PHI"
+    },
+    "PHI_011": {
+      "ownerTag": "PHI",
+      "controllerTag": "PHI"
+    },
+    "PHI_012": {
+      "ownerTag": "PHI",
+      "controllerTag": "PHI"
+    },
+    "IND_043": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_044": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_045": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_046": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_047": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_048": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_049": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_050": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_051": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_052": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_053": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_054": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_055": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_056": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_057": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_058": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_059": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_060": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_061": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_062": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_063": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_064": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_065": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_066": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_067": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_068": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_069": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_070": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_071": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_072": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_073": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_074": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_075": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_076": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_077": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_078": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_079": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_080": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_081": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "IND_082": {
+      "ownerTag": "IND",
+      "controllerTag": "IND"
+    },
+    "EAS_002": {
+      "ownerTag": "EAS",
+      "controllerTag": "EAS"
+    },
+    "AUS_004": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_005": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_006": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_007": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_008": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_009": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_010": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_011": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_012": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_013": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_014": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_015": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_016": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_017": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_018": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_019": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_020": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_021": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_022": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_023": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_024": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_025": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_026": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_027": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_028": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_029": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_030": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_031": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_032": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "AUS_033": {
+      "ownerTag": "AUS",
+      "controllerTag": "AUS"
+    },
+    "PAP_002": {
+      "ownerTag": "PAP",
+      "controllerTag": "PAP"
+    },
+    "PAP_003": {
+      "ownerTag": "PAP",
+      "controllerTag": "PAP"
+    },
+    "PAP_004": {
+      "ownerTag": "PAP",
+      "controllerTag": "PAP"
+    },
+    "PAP_005": {
+      "ownerTag": "PAP",
+      "controllerTag": "PAP"
+    },
+    "PAP_006": {
+      "ownerTag": "PAP",
+      "controllerTag": "PAP"
+    },
+    "PAP_007": {
+      "ownerTag": "PAP",
+      "controllerTag": "PAP"
+    },
+    "PAP_008": {
+      "ownerTag": "PAP",
+      "controllerTag": "PAP"
+    },
+    "NEW_013": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_014": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_015": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_016": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_017": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_018": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_019": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_020": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_021": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_022": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_023": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_024": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_025": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_026": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_027": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_028": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_029": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_030": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_031": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_032": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_033": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_034": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_035": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_036": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_037": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_038": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_039": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_040": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_041": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_042": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_043": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_044": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_045": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_046": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_047": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_048": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_049": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_050": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_051": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_052": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_053": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_054": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_055": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_056": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_057": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_058": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_059": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_060": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_061": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_062": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_063": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_064": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_065": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_066": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_067": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_068": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_069": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_070": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_071": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "NEW_072": {
+      "ownerTag": "NEW",
+      "controllerTag": "NEW"
+    },
+    "SOL_002": {
+      "ownerTag": "SOL",
+      "controllerTag": "SOL"
+    },
+    "SOL_003": {
+      "ownerTag": "SOL",
+      "controllerTag": "SOL"
+    },
+    "SOL_004": {
+      "ownerTag": "SOL",
+      "controllerTag": "SOL"
+    },
+    "SOL_005": {
+      "ownerTag": "SOL",
+      "controllerTag": "SOL"
+    },
+    "SOL_006": {
+      "ownerTag": "SOL",
+      "controllerTag": "SOL"
+    },
+    "SOL_007": {
+      "ownerTag": "SOL",
+      "controllerTag": "SOL"
+    },
+    "SOL_008": {
+      "ownerTag": "SOL",
+      "controllerTag": "SOL"
+    },
+    "FIJ_002": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_003": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_004": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_005": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_006": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_007": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_008": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_009": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_010": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_011": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_012": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_013": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_014": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_015": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_016": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_017": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_018": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_019": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_020": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_021": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_022": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_023": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_024": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_025": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_026": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_027": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_028": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_029": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_030": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_031": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_032": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_033": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_034": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_035": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_036": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_037": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_038": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_039": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_040": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_041": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_042": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_043": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_044": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_045": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FIJ_046": {
+      "ownerTag": "FIJ",
+      "controllerTag": "FIJ"
+    },
+    "FRE_003": {
+      "ownerTag": "FRE",
+      "controllerTag": "FRE"
+    },
+    "FRE_004": {
+      "ownerTag": "FRE",
+      "controllerTag": "FRE"
+    },
+    "FRE_005": {
+      "ownerTag": "FRE",
+      "controllerTag": "FRE"
+    },
+    "FRE_006": {
+      "ownerTag": "FRE",
+      "controllerTag": "FRE"
+    },
+    "FRE_007": {
+      "ownerTag": "FRE",
+      "controllerTag": "FRE"
+    },
+    "FRE_008": {
+      "ownerTag": "FRE",
+      "controllerTag": "FRE"
+    },
+    "FRE_009": {
+      "ownerTag": "FRE",
+      "controllerTag": "FRE"
+    },
+    "FRE_010": {
+      "ownerTag": "FRE",
+      "controllerTag": "FRE"
+    },
+    "FRE_011": {
+      "ownerTag": "FRE",
+      "controllerTag": "FRE"
+    },
+    "FRE_012": {
+      "ownerTag": "FRE",
+      "controllerTag": "FRE"
+    },
+    "FRE_013": {
+      "ownerTag": "FRE",
+      "controllerTag": "FRE"
+    },
+    "INI_002": {
+      "ownerTag": "INI",
+      "controllerTag": "INI"
+    },
+    "INI_003": {
+      "ownerTag": "INI",
+      "controllerTag": "INI"
+    },
+    "INI_004": {
+      "ownerTag": "INI",
+      "controllerTag": "INI"
+    },
+    "ITA_013": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_014": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_015": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_016": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_017": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_018": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_019": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_020": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_021": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_022": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_023": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "ITA_024": {
+      "ownerTag": "ITA",
+      "controllerTag": "ITA"
+    },
+    "SOU_021": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_022": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "SOU_023": {
+      "ownerTag": "SOU",
+      "controllerTag": "SOU"
+    },
+    "GRL_002": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_003": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_004": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_005": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_006": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_007": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_008": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_009": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_010": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_011": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_012": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_013": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_014": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_015": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_016": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_017": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_018": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_019": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_020": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    },
+    "GRL_021": {
+      "ownerTag": "GRL",
+      "controllerTag": "GRL"
+    }
+  },
+  "divisions": {
+    "AFG_DIV_001": {
+      "id": "AFG_DIV_001",
+      "ownerTag": "AFG",
+      "provinceId": "AFG_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ALA_DIV_001": {
+      "id": "ALA_DIV_001",
+      "ownerTag": "ALA",
+      "provinceId": "ALA_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ALB_DIV_001": {
+      "id": "ALB_DIV_001",
+      "ownerTag": "ALB",
+      "provinceId": "ALB_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ALG_DIV_001": {
+      "id": "ALG_DIV_001",
+      "ownerTag": "ALG",
+      "provinceId": "ALG_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "AND_DIV_001": {
+      "id": "AND_DIV_001",
+      "ownerTag": "AND",
+      "provinceId": "AND_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ANG_DIV_001": {
+      "id": "ANG_DIV_001",
+      "ownerTag": "ANG",
+      "provinceId": "ANG_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ARG_DIV_001": {
+      "id": "ARG_DIV_001",
+      "ownerTag": "ARG",
+      "provinceId": "ARG_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "AUS_DIV_001": {
+      "id": "AUS_DIV_001",
+      "ownerTag": "AUS",
+      "provinceId": "AUS_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "AUS_DIV_002": {
+      "id": "AUS_DIV_002",
+      "ownerTag": "AUS",
+      "provinceId": "AUS_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BAH_DIV_001": {
+      "id": "BAH_DIV_001",
+      "ownerTag": "BAH",
+      "provinceId": "BAH_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BAR_DIV_001": {
+      "id": "BAR_DIV_001",
+      "ownerTag": "BAR",
+      "provinceId": "BAR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BEL_DIV_001": {
+      "id": "BEL_DIV_001",
+      "ownerTag": "BEL",
+      "provinceId": "BEL_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BEL_DIV_002": {
+      "id": "BEL_DIV_002",
+      "ownerTag": "BEL",
+      "provinceId": "BEL_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BEN_DIV_001": {
+      "id": "BEN_DIV_001",
+      "ownerTag": "BEN",
+      "provinceId": "BEN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BHU_DIV_001": {
+      "id": "BHU_DIV_001",
+      "ownerTag": "BHU",
+      "provinceId": "BHU_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BOL_DIV_001": {
+      "id": "BOL_DIV_001",
+      "ownerTag": "BOL",
+      "provinceId": "BOL_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BOT_DIV_001": {
+      "id": "BOT_DIV_001",
+      "ownerTag": "BOT",
+      "provinceId": "BOT_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BRA_DIV_001": {
+      "id": "BRA_DIV_001",
+      "ownerTag": "BRA",
+      "provinceId": "BRA_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BRI_DIV_001": {
+      "id": "BRI_DIV_001",
+      "ownerTag": "BRI",
+      "provinceId": "BRI_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BRI_DIV_002": {
+      "id": "BRI_DIV_002",
+      "ownerTag": "BRI",
+      "provinceId": "BRI_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BRI_DIV_003": {
+      "id": "BRI_DIV_003",
+      "ownerTag": "BRI",
+      "provinceId": "BRI_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BRU_DIV_001": {
+      "id": "BRU_DIV_001",
+      "ownerTag": "BRU",
+      "provinceId": "BRU_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BUL_DIV_001": {
+      "id": "BUL_DIV_001",
+      "ownerTag": "BUL",
+      "provinceId": "BUL_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CAM_DIV_001": {
+      "id": "CAM_DIV_001",
+      "ownerTag": "CAM",
+      "provinceId": "CAM_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CAM_DIV_002": {
+      "id": "CAM_DIV_002",
+      "ownerTag": "CAM",
+      "provinceId": "CAM_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CAN_DIV_001": {
+      "id": "CAN_DIV_001",
+      "ownerTag": "CAN",
+      "provinceId": "CAN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CAP_DIV_001": {
+      "id": "CAP_DIV_001",
+      "ownerTag": "CAP",
+      "provinceId": "CAP_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CEN_DIV_001": {
+      "id": "CEN_DIV_001",
+      "ownerTag": "CEN",
+      "provinceId": "CEN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CHA_DIV_001": {
+      "id": "CHA_DIV_001",
+      "ownerTag": "CHA",
+      "provinceId": "CHA_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CHI_DIV_001": {
+      "id": "CHI_DIV_001",
+      "ownerTag": "CHI",
+      "provinceId": "CHI_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CHI_DIV_002": {
+      "id": "CHI_DIV_002",
+      "ownerTag": "CHI",
+      "provinceId": "CHI_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "COL_DIV_001": {
+      "id": "COL_DIV_001",
+      "ownerTag": "COL",
+      "provinceId": "COL_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CON_DIV_001": {
+      "id": "CON_DIV_001",
+      "ownerTag": "CON",
+      "provinceId": "CON_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CON_DIV_002": {
+      "id": "CON_DIV_002",
+      "ownerTag": "CON",
+      "provinceId": "CON_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "COS_DIV_001": {
+      "id": "COS_DIV_001",
+      "ownerTag": "COS",
+      "provinceId": "COS_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "COT_DIV_001": {
+      "id": "COT_DIV_001",
+      "ownerTag": "COT",
+      "provinceId": "COT_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CUB_DIV_001": {
+      "id": "CUB_DIV_001",
+      "ownerTag": "CUB",
+      "provinceId": "CUB_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CYP_DIV_001": {
+      "id": "CYP_DIV_001",
+      "ownerTag": "CYP",
+      "provinceId": "CYP_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CZE_DIV_001": {
+      "id": "CZE_DIV_001",
+      "ownerTag": "CZE",
+      "provinceId": "CZE_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "DAN_DIV_001": {
+      "id": "DAN_DIV_001",
+      "ownerTag": "DAN",
+      "provinceId": "DAN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "DEN_DIV_001": {
+      "id": "DEN_DIV_001",
+      "ownerTag": "DEN",
+      "provinceId": "DEN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "DJI_DIV_001": {
+      "id": "DJI_DIV_001",
+      "ownerTag": "DJI",
+      "provinceId": "DJI_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "DOM_DIV_001": {
+      "id": "DOM_DIV_001",
+      "ownerTag": "DOM",
+      "provinceId": "DOM_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "EAS_DIV_001": {
+      "id": "EAS_DIV_001",
+      "ownerTag": "EAS",
+      "provinceId": "EAS_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ECU_DIV_001": {
+      "id": "ECU_DIV_001",
+      "ownerTag": "ECU",
+      "provinceId": "ECU_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "EGY_DIV_001": {
+      "id": "EGY_DIV_001",
+      "ownerTag": "EGY",
+      "provinceId": "EGY_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ELS_DIV_001": {
+      "id": "ELS_DIV_001",
+      "ownerTag": "ELS",
+      "provinceId": "ELS_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "EQU_DIV_001": {
+      "id": "EQU_DIV_001",
+      "ownerTag": "EQU",
+      "provinceId": "EQU_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ERI_DIV_001": {
+      "id": "ERI_DIV_001",
+      "ownerTag": "ERI",
+      "provinceId": "ERI_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ESP_DIV_001": {
+      "id": "ESP_DIV_001",
+      "ownerTag": "ESP",
+      "provinceId": "ESP_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "EST_DIV_001": {
+      "id": "EST_DIV_001",
+      "ownerTag": "EST",
+      "provinceId": "EST_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ETH_DIV_001": {
+      "id": "ETH_DIV_001",
+      "ownerTag": "ETH",
+      "provinceId": "ETH_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FED_DIV_001": {
+      "id": "FED_DIV_001",
+      "ownerTag": "FED",
+      "provinceId": "FED_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FIJ_DIV_001": {
+      "id": "FIJ_DIV_001",
+      "ownerTag": "FIJ",
+      "provinceId": "FIJ_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FIN_DIV_001": {
+      "id": "FIN_DIV_001",
+      "ownerTag": "FIN",
+      "provinceId": "FIN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FRA_DIV_001": {
+      "id": "FRA_DIV_001",
+      "ownerTag": "FRA",
+      "provinceId": "FRA_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FRE_DIV_001": {
+      "id": "FRE_DIV_001",
+      "ownerTag": "FRE",
+      "provinceId": "FRE_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FRE_DIV_002": {
+      "id": "FRE_DIV_002",
+      "ownerTag": "FRE",
+      "provinceId": "FRE_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GAB_DIV_001": {
+      "id": "GAB_DIV_001",
+      "ownerTag": "GAB",
+      "provinceId": "GAB_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GAM_DIV_001": {
+      "id": "GAM_DIV_001",
+      "ownerTag": "GAM",
+      "provinceId": "GAM_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GBR_DIV_001": {
+      "id": "GBR_DIV_001",
+      "ownerTag": "GBR",
+      "provinceId": "GBR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GER_DIV_001": {
+      "id": "GER_DIV_001",
+      "ownerTag": "GER",
+      "provinceId": "GER_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GHA_DIV_001": {
+      "id": "GHA_DIV_001",
+      "ownerTag": "GHA",
+      "provinceId": "GHA_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GRE_DIV_001": {
+      "id": "GRE_DIV_001",
+      "ownerTag": "GRE",
+      "provinceId": "GRE_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GRL_DIV_001": {
+      "id": "GRL_DIV_001",
+      "ownerTag": "GRL",
+      "provinceId": "GRL_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GUA_DIV_001": {
+      "id": "GUA_DIV_001",
+      "ownerTag": "GUA",
+      "provinceId": "GUA_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GUA_DIV_002": {
+      "id": "GUA_DIV_002",
+      "ownerTag": "GUA",
+      "provinceId": "GUA_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GUI_DIV_001": {
+      "id": "GUI_DIV_001",
+      "ownerTag": "GUI",
+      "provinceId": "GUI_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GUI_DIV_002": {
+      "id": "GUI_DIV_002",
+      "ownerTag": "GUI",
+      "provinceId": "GUI_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GUY_DIV_001": {
+      "id": "GUY_DIV_001",
+      "ownerTag": "GUY",
+      "provinceId": "GUY_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "HAI_DIV_001": {
+      "id": "HAI_DIV_001",
+      "ownerTag": "HAI",
+      "provinceId": "HAI_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "HAW_DIV_001": {
+      "id": "HAW_DIV_001",
+      "ownerTag": "HAW",
+      "provinceId": "HAW_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "HON_DIV_001": {
+      "id": "HON_DIV_001",
+      "ownerTag": "HON",
+      "provinceId": "HON_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "HUN_DIV_001": {
+      "id": "HUN_DIV_001",
+      "ownerTag": "HUN",
+      "provinceId": "HUN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ICE_DIV_001": {
+      "id": "ICE_DIV_001",
+      "ownerTag": "ICE",
+      "provinceId": "ICE_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "IND_DIV_001": {
+      "id": "IND_DIV_001",
+      "ownerTag": "IND",
+      "provinceId": "IND_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "IND_DIV_002": {
+      "id": "IND_DIV_002",
+      "ownerTag": "IND",
+      "provinceId": "IND_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "INI_DIV_001": {
+      "id": "INI_DIV_001",
+      "ownerTag": "INI",
+      "provinceId": "INI_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "IRE_DIV_001": {
+      "id": "IRE_DIV_001",
+      "ownerTag": "IRE",
+      "provinceId": "IRE_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "IRN_DIV_001": {
+      "id": "IRN_DIV_001",
+      "ownerTag": "IRN",
+      "provinceId": "IRN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "IRQ_DIV_001": {
+      "id": "IRQ_DIV_001",
+      "ownerTag": "IRQ",
+      "provinceId": "IRQ_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ITA_DIV_001": {
+      "id": "ITA_DIV_001",
+      "ownerTag": "ITA",
+      "provinceId": "ITA_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ITA_DIV_002": {
+      "id": "ITA_DIV_002",
+      "ownerTag": "ITA",
+      "provinceId": "ITA_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "JAM_DIV_001": {
+      "id": "JAM_DIV_001",
+      "ownerTag": "JAM",
+      "provinceId": "JAM_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "JAP_DIV_001": {
+      "id": "JAP_DIV_001",
+      "ownerTag": "JAP",
+      "provinceId": "JAP_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "JOR_DIV_001": {
+      "id": "JOR_DIV_001",
+      "ownerTag": "JOR",
+      "provinceId": "JOR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "KEN_DIV_001": {
+      "id": "KEN_DIV_001",
+      "ownerTag": "KEN",
+      "provinceId": "KEN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "KOR_DIV_001": {
+      "id": "KOR_DIV_001",
+      "ownerTag": "KOR",
+      "provinceId": "KOR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LAO_DIV_001": {
+      "id": "LAO_DIV_001",
+      "ownerTag": "LAO",
+      "provinceId": "LAO_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LAT_DIV_001": {
+      "id": "LAT_DIV_001",
+      "ownerTag": "LAT",
+      "provinceId": "LAT_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LEB_DIV_001": {
+      "id": "LEB_DIV_001",
+      "ownerTag": "LEB",
+      "provinceId": "LEB_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LES_DIV_001": {
+      "id": "LES_DIV_001",
+      "ownerTag": "LES",
+      "provinceId": "LES_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LIB_DIV_001": {
+      "id": "LIB_DIV_001",
+      "ownerTag": "LIB",
+      "provinceId": "LIB_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LIB_DIV_002": {
+      "id": "LIB_DIV_002",
+      "ownerTag": "LIB",
+      "provinceId": "LIB_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LIE_DIV_001": {
+      "id": "LIE_DIV_001",
+      "ownerTag": "LIE",
+      "provinceId": "LIE_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LIT_DIV_001": {
+      "id": "LIT_DIV_001",
+      "ownerTag": "LIT",
+      "provinceId": "LIT_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LUX_DIV_001": {
+      "id": "LUX_DIV_001",
+      "ownerTag": "LUX",
+      "provinceId": "LUX_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MAD_DIV_001": {
+      "id": "MAD_DIV_001",
+      "ownerTag": "MAD",
+      "provinceId": "MAD_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MAL_DIV_001": {
+      "id": "MAL_DIV_001",
+      "ownerTag": "MAL",
+      "provinceId": "MAL_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MAL_DIV_002": {
+      "id": "MAL_DIV_002",
+      "ownerTag": "MAL",
+      "provinceId": "MAL_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MAL_DIV_003": {
+      "id": "MAL_DIV_003",
+      "ownerTag": "MAL",
+      "provinceId": "MAL_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MAR_DIV_001": {
+      "id": "MAR_DIV_001",
+      "ownerTag": "MAR",
+      "provinceId": "MAR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MAU_DIV_001": {
+      "id": "MAU_DIV_001",
+      "ownerTag": "MAU",
+      "provinceId": "MAU_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MAU_DIV_002": {
+      "id": "MAU_DIV_002",
+      "ownerTag": "MAU",
+      "provinceId": "MAU_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MCO_DIV_001": {
+      "id": "MCO_DIV_001",
+      "ownerTag": "MCO",
+      "provinceId": "MCO_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MEX_DIV_001": {
+      "id": "MEX_DIV_001",
+      "ownerTag": "MEX",
+      "provinceId": "MEX_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MON_DIV_001": {
+      "id": "MON_DIV_001",
+      "ownerTag": "MON",
+      "provinceId": "MON_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MOR_DIV_001": {
+      "id": "MOR_DIV_001",
+      "ownerTag": "MOR",
+      "provinceId": "MOR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MOZ_DIV_001": {
+      "id": "MOZ_DIV_001",
+      "ownerTag": "MOZ",
+      "provinceId": "MOZ_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NAM_DIV_001": {
+      "id": "NAM_DIV_001",
+      "ownerTag": "NAM",
+      "provinceId": "NAM_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NEP_DIV_001": {
+      "id": "NEP_DIV_001",
+      "ownerTag": "NEP",
+      "provinceId": "NEP_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NEW_DIV_001": {
+      "id": "NEW_DIV_001",
+      "ownerTag": "NEW",
+      "provinceId": "NEW_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NEW_DIV_002": {
+      "id": "NEW_DIV_002",
+      "ownerTag": "NEW",
+      "provinceId": "NEW_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NEW_DIV_003": {
+      "id": "NEW_DIV_003",
+      "ownerTag": "NEW",
+      "provinceId": "NEW_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NIC_DIV_001": {
+      "id": "NIC_DIV_001",
+      "ownerTag": "NIC",
+      "provinceId": "NIC_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NIG_DIV_001": {
+      "id": "NIG_DIV_001",
+      "ownerTag": "NIG",
+      "provinceId": "NIG_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NIG_DIV_002": {
+      "id": "NIG_DIV_002",
+      "ownerTag": "NIG",
+      "provinceId": "NIG_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NLD_DIV_001": {
+      "id": "NLD_DIV_001",
+      "ownerTag": "NLD",
+      "provinceId": "NLD_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NOR_DIV_001": {
+      "id": "NOR_DIV_001",
+      "ownerTag": "NOR",
+      "provinceId": "NOR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "OMA_DIV_001": {
+      "id": "OMA_DIV_001",
+      "ownerTag": "OMA",
+      "provinceId": "OMA_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PAL_DIV_001": {
+      "id": "PAL_DIV_001",
+      "ownerTag": "PAL",
+      "provinceId": "PAL_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PAN_DIV_001": {
+      "id": "PAN_DIV_001",
+      "ownerTag": "PAN",
+      "provinceId": "PAN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PAP_DIV_001": {
+      "id": "PAP_DIV_001",
+      "ownerTag": "PAP",
+      "provinceId": "PAP_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PAR_DIV_001": {
+      "id": "PAR_DIV_001",
+      "ownerTag": "PAR",
+      "provinceId": "PAR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PER_DIV_001": {
+      "id": "PER_DIV_001",
+      "ownerTag": "PER",
+      "provinceId": "PER_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PHI_DIV_001": {
+      "id": "PHI_DIV_001",
+      "ownerTag": "PHI",
+      "provinceId": "PHI_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "POL_DIV_001": {
+      "id": "POL_DIV_001",
+      "ownerTag": "POL",
+      "provinceId": "POL_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "POR_DIV_001": {
+      "id": "POR_DIV_001",
+      "ownerTag": "POR",
+      "provinceId": "POR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PUE_DIV_001": {
+      "id": "PUE_DIV_001",
+      "ownerTag": "PUE",
+      "provinceId": "PUE_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "QAT_DIV_001": {
+      "id": "QAT_DIV_001",
+      "ownerTag": "QAT",
+      "provinceId": "QAT_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "REU_DIV_001": {
+      "id": "REU_DIV_001",
+      "ownerTag": "REU",
+      "provinceId": "REU_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ROM_DIV_001": {
+      "id": "ROM_DIV_001",
+      "ownerTag": "ROM",
+      "provinceId": "ROM_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "RWA_DIV_001": {
+      "id": "RWA_DIV_001",
+      "ownerTag": "RWA",
+      "provinceId": "RWA_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SAB_DIV_001": {
+      "id": "SAB_DIV_001",
+      "ownerTag": "SAB",
+      "provinceId": "SAB_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SAR_DIV_001": {
+      "id": "SAR_DIV_001",
+      "ownerTag": "SAR",
+      "provinceId": "SAR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SAU_DIV_001": {
+      "id": "SAU_DIV_001",
+      "ownerTag": "SAU",
+      "provinceId": "SAU_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SEN_DIV_001": {
+      "id": "SEN_DIV_001",
+      "ownerTag": "SEN",
+      "provinceId": "SEN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SIE_DIV_001": {
+      "id": "SIE_DIV_001",
+      "ownerTag": "SIE",
+      "provinceId": "SIE_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SMR_DIV_001": {
+      "id": "SMR_DIV_001",
+      "ownerTag": "SMR",
+      "provinceId": "SMR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SOL_DIV_001": {
+      "id": "SOL_DIV_001",
+      "ownerTag": "SOL",
+      "provinceId": "SOL_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SOU_DIV_001": {
+      "id": "SOU_DIV_001",
+      "ownerTag": "SOU",
+      "provinceId": "SOU_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SOU_DIV_002": {
+      "id": "SOU_DIV_002",
+      "ownerTag": "SOU",
+      "provinceId": "SOU_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SOV_DIV_001": {
+      "id": "SOV_DIV_001",
+      "ownerTag": "SOV",
+      "provinceId": "SOV_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SPA_DIV_001": {
+      "id": "SPA_DIV_001",
+      "ownerTag": "SPA",
+      "provinceId": "SPA_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SPA_DIV_002": {
+      "id": "SPA_DIV_002",
+      "ownerTag": "SPA",
+      "provinceId": "SPA_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SRI_DIV_001": {
+      "id": "SRI_DIV_001",
+      "ownerTag": "SRI",
+      "provinceId": "SRI_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "STR_DIV_001": {
+      "id": "STR_DIV_001",
+      "ownerTag": "STR",
+      "provinceId": "STR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SUD_DIV_001": {
+      "id": "SUD_DIV_001",
+      "ownerTag": "SUD",
+      "provinceId": "SUD_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SUR_DIV_001": {
+      "id": "SUR_DIV_001",
+      "ownerTag": "SUR",
+      "provinceId": "SUR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SWA_DIV_001": {
+      "id": "SWA_DIV_001",
+      "ownerTag": "SWA",
+      "provinceId": "SWA_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SWE_DIV_001": {
+      "id": "SWE_DIV_001",
+      "ownerTag": "SWE",
+      "provinceId": "SWE_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SWI_DIV_001": {
+      "id": "SWI_DIV_001",
+      "ownerTag": "SWI",
+      "provinceId": "SWI_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SYR_DIV_001": {
+      "id": "SYR_DIV_001",
+      "ownerTag": "SYR",
+      "provinceId": "SYR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TAI_DIV_001": {
+      "id": "TAI_DIV_001",
+      "ownerTag": "TAI",
+      "provinceId": "TAI_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TAN_DIV_001": {
+      "id": "TAN_DIV_001",
+      "ownerTag": "TAN",
+      "provinceId": "TAN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "THA_DIV_001": {
+      "id": "THA_DIV_001",
+      "ownerTag": "THA",
+      "provinceId": "THA_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TIB_DIV_001": {
+      "id": "TIB_DIV_001",
+      "ownerTag": "TIB",
+      "provinceId": "TIB_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TOG_DIV_001": {
+      "id": "TOG_DIV_001",
+      "ownerTag": "TOG",
+      "provinceId": "TOG_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TRI_DIV_001": {
+      "id": "TRI_DIV_001",
+      "ownerTag": "TRI",
+      "provinceId": "TRI_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TUN_DIV_001": {
+      "id": "TUN_DIV_001",
+      "ownerTag": "TUN",
+      "provinceId": "TUN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TUR_DIV_001": {
+      "id": "TUR_DIV_001",
+      "ownerTag": "TUR",
+      "provinceId": "TUR_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "UGA_DIV_001": {
+      "id": "UGA_DIV_001",
+      "ownerTag": "UGA",
+      "provinceId": "UGA_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "UNF_DIV_001": {
+      "id": "UNF_DIV_001",
+      "ownerTag": "UNF",
+      "provinceId": "UNF_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "UNI_DIV_001": {
+      "id": "UNI_DIV_001",
+      "ownerTag": "UNI",
+      "provinceId": "UNI_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "UNI_DIV_002": {
+      "id": "UNI_DIV_002",
+      "ownerTag": "UNI",
+      "provinceId": "UNI_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "URU_DIV_001": {
+      "id": "URU_DIV_001",
+      "ownerTag": "URU",
+      "provinceId": "URU_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "VAT_DIV_001": {
+      "id": "VAT_DIV_001",
+      "ownerTag": "VAT",
+      "provinceId": "VAT_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "VEN_DIV_001": {
+      "id": "VEN_DIV_001",
+      "ownerTag": "VEN",
+      "provinceId": "VEN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "VIE_DIV_001": {
+      "id": "VIE_DIV_001",
+      "ownerTag": "VIE",
+      "provinceId": "VIE_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "YEM_DIV_001": {
+      "id": "YEM_DIV_001",
+      "ownerTag": "YEM",
+      "provinceId": "YEM_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "YUG_DIV_001": {
+      "id": "YUG_DIV_001",
+      "ownerTag": "YUG",
+      "provinceId": "YUG_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ZAM_DIV_001": {
+      "id": "ZAM_DIV_001",
+      "ownerTag": "ZAM",
+      "provinceId": "ZAM_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ZAN_DIV_001": {
+      "id": "ZAN_DIV_001",
+      "ownerTag": "ZAN",
+      "provinceId": "ZAN_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ZIM_DIV_001": {
+      "id": "ZIM_DIV_001",
+      "ownerTag": "ZIM",
+      "provinceId": "ZIM_001",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "AFG_DIV_002": {
+      "id": "AFG_DIV_002",
+      "ownerTag": "AFG",
+      "provinceId": "AFG_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "AFG_DIV_003": {
+      "id": "AFG_DIV_003",
+      "ownerTag": "AFG",
+      "provinceId": "AFG_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ALA_DIV_002": {
+      "id": "ALA_DIV_002",
+      "ownerTag": "ALA",
+      "provinceId": "ALA_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ALA_DIV_003": {
+      "id": "ALA_DIV_003",
+      "ownerTag": "ALA",
+      "provinceId": "ALA_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ALG_DIV_002": {
+      "id": "ALG_DIV_002",
+      "ownerTag": "ALG",
+      "provinceId": "ALG_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ALG_DIV_003": {
+      "id": "ALG_DIV_003",
+      "ownerTag": "ALG",
+      "provinceId": "ALG_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ANG_DIV_002": {
+      "id": "ANG_DIV_002",
+      "ownerTag": "ANG",
+      "provinceId": "ANG_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ANG_DIV_003": {
+      "id": "ANG_DIV_003",
+      "ownerTag": "ANG",
+      "provinceId": "ANG_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ARG_DIV_002": {
+      "id": "ARG_DIV_002",
+      "ownerTag": "ARG",
+      "provinceId": "ARG_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ARG_DIV_003": {
+      "id": "ARG_DIV_003",
+      "ownerTag": "ARG",
+      "provinceId": "ARG_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "AUS_DIV_003": {
+      "id": "AUS_DIV_003",
+      "ownerTag": "AUS",
+      "provinceId": "AUS_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BAH_DIV_002": {
+      "id": "BAH_DIV_002",
+      "ownerTag": "BAH",
+      "provinceId": "BAH_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BAH_DIV_003": {
+      "id": "BAH_DIV_003",
+      "ownerTag": "BAH",
+      "provinceId": "BAH_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BEN_DIV_002": {
+      "id": "BEN_DIV_002",
+      "ownerTag": "BEN",
+      "provinceId": "BEN_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BEN_DIV_003": {
+      "id": "BEN_DIV_003",
+      "ownerTag": "BEN",
+      "provinceId": "BEN_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BOL_DIV_002": {
+      "id": "BOL_DIV_002",
+      "ownerTag": "BOL",
+      "provinceId": "BOL_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BOL_DIV_003": {
+      "id": "BOL_DIV_003",
+      "ownerTag": "BOL",
+      "provinceId": "BOL_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BOT_DIV_002": {
+      "id": "BOT_DIV_002",
+      "ownerTag": "BOT",
+      "provinceId": "BOT_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BOT_DIV_003": {
+      "id": "BOT_DIV_003",
+      "ownerTag": "BOT",
+      "provinceId": "BOT_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BRA_DIV_002": {
+      "id": "BRA_DIV_002",
+      "ownerTag": "BRA",
+      "provinceId": "BRA_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BRA_DIV_003": {
+      "id": "BRA_DIV_003",
+      "ownerTag": "BRA",
+      "provinceId": "BRA_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BUL_DIV_002": {
+      "id": "BUL_DIV_002",
+      "ownerTag": "BUL",
+      "provinceId": "BUL_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "BUL_DIV_003": {
+      "id": "BUL_DIV_003",
+      "ownerTag": "BUL",
+      "provinceId": "BUL_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CAM_DIV_003": {
+      "id": "CAM_DIV_003",
+      "ownerTag": "CAM",
+      "provinceId": "CAM_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CAN_DIV_002": {
+      "id": "CAN_DIV_002",
+      "ownerTag": "CAN",
+      "provinceId": "CAN_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CAN_DIV_003": {
+      "id": "CAN_DIV_003",
+      "ownerTag": "CAN",
+      "provinceId": "CAN_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CEN_DIV_002": {
+      "id": "CEN_DIV_002",
+      "ownerTag": "CEN",
+      "provinceId": "CEN_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CEN_DIV_003": {
+      "id": "CEN_DIV_003",
+      "ownerTag": "CEN",
+      "provinceId": "CEN_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CHA_DIV_002": {
+      "id": "CHA_DIV_002",
+      "ownerTag": "CHA",
+      "provinceId": "CHA_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CHA_DIV_003": {
+      "id": "CHA_DIV_003",
+      "ownerTag": "CHA",
+      "provinceId": "CHA_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CHI_DIV_003": {
+      "id": "CHI_DIV_003",
+      "ownerTag": "CHI",
+      "provinceId": "CHI_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "COL_DIV_002": {
+      "id": "COL_DIV_002",
+      "ownerTag": "COL",
+      "provinceId": "COL_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "COL_DIV_003": {
+      "id": "COL_DIV_003",
+      "ownerTag": "COL",
+      "provinceId": "COL_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CON_DIV_003": {
+      "id": "CON_DIV_003",
+      "ownerTag": "CON",
+      "provinceId": "CON_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "COS_DIV_002": {
+      "id": "COS_DIV_002",
+      "ownerTag": "COS",
+      "provinceId": "COS_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "COS_DIV_003": {
+      "id": "COS_DIV_003",
+      "ownerTag": "COS",
+      "provinceId": "COS_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "COT_DIV_002": {
+      "id": "COT_DIV_002",
+      "ownerTag": "COT",
+      "provinceId": "COT_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "COT_DIV_003": {
+      "id": "COT_DIV_003",
+      "ownerTag": "COT",
+      "provinceId": "COT_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CUB_DIV_002": {
+      "id": "CUB_DIV_002",
+      "ownerTag": "CUB",
+      "provinceId": "CUB_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CUB_DIV_003": {
+      "id": "CUB_DIV_003",
+      "ownerTag": "CUB",
+      "provinceId": "CUB_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CZE_DIV_002": {
+      "id": "CZE_DIV_002",
+      "ownerTag": "CZE",
+      "provinceId": "CZE_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "CZE_DIV_003": {
+      "id": "CZE_DIV_003",
+      "ownerTag": "CZE",
+      "provinceId": "CZE_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "DEN_DIV_002": {
+      "id": "DEN_DIV_002",
+      "ownerTag": "DEN",
+      "provinceId": "DEN_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "DEN_DIV_003": {
+      "id": "DEN_DIV_003",
+      "ownerTag": "DEN",
+      "provinceId": "DEN_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "DOM_DIV_002": {
+      "id": "DOM_DIV_002",
+      "ownerTag": "DOM",
+      "provinceId": "DOM_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "DOM_DIV_003": {
+      "id": "DOM_DIV_003",
+      "ownerTag": "DOM",
+      "provinceId": "DOM_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "EAS_DIV_002": {
+      "id": "EAS_DIV_002",
+      "ownerTag": "EAS",
+      "provinceId": "EAS_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ECU_DIV_002": {
+      "id": "ECU_DIV_002",
+      "ownerTag": "ECU",
+      "provinceId": "ECU_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ECU_DIV_003": {
+      "id": "ECU_DIV_003",
+      "ownerTag": "ECU",
+      "provinceId": "ECU_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "EGY_DIV_002": {
+      "id": "EGY_DIV_002",
+      "ownerTag": "EGY",
+      "provinceId": "EGY_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "EGY_DIV_003": {
+      "id": "EGY_DIV_003",
+      "ownerTag": "EGY",
+      "provinceId": "EGY_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "EQU_DIV_002": {
+      "id": "EQU_DIV_002",
+      "ownerTag": "EQU",
+      "provinceId": "EQU_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "EQU_DIV_003": {
+      "id": "EQU_DIV_003",
+      "ownerTag": "EQU",
+      "provinceId": "EQU_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ERI_DIV_002": {
+      "id": "ERI_DIV_002",
+      "ownerTag": "ERI",
+      "provinceId": "ERI_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ERI_DIV_003": {
+      "id": "ERI_DIV_003",
+      "ownerTag": "ERI",
+      "provinceId": "ERI_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ESP_DIV_002": {
+      "id": "ESP_DIV_002",
+      "ownerTag": "ESP",
+      "provinceId": "ESP_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ESP_DIV_003": {
+      "id": "ESP_DIV_003",
+      "ownerTag": "ESP",
+      "provinceId": "ESP_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "EST_DIV_002": {
+      "id": "EST_DIV_002",
+      "ownerTag": "EST",
+      "provinceId": "EST_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "EST_DIV_003": {
+      "id": "EST_DIV_003",
+      "ownerTag": "EST",
+      "provinceId": "EST_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ETH_DIV_002": {
+      "id": "ETH_DIV_002",
+      "ownerTag": "ETH",
+      "provinceId": "ETH_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ETH_DIV_003": {
+      "id": "ETH_DIV_003",
+      "ownerTag": "ETH",
+      "provinceId": "ETH_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FED_DIV_002": {
+      "id": "FED_DIV_002",
+      "ownerTag": "FED",
+      "provinceId": "FED_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FED_DIV_003": {
+      "id": "FED_DIV_003",
+      "ownerTag": "FED",
+      "provinceId": "FED_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FIJ_DIV_002": {
+      "id": "FIJ_DIV_002",
+      "ownerTag": "FIJ",
+      "provinceId": "FIJ_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FIJ_DIV_003": {
+      "id": "FIJ_DIV_003",
+      "ownerTag": "FIJ",
+      "provinceId": "FIJ_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FIN_DIV_002": {
+      "id": "FIN_DIV_002",
+      "ownerTag": "FIN",
+      "provinceId": "FIN_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FIN_DIV_003": {
+      "id": "FIN_DIV_003",
+      "ownerTag": "FIN",
+      "provinceId": "FIN_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FRA_DIV_002": {
+      "id": "FRA_DIV_002",
+      "ownerTag": "FRA",
+      "provinceId": "FRA_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FRA_DIV_003": {
+      "id": "FRA_DIV_003",
+      "ownerTag": "FRA",
+      "provinceId": "FRA_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "FRE_DIV_003": {
+      "id": "FRE_DIV_003",
+      "ownerTag": "FRE",
+      "provinceId": "FRE_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GAB_DIV_002": {
+      "id": "GAB_DIV_002",
+      "ownerTag": "GAB",
+      "provinceId": "GAB_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GAB_DIV_003": {
+      "id": "GAB_DIV_003",
+      "ownerTag": "GAB",
+      "provinceId": "GAB_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GBR_DIV_002": {
+      "id": "GBR_DIV_002",
+      "ownerTag": "GBR",
+      "provinceId": "GBR_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GBR_DIV_003": {
+      "id": "GBR_DIV_003",
+      "ownerTag": "GBR",
+      "provinceId": "GBR_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GER_DIV_002": {
+      "id": "GER_DIV_002",
+      "ownerTag": "GER",
+      "provinceId": "GER_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GER_DIV_003": {
+      "id": "GER_DIV_003",
+      "ownerTag": "GER",
+      "provinceId": "GER_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GHA_DIV_002": {
+      "id": "GHA_DIV_002",
+      "ownerTag": "GHA",
+      "provinceId": "GHA_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GHA_DIV_003": {
+      "id": "GHA_DIV_003",
+      "ownerTag": "GHA",
+      "provinceId": "GHA_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GRE_DIV_002": {
+      "id": "GRE_DIV_002",
+      "ownerTag": "GRE",
+      "provinceId": "GRE_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GRE_DIV_003": {
+      "id": "GRE_DIV_003",
+      "ownerTag": "GRE",
+      "provinceId": "GRE_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GRL_DIV_002": {
+      "id": "GRL_DIV_002",
+      "ownerTag": "GRL",
+      "provinceId": "GRL_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GRL_DIV_003": {
+      "id": "GRL_DIV_003",
+      "ownerTag": "GRL",
+      "provinceId": "GRL_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GUA_DIV_003": {
+      "id": "GUA_DIV_003",
+      "ownerTag": "GUA",
+      "provinceId": "GUA_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GUI_DIV_003": {
+      "id": "GUI_DIV_003",
+      "ownerTag": "GUI",
+      "provinceId": "GUI_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GUY_DIV_002": {
+      "id": "GUY_DIV_002",
+      "ownerTag": "GUY",
+      "provinceId": "GUY_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "GUY_DIV_003": {
+      "id": "GUY_DIV_003",
+      "ownerTag": "GUY",
+      "provinceId": "GUY_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "HAW_DIV_002": {
+      "id": "HAW_DIV_002",
+      "ownerTag": "HAW",
+      "provinceId": "HAW_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "HAW_DIV_003": {
+      "id": "HAW_DIV_003",
+      "ownerTag": "HAW",
+      "provinceId": "HAW_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "HON_DIV_002": {
+      "id": "HON_DIV_002",
+      "ownerTag": "HON",
+      "provinceId": "HON_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "HON_DIV_003": {
+      "id": "HON_DIV_003",
+      "ownerTag": "HON",
+      "provinceId": "HON_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "HUN_DIV_002": {
+      "id": "HUN_DIV_002",
+      "ownerTag": "HUN",
+      "provinceId": "HUN_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "HUN_DIV_003": {
+      "id": "HUN_DIV_003",
+      "ownerTag": "HUN",
+      "provinceId": "HUN_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ICE_DIV_002": {
+      "id": "ICE_DIV_002",
+      "ownerTag": "ICE",
+      "provinceId": "ICE_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ICE_DIV_003": {
+      "id": "ICE_DIV_003",
+      "ownerTag": "ICE",
+      "provinceId": "ICE_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "IND_DIV_003": {
+      "id": "IND_DIV_003",
+      "ownerTag": "IND",
+      "provinceId": "IND_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "INI_DIV_002": {
+      "id": "INI_DIV_002",
+      "ownerTag": "INI",
+      "provinceId": "INI_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "INI_DIV_003": {
+      "id": "INI_DIV_003",
+      "ownerTag": "INI",
+      "provinceId": "INI_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "IRE_DIV_002": {
+      "id": "IRE_DIV_002",
+      "ownerTag": "IRE",
+      "provinceId": "IRE_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "IRE_DIV_003": {
+      "id": "IRE_DIV_003",
+      "ownerTag": "IRE",
+      "provinceId": "IRE_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "IRN_DIV_002": {
+      "id": "IRN_DIV_002",
+      "ownerTag": "IRN",
+      "provinceId": "IRN_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "IRN_DIV_003": {
+      "id": "IRN_DIV_003",
+      "ownerTag": "IRN",
+      "provinceId": "IRN_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "IRQ_DIV_002": {
+      "id": "IRQ_DIV_002",
+      "ownerTag": "IRQ",
+      "provinceId": "IRQ_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "IRQ_DIV_003": {
+      "id": "IRQ_DIV_003",
+      "ownerTag": "IRQ",
+      "provinceId": "IRQ_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ITA_DIV_003": {
+      "id": "ITA_DIV_003",
+      "ownerTag": "ITA",
+      "provinceId": "ITA_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "JAP_DIV_002": {
+      "id": "JAP_DIV_002",
+      "ownerTag": "JAP",
+      "provinceId": "JAP_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "JAP_DIV_003": {
+      "id": "JAP_DIV_003",
+      "ownerTag": "JAP",
+      "provinceId": "JAP_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "JOR_DIV_002": {
+      "id": "JOR_DIV_002",
+      "ownerTag": "JOR",
+      "provinceId": "JOR_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "JOR_DIV_003": {
+      "id": "JOR_DIV_003",
+      "ownerTag": "JOR",
+      "provinceId": "JOR_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "KEN_DIV_002": {
+      "id": "KEN_DIV_002",
+      "ownerTag": "KEN",
+      "provinceId": "KEN_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "KEN_DIV_003": {
+      "id": "KEN_DIV_003",
+      "ownerTag": "KEN",
+      "provinceId": "KEN_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "KOR_DIV_002": {
+      "id": "KOR_DIV_002",
+      "ownerTag": "KOR",
+      "provinceId": "KOR_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "KOR_DIV_003": {
+      "id": "KOR_DIV_003",
+      "ownerTag": "KOR",
+      "provinceId": "KOR_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LAO_DIV_002": {
+      "id": "LAO_DIV_002",
+      "ownerTag": "LAO",
+      "provinceId": "LAO_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LAO_DIV_003": {
+      "id": "LAO_DIV_003",
+      "ownerTag": "LAO",
+      "provinceId": "LAO_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LAT_DIV_002": {
+      "id": "LAT_DIV_002",
+      "ownerTag": "LAT",
+      "provinceId": "LAT_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LAT_DIV_003": {
+      "id": "LAT_DIV_003",
+      "ownerTag": "LAT",
+      "provinceId": "LAT_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LIB_DIV_003": {
+      "id": "LIB_DIV_003",
+      "ownerTag": "LIB",
+      "provinceId": "LIB_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LIT_DIV_002": {
+      "id": "LIT_DIV_002",
+      "ownerTag": "LIT",
+      "provinceId": "LIT_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "LIT_DIV_003": {
+      "id": "LIT_DIV_003",
+      "ownerTag": "LIT",
+      "provinceId": "LIT_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MAD_DIV_002": {
+      "id": "MAD_DIV_002",
+      "ownerTag": "MAD",
+      "provinceId": "MAD_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MAD_DIV_003": {
+      "id": "MAD_DIV_003",
+      "ownerTag": "MAD",
+      "provinceId": "MAD_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MAU_DIV_003": {
+      "id": "MAU_DIV_003",
+      "ownerTag": "MAU",
+      "provinceId": "MAU_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MEX_DIV_002": {
+      "id": "MEX_DIV_002",
+      "ownerTag": "MEX",
+      "provinceId": "MEX_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MEX_DIV_003": {
+      "id": "MEX_DIV_003",
+      "ownerTag": "MEX",
+      "provinceId": "MEX_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MON_DIV_002": {
+      "id": "MON_DIV_002",
+      "ownerTag": "MON",
+      "provinceId": "MON_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MON_DIV_003": {
+      "id": "MON_DIV_003",
+      "ownerTag": "MON",
+      "provinceId": "MON_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MOR_DIV_002": {
+      "id": "MOR_DIV_002",
+      "ownerTag": "MOR",
+      "provinceId": "MOR_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MOR_DIV_003": {
+      "id": "MOR_DIV_003",
+      "ownerTag": "MOR",
+      "provinceId": "MOR_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MOZ_DIV_002": {
+      "id": "MOZ_DIV_002",
+      "ownerTag": "MOZ",
+      "provinceId": "MOZ_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "MOZ_DIV_003": {
+      "id": "MOZ_DIV_003",
+      "ownerTag": "MOZ",
+      "provinceId": "MOZ_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NAM_DIV_002": {
+      "id": "NAM_DIV_002",
+      "ownerTag": "NAM",
+      "provinceId": "NAM_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NAM_DIV_003": {
+      "id": "NAM_DIV_003",
+      "ownerTag": "NAM",
+      "provinceId": "NAM_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NEP_DIV_002": {
+      "id": "NEP_DIV_002",
+      "ownerTag": "NEP",
+      "provinceId": "NEP_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NEP_DIV_003": {
+      "id": "NEP_DIV_003",
+      "ownerTag": "NEP",
+      "provinceId": "NEP_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NIC_DIV_002": {
+      "id": "NIC_DIV_002",
+      "ownerTag": "NIC",
+      "provinceId": "NIC_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NIC_DIV_003": {
+      "id": "NIC_DIV_003",
+      "ownerTag": "NIC",
+      "provinceId": "NIC_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NIG_DIV_003": {
+      "id": "NIG_DIV_003",
+      "ownerTag": "NIG",
+      "provinceId": "NIG_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NLD_DIV_002": {
+      "id": "NLD_DIV_002",
+      "ownerTag": "NLD",
+      "provinceId": "NLD_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NLD_DIV_003": {
+      "id": "NLD_DIV_003",
+      "ownerTag": "NLD",
+      "provinceId": "NLD_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NOR_DIV_002": {
+      "id": "NOR_DIV_002",
+      "ownerTag": "NOR",
+      "provinceId": "NOR_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "NOR_DIV_003": {
+      "id": "NOR_DIV_003",
+      "ownerTag": "NOR",
+      "provinceId": "NOR_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "OMA_DIV_002": {
+      "id": "OMA_DIV_002",
+      "ownerTag": "OMA",
+      "provinceId": "OMA_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "OMA_DIV_003": {
+      "id": "OMA_DIV_003",
+      "ownerTag": "OMA",
+      "provinceId": "OMA_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PAN_DIV_002": {
+      "id": "PAN_DIV_002",
+      "ownerTag": "PAN",
+      "provinceId": "PAN_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PAN_DIV_003": {
+      "id": "PAN_DIV_003",
+      "ownerTag": "PAN",
+      "provinceId": "PAN_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PAP_DIV_002": {
+      "id": "PAP_DIV_002",
+      "ownerTag": "PAP",
+      "provinceId": "PAP_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PAP_DIV_003": {
+      "id": "PAP_DIV_003",
+      "ownerTag": "PAP",
+      "provinceId": "PAP_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PAR_DIV_002": {
+      "id": "PAR_DIV_002",
+      "ownerTag": "PAR",
+      "provinceId": "PAR_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PAR_DIV_003": {
+      "id": "PAR_DIV_003",
+      "ownerTag": "PAR",
+      "provinceId": "PAR_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PER_DIV_002": {
+      "id": "PER_DIV_002",
+      "ownerTag": "PER",
+      "provinceId": "PER_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PER_DIV_003": {
+      "id": "PER_DIV_003",
+      "ownerTag": "PER",
+      "provinceId": "PER_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PHI_DIV_002": {
+      "id": "PHI_DIV_002",
+      "ownerTag": "PHI",
+      "provinceId": "PHI_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "PHI_DIV_003": {
+      "id": "PHI_DIV_003",
+      "ownerTag": "PHI",
+      "provinceId": "PHI_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "POL_DIV_002": {
+      "id": "POL_DIV_002",
+      "ownerTag": "POL",
+      "provinceId": "POL_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "POL_DIV_003": {
+      "id": "POL_DIV_003",
+      "ownerTag": "POL",
+      "provinceId": "POL_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "POR_DIV_002": {
+      "id": "POR_DIV_002",
+      "ownerTag": "POR",
+      "provinceId": "POR_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "POR_DIV_003": {
+      "id": "POR_DIV_003",
+      "ownerTag": "POR",
+      "provinceId": "POR_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ROM_DIV_002": {
+      "id": "ROM_DIV_002",
+      "ownerTag": "ROM",
+      "provinceId": "ROM_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ROM_DIV_003": {
+      "id": "ROM_DIV_003",
+      "ownerTag": "ROM",
+      "provinceId": "ROM_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SAB_DIV_002": {
+      "id": "SAB_DIV_002",
+      "ownerTag": "SAB",
+      "provinceId": "SAB_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SAB_DIV_003": {
+      "id": "SAB_DIV_003",
+      "ownerTag": "SAB",
+      "provinceId": "SAB_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SAR_DIV_002": {
+      "id": "SAR_DIV_002",
+      "ownerTag": "SAR",
+      "provinceId": "SAR_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SAR_DIV_003": {
+      "id": "SAR_DIV_003",
+      "ownerTag": "SAR",
+      "provinceId": "SAR_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SAU_DIV_002": {
+      "id": "SAU_DIV_002",
+      "ownerTag": "SAU",
+      "provinceId": "SAU_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SAU_DIV_003": {
+      "id": "SAU_DIV_003",
+      "ownerTag": "SAU",
+      "provinceId": "SAU_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SEN_DIV_002": {
+      "id": "SEN_DIV_002",
+      "ownerTag": "SEN",
+      "provinceId": "SEN_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SEN_DIV_003": {
+      "id": "SEN_DIV_003",
+      "ownerTag": "SEN",
+      "provinceId": "SEN_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SIE_DIV_002": {
+      "id": "SIE_DIV_002",
+      "ownerTag": "SIE",
+      "provinceId": "SIE_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SIE_DIV_003": {
+      "id": "SIE_DIV_003",
+      "ownerTag": "SIE",
+      "provinceId": "SIE_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SOL_DIV_002": {
+      "id": "SOL_DIV_002",
+      "ownerTag": "SOL",
+      "provinceId": "SOL_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SOL_DIV_003": {
+      "id": "SOL_DIV_003",
+      "ownerTag": "SOL",
+      "provinceId": "SOL_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SOU_DIV_003": {
+      "id": "SOU_DIV_003",
+      "ownerTag": "SOU",
+      "provinceId": "SOU_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SOV_DIV_002": {
+      "id": "SOV_DIV_002",
+      "ownerTag": "SOV",
+      "provinceId": "SOV_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SOV_DIV_003": {
+      "id": "SOV_DIV_003",
+      "ownerTag": "SOV",
+      "provinceId": "SOV_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SPA_DIV_003": {
+      "id": "SPA_DIV_003",
+      "ownerTag": "SPA",
+      "provinceId": "SPA_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SRI_DIV_002": {
+      "id": "SRI_DIV_002",
+      "ownerTag": "SRI",
+      "provinceId": "SRI_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SRI_DIV_003": {
+      "id": "SRI_DIV_003",
+      "ownerTag": "SRI",
+      "provinceId": "SRI_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "STR_DIV_002": {
+      "id": "STR_DIV_002",
+      "ownerTag": "STR",
+      "provinceId": "STR_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "STR_DIV_003": {
+      "id": "STR_DIV_003",
+      "ownerTag": "STR",
+      "provinceId": "STR_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SUD_DIV_002": {
+      "id": "SUD_DIV_002",
+      "ownerTag": "SUD",
+      "provinceId": "SUD_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SUD_DIV_003": {
+      "id": "SUD_DIV_003",
+      "ownerTag": "SUD",
+      "provinceId": "SUD_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SUR_DIV_002": {
+      "id": "SUR_DIV_002",
+      "ownerTag": "SUR",
+      "provinceId": "SUR_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SUR_DIV_003": {
+      "id": "SUR_DIV_003",
+      "ownerTag": "SUR",
+      "provinceId": "SUR_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SWE_DIV_002": {
+      "id": "SWE_DIV_002",
+      "ownerTag": "SWE",
+      "provinceId": "SWE_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SWE_DIV_003": {
+      "id": "SWE_DIV_003",
+      "ownerTag": "SWE",
+      "provinceId": "SWE_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SWI_DIV_002": {
+      "id": "SWI_DIV_002",
+      "ownerTag": "SWI",
+      "provinceId": "SWI_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SWI_DIV_003": {
+      "id": "SWI_DIV_003",
+      "ownerTag": "SWI",
+      "provinceId": "SWI_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SYR_DIV_002": {
+      "id": "SYR_DIV_002",
+      "ownerTag": "SYR",
+      "provinceId": "SYR_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "SYR_DIV_003": {
+      "id": "SYR_DIV_003",
+      "ownerTag": "SYR",
+      "provinceId": "SYR_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TAN_DIV_002": {
+      "id": "TAN_DIV_002",
+      "ownerTag": "TAN",
+      "provinceId": "TAN_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TAN_DIV_003": {
+      "id": "TAN_DIV_003",
+      "ownerTag": "TAN",
+      "provinceId": "TAN_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "THA_DIV_002": {
+      "id": "THA_DIV_002",
+      "ownerTag": "THA",
+      "provinceId": "THA_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "THA_DIV_003": {
+      "id": "THA_DIV_003",
+      "ownerTag": "THA",
+      "provinceId": "THA_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TIB_DIV_002": {
+      "id": "TIB_DIV_002",
+      "ownerTag": "TIB",
+      "provinceId": "TIB_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TIB_DIV_003": {
+      "id": "TIB_DIV_003",
+      "ownerTag": "TIB",
+      "provinceId": "TIB_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TOG_DIV_002": {
+      "id": "TOG_DIV_002",
+      "ownerTag": "TOG",
+      "provinceId": "TOG_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TOG_DIV_003": {
+      "id": "TOG_DIV_003",
+      "ownerTag": "TOG",
+      "provinceId": "TOG_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TUN_DIV_002": {
+      "id": "TUN_DIV_002",
+      "ownerTag": "TUN",
+      "provinceId": "TUN_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TUN_DIV_003": {
+      "id": "TUN_DIV_003",
+      "ownerTag": "TUN",
+      "provinceId": "TUN_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TUR_DIV_002": {
+      "id": "TUR_DIV_002",
+      "ownerTag": "TUR",
+      "provinceId": "TUR_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "TUR_DIV_003": {
+      "id": "TUR_DIV_003",
+      "ownerTag": "TUR",
+      "provinceId": "TUR_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "UGA_DIV_002": {
+      "id": "UGA_DIV_002",
+      "ownerTag": "UGA",
+      "provinceId": "UGA_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "UGA_DIV_003": {
+      "id": "UGA_DIV_003",
+      "ownerTag": "UGA",
+      "provinceId": "UGA_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "UNF_DIV_002": {
+      "id": "UNF_DIV_002",
+      "ownerTag": "UNF",
+      "provinceId": "UNF_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "UNF_DIV_003": {
+      "id": "UNF_DIV_003",
+      "ownerTag": "UNF",
+      "provinceId": "UNF_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "UNI_DIV_003": {
+      "id": "UNI_DIV_003",
+      "ownerTag": "UNI",
+      "provinceId": "UNI_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "URU_DIV_002": {
+      "id": "URU_DIV_002",
+      "ownerTag": "URU",
+      "provinceId": "URU_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "URU_DIV_003": {
+      "id": "URU_DIV_003",
+      "ownerTag": "URU",
+      "provinceId": "URU_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "VEN_DIV_002": {
+      "id": "VEN_DIV_002",
+      "ownerTag": "VEN",
+      "provinceId": "VEN_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "VEN_DIV_003": {
+      "id": "VEN_DIV_003",
+      "ownerTag": "VEN",
+      "provinceId": "VEN_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "VIE_DIV_002": {
+      "id": "VIE_DIV_002",
+      "ownerTag": "VIE",
+      "provinceId": "VIE_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "VIE_DIV_003": {
+      "id": "VIE_DIV_003",
+      "ownerTag": "VIE",
+      "provinceId": "VIE_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "YEM_DIV_002": {
+      "id": "YEM_DIV_002",
+      "ownerTag": "YEM",
+      "provinceId": "YEM_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "YEM_DIV_003": {
+      "id": "YEM_DIV_003",
+      "ownerTag": "YEM",
+      "provinceId": "YEM_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "YUG_DIV_002": {
+      "id": "YUG_DIV_002",
+      "ownerTag": "YUG",
+      "provinceId": "YUG_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "YUG_DIV_003": {
+      "id": "YUG_DIV_003",
+      "ownerTag": "YUG",
+      "provinceId": "YUG_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ZAM_DIV_002": {
+      "id": "ZAM_DIV_002",
+      "ownerTag": "ZAM",
+      "provinceId": "ZAM_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ZAM_DIV_003": {
+      "id": "ZAM_DIV_003",
+      "ownerTag": "ZAM",
+      "provinceId": "ZAM_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ZIM_DIV_002": {
+      "id": "ZIM_DIV_002",
+      "ownerTag": "ZIM",
+      "provinceId": "ZIM_002",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    },
+    "ZIM_DIV_003": {
+      "id": "ZIM_DIV_003",
+      "ownerTag": "ZIM",
+      "provinceId": "ZIM_003",
+      "strength": 100,
+      "organization": 80,
+      "movementTarget": null
+    }
+  },
+  "visualOrders": [
+    {
+      "actorTag": "GER",
+      "label": "GER_DIV_001 -> GER_RHINELAND",
+      "coordinates": [
+        [
+          7.5651873,
+          49.27783925
+        ],
+        [
+          7.5651873,
+          49.27783925
+        ]
+      ]
+    }
+  ],
+  "events": [
+    {
+      "turn": 1,
+      "actor": "GER",
+      "action": "MOVE_DIVISIONS to GER_RHINELAND",
+      "summary": "Moved 1 divisions to GER_RHINELAND"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+# Python
+backend/.venv/
+backend/**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+
+# Env / secrets
+.env
+.env.*
+*.env
+
+# Raw huge map data
+backend/data/raw/
+
+# Logs
+*.log
+
+# OS / editor trash
+.DS_Store
+Thumbs.db

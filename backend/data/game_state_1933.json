@@ -1,0 +1,1541 @@
+{
+  "year": 1933,
+  "turn": 2,
+  "countries": {
+    "GER": {
+      "tag": "GER",
+      "name": "Germany",
+      "color": "#52525b",
+      "ideology": "fragile_democracy",
+      "stability": 38,
+      "economy": 53,
+      "military": 42,
+      "legitimacy": 36
+    },
+    "FRA": {
+      "tag": "FRA",
+      "name": "France",
+      "color": "#2563eb",
+      "ideology": "democracy",
+      "stability": 62,
+      "economy": 68,
+      "military": 64,
+      "legitimacy": 70
+    },
+    "GBR": {
+      "tag": "GBR",
+      "name": "United Kingdom",
+      "color": "#dc2626",
+      "ideology": "constitutional_monarchy",
+      "stability": 72,
+      "economy": 82,
+      "military": 70,
+      "legitimacy": 76
+    },
+    "ITA": {
+      "tag": "ITA",
+      "name": "Italy",
+      "color": "#16a34a",
+      "ideology": "fascist_dictatorship",
+      "stability": 64,
+      "economy": 48,
+      "military": 54,
+      "legitimacy": 58
+    },
+    "POL": {
+      "tag": "POL",
+      "name": "Poland",
+      "color": "#e5e7eb",
+      "ideology": "authoritarian_republic",
+      "stability": 55,
+      "economy": 40,
+      "military": 46,
+      "legitimacy": 50
+    },
+    "SOV": {
+      "tag": "SOV",
+      "name": "Soviet Union",
+      "color": "#b91c1c",
+      "ideology": "communist_one_party_state",
+      "stability": 58,
+      "economy": 55,
+      "military": 66,
+      "legitimacy": 52
+    },
+    "ESP": {
+      "tag": "ESP",
+      "name": "Spain",
+      "color": "#f59e0b",
+      "ideology": "unstable_republic",
+      "stability": 35,
+      "economy": 38,
+      "military": 34,
+      "legitimacy": 42
+    },
+    "TUR": {
+      "tag": "TUR",
+      "name": "Turkey",
+      "color": "#991b1b",
+      "ideology": "republican_modernization",
+      "stability": 60,
+      "economy": 36,
+      "military": 45,
+      "legitimacy": 62
+    },
+    "IRE": {
+      "tag": "IRE",
+      "name": "Ireland",
+      "color": "#22c55e",
+      "ideology": "democracy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "NLD": {
+      "tag": "NLD",
+      "name": "Netherlands",
+      "color": "#f97316",
+      "ideology": "democracy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "BEL": {
+      "tag": "BEL",
+      "name": "Belgium",
+      "color": "#facc15",
+      "ideology": "constitutional_monarchy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "LUX": {
+      "tag": "LUX",
+      "name": "Luxembourg",
+      "color": "#38bdf8",
+      "ideology": "constitutional_monarchy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "SWI": {
+      "tag": "SWI",
+      "name": "Switzerland",
+      "color": "#ef4444",
+      "ideology": "neutral_democracy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "POR": {
+      "tag": "POR",
+      "name": "Portugal",
+      "color": "#15803d",
+      "ideology": "authoritarian_republic",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "AUS": {
+      "tag": "AUS",
+      "name": "Austria",
+      "color": "#dc2626",
+      "ideology": "fragile_democracy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "HUN": {
+      "tag": "HUN",
+      "name": "Hungary",
+      "color": "#16a34a",
+      "ideology": "regency_authoritarian",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "CZE": {
+      "tag": "CZE",
+      "name": "Czechoslovakia",
+      "color": "#60a5fa",
+      "ideology": "democracy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "ALB": {
+      "tag": "ALB",
+      "name": "Albania",
+      "color": "#991b1b",
+      "ideology": "monarchy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "YUG": {
+      "tag": "YUG",
+      "name": "Yugoslavia",
+      "color": "#2563eb",
+      "ideology": "monarchy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "GRE": {
+      "tag": "GRE",
+      "name": "Greece",
+      "color": "#0ea5e9",
+      "ideology": "republic",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "BUL": {
+      "tag": "BUL",
+      "name": "Bulgaria",
+      "color": "#65a30d",
+      "ideology": "monarchy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "ROM": {
+      "tag": "ROM",
+      "name": "Romania",
+      "color": "#f59e0b",
+      "ideology": "monarchy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "EST": {
+      "tag": "EST",
+      "name": "Estonia",
+      "color": "#3b82f6",
+      "ideology": "democracy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "LAT": {
+      "tag": "LAT",
+      "name": "Latvia",
+      "color": "#7f1d1d",
+      "ideology": "democracy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "LIT": {
+      "tag": "LIT",
+      "name": "Lithuania",
+      "color": "#fbbf24",
+      "ideology": "authoritarian_republic",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "FIN": {
+      "tag": "FIN",
+      "name": "Finland",
+      "color": "#93c5fd",
+      "ideology": "democracy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "SWE": {
+      "tag": "SWE",
+      "name": "Sweden",
+      "color": "#facc15",
+      "ideology": "constitutional_monarchy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "NOR": {
+      "tag": "NOR",
+      "name": "Norway",
+      "color": "#ef4444",
+      "ideology": "constitutional_monarchy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "DEN": {
+      "tag": "DEN",
+      "name": "Denmark",
+      "color": "#dc2626",
+      "ideology": "constitutional_monarchy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "ICE": {
+      "tag": "ICE",
+      "name": "Iceland",
+      "color": "#1d4ed8",
+      "ideology": "constitutional_monarchy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "IRN": {
+      "tag": "IRN",
+      "name": "Iran",
+      "color": "#16a34a",
+      "ideology": "monarchy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "IRQ": {
+      "tag": "IRQ",
+      "name": "Iraq",
+      "color": "#84cc16",
+      "ideology": "monarchy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "EGY": {
+      "tag": "EGY",
+      "name": "Egypt",
+      "color": "#eab308",
+      "ideology": "monarchy",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "SYR": {
+      "tag": "SYR",
+      "name": "Syria",
+      "color": "#22c55e",
+      "ideology": "mandate",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "LEB": {
+      "tag": "LEB",
+      "name": "Lebanon",
+      "color": "#10b981",
+      "ideology": "mandate",
+      "stability": 50,
+      "economy": 45,
+      "military": 35,
+      "legitimacy": 50
+    },
+    "AFG": {
+      "tag": "AFG",
+      "name": "Afghanistan",
+      "color": "#64748b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "ALA": {
+      "tag": "ALA",
+      "name": "Alaska",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "ALG": {
+      "tag": "ALG",
+      "name": "Algeria",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "ANG": {
+      "tag": "ANG",
+      "name": "Angola",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "ARG": {
+      "tag": "ARG",
+      "name": "Argentina",
+      "color": "#64748b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "BAH": {
+      "tag": "BAH",
+      "name": "Bahamas",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "BAR": {
+      "tag": "BAR",
+      "name": "Barbados",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "BEN": {
+      "tag": "BEN",
+      "name": "Benin",
+      "color": "#f59e0b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "BHU": {
+      "tag": "BHU",
+      "name": "Bhutan",
+      "color": "#64748b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "BOL": {
+      "tag": "BOL",
+      "name": "Bolivia",
+      "color": "#7c3aed",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "BOT": {
+      "tag": "BOT",
+      "name": "Botswana",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "BRA": {
+      "tag": "BRA",
+      "name": "Brazil",
+      "color": "#f59e0b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "BRI": {
+      "tag": "BRI",
+      "name": "British Somaliland (Somaliland Republic)",
+      "color": "#7c3aed",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "BRU": {
+      "tag": "BRU",
+      "name": "Brunei",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "CAM": {
+      "tag": "CAM",
+      "name": "Cambodia (Kampuchea)",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "CAN": {
+      "tag": "CAN",
+      "name": "Canada",
+      "color": "#0891b2",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "CAP": {
+      "tag": "CAP",
+      "name": "Cape Verde",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "CEN": {
+      "tag": "CEN",
+      "name": "Central African Republic",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "CHA": {
+      "tag": "CHA",
+      "name": "Chad",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "CHI": {
+      "tag": "CHI",
+      "name": "China",
+      "color": "#64748b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "COL": {
+      "tag": "COL",
+      "name": "Colombia",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "CON": {
+      "tag": "CON",
+      "name": "Congo, Democratic Republic of (Zaire)",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "COS": {
+      "tag": "COS",
+      "name": "Costa Rica",
+      "color": "#64748b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "COT": {
+      "tag": "COT",
+      "name": "Cote D'Ivoire",
+      "color": "#f59e0b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "CUB": {
+      "tag": "CUB",
+      "name": "Cuba",
+      "color": "#7c3aed",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "CYP": {
+      "tag": "CYP",
+      "name": "Cyprus",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "DAN": {
+      "tag": "DAN",
+      "name": "Danzig",
+      "color": "#f59e0b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "DJI": {
+      "tag": "DJI",
+      "name": "Djibouti",
+      "color": "#f59e0b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "DOM": {
+      "tag": "DOM",
+      "name": "Dominican Republic",
+      "color": "#64748b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "EAS": {
+      "tag": "EAS",
+      "name": "East Timor",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "ECU": {
+      "tag": "ECU",
+      "name": "Ecuador",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "ELS": {
+      "tag": "ELS",
+      "name": "El Salvador",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "EQU": {
+      "tag": "EQU",
+      "name": "Equatorial Guinea",
+      "color": "#0891b2",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "ERI": {
+      "tag": "ERI",
+      "name": "Eritrea",
+      "color": "#7c3aed",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "ETH": {
+      "tag": "ETH",
+      "name": "Ethiopia",
+      "color": "#f59e0b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "FED": {
+      "tag": "FED",
+      "name": "Federated Malay States",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "FIJ": {
+      "tag": "FIJ",
+      "name": "Fiji",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "FRE": {
+      "tag": "FRE",
+      "name": "French Polynesia",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "GAB": {
+      "tag": "GAB",
+      "name": "Gabon",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "GAM": {
+      "tag": "GAM",
+      "name": "Gambia",
+      "color": "#64748b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "GHA": {
+      "tag": "GHA",
+      "name": "Ghana",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "GUA": {
+      "tag": "GUA",
+      "name": "Guatemala",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "GUI": {
+      "tag": "GUI",
+      "name": "Guinea",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "GUY": {
+      "tag": "GUY",
+      "name": "Guyana",
+      "color": "#7c3aed",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "HAI": {
+      "tag": "HAI",
+      "name": "Haiti",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "HAW": {
+      "tag": "HAW",
+      "name": "Hawaii",
+      "color": "#f59e0b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "HON": {
+      "tag": "HON",
+      "name": "Honduras",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "IND": {
+      "tag": "IND",
+      "name": "Indonesia",
+      "color": "#64748b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "INI": {
+      "tag": "INI",
+      "name": "Inini",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "JAM": {
+      "tag": "JAM",
+      "name": "Jamaica",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "JAP": {
+      "tag": "JAP",
+      "name": "Japan",
+      "color": "#0891b2",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "JOR": {
+      "tag": "JOR",
+      "name": "Jordan",
+      "color": "#7c3aed",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "KEN": {
+      "tag": "KEN",
+      "name": "Kenya",
+      "color": "#64748b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "KOR": {
+      "tag": "KOR",
+      "name": "Korea",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "LAO": {
+      "tag": "LAO",
+      "name": "Laos",
+      "color": "#64748b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "LES": {
+      "tag": "LES",
+      "name": "Lesotho",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "LIB": {
+      "tag": "LIB",
+      "name": "Libya",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "MAD": {
+      "tag": "MAD",
+      "name": "Madagascar (Malagasy)",
+      "color": "#64748b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "MAL": {
+      "tag": "MAL",
+      "name": "Maldives",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "MAR": {
+      "tag": "MAR",
+      "name": "Martinique",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "MAU": {
+      "tag": "MAU",
+      "name": "Mauritius",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "MEX": {
+      "tag": "MEX",
+      "name": "Mexico",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "MON": {
+      "tag": "MON",
+      "name": "Mongolia",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "MOR": {
+      "tag": "MOR",
+      "name": "Morocco",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "MOZ": {
+      "tag": "MOZ",
+      "name": "Mozambique",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "NAM": {
+      "tag": "NAM",
+      "name": "Namibia",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "NEP": {
+      "tag": "NEP",
+      "name": "Nepal",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "NEW": {
+      "tag": "NEW",
+      "name": "New Caledonia and Dependencies",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "NIC": {
+      "tag": "NIC",
+      "name": "Nicaragua",
+      "color": "#7c3aed",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "NIG": {
+      "tag": "NIG",
+      "name": "Nigeria",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "OMA": {
+      "tag": "OMA",
+      "name": "Oman",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "PAL": {
+      "tag": "PAL",
+      "name": "Palestine",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "PAN": {
+      "tag": "PAN",
+      "name": "Panama",
+      "color": "#0891b2",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "PAP": {
+      "tag": "PAP",
+      "name": "Papua",
+      "color": "#f59e0b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "PAR": {
+      "tag": "PAR",
+      "name": "Paraguay",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "PER": {
+      "tag": "PER",
+      "name": "Peru",
+      "color": "#7c3aed",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "PHI": {
+      "tag": "PHI",
+      "name": "Philippines",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "PUE": {
+      "tag": "PUE",
+      "name": "Puerto Rico",
+      "color": "#7c3aed",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "QAT": {
+      "tag": "QAT",
+      "name": "Qatar",
+      "color": "#0891b2",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "REU": {
+      "tag": "REU",
+      "name": "Reunion",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "RWA": {
+      "tag": "RWA",
+      "name": "Rwanda-Urundi",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "SAB": {
+      "tag": "SAB",
+      "name": "Sabah (North Borneo)",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "SAR": {
+      "tag": "SAR",
+      "name": "Sarawak",
+      "color": "#64748b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "SAU": {
+      "tag": "SAU",
+      "name": "Saudi Arabia",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "SEN": {
+      "tag": "SEN",
+      "name": "Senegal",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "SIE": {
+      "tag": "SIE",
+      "name": "Sierra Leone",
+      "color": "#7c3aed",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "SOL": {
+      "tag": "SOL",
+      "name": "Solomon Islands",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "SOU": {
+      "tag": "SOU",
+      "name": "Southern Sakhalin Island",
+      "color": "#f59e0b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "SPA": {
+      "tag": "SPA",
+      "name": "Spanish West Africa",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "SRI": {
+      "tag": "SRI",
+      "name": "Sri Lanka (Ceylon)",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "STR": {
+      "tag": "STR",
+      "name": "Straits Settlements",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "SUD": {
+      "tag": "SUD",
+      "name": "Sudan",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "SUR": {
+      "tag": "SUR",
+      "name": "Surinam",
+      "color": "#f59e0b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "SWA": {
+      "tag": "SWA",
+      "name": "Swaziland (Eswatini)",
+      "color": "#f59e0b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "TAI": {
+      "tag": "TAI",
+      "name": "Taiwan",
+      "color": "#0891b2",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "TAN": {
+      "tag": "TAN",
+      "name": "Tanzania (Tanganyika)",
+      "color": "#f59e0b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "THA": {
+      "tag": "THA",
+      "name": "Thailand",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "TIB": {
+      "tag": "TIB",
+      "name": "Tibet",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "TOG": {
+      "tag": "TOG",
+      "name": "Togo",
+      "color": "#2563eb",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "TRI": {
+      "tag": "TRI",
+      "name": "Trinidad and Tobago",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "TUN": {
+      "tag": "TUN",
+      "name": "Tunisia",
+      "color": "#be123c",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "UGA": {
+      "tag": "UGA",
+      "name": "Uganda",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "UNF": {
+      "tag": "UNF",
+      "name": "Unfederated Malay States",
+      "color": "#0891b2",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "UNI": {
+      "tag": "UNI",
+      "name": "United Arab Emirates",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "URU": {
+      "tag": "URU",
+      "name": "Uruguay",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "VEN": {
+      "tag": "VEN",
+      "name": "Venezuela",
+      "color": "#0891b2",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "VIE": {
+      "tag": "VIE",
+      "name": "Vietnam (Annam/Cochin China/Tonkin)",
+      "color": "#7c3aed",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "YEM": {
+      "tag": "YEM",
+      "name": "Yemen (Arab Republic of Yemen)",
+      "color": "#64748b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "ZAM": {
+      "tag": "ZAM",
+      "name": "Zambia",
+      "color": "#f59e0b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "ZAN": {
+      "tag": "ZAN",
+      "name": "Zanzibar",
+      "color": "#dc2626",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "ZIM": {
+      "tag": "ZIM",
+      "name": "Zimbabwe (Rhodesia)",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "AND": {
+      "tag": "AND",
+      "name": "Andorra",
+      "color": "#7c3aed",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "GRL": {
+      "tag": "GRL",
+      "name": "Greenland",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "LIE": {
+      "tag": "LIE",
+      "name": "Liechtenstein",
+      "color": "#16a34a",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "SMR": {
+      "tag": "SMR",
+      "name": "San Marino",
+      "color": "#0891b2",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "VAT": {
+      "tag": "VAT",
+      "name": "Vatican",
+      "color": "#64748b",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    },
+    "MCO": {
+      "tag": "MCO",
+      "name": "Monaco",
+      "color": "#7c3aed",
+      "ideology": "unknown",
+      "stability": 50,
+      "economy": 40,
+      "military": 30,
+      "legitimacy": 50
+    }
+  },
+  "events": [
+    {
+      "turn": 1,
+      "actor": "GER",
+      "action": "напасть на францию",
+      "action_class": "GENERAL_POLICY",
+      "summary": "Germany проводит общий политический курс. Последствия умеренные и пока неопределённые.",
+      "effects": {
+        "stability": 0,
+        "economy": 1,
+        "military": 0,
+        "legitimacy": 0
+      }
+    }
+  ]
+}
