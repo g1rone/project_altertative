@@ -9,6 +9,13 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
+try:
+    from shapely.geometry import shape
+
+    HAS_SHAPELY = True
+except ImportError:
+    HAS_SHAPELY = False
+
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
@@ -56,6 +63,24 @@ LABEL_NAMES = {
     "CAN": "CANADA",
     "BRA": "BRAZIL",
     "IND": "INDIA",
+}
+COUNTRY_LABEL_POINTS = {
+    "GER": (10.5, 51.0),
+    "FRA": (2.4, 46.2),
+    "GBR": (-2.5, 54.2),
+    "ITA": (12.5, 42.8),
+    "POL": (19.1, 52.1),
+    "SOV": (48.0, 56.0),
+    "ESP": (-3.7, 40.2),
+    "TUR": (35.0, 39.0),
+    "USA": (-98.5, 39.5),
+    "UNI": (-98.5, 39.5),
+    "CAN": (-100.0, 58.0),
+    "CHI": (104.0, 35.5),
+    "CHN": (104.0, 35.5),
+    "JAP": (138.0, 37.0),
+    "BRA": (-54.0, -11.0),
+    "IND": (78.0, 22.0),
 }
 SAFE_REGION_LABEL_IDS = {
     "GER_RHINELAND",
@@ -255,61 +280,54 @@ def province_data_looks_rectangular(provinces: dict) -> bool:
 
 def build_current_country_label_lines() -> dict:
     countries = build_current_countries_from_provinces()
-    candidates: dict[str, tuple[float, dict]] = {}
-
-    for country in countries.get("features", []):
-        tag = country.get("properties", {}).get("tag")
-        if tag not in SAFE_LABEL_TAGS:
-            continue
-
-        bbox = geometry_bbox(country.get("geometry"))
-        if not bbox:
-            continue
-        min_lon, min_lat, max_lon, max_lat = bbox
-        width = max_lon - min_lon
-        height = max_lat - min_lat
-        area = width * height
-        if area < 8:
-            continue
-        if width > 120:
-            continue
-        if tag in candidates and candidates[tag][0] >= area:
-            continue
-        candidates[tag] = (area, country)
-
+    seen_tags = {
+        country.get("properties", {}).get("tag")
+        for country in countries.get("features", [])
+    }
     features = []
-    for tag, (_, country) in sorted(candidates.items()):
-        bbox = geometry_bbox(country.get("geometry"))
-        if not bbox:
+
+    for tag in sorted(SAFE_LABEL_TAGS):
+        if tag not in seen_tags or tag not in COUNTRY_LABEL_POINTS:
             continue
-        min_lon, min_lat, max_lon, max_lat = bbox
-        width = max_lon - min_lon
-        height = max_lat - min_lat
-        center_lat = (min_lat + max_lat) / 2
-        center_lon = (min_lon + max_lon) / 2
-        label_size = max(12, min(26, 10 + width / 6))
-        line_width = min(width * 0.5, 30)
+        label_point = list(COUNTRY_LABEL_POINTS[tag])
+        label_size = 24 if tag in {"SOV", "USA", "UNI", "CAN", "CHI", "CHN", "IND", "BRA"} else 15
         features.append(
             {
                 "type": "Feature",
                 "properties": {
                     "tag": tag,
-                    "label": LABEL_NAMES.get(tag, country["properties"]["displayName"]),
+                    "label": LABEL_NAMES.get(tag, tag),
                     "labelSize": label_size,
-                    "labelSpacing": 0.08 if width > height else 0.03,
                     "labelRank": 1,
                 },
                 "geometry": {
-                    "type": "LineString",
-                    "coordinates": [
-                        [center_lon - line_width / 2, center_lat],
-                        [center_lon + line_width / 2, center_lat],
-                    ],
+                    "type": "Point",
+                    "coordinates": label_point,
                 },
             }
         )
 
     return {"type": "FeatureCollection", "features": features}
+
+
+def safe_label_point(geometry: dict | None, bbox: tuple[float, float, float, float]) -> list[float] | None:
+    if not geometry:
+        return None
+
+    if HAS_SHAPELY:
+        try:
+            geom = shape(geometry)
+            if geom.is_empty or not geom.is_valid:
+                return None
+            point = geom.representative_point()
+            return [point.x, point.y]
+        except Exception:
+            return None
+
+    min_lon, min_lat, max_lon, max_lat = bbox
+    if max_lon - min_lon > 120 or max_lat - min_lat > 70:
+        return None
+    return [(min_lon + max_lon) / 2, (min_lat + max_lat) / 2]
 
 
 def build_region_geometries_from_provinces() -> dict:
@@ -349,28 +367,33 @@ def build_region_geometries_from_provinces() -> dict:
 
 
 def build_region_labels() -> dict:
-    regions_geojson = build_region_geometries_from_provinces()
     regions = load_regions().get("regions", {})
     features = []
 
-    for region in regions_geojson.get("features", []):
-        props = region.get("properties", {})
-        region_data = regions.get(props.get("regionId"), {})
-        if props.get("regionId") not in SAFE_REGION_LABEL_IDS:
+    for region_id, region_data in regions.items():
+        if region_id not in SAFE_REGION_LABEL_IDS:
+            continue
+        if region_data.get("isGenerated") or not region_data.get("isPlayerVisible"):
+            continue
+        display_name = region_data.get("displayName", "")
+        if "_STATE_" in display_name or not display_name:
             continue
         features.append(
             {
                 "type": "Feature",
                 "properties": {
-                    "regionId": props.get("regionId"),
-                    "label": props.get("displayName"),
+                    "regionId": region_id,
+                    "label": display_name,
                     "labelSize": region_data.get("labelSize", 13),
                     "labelRank": region_data.get("labelRank", 1),
                     "aliases": region_data.get("aliases", []),
                 },
                 "geometry": {
                     "type": "Point",
-                    "coordinates": [props.get("centerLon", 0), props.get("centerLat", 0)],
+                    "coordinates": [
+                        region_data.get("centerLon", 0),
+                        region_data.get("centerLat", 0),
+                    ],
                 },
             }
         )
@@ -433,6 +456,8 @@ def parse_order_text(actor_tag: str, text: str) -> dict:
     regions = load_regions().get("regions", {})
     matches = []
     for region_id, region in regions.items():
+        if region.get("isGenerated") or not region.get("isPlayerVisible"):
+            continue
         aliases = region.get("aliases", []) + [region.get("displayName", ""), region.get("name", "")]
         if any(alias and alias.lower() in normalized for alias in aliases):
             matches.append(region)
@@ -475,7 +500,10 @@ def execute_order(order: ExecuteOrderRequest) -> dict:
 
     target_province_ids = target_region.get("provinceIds", [])
     if not target_province_ids:
-        raise HTTPException(status_code=400, detail="Target region has no provinces")
+        raise HTTPException(
+            status_code=400,
+            detail="Region exists but has no province binding yet",
+        )
 
     moved = []
     target_province_id = target_province_ids[0]

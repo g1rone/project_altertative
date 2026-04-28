@@ -262,6 +262,9 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     id: 'region-border',
     type: 'line',
     source: 'regions-1933',
+    layout: {
+      visibility: 'none',
+    },
     paint: {
       'line-color': '#334155',
       'line-width': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5, 0.25, 7, 0.8],
@@ -291,16 +294,13 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
   } as any)
 
   map.addLayer({
-    id: 'country-label-lines',
+    id: 'country-labels',
     type: 'symbol',
     source: 'country-label-lines-1933',
     layout: {
-      'symbol-placement': 'line',
       'text-field': ['get', 'label'],
       'text-size': ['get', 'labelSize'],
-      'text-letter-spacing': ['get', 'labelSpacing'],
       'text-font': ['Open Sans Regular'],
-      'text-keep-upright': true,
       'text-allow-overlap': false,
       'text-ignore-placement': false,
     },
@@ -316,9 +316,18 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     id: 'region-labels',
     type: 'symbol',
     source: 'region-labels-1933',
+    minzoom: 5,
     layout: {
       'text-field': ['get', 'label'],
-      'text-size': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5, ['get', 'labelSize'], 7, ['+', ['get', 'labelSize'], 2]],
+      'text-size': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        5,
+        ['get', 'labelSize'],
+        7,
+        ['+', ['get', 'labelSize'], 2],
+      ],
       'text-font': ['Open Sans Regular'],
       'text-allow-overlap': false,
       'text-ignore-placement': false,

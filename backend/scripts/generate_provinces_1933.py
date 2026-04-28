@@ -69,6 +69,8 @@ SPECIAL_REGIONS = [
             "демилитаризованная зона",
         ],
         "bbox": (5.5, 49.0, 8.5, 52.5),
+        "centerLon": 7.2,
+        "centerLat": 50.5,
     },
     {
         "regionId": "GER_BAVARIA",
@@ -77,6 +79,8 @@ SPECIAL_REGIONS = [
         "displayName": "Бавария",
         "aliases": ["Бавария", "Баварию", "Bavaria"],
         "bbox": (9.0, 47.0, 13.8, 50.8),
+        "centerLon": 11.5,
+        "centerLat": 48.9,
     },
     {
         "regionId": "GER_SAXONY",
@@ -85,6 +89,8 @@ SPECIAL_REGIONS = [
         "displayName": "Саксония",
         "aliases": ["Саксония", "Саксонию", "Saxony"],
         "bbox": (11.5, 50.0, 15.2, 52.0),
+        "centerLon": 13.2,
+        "centerLat": 51.1,
     },
     {
         "regionId": "GER_EAST_PRUSSIA",
@@ -93,6 +99,8 @@ SPECIAL_REGIONS = [
         "displayName": "Восточная Пруссия",
         "aliases": ["Восточная Пруссия", "Восточную Пруссию", "East Prussia"],
         "bbox": (19.0, 53.0, 23.5, 55.5),
+        "centerLon": 21.2,
+        "centerLat": 54.4,
     },
     {
         "regionId": "POL_DANZIG",
@@ -101,6 +109,8 @@ SPECIAL_REGIONS = [
         "displayName": "Данциг",
         "aliases": ["Данциг", "Danzig"],
         "bbox": (18.3, 53.8, 19.3, 54.8),
+        "centerLon": 18.65,
+        "centerLat": 54.35,
     },
     {
         "regionId": "FRA_ALSACE_LORRAINE",
@@ -109,6 +119,8 @@ SPECIAL_REGIONS = [
         "displayName": "Эльзас-Лотарингия",
         "aliases": ["Эльзас-Лотарингия", "Эльзас", "Alsace-Lorraine"],
         "bbox": (6.5, 47.3, 8.5, 49.5),
+        "centerLon": 7.3,
+        "centerLat": 48.4,
     },
     {
         "regionId": "SOV_UKRAINE",
@@ -117,6 +129,8 @@ SPECIAL_REGIONS = [
         "displayName": "Украина",
         "aliases": ["Украина", "Украину", "Ukraine"],
         "bbox": (22.0, 44.0, 41.0, 53.0),
+        "centerLon": 31.0,
+        "centerLat": 49.0,
     },
     {
         "regionId": "ITA_LOMBARDY",
@@ -125,6 +139,8 @@ SPECIAL_REGIONS = [
         "displayName": "Ломбардия",
         "aliases": ["Ломбардия", "Ломбардию", "Lombardy"],
         "bbox": (8.5, 44.7, 11.5, 46.8),
+        "centerLon": 9.8,
+        "centerLat": 45.6,
     },
     {
         "regionId": "GBR_ENGLAND",
@@ -133,6 +149,8 @@ SPECIAL_REGIONS = [
         "displayName": "Англия",
         "aliases": ["Англия", "Англию", "England"],
         "bbox": (-6.5, 49.5, 2.5, 56.0),
+        "centerLon": -1.5,
+        "centerLat": 52.6,
     },
     {
         "regionId": "TUR_ANATOLIA",
@@ -141,6 +159,8 @@ SPECIAL_REGIONS = [
         "displayName": "Анатолия",
         "aliases": ["Анатолия", "Анатолию", "Anatolia"],
         "bbox": (25.0, 35.0, 45.0, 42.5),
+        "centerLon": 34.5,
+        "centerLat": 39.0,
     },
 ]
 
@@ -227,6 +247,8 @@ def main() -> None:
             region["provinceIds"].append(province_id)
 
     for region in regions.values():
+        if not region.get("isGenerated"):
+            continue
         region_provinces = [
             province
             for province in provinces
@@ -235,6 +257,19 @@ def main() -> None:
         center_lon, center_lat = average_centers(region_provinces)
         region["centerLon"] = center_lon
         region["centerLat"] = center_lat
+
+    for seed in SPECIAL_REGIONS:
+        region_id = seed["regionId"]
+        regions.setdefault(
+            region_id,
+            make_region(
+                region_id,
+                seed["tag"],
+                seed,
+                seed["centerLon"],
+                seed["centerLat"],
+            ),
+        )
 
     adjacency = build_adjacency(provinces)
     campaign_state = build_campaign_state(provinces)
@@ -429,6 +464,7 @@ def make_region(
     name = seed["name"] if seed else region_id.replace("_", " ").title()
     display_name = seed["displayName"] if seed else name
     aliases = seed["aliases"] if seed else [display_name, name]
+    is_generated = seed is None
     return {
         "regionId": region_id,
         "name": name,
@@ -437,10 +473,12 @@ def make_region(
         "originalCountryTag": tag,
         "ownerTag": tag,
         "provinceIds": [],
-        "centerLon": center_lon,
-        "centerLat": center_lat,
+        "centerLon": seed.get("centerLon", center_lon) if seed else center_lon,
+        "centerLat": seed.get("centerLat", center_lat) if seed else center_lat,
         "labelSize": 13,
         "labelRank": 1,
+        "isGenerated": is_generated,
+        "isPlayerVisible": not is_generated,
         "resources": {"steel": 0, "coal": 0, "oil": 0},
         "buildingSlots": 3,
         "victoryPoints": 0,
