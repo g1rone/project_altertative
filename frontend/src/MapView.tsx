@@ -295,7 +295,7 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     id: 'country-label-lines',
     type: 'symbol',
     source: 'country-labels-1933',
-    filter: ['==', ['geometry-type'], 'LineString'],
+    filter: ['==', ['get', 'labelKind'], 'line'],
     layout: {
       'symbol-placement': 'line',
       'text-field': ['get', 'label'],
@@ -320,7 +320,7 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     id: 'country-label-points',
     type: 'symbol',
     source: 'country-labels-1933',
-    filter: ['==', ['geometry-type'], 'Point'],
+    filter: ['==', ['get', 'labelKind'], 'point'],
     layout: {
       'symbol-placement': 'point',
       'text-field': ['get', 'label'],

@@ -9,6 +9,13 @@ from typing import Any
 BACKEND_DIR = Path(__file__).resolve().parents[1]
 RAW_PATH = BACKEND_DIR / "data" / "raw" / "CShapes-2.0.geojson"
 OUT_PATH = BACKEND_DIR / "data" / "europe_1933.geojson"
+MAP_UNITS_OUT_PATH = BACKEND_DIR / "data" / "base" / "map_units_1933.geojson"
+MAP_UNIT_SOURCE_PATHS = [
+    BACKEND_DIR / "data" / "raw" / "ne_10m_admin_0_map_units.geojson",
+    BACKEND_DIR / "data" / "raw" / "ne_10m_admin_0_countries.geojson",
+    BACKEND_DIR / "data" / "raw" / "ne_50m_admin_0_map_units.geojson",
+    BACKEND_DIR / "data" / "raw" / "ne_50m_admin_0_countries.geojson",
+]
 TARGET_DATE = date(1933, 1, 1)
 REGION_MODE = "world"
 EUROPE_BBOX = (-15.0, 33.0, 65.0, 72.0)
@@ -52,6 +59,10 @@ GWCODE_TO_TAG = {
     651: "EGY",
     652: "SYR",
     660: "LEB",
+}
+
+MAP_UNIT_FALLBACKS = {
+    "Greenland": {"tag": "GRL", "ownerTag": "DEN", "controllerTag": "DEN"},
 }
 
 
@@ -110,6 +121,9 @@ def main() -> None:
             }
         )
 
+    map_unit_features = load_map_unit_fallbacks(prepared_features)
+    prepared_features.extend(map_unit_features)
+
     prepared = {
         "type": "FeatureCollection",
         "features": prepared_features,
@@ -120,7 +134,13 @@ def main() -> None:
         json.dump(prepared, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
+    MAP_UNITS_OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with MAP_UNITS_OUT_PATH.open("w", encoding="utf-8") as f:
+        json.dump({"type": "FeatureCollection", "features": map_unit_features}, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
     print(f"saved: {OUT_PATH}")
+    print(f"map unit fallbacks: {len(map_unit_features)}")
     print(f"region mode: {REGION_MODE}")
     print(f"features: {len(prepared_features)}")
     print("tags:")
@@ -242,6 +262,65 @@ def tag_for_country(gwcode: int | None, name: str) -> str:
 
     letters = "".join(char for char in name.upper() if "A" <= char <= "Z")
     return letters[:3] or f"GW{gwcode or 'UNK'}"
+
+
+def load_map_unit_fallbacks(existing_features: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    existing_names = {
+        str(feature.get("properties", {}).get("name", "")).lower()
+        for feature in existing_features
+    }
+    source_path = next((path for path in MAP_UNIT_SOURCE_PATHS if path.exists()), None)
+    if not source_path:
+        print("Natural Earth Admin-0/map units source not found; missing islands are not faked.")
+        return []
+
+    with source_path.open("r", encoding="utf-8") as f:
+        source = json.load(f)
+
+    fallback_features = []
+    for feature in source.get("features", []):
+        properties = feature.get("properties", {})
+        name = map_unit_name(properties)
+        fallback = MAP_UNIT_FALLBACKS.get(name)
+        geometry = feature.get("geometry")
+        if not fallback or not geometry or name.lower() in existing_names:
+            continue
+
+        bbox = geometry_bbox(geometry)
+        if bbox is None:
+            continue
+        min_lon, min_lat, max_lon, max_lat = bbox
+        fallback_features.append(
+            {
+                "type": "Feature",
+                "properties": {
+                    "tag": fallback["tag"],
+                    "name": name,
+                    "ownerTag": fallback["ownerTag"],
+                    "controllerTag": fallback["controllerTag"],
+                    "isMicrostate": False,
+                    "smallCountry": False,
+                    "source": "natural-earth-map-units",
+                    "minLon": min_lon,
+                    "minLat": min_lat,
+                    "maxLon": max_lon,
+                    "maxLat": max_lat,
+                    "centerLon": (min_lon + max_lon) / 2,
+                    "centerLat": (min_lat + max_lat) / 2,
+                },
+                "geometry": geometry,
+            }
+        )
+
+    return fallback_features
+
+
+def map_unit_name(properties: dict[str, Any]) -> str:
+    for key in ("NAME", "NAME_EN", "ADMIN", "name", "name_en", "admin"):
+        value = properties.get(key)
+        if value:
+            return str(value)
+    return ""
 
 
 def as_int(value: Any) -> int | None:

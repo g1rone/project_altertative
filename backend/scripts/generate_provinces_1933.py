@@ -545,29 +545,9 @@ def build_manual_regions() -> dict[str, Any]:
 
 
 def build_manual_regions_geojson(manual_regions: dict[str, Any]) -> dict[str, Any]:
-    features = []
-    for region in manual_regions["regions"].values():
-        features.append(
-            {
-                "type": "Feature",
-                "properties": {
-                    "regionId": region["regionId"],
-                    "label": region["displayName"],
-                    "displayName": region["displayName"],
-                    "ownerTag": region["ownerTag"],
-                    "isGenerated": False,
-                    "isPlayerVisible": True,
-                    "centerLon": region["centerLon"],
-                    "centerLat": region["centerLat"],
-                },
-                "geometry": {
-                    "type": "Polygon",
-                    "coordinates": [region["roughPolygon"]],
-                },
-            }
-        )
-
-    return {"type": "FeatureCollection", "features": features}
+    # Manual regions are command/alias metadata only. Do not render rough bbox
+    # polygons as player-facing region borders; real regions come from Admin-1.
+    return {"type": "FeatureCollection", "features": []}
 
 
 def province_target_count(tag: str, area: float, bbox_size: float) -> int:

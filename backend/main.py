@@ -211,6 +211,16 @@ def load_regions() -> dict:
     return read_json(BASE_REGIONS_PATH)
 
 
+def load_order_regions() -> dict:
+    """Command aliases may live in manual metadata even when map regions are empty."""
+    regions = {}
+    if BASE_REGIONS_PATH.exists():
+        regions.update(read_json(BASE_REGIONS_PATH).get("regions", {}))
+    if MANUAL_REGIONS_PATH.exists():
+        regions.update(read_json(MANUAL_REGIONS_PATH).get("regions", {}))
+    return {"regions": regions}
+
+
 def load_province_adjacency() -> dict[str, list[str]]:
     return read_json(PROVINCE_ADJACENCY_PATH)
 
@@ -353,7 +363,7 @@ def build_current_country_label_lines() -> dict:
                     "labelSize": label_size,
                     "labelSpacing": 0.16,
                     "labelRank": 1,
-                    "labelKind": label_geometry["type"].lower(),
+                    "labelKind": "line" if label_geometry["type"] == "LineString" else "point",
                 },
                 "geometry": label_geometry,
             }
@@ -462,36 +472,50 @@ def safe_label_point(geometry: dict | None, bbox: tuple[float, float, float, flo
 
 def build_region_geometries_from_provinces() -> dict:
     if REGIONS_GEOJSON_PATH.exists():
-        return read_json(REGIONS_GEOJSON_PATH)
+        regions = read_json(REGIONS_GEOJSON_PATH)
+        features = [
+            feature
+            for feature in regions.get("features", [])
+            if feature.get("properties", {}).get("source") in {"natural-earth-admin1", "geoboundaries-adm1"}
+            and feature.get("properties", {}).get("isPlayerVisible") is True
+            and feature.get("geometry", {}).get("type") in {"Polygon", "MultiPolygon"}
+        ]
+        return {"type": "FeatureCollection", "features": features}
     return {"type": "FeatureCollection", "features": []}
 
 
 def build_region_labels() -> dict:
-    regions = load_manual_regions().get("regions", {})
+    regions_geojson = build_region_geometries_from_provinces()
     features = []
 
-    for region_id, region_data in regions.items():
-        if region_data.get("isGenerated") or not region_data.get("isPlayerVisible"):
+    for region in regions_geojson.get("features", []):
+        props = region.get("properties", {})
+        if props.get("isGenerated") or not props.get("isPlayerVisible"):
             continue
-        display_name = region_data.get("displayName", "")
+        display_name = props.get("displayName") or props.get("name") or props.get("regionId", "")
         if "_STATE_" in display_name or not display_name:
             continue
+        center_lon = props.get("centerLon")
+        center_lat = props.get("centerLat")
+        if center_lon is None or center_lat is None:
+            bbox = geometry_bbox(region.get("geometry"))
+            if not bbox:
+                continue
+            center_lon = (bbox[0] + bbox[2]) / 2
+            center_lat = (bbox[1] + bbox[3]) / 2
         features.append(
             {
                 "type": "Feature",
                 "properties": {
-                    "regionId": region_id,
+                    "regionId": props.get("regionId"),
                     "label": display_name,
-                    "labelSize": region_data.get("labelSize", 13),
-                    "labelRank": region_data.get("labelRank", 1),
-                    "aliases": region_data.get("aliases", []),
+                    "labelSize": props.get("labelSize", 12),
+                    "labelRank": props.get("labelRank", 1),
+                    "aliases": props.get("aliases", []),
                 },
                 "geometry": {
                     "type": "Point",
-                    "coordinates": [
-                        region_data.get("centerLon", 0),
-                        region_data.get("centerLat", 0),
-                    ],
+                    "coordinates": [center_lon, center_lat],
                 },
             }
         )
@@ -551,7 +575,7 @@ def build_visual_orders() -> dict:
 
 def parse_order_text(actor_tag: str, text: str) -> dict:
     normalized = text.lower()
-    regions = load_manual_regions().get("regions", {})
+    regions = load_order_regions().get("regions", {})
     matches = []
     for region_id, region in regions.items():
         if region.get("isGenerated") or not region.get("isPlayerVisible"):
@@ -591,7 +615,7 @@ def execute_order(order: ExecuteOrderRequest) -> dict:
         raise HTTPException(status_code=400, detail="Only MOVE_DIVISIONS is implemented in MVP")
 
     campaign_state = load_campaign_state()
-    regions = load_regions().get("regions", {})
+    regions = load_order_regions().get("regions", {})
     target_region = regions.get(order.targetRegionId)
     if not target_region:
         raise HTTPException(status_code=404, detail="Unknown target region")
