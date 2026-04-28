@@ -178,6 +178,10 @@ async function fetchAllMapData(): Promise<MapData> {
     fetchVisualOrders(),
   ])
 
+  if (regions.features.length === 0) {
+    console.warn('Region layer is empty. Run prepare_admin1_regions.py.')
+  }
+
   return {
     provinces,
     countries: shouldUseCountryFallback(currentCountries) ? fallbackCountries : currentCountries,
@@ -418,6 +422,16 @@ function addInteractions(map: maplibregl.Map, onSelectCountry: (tag: string) => 
 
   map.on('click', 'province-fill', (event) => {
     const tag = event.features?.[0]?.properties?.ownerTag
+    if (typeof tag === 'string') onSelectCountry(tag)
+  })
+
+  map.on('click', 'microstate-marker', (event) => {
+    const tag = event.features?.[0]?.properties?.tag
+    if (typeof tag === 'string') onSelectCountry(tag)
+  })
+
+  map.on('click', 'microstate-label', (event) => {
+    const tag = event.features?.[0]?.properties?.tag
     if (typeof tag === 'string') onSelectCountry(tag)
   })
 

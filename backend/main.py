@@ -12,6 +12,7 @@ from pydantic import BaseModel, Field
 
 try:
     from shapely.geometry import shape
+    from shapely.validation import make_valid
 
     HAS_SHAPELY = True
 except ImportError:
@@ -49,6 +50,14 @@ SAFE_LABEL_TAGS = {
     "CAN",
     "BRA",
     "IND",
+}
+LINE_LABEL_TAGS = {
+    "GER",
+    "FRA",
+    "ITA",
+    "POL",
+    "ESP",
+    "TUR",
 }
 LABEL_NAMES = {
     "GER": "GERMANY",
@@ -347,13 +356,13 @@ def build_current_country_label_lines() -> dict:
         if tag not in SAFE_LABEL_TAGS:
             continue
 
-        label_geometry = dynamic_label_geometry(country.get("geometry"))
+        label_geometry = dynamic_label_geometry(country.get("geometry"), tag)
         if not label_geometry:
             continue
 
         bbox = geometry_bbox(country.get("geometry"))
         width = (bbox[2] - bbox[0]) if bbox else 10
-        label_size = max(13, min(30, 11 + width / 6))
+        label_size = max(13, min(26, 11 + width / 7))
         features.append(
             {
                 "type": "Feature",
@@ -372,21 +381,27 @@ def build_current_country_label_lines() -> dict:
     return {"type": "FeatureCollection", "features": features}
 
 
-def dynamic_label_geometry(geometry: dict | None) -> dict | None:
-    ring = largest_polygon_ring(geometry)
-    if not ring or len(ring) < 4:
-        bbox = geometry_bbox(geometry)
-        if not bbox:
-            return None
-        point = safe_label_point(geometry, bbox)
+def dynamic_label_geometry(geometry: dict | None, tag: str) -> dict | None:
+    bbox = geometry_bbox(geometry)
+    if not bbox:
+        return None
+    point = safe_label_point(geometry, bbox)
+
+    min_lon, min_lat, max_lon, max_lat = bbox
+    width = max_lon - min_lon
+    height = max_lat - min_lat
+    should_try_line = tag in LINE_LABEL_TAGS and 3 <= width <= 45 and 2 <= height <= 30
+    if not should_try_line:
         return {"type": "Point", "coordinates": point} if point else None
 
-    line = pca_label_line(ring)
+    ring = largest_polygon_ring(geometry)
+    if not ring or len(ring) < 4:
+        return {"type": "Point", "coordinates": point} if point else None
+
+    line = pca_label_line(ring, point)
     if line:
         return {"type": "LineString", "coordinates": line}
 
-    bbox = geometry_bbox({"type": "Polygon", "coordinates": [ring]})
-    point = safe_label_point(geometry, bbox) if bbox else None
     return {"type": "Point", "coordinates": point} if point else None
 
 
@@ -422,9 +437,9 @@ def ring_area(ring: list[list[float]]) -> float:
     return total / 2
 
 
-def pca_label_line(ring: list[list[float]]) -> list[list[float]] | None:
+def pca_label_line(ring: list[list[float]], center: list[float] | None) -> list[list[float]] | None:
     points = [[float(point[0]), float(point[1])] for point in ring[:-1] if len(point) >= 2]
-    if len(points) < 3:
+    if len(points) < 3 or not center:
         return None
 
     mean_lon = sum(point[0] for point in points) / len(points)
@@ -443,10 +458,11 @@ def pca_label_line(ring: list[list[float]]) -> list[list[float]] | None:
     if span < 1.0:
         return None
 
-    half_length = min(span * 0.32, 28)
+    half_length = min(span * 0.24, 12)
+    center_lon, center_lat = center
     return [
-        [mean_lon - axis[0] * half_length, mean_lat - axis[1] * half_length],
-        [mean_lon + axis[0] * half_length, mean_lat + axis[1] * half_length],
+        [center_lon - axis[0] * half_length, center_lat - axis[1] * half_length],
+        [center_lon + axis[0] * half_length, center_lat + axis[1] * half_length],
     ]
 
 
@@ -457,6 +473,8 @@ def safe_label_point(geometry: dict | None, bbox: tuple[float, float, float, flo
     if HAS_SHAPELY:
         try:
             geom = shape(geometry)
+            if not geom.is_valid:
+                geom = make_valid(geom)
             if geom.is_empty or not geom.is_valid:
                 return None
             point = geom.representative_point()
@@ -480,12 +498,18 @@ def build_region_geometries_from_provinces() -> dict:
             and feature.get("properties", {}).get("isPlayerVisible") is True
             and feature.get("geometry", {}).get("type") in {"Polygon", "MultiPolygon"}
         ]
+        if not features:
+            print("WARNING: regions_1933.geojson is empty; run scripts/prepare_admin1_regions.py")
         return {"type": "FeatureCollection", "features": features}
+    print("WARNING: regions_1933.geojson is missing; run scripts/prepare_admin1_regions.py")
     return {"type": "FeatureCollection", "features": []}
 
 
 def build_region_labels() -> dict:
     regions_geojson = build_region_geometries_from_provinces()
+    if not regions_geojson.get("features"):
+        print("WARNING: region labels are empty because regions_1933.geojson has no features")
+        return {"type": "FeatureCollection", "features": []}
     features = []
 
     for region in regions_geojson.get("features", []):
@@ -967,7 +991,10 @@ def get_map_1933_microstates() -> dict:
 
 @app.get("/api/map/1933/regions")
 def get_map_1933_regions() -> dict:
-    return load_regions()
+    regions = load_regions()
+    if not regions.get("regions"):
+        print("WARNING: regions_1933.json is empty; run scripts/prepare_admin1_regions.py")
+    return regions
 
 
 @app.get("/api/map/1933/province-adjacency")
