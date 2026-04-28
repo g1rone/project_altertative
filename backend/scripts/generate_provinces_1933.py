@@ -28,6 +28,8 @@ PROVINCES_PATH = BASE_DIR / "provinces_1933.geojson"
 REGIONS_PATH = BASE_DIR / "regions_1933.json"
 ADJACENCY_PATH = BASE_DIR / "province_adjacency_1933.json"
 MICROSTATE_POINTS_PATH = BASE_DIR / "microstate_points_1933.geojson"
+MANUAL_REGIONS_PATH = BASE_DIR / "manual_regions_1933.json"
+REGIONS_GEOJSON_PATH = BASE_DIR / "regions_1933.geojson"
 CAMPAIGN_PATH = SAVE_DIR / "campaign_state.json"
 STATE_PATHS = [
     DATA_DIR / "game_state_1933.json",
@@ -164,6 +166,91 @@ SPECIAL_REGIONS = [
     },
 ]
 
+MANUAL_REGION_ROWS = [
+    ("GER_RHINELAND", "GER", "Рейнская область", "Rhineland", ["Рейнская область", "Рейнланд", "Rhineland", "рейнскую область"], (5.8, 49.0, 8.4, 51.6)),
+    ("GER_BAVARIA", "GER", "Бавария", "Bavaria", ["Бавария", "Bavaria", "баварию"], (9.0, 47.1, 13.8, 50.7)),
+    ("GER_SAXONY", "GER", "Саксония", "Saxony", ["Саксония", "Saxony", "саксонию"], (11.5, 50.0, 15.2, 52.0)),
+    ("GER_EAST_PRUSSIA", "GER", "Восточная Пруссия", "East Prussia", ["Восточная Пруссия", "East Prussia", "восточную пруссию"], (19.0, 53.1, 23.4, 55.3)),
+    ("GER_WESTPHALIA", "GER", "Вестфалия", "Westphalia", ["Вестфалия", "Westphalia"], (6.2, 50.8, 9.2, 52.6)),
+    ("GER_HAMBURG", "GER", "Гамбург", "Hamburg", ["Гамбург", "Hamburg"], (8.5, 53.1, 10.6, 54.0)),
+    ("GER_BERLIN", "GER", "Берлин", "Berlin", ["Берлин", "Berlin"], (12.5, 52.0, 14.2, 53.0)),
+    ("GER_SILESIA", "GER", "Силезия", "Silesia", ["Силезия", "Silesia"], (14.4, 50.0, 18.5, 52.2)),
+    ("GER_BRANDENBURG", "GER", "Бранденбург", "Brandenburg", ["Бранденбург", "Brandenburg"], (11.3, 51.4, 14.8, 53.7)),
+    ("GER_BADEN_WURTTEMBERG", "GER", "Баден-Вюртемберг", "Baden-Wurttemberg", ["Баден-Вюртемберг", "Baden-Wurttemberg"], (7.5, 47.4, 10.5, 49.8)),
+    ("POL_DANZIG", "POL", "Данциг", "Danzig", ["Данциг", "Danzig", "вольный город данциг"], (18.3, 53.8, 19.3, 54.8)),
+    ("POL_POZNAN", "POL", "Познань", "Poznan", ["Познань", "Poznan"], (15.5, 51.0, 18.5, 53.3)),
+    ("POL_WARSAW", "POL", "Варшава", "Warsaw", ["Варшава", "Warsaw"], (19.0, 51.5, 22.5, 53.5)),
+    ("POL_POMERANIA", "POL", "Померания", "Pomerania", ["Померания", "Pomerania"], (15.0, 53.0, 19.2, 55.0)),
+    ("POL_GALICIA", "POL", "Галиция", "Galicia", ["Галиция", "Galicia"], (20.0, 48.5, 24.8, 50.8)),
+    ("POL_VILNIUS", "POL", "Вильнюс", "Vilnius", ["Вильнюс", "Vilnius"], (23.0, 53.5, 26.5, 55.8)),
+    ("POL_LODZ", "POL", "Лодзь", "Lodz", ["Лодзь", "Lodz"], (17.8, 50.5, 20.5, 52.2)),
+    ("POL_LUBLIN", "POL", "Люблин", "Lublin", ["Люблин", "Lublin"], (21.5, 50.0, 24.5, 52.2)),
+    ("FRA_PARIS", "FRA", "Париж", "Paris", ["Париж", "Paris"], (1.3, 48.0, 3.5, 49.5)),
+    ("FRA_NORMANDY", "FRA", "Нормандия", "Normandy", ["Нормандия", "Normandy"], (-2.0, 48.3, 1.5, 50.2)),
+    ("FRA_BRITTANY", "FRA", "Бретань", "Brittany", ["Бретань", "Brittany"], (-5.4, 47.2, -1.2, 49.0)),
+    ("FRA_ALSACE_LORRAINE", "FRA", "Эльзас-Лотарингия", "Alsace-Lorraine", ["Эльзас", "Эльзас-Лотарингия", "Alsace-Lorraine"], (6.5, 47.3, 8.5, 49.5)),
+    ("FRA_AQUITAINE", "FRA", "Аквитания", "Aquitaine", ["Аквитания", "Aquitaine"], (-1.8, 43.0, 1.2, 46.2)),
+    ("FRA_PROVENCE", "FRA", "Прованс", "Provence", ["Прованс", "Provence"], (4.5, 43.0, 7.8, 44.8)),
+    ("FRA_BURGUNDY", "FRA", "Бургундия", "Burgundy", ["Бургундия", "Burgundy"], (3.5, 46.2, 6.2, 48.2)),
+    ("FRA_OCCITANIA", "FRA", "Окситания", "Occitania", ["Окситания", "Occitania"], (0.0, 42.5, 4.8, 45.2)),
+    ("ITA_LOMBARDY", "ITA", "Ломбардия", "Lombardy", ["Ломбардия", "Lombardy"], (8.5, 44.7, 11.5, 46.8)),
+    ("ITA_PIEDMONT", "ITA", "Пьемонт", "Piedmont", ["Пьемонт", "Piedmont"], (6.7, 44.0, 8.8, 46.4)),
+    ("ITA_VENETO", "ITA", "Венето", "Veneto", ["Венето", "Veneto"], (11.0, 44.8, 13.2, 46.6)),
+    ("ITA_TUSCANY", "ITA", "Тоскана", "Tuscany", ["Тоскана", "Tuscany"], (9.5, 42.8, 12.2, 44.5)),
+    ("ITA_LAZIO", "ITA", "Лацио", "Lazio", ["Лацио", "Lazio"], (11.5, 41.0, 13.5, 42.8)),
+    ("ITA_SICILY", "ITA", "Сицилия", "Sicily", ["Сицилия", "Sicily"], (12.2, 36.4, 15.8, 38.4)),
+    ("ITA_SARDINIA", "ITA", "Сардиния", "Sardinia", ["Сардиния", "Sardinia"], (8.0, 38.8, 9.8, 41.3)),
+    ("ITA_NAPLES", "ITA", "Неаполь", "Naples", ["Неаполь", "Naples"], (13.0, 39.5, 17.5, 42.0)),
+    ("ESP_CASTILE", "ESP", "Кастилия", "Castile", ["Кастилия", "Castile"], (-6.0, 39.0, -1.5, 42.5)),
+    ("ESP_CATALONIA", "ESP", "Каталония", "Catalonia", ["Каталония", "Catalonia"], (0.0, 40.5, 3.4, 42.8)),
+    ("ESP_ANDALUSIA", "ESP", "Андалусия", "Andalusia", ["Андалусия", "Andalusia"], (-7.5, 36.0, -1.5, 38.8)),
+    ("ESP_BASQUE", "ESP", "Страна Басков", "Basque Country", ["Страна Басков", "Basque"], (-3.5, 42.4, -1.2, 43.5)),
+    ("ESP_GALICIA", "ESP", "Галисия", "Galicia", ["Галисия", "Galicia"], (-9.3, 41.8, -6.5, 43.8)),
+    ("ESP_VALENCIA", "ESP", "Валенсия", "Valencia", ["Валенсия", "Valencia"], (-1.0, 38.0, 0.8, 40.6)),
+    ("ESP_ARAGON", "ESP", "Арагон", "Aragon", ["Арагон", "Aragon"], (-1.8, 40.0, 1.0, 42.5)),
+    ("GBR_ENGLAND", "GBR", "Англия", "England", ["Англия", "England"], (-6.5, 49.5, 2.5, 56.0)),
+    ("GBR_SCOTLAND", "GBR", "Шотландия", "Scotland", ["Шотландия", "Scotland"], (-7.8, 55.0, -1.0, 59.2)),
+    ("GBR_WALES", "GBR", "Уэльс", "Wales", ["Уэльс", "Wales"], (-5.5, 51.2, -2.7, 53.5)),
+    ("GBR_NORTHERN_IRELAND", "GBR", "Северная Ирландия", "Northern Ireland", ["Северная Ирландия", "Northern Ireland"], (-7.5, 54.0, -5.3, 55.4)),
+    ("IRE_IRELAND", "IRE", "Ирландия", "Ireland", ["Ирландия", "Ireland"], (-10.5, 51.2, -5.5, 55.4)),
+    ("SOV_UKRAINE", "SOV", "Украина", "Ukraine", ["Украина", "Ukraine", "украину"], (22.0, 44.0, 41.0, 53.0)),
+    ("SOV_BELARUS", "SOV", "Беларусь", "Belarus", ["Беларусь", "Belarus"], (23.0, 51.0, 32.5, 56.5)),
+    ("SOV_LENINGRAD", "SOV", "Ленинград", "Leningrad", ["Ленинград", "Leningrad"], (27.0, 58.0, 33.5, 61.8)),
+    ("SOV_MOSCOW", "SOV", "Москва", "Moscow", ["Москва", "Moscow"], (33.0, 54.0, 40.5, 57.8)),
+    ("SOV_CAUCASUS", "SOV", "Кавказ", "Caucasus", ["Кавказ", "Caucasus"], (37.0, 41.0, 49.0, 45.5)),
+    ("SOV_URAL", "SOV", "Урал", "Ural", ["Урал", "Ural"], (54.0, 52.0, 66.0, 61.5)),
+    ("SOV_VOLGA", "SOV", "Поволжье", "Volga", ["Поволжье", "Volga"], (44.0, 48.0, 55.0, 56.0)),
+    ("SOV_CENTRAL_ASIA", "SOV", "Средняя Азия", "Central Asia", ["Средняя Азия", "Central Asia"], (55.0, 37.0, 75.0, 48.0)),
+    ("SOV_SIBERIA", "SOV", "Сибирь", "Siberia", ["Сибирь", "Siberia"], (70.0, 50.0, 105.0, 65.0)),
+    ("AUS_AUSTRIA", "AUS", "Австрия", "Austria", ["Австрия", "Austria"], (9.5, 46.3, 17.2, 49.2)),
+    ("CZE_BOHEMIA", "CZE", "Богемия", "Bohemia", ["Богемия", "Bohemia"], (12.0, 48.5, 16.5, 51.2)),
+    ("CZE_SLOVAKIA", "CZE", "Словакия", "Slovakia", ["Словакия", "Slovakia"], (16.5, 47.5, 22.5, 49.8)),
+    ("HUN_HUNGARY", "HUN", "Венгрия", "Hungary", ["Венгрия", "Hungary"], (16.0, 45.5, 23.0, 48.7)),
+    ("ROM_WALLACHIA", "ROM", "Валахия", "Wallachia", ["Валахия", "Wallachia"], (23.0, 43.5, 29.5, 45.8)),
+    ("ROM_TRANSYLVANIA", "ROM", "Трансильвания", "Transylvania", ["Трансильвания", "Transylvania"], (21.5, 45.5, 26.5, 48.5)),
+    ("YUG_SERBIA", "YUG", "Сербия", "Serbia", ["Сербия", "Serbia"], (19.0, 43.0, 23.0, 46.0)),
+    ("YUG_CROATIA", "YUG", "Хорватия", "Croatia", ["Хорватия", "Croatia"], (14.0, 44.0, 18.8, 46.6)),
+    ("BUL_BULGARIA", "BUL", "Болгария", "Bulgaria", ["Болгария", "Bulgaria"], (22.0, 41.0, 28.5, 44.3)),
+    ("GRE_GREECE", "GRE", "Греция", "Greece", ["Греция", "Greece"], (19.5, 36.0, 26.5, 41.8)),
+    ("TUR_ISTANBUL", "TUR", "Стамбул", "Istanbul", ["Стамбул", "Istanbul"], (26.0, 40.0, 30.5, 42.0)),
+    ("TUR_ANATOLIA", "TUR", "Анатолия", "Anatolia", ["Анатолия", "Anatolia"], (29.0, 36.0, 39.0, 41.5)),
+    ("TUR_KURDISTAN", "TUR", "Курдистан", "Kurdistan", ["Курдистан", "Kurdistan"], (38.0, 36.5, 44.5, 41.5)),
+    ("TUR_ARMENIA", "TUR", "Армения", "Armenia", ["Армения", "Armenia"], (39.0, 39.0, 44.8, 42.5)),
+    ("PER_PERSIA", "PER", "Персия", "Persia", ["Персия", "Persia"], (45.0, 25.0, 62.0, 39.5)),
+    ("IRQ_IRAQ", "IRQ", "Ирак", "Iraq", ["Ирак", "Iraq"], (38.0, 29.0, 49.0, 37.8)),
+    ("SYR_SYRIA", "SYR", "Сирия", "Syria", ["Сирия", "Syria"], (35.5, 32.0, 42.5, 37.5)),
+    ("PAL_PALESTINE", "PAL", "Палестина", "Palestine", ["Палестина", "Palestine"], (34.0, 30.0, 36.0, 33.5)),
+    ("EGY_EGYPT", "EGY", "Египет", "Egypt", ["Египет", "Egypt"], (25.0, 22.0, 36.5, 31.8)),
+    ("CHI_NORTH_CHINA", "CHI", "Северный Китай", "North China", ["Северный Китай", "North China"], (108.0, 34.0, 120.0, 41.5)),
+    ("CHI_SICHUAN", "CHI", "Сычуань", "Sichuan", ["Сычуань", "Sichuan"], (97.0, 27.0, 108.0, 33.5)),
+    ("CHI_GUANGDONG", "CHI", "Гуандун", "Guangdong", ["Гуандун", "Guangdong"], (109.0, 20.0, 117.5, 25.5)),
+    ("CHI_YUNNAN", "CHI", "Юньнань", "Yunnan", ["Юньнань", "Yunnan"], (97.0, 21.0, 106.0, 28.5)),
+    ("CHI_MANCHURIA", "CHI", "Маньчжурия", "Manchuria", ["Маньчжурия", "Manchuria"], (120.0, 40.0, 132.0, 50.5)),
+    ("MNG_MONGOLIA", "MNG", "Монголия", "Mongolia", ["Монголия", "Mongolia"], (87.0, 42.0, 119.0, 52.0)),
+    ("JAP_HOME_ISLANDS", "JAP", "Японские острова", "Home Islands", ["Японские острова", "Home Islands"], (130.0, 31.0, 146.0, 45.5)),
+    ("JAP_KOREA", "JAP", "Корея", "Korea", ["Корея", "Korea"], (125.0, 34.0, 130.5, 43.5)),
+]
+
 
 def main() -> None:
     BASE_DIR.mkdir(parents=True, exist_ok=True)
@@ -271,6 +358,10 @@ def main() -> None:
             ),
         )
 
+    manual_regions = build_manual_regions()
+    for region_id, manual_region in manual_regions["regions"].items():
+        regions.setdefault(region_id, manual_region)
+
     adjacency = build_adjacency(provinces)
     campaign_state = build_campaign_state(provinces)
     if CAMPAIGN_PATH.exists():
@@ -278,6 +369,8 @@ def main() -> None:
 
     write_json(PROVINCES_PATH, {"type": "FeatureCollection", "features": provinces})
     write_json(REGIONS_PATH, {"regions": regions})
+    write_json(MANUAL_REGIONS_PATH, manual_regions)
+    write_json(REGIONS_GEOJSON_PATH, build_manual_regions_geojson(manual_regions))
     write_json(ADJACENCY_PATH, adjacency)
     write_json(MICROSTATE_POINTS_PATH, microstate_points)
     write_json(CAMPAIGN_PATH, campaign_state)
@@ -424,6 +517,57 @@ def build_fallback_microstate_points(countries: dict[str, Any]) -> dict[str, Any
         )
 
     return {"type": "FeatureCollection", "features": point_features}
+
+
+def build_manual_regions() -> dict[str, Any]:
+    regions = {}
+    for region_id, owner_tag, display_name, english_name, aliases, bbox in MANUAL_REGION_ROWS:
+        center_lon, center_lat = bbox_center(bbox)
+        regions[region_id] = {
+            "regionId": region_id,
+            "displayName": display_name,
+            "englishName": english_name,
+            "name": english_name,
+            "aliases": aliases,
+            "ownerTag": owner_tag,
+            "originalCountryTag": owner_tag,
+            "isGenerated": False,
+            "isPlayerVisible": True,
+            "centerLon": center_lon,
+            "centerLat": center_lat,
+            "labelSize": 13,
+            "labelRank": 1,
+            "provinceIds": [],
+            "roughPolygon": bbox_ring(bbox),
+        }
+
+    return {"regions": regions}
+
+
+def build_manual_regions_geojson(manual_regions: dict[str, Any]) -> dict[str, Any]:
+    features = []
+    for region in manual_regions["regions"].values():
+        features.append(
+            {
+                "type": "Feature",
+                "properties": {
+                    "regionId": region["regionId"],
+                    "label": region["displayName"],
+                    "displayName": region["displayName"],
+                    "ownerTag": region["ownerTag"],
+                    "isGenerated": False,
+                    "isPlayerVisible": True,
+                    "centerLon": region["centerLon"],
+                    "centerLat": region["centerLat"],
+                },
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [region["roughPolygon"]],
+                },
+            }
+        )
+
+    return {"type": "FeatureCollection", "features": features}
 
 
 def province_target_count(tag: str, area: float, bbox_size: float) -> int:
@@ -673,19 +817,21 @@ def iter_points(coordinates: Any):
 
 
 def bbox_polygon(bbox: tuple[float, float, float, float]) -> dict[str, Any]:
-    min_lon, min_lat, max_lon, max_lat = bbox
     return {
         "type": "Polygon",
-        "coordinates": [
-            [
-                [min_lon, min_lat],
-                [max_lon, min_lat],
-                [max_lon, max_lat],
-                [min_lon, max_lat],
-                [min_lon, min_lat],
-            ]
-        ],
+        "coordinates": [bbox_ring(bbox)],
     }
+
+
+def bbox_ring(bbox: tuple[float, float, float, float]) -> list[list[float]]:
+    min_lon, min_lat, max_lon, max_lat = bbox
+    return [
+        [min_lon, min_lat],
+        [max_lon, min_lat],
+        [max_lon, max_lat],
+        [min_lon, max_lat],
+        [min_lon, min_lat],
+    ]
 
 
 def bbox_center(bbox: tuple[float, float, float, float]) -> tuple[float, float]:

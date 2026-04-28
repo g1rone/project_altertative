@@ -198,7 +198,7 @@ function addSources(map: maplibregl.Map, data: MapData) {
     type: 'geojson',
     data: data.countries,
   })
-  map.addSource('country-label-lines-1933', {
+  map.addSource('country-labels-1933', {
     type: 'geojson',
     data: data.countryLabels,
   })
@@ -242,9 +242,9 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
       visibility: 'none',
     },
     paint: {
-      'line-color': '#475569',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 3, 0, 5, 0.2, 7, 0.7],
-      'line-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0, 5, 0.2, 7, 0.65],
+      'line-color': '#0f172a',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 3, 0.4, 7, 0.8],
+      'line-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0.35, 7, 0.55],
     },
   } as any)
 
@@ -262,13 +262,11 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     id: 'region-border',
     type: 'line',
     source: 'regions-1933',
-    layout: {
-      visibility: 'none',
-    },
+    minzoom: 4.5,
     paint: {
-      'line-color': '#334155',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5, 0.25, 7, 0.8],
-      'line-opacity': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5, 0.18, 7, 0.45],
+      'line-color': '#e5e7eb',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 4, 0, 5, 0.7, 7, 1.4],
+      'line-opacity': ['interpolate', ['linear'], ['zoom'], 4, 0, 5, 0.45, 7, 0.75],
     },
   } as any)
 
@@ -294,10 +292,37 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
   } as any)
 
   map.addLayer({
-    id: 'country-labels',
+    id: 'country-label-lines',
     type: 'symbol',
-    source: 'country-label-lines-1933',
+    source: 'country-labels-1933',
+    filter: ['==', ['geometry-type'], 'LineString'],
     layout: {
+      'symbol-placement': 'line',
+      'text-field': ['get', 'label'],
+      'text-size': ['get', 'labelSize'],
+      'text-letter-spacing': ['get', 'labelSpacing'],
+      'text-font': ['Open Sans Regular'],
+      'text-keep-upright': true,
+      'text-allow-overlap': false,
+      'text-ignore-placement': false,
+      'text-max-angle': 45,
+    },
+    paint: {
+      'text-color': '#f8fafc',
+      'text-halo-color': '#111827',
+      'text-halo-width': 2,
+      'text-halo-blur': 0.5,
+      'text-opacity': ['interpolate', ['linear'], ['zoom'], 2, 0.95, 4, 0.9, 5.5, 0.55, 6.7, 0],
+    },
+  } as any)
+
+  map.addLayer({
+    id: 'country-label-points',
+    type: 'symbol',
+    source: 'country-labels-1933',
+    filter: ['==', ['geometry-type'], 'Point'],
+    layout: {
+      'symbol-placement': 'point',
       'text-field': ['get', 'label'],
       'text-size': ['get', 'labelSize'],
       'text-font': ['Open Sans Regular'],
@@ -306,9 +331,10 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     },
     paint: {
       'text-color': '#f8fafc',
-      'text-halo-color': '#020617',
+      'text-halo-color': '#111827',
       'text-halo-width': 2,
-      'text-opacity': ['interpolate', ['linear'], ['zoom'], 2, 0.9, 4, 0.75, 6, 0.25, 7, 0],
+      'text-halo-blur': 0.5,
+      'text-opacity': ['interpolate', ['linear'], ['zoom'], 2, 0.8, 4, 0.75, 5.5, 0.4, 6.7, 0],
     },
   } as any)
 

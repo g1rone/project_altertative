@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import math
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -27,7 +28,10 @@ BASE_PROVINCES_PATH = BASE_DATA_DIR / "provinces_1933.geojson"
 BASE_REGIONS_PATH = BASE_DATA_DIR / "regions_1933.json"
 PROVINCE_ADJACENCY_PATH = BASE_DATA_DIR / "province_adjacency_1933.json"
 MICROSTATE_POINTS_PATH = BASE_DATA_DIR / "microstate_points_1933.geojson"
+MANUAL_REGIONS_PATH = BASE_DATA_DIR / "manual_regions_1933.json"
+REGIONS_GEOJSON_PATH = BASE_DATA_DIR / "regions_1933.geojson"
 CAMPAIGN_STATE_PATH = SAVE_DATA_DIR / "campaign_state.json"
+# TODO: campaign state is currently global. Later store it per campaignId/user/session.
 SAFE_LABEL_TAGS = {
     "GER",
     "FRA",
@@ -211,6 +215,10 @@ def load_province_adjacency() -> dict[str, list[str]]:
     return read_json(PROVINCE_ADJACENCY_PATH)
 
 
+def load_manual_regions() -> dict:
+    return read_json(MANUAL_REGIONS_PATH) if MANUAL_REGIONS_PATH.exists() else {"regions": {}}
+
+
 def load_campaign_state() -> dict:
     return read_json(CAMPAIGN_STATE_PATH)
 
@@ -239,8 +247,42 @@ def apply_campaign_ownership_to_provinces() -> dict:
 
 
 def build_current_countries_from_provinces() -> dict:
-    return color_country_features(read_json(MAP_PATH))
+    provinces = apply_campaign_ownership_to_provinces()
+    if province_data_looks_rectangular(provinces):
+        return color_country_features(read_json(MAP_PATH))
 
+    state = load_state()
+    grouped: dict[str, list[dict]] = {}
+
+    for province in provinces.get("features", []):
+        owner = province.get("properties", {}).get("ownerTag", "UNK")
+        grouped.setdefault(owner, []).append(province)
+
+    features = []
+    for tag, owned_provinces in sorted(grouped.items()):
+        country_state = state.countries.get(tag)
+        geometries = [province["geometry"] for province in owned_provinces if province.get("geometry")]
+        if not geometries:
+            continue
+        region_count = len({province["properties"].get("regionId") for province in owned_provinces})
+        name = country_state.name if country_state else tag
+        features.append(
+            {
+                "type": "Feature",
+                "properties": {
+                    "tag": tag,
+                    "name": name,
+                    "displayName": LABEL_NAMES.get(tag, name.upper()),
+                    "color": country_state.color if country_state else stable_color(tag),
+                    "provinceCount": len(owned_provinces),
+                    "regionCount": region_count,
+                },
+                "geometry": collect_geometries(geometries),
+            }
+        )
+
+    current_countries = {"type": "FeatureCollection", "features": features}
+    return color_country_features(read_json(MAP_PATH)) if country_data_looks_suspicious(current_countries) else current_countries
 
 def color_country_features(countries: dict) -> dict:
     state = load_state()
@@ -278,36 +320,124 @@ def province_data_looks_rectangular(provinces: dict) -> bool:
     return rectangular / len(features) > 0.5
 
 
+def country_data_looks_suspicious(countries: dict) -> bool:
+    features = countries.get("features", [])
+    if not features:
+        return True
+    return province_data_looks_rectangular(countries)
+
+
 def build_current_country_label_lines() -> dict:
     countries = build_current_countries_from_provinces()
-    seen_tags = {
-        country.get("properties", {}).get("tag")
-        for country in countries.get("features", [])
-    }
     features = []
 
-    for tag in sorted(SAFE_LABEL_TAGS):
-        if tag not in seen_tags or tag not in COUNTRY_LABEL_POINTS:
+    for country in countries.get("features", []):
+        props = country.get("properties", {})
+        tag = props.get("tag")
+        if tag not in SAFE_LABEL_TAGS:
             continue
-        label_point = list(COUNTRY_LABEL_POINTS[tag])
-        label_size = 24 if tag in {"SOV", "USA", "UNI", "CAN", "CHI", "CHN", "IND", "BRA"} else 15
+
+        label_geometry = dynamic_label_geometry(country.get("geometry"))
+        if not label_geometry:
+            continue
+
+        bbox = geometry_bbox(country.get("geometry"))
+        width = (bbox[2] - bbox[0]) if bbox else 10
+        label_size = max(13, min(30, 11 + width / 6))
         features.append(
             {
                 "type": "Feature",
                 "properties": {
                     "tag": tag,
-                    "label": LABEL_NAMES.get(tag, tag),
+                    "label": LABEL_NAMES.get(tag, props.get("displayName", tag)),
                     "labelSize": label_size,
+                    "labelSpacing": 0.16,
                     "labelRank": 1,
+                    "labelKind": label_geometry["type"].lower(),
                 },
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": label_point,
-                },
+                "geometry": label_geometry,
             }
         )
 
     return {"type": "FeatureCollection", "features": features}
+
+
+def dynamic_label_geometry(geometry: dict | None) -> dict | None:
+    ring = largest_polygon_ring(geometry)
+    if not ring or len(ring) < 4:
+        bbox = geometry_bbox(geometry)
+        if not bbox:
+            return None
+        point = safe_label_point(geometry, bbox)
+        return {"type": "Point", "coordinates": point} if point else None
+
+    line = pca_label_line(ring)
+    if line:
+        return {"type": "LineString", "coordinates": line}
+
+    bbox = geometry_bbox({"type": "Polygon", "coordinates": [ring]})
+    point = safe_label_point(geometry, bbox) if bbox else None
+    return {"type": "Point", "coordinates": point} if point else None
+
+
+def largest_polygon_ring(geometry: dict | None) -> list[list[float]] | None:
+    if not geometry:
+        return None
+
+    polygons = []
+    if geometry.get("type") == "Polygon":
+        polygons = [geometry.get("coordinates", [])]
+    elif geometry.get("type") == "MultiPolygon":
+        polygons = geometry.get("coordinates", [])
+
+    best_ring = None
+    best_area = 0.0
+    for polygon in polygons:
+        if not polygon:
+            continue
+        ring = polygon[0]
+        area = abs(ring_area(ring))
+        if area > best_area:
+            best_area = area
+            best_ring = ring
+
+    return best_ring
+
+
+def ring_area(ring: list[list[float]]) -> float:
+    total = 0.0
+    for index, point in enumerate(ring):
+        next_point = ring[(index + 1) % len(ring)]
+        total += point[0] * next_point[1] - next_point[0] * point[1]
+    return total / 2
+
+
+def pca_label_line(ring: list[list[float]]) -> list[list[float]] | None:
+    points = [[float(point[0]), float(point[1])] for point in ring[:-1] if len(point) >= 2]
+    if len(points) < 3:
+        return None
+
+    mean_lon = sum(point[0] for point in points) / len(points)
+    mean_lat = sum(point[1] for point in points) / len(points)
+    centered = [[point[0] - mean_lon, point[1] - mean_lat] for point in points]
+    xx = sum(point[0] * point[0] for point in centered) / len(centered)
+    xy = sum(point[0] * point[1] for point in centered) / len(centered)
+    yy = sum(point[1] * point[1] for point in centered) / len(centered)
+
+    angle = 0.5 * math.atan2(2 * xy, xx - yy)
+    axis = [math.cos(angle), math.sin(angle)]
+    projections = [point[0] * axis[0] + point[1] * axis[1] for point in centered]
+    min_projection = min(projections)
+    max_projection = max(projections)
+    span = max_projection - min_projection
+    if span < 1.0:
+        return None
+
+    half_length = min(span * 0.32, 28)
+    return [
+        [mean_lon - axis[0] * half_length, mean_lat - axis[1] * half_length],
+        [mean_lon + axis[0] * half_length, mean_lat + axis[1] * half_length],
+    ]
 
 
 def safe_label_point(geometry: dict | None, bbox: tuple[float, float, float, float]) -> list[float] | None:
@@ -331,48 +461,16 @@ def safe_label_point(geometry: dict | None, bbox: tuple[float, float, float, flo
 
 
 def build_region_geometries_from_provinces() -> dict:
-    provinces = apply_campaign_ownership_to_provinces()
-    regions = load_regions().get("regions", {})
-    grouped: dict[str, list[dict]] = {}
-
-    for province in provinces.get("features", []):
-        region_id = province.get("properties", {}).get("regionId")
-        if region_id:
-            grouped.setdefault(region_id, []).append(province)
-
-    features = []
-    for region_id, region_provinces in grouped.items():
-        region = regions.get(region_id, {})
-        geometries = [province["geometry"] for province in region_provinces if province.get("geometry")]
-        if not geometries:
-            continue
-        center_lon, center_lat = average_centers(region_provinces)
-        features.append(
-            {
-                "type": "Feature",
-                "properties": {
-                    "regionId": region_id,
-                    "label": region.get("displayName", region_id),
-                    "displayName": region.get("displayName", region_id),
-                    "aliases": region.get("aliases", []),
-                    "provinceCount": len(region_provinces),
-                    "centerLon": center_lon,
-                    "centerLat": center_lat,
-                },
-                "geometry": collect_geometries(geometries),
-            }
-        )
-
-    return {"type": "FeatureCollection", "features": features}
+    if REGIONS_GEOJSON_PATH.exists():
+        return read_json(REGIONS_GEOJSON_PATH)
+    return {"type": "FeatureCollection", "features": []}
 
 
 def build_region_labels() -> dict:
-    regions = load_regions().get("regions", {})
+    regions = load_manual_regions().get("regions", {})
     features = []
 
     for region_id, region_data in regions.items():
-        if region_id not in SAFE_REGION_LABEL_IDS:
-            continue
         if region_data.get("isGenerated") or not region_data.get("isPlayerVisible"):
             continue
         display_name = region_data.get("displayName", "")
@@ -453,7 +551,7 @@ def build_visual_orders() -> dict:
 
 def parse_order_text(actor_tag: str, text: str) -> dict:
     normalized = text.lower()
-    regions = load_regions().get("regions", {})
+    regions = load_manual_regions().get("regions", {})
     matches = []
     for region_id, region in regions.items():
         if region.get("isGenerated") or not region.get("isPlayerVisible"):

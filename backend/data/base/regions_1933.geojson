@@ -1,0 +1,3285 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GER_RHINELAND",
+        "label": "Рейнская область",
+        "displayName": "Рейнская область",
+        "ownerTag": "GER",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 7.1,
+        "centerLat": 50.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.8,
+              49.0
+            ],
+            [
+              8.4,
+              49.0
+            ],
+            [
+              8.4,
+              51.6
+            ],
+            [
+              5.8,
+              51.6
+            ],
+            [
+              5.8,
+              49.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GER_BAVARIA",
+        "label": "Бавария",
+        "displayName": "Бавария",
+        "ownerTag": "GER",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 11.4,
+        "centerLat": 48.900000000000006
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.0,
+              47.1
+            ],
+            [
+              13.8,
+              47.1
+            ],
+            [
+              13.8,
+              50.7
+            ],
+            [
+              9.0,
+              50.7
+            ],
+            [
+              9.0,
+              47.1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GER_SAXONY",
+        "label": "Саксония",
+        "displayName": "Саксония",
+        "ownerTag": "GER",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 13.35,
+        "centerLat": 51.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.5,
+              50.0
+            ],
+            [
+              15.2,
+              50.0
+            ],
+            [
+              15.2,
+              52.0
+            ],
+            [
+              11.5,
+              52.0
+            ],
+            [
+              11.5,
+              50.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GER_EAST_PRUSSIA",
+        "label": "Восточная Пруссия",
+        "displayName": "Восточная Пруссия",
+        "ownerTag": "GER",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 21.2,
+        "centerLat": 54.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.0,
+              53.1
+            ],
+            [
+              23.4,
+              53.1
+            ],
+            [
+              23.4,
+              55.3
+            ],
+            [
+              19.0,
+              55.3
+            ],
+            [
+              19.0,
+              53.1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GER_WESTPHALIA",
+        "label": "Вестфалия",
+        "displayName": "Вестфалия",
+        "ownerTag": "GER",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 7.699999999999999,
+        "centerLat": 51.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.2,
+              50.8
+            ],
+            [
+              9.2,
+              50.8
+            ],
+            [
+              9.2,
+              52.6
+            ],
+            [
+              6.2,
+              52.6
+            ],
+            [
+              6.2,
+              50.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GER_HAMBURG",
+        "label": "Гамбург",
+        "displayName": "Гамбург",
+        "ownerTag": "GER",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 9.55,
+        "centerLat": 53.55
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              53.1
+            ],
+            [
+              10.6,
+              53.1
+            ],
+            [
+              10.6,
+              54.0
+            ],
+            [
+              8.5,
+              54.0
+            ],
+            [
+              8.5,
+              53.1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GER_BERLIN",
+        "label": "Берлин",
+        "displayName": "Берлин",
+        "ownerTag": "GER",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 13.35,
+        "centerLat": 52.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.5,
+              52.0
+            ],
+            [
+              14.2,
+              52.0
+            ],
+            [
+              14.2,
+              53.0
+            ],
+            [
+              12.5,
+              53.0
+            ],
+            [
+              12.5,
+              52.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GER_SILESIA",
+        "label": "Силезия",
+        "displayName": "Силезия",
+        "ownerTag": "GER",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 16.45,
+        "centerLat": 51.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.4,
+              50.0
+            ],
+            [
+              18.5,
+              50.0
+            ],
+            [
+              18.5,
+              52.2
+            ],
+            [
+              14.4,
+              52.2
+            ],
+            [
+              14.4,
+              50.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GER_BRANDENBURG",
+        "label": "Бранденбург",
+        "displayName": "Бранденбург",
+        "ownerTag": "GER",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 13.05,
+        "centerLat": 52.55
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.3,
+              51.4
+            ],
+            [
+              14.8,
+              51.4
+            ],
+            [
+              14.8,
+              53.7
+            ],
+            [
+              11.3,
+              53.7
+            ],
+            [
+              11.3,
+              51.4
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GER_BADEN_WURTTEMBERG",
+        "label": "Баден-Вюртемберг",
+        "displayName": "Баден-Вюртемберг",
+        "ownerTag": "GER",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 9.0,
+        "centerLat": 48.599999999999994
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.5,
+              47.4
+            ],
+            [
+              10.5,
+              47.4
+            ],
+            [
+              10.5,
+              49.8
+            ],
+            [
+              7.5,
+              49.8
+            ],
+            [
+              7.5,
+              47.4
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "POL_DANZIG",
+        "label": "Данциг",
+        "displayName": "Данциг",
+        "ownerTag": "POL",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 18.8,
+        "centerLat": 54.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.3,
+              53.8
+            ],
+            [
+              19.3,
+              53.8
+            ],
+            [
+              19.3,
+              54.8
+            ],
+            [
+              18.3,
+              54.8
+            ],
+            [
+              18.3,
+              53.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "POL_POZNAN",
+        "label": "Познань",
+        "displayName": "Познань",
+        "ownerTag": "POL",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 17.0,
+        "centerLat": 52.15
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.5,
+              51.0
+            ],
+            [
+              18.5,
+              51.0
+            ],
+            [
+              18.5,
+              53.3
+            ],
+            [
+              15.5,
+              53.3
+            ],
+            [
+              15.5,
+              51.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "POL_WARSAW",
+        "label": "Варшава",
+        "displayName": "Варшава",
+        "ownerTag": "POL",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 20.75,
+        "centerLat": 52.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.0,
+              51.5
+            ],
+            [
+              22.5,
+              51.5
+            ],
+            [
+              22.5,
+              53.5
+            ],
+            [
+              19.0,
+              53.5
+            ],
+            [
+              19.0,
+              51.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "POL_POMERANIA",
+        "label": "Померания",
+        "displayName": "Померания",
+        "ownerTag": "POL",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 17.1,
+        "centerLat": 54.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.0,
+              53.0
+            ],
+            [
+              19.2,
+              53.0
+            ],
+            [
+              19.2,
+              55.0
+            ],
+            [
+              15.0,
+              55.0
+            ],
+            [
+              15.0,
+              53.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "POL_GALICIA",
+        "label": "Галиция",
+        "displayName": "Галиция",
+        "ownerTag": "POL",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 22.4,
+        "centerLat": 49.65
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.0,
+              48.5
+            ],
+            [
+              24.8,
+              48.5
+            ],
+            [
+              24.8,
+              50.8
+            ],
+            [
+              20.0,
+              50.8
+            ],
+            [
+              20.0,
+              48.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "POL_VILNIUS",
+        "label": "Вильнюс",
+        "displayName": "Вильнюс",
+        "ownerTag": "POL",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 24.75,
+        "centerLat": 54.65
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.0,
+              53.5
+            ],
+            [
+              26.5,
+              53.5
+            ],
+            [
+              26.5,
+              55.8
+            ],
+            [
+              23.0,
+              55.8
+            ],
+            [
+              23.0,
+              53.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "POL_LODZ",
+        "label": "Лодзь",
+        "displayName": "Лодзь",
+        "ownerTag": "POL",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 19.15,
+        "centerLat": 51.35
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.8,
+              50.5
+            ],
+            [
+              20.5,
+              50.5
+            ],
+            [
+              20.5,
+              52.2
+            ],
+            [
+              17.8,
+              52.2
+            ],
+            [
+              17.8,
+              50.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "POL_LUBLIN",
+        "label": "Люблин",
+        "displayName": "Люблин",
+        "ownerTag": "POL",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 23.0,
+        "centerLat": 51.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.5,
+              50.0
+            ],
+            [
+              24.5,
+              50.0
+            ],
+            [
+              24.5,
+              52.2
+            ],
+            [
+              21.5,
+              52.2
+            ],
+            [
+              21.5,
+              50.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "FRA_PARIS",
+        "label": "Париж",
+        "displayName": "Париж",
+        "ownerTag": "FRA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 2.4,
+        "centerLat": 48.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.3,
+              48.0
+            ],
+            [
+              3.5,
+              48.0
+            ],
+            [
+              3.5,
+              49.5
+            ],
+            [
+              1.3,
+              49.5
+            ],
+            [
+              1.3,
+              48.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "FRA_NORMANDY",
+        "label": "Нормандия",
+        "displayName": "Нормандия",
+        "ownerTag": "FRA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": -0.25,
+        "centerLat": 49.25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.0,
+              48.3
+            ],
+            [
+              1.5,
+              48.3
+            ],
+            [
+              1.5,
+              50.2
+            ],
+            [
+              -2.0,
+              50.2
+            ],
+            [
+              -2.0,
+              48.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "FRA_BRITTANY",
+        "label": "Бретань",
+        "displayName": "Бретань",
+        "ownerTag": "FRA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": -3.3000000000000003,
+        "centerLat": 48.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.4,
+              47.2
+            ],
+            [
+              -1.2,
+              47.2
+            ],
+            [
+              -1.2,
+              49.0
+            ],
+            [
+              -5.4,
+              49.0
+            ],
+            [
+              -5.4,
+              47.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "FRA_ALSACE_LORRAINE",
+        "label": "Эльзас-Лотарингия",
+        "displayName": "Эльзас-Лотарингия",
+        "ownerTag": "FRA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 7.5,
+        "centerLat": 48.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              47.3
+            ],
+            [
+              8.5,
+              47.3
+            ],
+            [
+              8.5,
+              49.5
+            ],
+            [
+              6.5,
+              49.5
+            ],
+            [
+              6.5,
+              47.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "FRA_AQUITAINE",
+        "label": "Аквитания",
+        "displayName": "Аквитания",
+        "ownerTag": "FRA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": -0.30000000000000004,
+        "centerLat": 44.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.8,
+              43.0
+            ],
+            [
+              1.2,
+              43.0
+            ],
+            [
+              1.2,
+              46.2
+            ],
+            [
+              -1.8,
+              46.2
+            ],
+            [
+              -1.8,
+              43.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "FRA_PROVENCE",
+        "label": "Прованс",
+        "displayName": "Прованс",
+        "ownerTag": "FRA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 6.15,
+        "centerLat": 43.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              4.5,
+              43.0
+            ],
+            [
+              7.8,
+              43.0
+            ],
+            [
+              7.8,
+              44.8
+            ],
+            [
+              4.5,
+              44.8
+            ],
+            [
+              4.5,
+              43.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "FRA_BURGUNDY",
+        "label": "Бургундия",
+        "displayName": "Бургундия",
+        "ownerTag": "FRA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 4.85,
+        "centerLat": 47.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5,
+              46.2
+            ],
+            [
+              6.2,
+              46.2
+            ],
+            [
+              6.2,
+              48.2
+            ],
+            [
+              3.5,
+              48.2
+            ],
+            [
+              3.5,
+              46.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "FRA_OCCITANIA",
+        "label": "Окситания",
+        "displayName": "Окситания",
+        "ownerTag": "FRA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 2.4,
+        "centerLat": 43.85
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              42.5
+            ],
+            [
+              4.8,
+              42.5
+            ],
+            [
+              4.8,
+              45.2
+            ],
+            [
+              0.0,
+              45.2
+            ],
+            [
+              0.0,
+              42.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ITA_LOMBARDY",
+        "label": "Ломбардия",
+        "displayName": "Ломбардия",
+        "ownerTag": "ITA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 10.0,
+        "centerLat": 45.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.5,
+              44.7
+            ],
+            [
+              11.5,
+              44.7
+            ],
+            [
+              11.5,
+              46.8
+            ],
+            [
+              8.5,
+              46.8
+            ],
+            [
+              8.5,
+              44.7
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ITA_PIEDMONT",
+        "label": "Пьемонт",
+        "displayName": "Пьемонт",
+        "ownerTag": "ITA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 7.75,
+        "centerLat": 45.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.7,
+              44.0
+            ],
+            [
+              8.8,
+              44.0
+            ],
+            [
+              8.8,
+              46.4
+            ],
+            [
+              6.7,
+              46.4
+            ],
+            [
+              6.7,
+              44.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ITA_VENETO",
+        "label": "Венето",
+        "displayName": "Венето",
+        "ownerTag": "ITA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 12.1,
+        "centerLat": 45.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.0,
+              44.8
+            ],
+            [
+              13.2,
+              44.8
+            ],
+            [
+              13.2,
+              46.6
+            ],
+            [
+              11.0,
+              46.6
+            ],
+            [
+              11.0,
+              44.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ITA_TUSCANY",
+        "label": "Тоскана",
+        "displayName": "Тоскана",
+        "ownerTag": "ITA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 10.85,
+        "centerLat": 43.65
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.5,
+              42.8
+            ],
+            [
+              12.2,
+              42.8
+            ],
+            [
+              12.2,
+              44.5
+            ],
+            [
+              9.5,
+              44.5
+            ],
+            [
+              9.5,
+              42.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ITA_LAZIO",
+        "label": "Лацио",
+        "displayName": "Лацио",
+        "ownerTag": "ITA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 12.5,
+        "centerLat": 41.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.5,
+              41.0
+            ],
+            [
+              13.5,
+              41.0
+            ],
+            [
+              13.5,
+              42.8
+            ],
+            [
+              11.5,
+              42.8
+            ],
+            [
+              11.5,
+              41.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ITA_SICILY",
+        "label": "Сицилия",
+        "displayName": "Сицилия",
+        "ownerTag": "ITA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 14.0,
+        "centerLat": 37.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.2,
+              36.4
+            ],
+            [
+              15.8,
+              36.4
+            ],
+            [
+              15.8,
+              38.4
+            ],
+            [
+              12.2,
+              38.4
+            ],
+            [
+              12.2,
+              36.4
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ITA_SARDINIA",
+        "label": "Сардиния",
+        "displayName": "Сардиния",
+        "ownerTag": "ITA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 8.9,
+        "centerLat": 40.05
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.0,
+              38.8
+            ],
+            [
+              9.8,
+              38.8
+            ],
+            [
+              9.8,
+              41.3
+            ],
+            [
+              8.0,
+              41.3
+            ],
+            [
+              8.0,
+              38.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ITA_NAPLES",
+        "label": "Неаполь",
+        "displayName": "Неаполь",
+        "ownerTag": "ITA",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 15.25,
+        "centerLat": 40.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.0,
+              39.5
+            ],
+            [
+              17.5,
+              39.5
+            ],
+            [
+              17.5,
+              42.0
+            ],
+            [
+              13.0,
+              42.0
+            ],
+            [
+              13.0,
+              39.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ESP_CASTILE",
+        "label": "Кастилия",
+        "displayName": "Кастилия",
+        "ownerTag": "ESP",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": -3.75,
+        "centerLat": 40.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.0,
+              39.0
+            ],
+            [
+              -1.5,
+              39.0
+            ],
+            [
+              -1.5,
+              42.5
+            ],
+            [
+              -6.0,
+              42.5
+            ],
+            [
+              -6.0,
+              39.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ESP_CATALONIA",
+        "label": "Каталония",
+        "displayName": "Каталония",
+        "ownerTag": "ESP",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 1.7,
+        "centerLat": 41.65
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0,
+              40.5
+            ],
+            [
+              3.4,
+              40.5
+            ],
+            [
+              3.4,
+              42.8
+            ],
+            [
+              0.0,
+              42.8
+            ],
+            [
+              0.0,
+              40.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ESP_ANDALUSIA",
+        "label": "Андалусия",
+        "displayName": "Андалусия",
+        "ownerTag": "ESP",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": -4.5,
+        "centerLat": 37.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -7.5,
+              36.0
+            ],
+            [
+              -1.5,
+              36.0
+            ],
+            [
+              -1.5,
+              38.8
+            ],
+            [
+              -7.5,
+              38.8
+            ],
+            [
+              -7.5,
+              36.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ESP_BASQUE",
+        "label": "Страна Басков",
+        "displayName": "Страна Басков",
+        "ownerTag": "ESP",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": -2.35,
+        "centerLat": 42.95
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.5,
+              42.4
+            ],
+            [
+              -1.2,
+              42.4
+            ],
+            [
+              -1.2,
+              43.5
+            ],
+            [
+              -3.5,
+              43.5
+            ],
+            [
+              -3.5,
+              42.4
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ESP_GALICIA",
+        "label": "Галисия",
+        "displayName": "Галисия",
+        "ownerTag": "ESP",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": -7.9,
+        "centerLat": 42.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9.3,
+              41.8
+            ],
+            [
+              -6.5,
+              41.8
+            ],
+            [
+              -6.5,
+              43.8
+            ],
+            [
+              -9.3,
+              43.8
+            ],
+            [
+              -9.3,
+              41.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ESP_VALENCIA",
+        "label": "Валенсия",
+        "displayName": "Валенсия",
+        "ownerTag": "ESP",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": -0.09999999999999998,
+        "centerLat": 39.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.0,
+              38.0
+            ],
+            [
+              0.8,
+              38.0
+            ],
+            [
+              0.8,
+              40.6
+            ],
+            [
+              -1.0,
+              40.6
+            ],
+            [
+              -1.0,
+              38.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ESP_ARAGON",
+        "label": "Арагон",
+        "displayName": "Арагон",
+        "ownerTag": "ESP",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": -0.4,
+        "centerLat": 41.25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.8,
+              40.0
+            ],
+            [
+              1.0,
+              40.0
+            ],
+            [
+              1.0,
+              42.5
+            ],
+            [
+              -1.8,
+              42.5
+            ],
+            [
+              -1.8,
+              40.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GBR_ENGLAND",
+        "label": "Англия",
+        "displayName": "Англия",
+        "ownerTag": "GBR",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": -2.0,
+        "centerLat": 52.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.5,
+              49.5
+            ],
+            [
+              2.5,
+              49.5
+            ],
+            [
+              2.5,
+              56.0
+            ],
+            [
+              -6.5,
+              56.0
+            ],
+            [
+              -6.5,
+              49.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GBR_SCOTLAND",
+        "label": "Шотландия",
+        "displayName": "Шотландия",
+        "ownerTag": "GBR",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": -4.4,
+        "centerLat": 57.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -7.8,
+              55.0
+            ],
+            [
+              -1.0,
+              55.0
+            ],
+            [
+              -1.0,
+              59.2
+            ],
+            [
+              -7.8,
+              59.2
+            ],
+            [
+              -7.8,
+              55.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GBR_WALES",
+        "label": "Уэльс",
+        "displayName": "Уэльс",
+        "ownerTag": "GBR",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": -4.1,
+        "centerLat": 52.35
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.5,
+              51.2
+            ],
+            [
+              -2.7,
+              51.2
+            ],
+            [
+              -2.7,
+              53.5
+            ],
+            [
+              -5.5,
+              53.5
+            ],
+            [
+              -5.5,
+              51.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GBR_NORTHERN_IRELAND",
+        "label": "Северная Ирландия",
+        "displayName": "Северная Ирландия",
+        "ownerTag": "GBR",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": -6.4,
+        "centerLat": 54.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -7.5,
+              54.0
+            ],
+            [
+              -5.3,
+              54.0
+            ],
+            [
+              -5.3,
+              55.4
+            ],
+            [
+              -7.5,
+              55.4
+            ],
+            [
+              -7.5,
+              54.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "IRE_IRELAND",
+        "label": "Ирландия",
+        "displayName": "Ирландия",
+        "ownerTag": "IRE",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": -8.0,
+        "centerLat": 53.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10.5,
+              51.2
+            ],
+            [
+              -5.5,
+              51.2
+            ],
+            [
+              -5.5,
+              55.4
+            ],
+            [
+              -10.5,
+              55.4
+            ],
+            [
+              -10.5,
+              51.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "SOV_UKRAINE",
+        "label": "Украина",
+        "displayName": "Украина",
+        "ownerTag": "SOV",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 31.5,
+        "centerLat": 48.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.0,
+              44.0
+            ],
+            [
+              41.0,
+              44.0
+            ],
+            [
+              41.0,
+              53.0
+            ],
+            [
+              22.0,
+              53.0
+            ],
+            [
+              22.0,
+              44.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "SOV_BELARUS",
+        "label": "Беларусь",
+        "displayName": "Беларусь",
+        "ownerTag": "SOV",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 27.75,
+        "centerLat": 53.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.0,
+              51.0
+            ],
+            [
+              32.5,
+              51.0
+            ],
+            [
+              32.5,
+              56.5
+            ],
+            [
+              23.0,
+              56.5
+            ],
+            [
+              23.0,
+              51.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "SOV_LENINGRAD",
+        "label": "Ленинград",
+        "displayName": "Ленинград",
+        "ownerTag": "SOV",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 30.25,
+        "centerLat": 59.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              27.0,
+              58.0
+            ],
+            [
+              33.5,
+              58.0
+            ],
+            [
+              33.5,
+              61.8
+            ],
+            [
+              27.0,
+              61.8
+            ],
+            [
+              27.0,
+              58.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "SOV_MOSCOW",
+        "label": "Москва",
+        "displayName": "Москва",
+        "ownerTag": "SOV",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 36.75,
+        "centerLat": 55.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.0,
+              54.0
+            ],
+            [
+              40.5,
+              54.0
+            ],
+            [
+              40.5,
+              57.8
+            ],
+            [
+              33.0,
+              57.8
+            ],
+            [
+              33.0,
+              54.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "SOV_CAUCASUS",
+        "label": "Кавказ",
+        "displayName": "Кавказ",
+        "ownerTag": "SOV",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 43.0,
+        "centerLat": 43.25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.0,
+              41.0
+            ],
+            [
+              49.0,
+              41.0
+            ],
+            [
+              49.0,
+              45.5
+            ],
+            [
+              37.0,
+              45.5
+            ],
+            [
+              37.0,
+              41.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "SOV_URAL",
+        "label": "Урал",
+        "displayName": "Урал",
+        "ownerTag": "SOV",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 60.0,
+        "centerLat": 56.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              54.0,
+              52.0
+            ],
+            [
+              66.0,
+              52.0
+            ],
+            [
+              66.0,
+              61.5
+            ],
+            [
+              54.0,
+              61.5
+            ],
+            [
+              54.0,
+              52.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "SOV_VOLGA",
+        "label": "Поволжье",
+        "displayName": "Поволжье",
+        "ownerTag": "SOV",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 49.5,
+        "centerLat": 52.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              44.0,
+              48.0
+            ],
+            [
+              55.0,
+              48.0
+            ],
+            [
+              55.0,
+              56.0
+            ],
+            [
+              44.0,
+              56.0
+            ],
+            [
+              44.0,
+              48.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "SOV_CENTRAL_ASIA",
+        "label": "Средняя Азия",
+        "displayName": "Средняя Азия",
+        "ownerTag": "SOV",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 65.0,
+        "centerLat": 42.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              55.0,
+              37.0
+            ],
+            [
+              75.0,
+              37.0
+            ],
+            [
+              75.0,
+              48.0
+            ],
+            [
+              55.0,
+              48.0
+            ],
+            [
+              55.0,
+              37.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "SOV_SIBERIA",
+        "label": "Сибирь",
+        "displayName": "Сибирь",
+        "ownerTag": "SOV",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 87.5,
+        "centerLat": 57.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.0,
+              50.0
+            ],
+            [
+              105.0,
+              50.0
+            ],
+            [
+              105.0,
+              65.0
+            ],
+            [
+              70.0,
+              65.0
+            ],
+            [
+              70.0,
+              50.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "AUS_AUSTRIA",
+        "label": "Австрия",
+        "displayName": "Австрия",
+        "ownerTag": "AUS",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 13.35,
+        "centerLat": 47.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.5,
+              46.3
+            ],
+            [
+              17.2,
+              46.3
+            ],
+            [
+              17.2,
+              49.2
+            ],
+            [
+              9.5,
+              49.2
+            ],
+            [
+              9.5,
+              46.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "CZE_BOHEMIA",
+        "label": "Богемия",
+        "displayName": "Богемия",
+        "ownerTag": "CZE",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 14.25,
+        "centerLat": 49.85
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.0,
+              48.5
+            ],
+            [
+              16.5,
+              48.5
+            ],
+            [
+              16.5,
+              51.2
+            ],
+            [
+              12.0,
+              51.2
+            ],
+            [
+              12.0,
+              48.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "CZE_SLOVAKIA",
+        "label": "Словакия",
+        "displayName": "Словакия",
+        "ownerTag": "CZE",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 19.5,
+        "centerLat": 48.65
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.5,
+              47.5
+            ],
+            [
+              22.5,
+              47.5
+            ],
+            [
+              22.5,
+              49.8
+            ],
+            [
+              16.5,
+              49.8
+            ],
+            [
+              16.5,
+              47.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "HUN_HUNGARY",
+        "label": "Венгрия",
+        "displayName": "Венгрия",
+        "ownerTag": "HUN",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 19.5,
+        "centerLat": 47.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.0,
+              45.5
+            ],
+            [
+              23.0,
+              45.5
+            ],
+            [
+              23.0,
+              48.7
+            ],
+            [
+              16.0,
+              48.7
+            ],
+            [
+              16.0,
+              45.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ROM_WALLACHIA",
+        "label": "Валахия",
+        "displayName": "Валахия",
+        "ownerTag": "ROM",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 26.25,
+        "centerLat": 44.65
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.0,
+              43.5
+            ],
+            [
+              29.5,
+              43.5
+            ],
+            [
+              29.5,
+              45.8
+            ],
+            [
+              23.0,
+              45.8
+            ],
+            [
+              23.0,
+              43.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "ROM_TRANSYLVANIA",
+        "label": "Трансильвания",
+        "displayName": "Трансильвания",
+        "ownerTag": "ROM",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 24.0,
+        "centerLat": 47.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.5,
+              45.5
+            ],
+            [
+              26.5,
+              45.5
+            ],
+            [
+              26.5,
+              48.5
+            ],
+            [
+              21.5,
+              48.5
+            ],
+            [
+              21.5,
+              45.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "YUG_SERBIA",
+        "label": "Сербия",
+        "displayName": "Сербия",
+        "ownerTag": "YUG",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 21.0,
+        "centerLat": 44.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.0,
+              43.0
+            ],
+            [
+              23.0,
+              43.0
+            ],
+            [
+              23.0,
+              46.0
+            ],
+            [
+              19.0,
+              46.0
+            ],
+            [
+              19.0,
+              43.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "YUG_CROATIA",
+        "label": "Хорватия",
+        "displayName": "Хорватия",
+        "ownerTag": "YUG",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 16.4,
+        "centerLat": 45.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.0,
+              44.0
+            ],
+            [
+              18.8,
+              44.0
+            ],
+            [
+              18.8,
+              46.6
+            ],
+            [
+              14.0,
+              46.6
+            ],
+            [
+              14.0,
+              44.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "BUL_BULGARIA",
+        "label": "Болгария",
+        "displayName": "Болгария",
+        "ownerTag": "BUL",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 25.25,
+        "centerLat": 42.65
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.0,
+              41.0
+            ],
+            [
+              28.5,
+              41.0
+            ],
+            [
+              28.5,
+              44.3
+            ],
+            [
+              22.0,
+              44.3
+            ],
+            [
+              22.0,
+              41.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "GRE_GREECE",
+        "label": "Греция",
+        "displayName": "Греция",
+        "ownerTag": "GRE",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 23.0,
+        "centerLat": 38.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.5,
+              36.0
+            ],
+            [
+              26.5,
+              36.0
+            ],
+            [
+              26.5,
+              41.8
+            ],
+            [
+              19.5,
+              41.8
+            ],
+            [
+              19.5,
+              36.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "TUR_ISTANBUL",
+        "label": "Стамбул",
+        "displayName": "Стамбул",
+        "ownerTag": "TUR",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 28.25,
+        "centerLat": 41.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              26.0,
+              40.0
+            ],
+            [
+              30.5,
+              40.0
+            ],
+            [
+              30.5,
+              42.0
+            ],
+            [
+              26.0,
+              42.0
+            ],
+            [
+              26.0,
+              40.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "TUR_ANATOLIA",
+        "label": "Анатолия",
+        "displayName": "Анатолия",
+        "ownerTag": "TUR",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 34.0,
+        "centerLat": 38.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              29.0,
+              36.0
+            ],
+            [
+              39.0,
+              36.0
+            ],
+            [
+              39.0,
+              41.5
+            ],
+            [
+              29.0,
+              41.5
+            ],
+            [
+              29.0,
+              36.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "TUR_KURDISTAN",
+        "label": "Курдистан",
+        "displayName": "Курдистан",
+        "ownerTag": "TUR",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 41.25,
+        "centerLat": 39.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              38.0,
+              36.5
+            ],
+            [
+              44.5,
+              36.5
+            ],
+            [
+              44.5,
+              41.5
+            ],
+            [
+              38.0,
+              41.5
+            ],
+            [
+              38.0,
+              36.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "TUR_ARMENIA",
+        "label": "Армения",
+        "displayName": "Армения",
+        "ownerTag": "TUR",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 41.9,
+        "centerLat": 40.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.0,
+              39.0
+            ],
+            [
+              44.8,
+              39.0
+            ],
+            [
+              44.8,
+              42.5
+            ],
+            [
+              39.0,
+              42.5
+            ],
+            [
+              39.0,
+              39.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "PER_PERSIA",
+        "label": "Персия",
+        "displayName": "Персия",
+        "ownerTag": "PER",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 53.5,
+        "centerLat": 32.25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              45.0,
+              25.0
+            ],
+            [
+              62.0,
+              25.0
+            ],
+            [
+              62.0,
+              39.5
+            ],
+            [
+              45.0,
+              39.5
+            ],
+            [
+              45.0,
+              25.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "IRQ_IRAQ",
+        "label": "Ирак",
+        "displayName": "Ирак",
+        "ownerTag": "IRQ",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 43.5,
+        "centerLat": 33.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              38.0,
+              29.0
+            ],
+            [
+              49.0,
+              29.0
+            ],
+            [
+              49.0,
+              37.8
+            ],
+            [
+              38.0,
+              37.8
+            ],
+            [
+              38.0,
+              29.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "SYR_SYRIA",
+        "label": "Сирия",
+        "displayName": "Сирия",
+        "ownerTag": "SYR",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 39.0,
+        "centerLat": 34.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.5,
+              32.0
+            ],
+            [
+              42.5,
+              32.0
+            ],
+            [
+              42.5,
+              37.5
+            ],
+            [
+              35.5,
+              37.5
+            ],
+            [
+              35.5,
+              32.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "PAL_PALESTINE",
+        "label": "Палестина",
+        "displayName": "Палестина",
+        "ownerTag": "PAL",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 35.0,
+        "centerLat": 31.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.0,
+              30.0
+            ],
+            [
+              36.0,
+              30.0
+            ],
+            [
+              36.0,
+              33.5
+            ],
+            [
+              34.0,
+              33.5
+            ],
+            [
+              34.0,
+              30.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "EGY_EGYPT",
+        "label": "Египет",
+        "displayName": "Египет",
+        "ownerTag": "EGY",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 30.75,
+        "centerLat": 26.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.0,
+              22.0
+            ],
+            [
+              36.5,
+              22.0
+            ],
+            [
+              36.5,
+              31.8
+            ],
+            [
+              25.0,
+              31.8
+            ],
+            [
+              25.0,
+              22.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "CHI_NORTH_CHINA",
+        "label": "Северный Китай",
+        "displayName": "Северный Китай",
+        "ownerTag": "CHI",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 114.0,
+        "centerLat": 37.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              108.0,
+              34.0
+            ],
+            [
+              120.0,
+              34.0
+            ],
+            [
+              120.0,
+              41.5
+            ],
+            [
+              108.0,
+              41.5
+            ],
+            [
+              108.0,
+              34.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "CHI_SICHUAN",
+        "label": "Сычуань",
+        "displayName": "Сычуань",
+        "ownerTag": "CHI",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 102.5,
+        "centerLat": 30.25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.0,
+              27.0
+            ],
+            [
+              108.0,
+              27.0
+            ],
+            [
+              108.0,
+              33.5
+            ],
+            [
+              97.0,
+              33.5
+            ],
+            [
+              97.0,
+              27.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "CHI_GUANGDONG",
+        "label": "Гуандун",
+        "displayName": "Гуандун",
+        "ownerTag": "CHI",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 113.25,
+        "centerLat": 22.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              109.0,
+              20.0
+            ],
+            [
+              117.5,
+              20.0
+            ],
+            [
+              117.5,
+              25.5
+            ],
+            [
+              109.0,
+              25.5
+            ],
+            [
+              109.0,
+              20.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "CHI_YUNNAN",
+        "label": "Юньнань",
+        "displayName": "Юньнань",
+        "ownerTag": "CHI",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 101.5,
+        "centerLat": 24.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              97.0,
+              21.0
+            ],
+            [
+              106.0,
+              21.0
+            ],
+            [
+              106.0,
+              28.5
+            ],
+            [
+              97.0,
+              28.5
+            ],
+            [
+              97.0,
+              21.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "CHI_MANCHURIA",
+        "label": "Маньчжурия",
+        "displayName": "Маньчжурия",
+        "ownerTag": "CHI",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 126.0,
+        "centerLat": 45.25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              120.0,
+              40.0
+            ],
+            [
+              132.0,
+              40.0
+            ],
+            [
+              132.0,
+              50.5
+            ],
+            [
+              120.0,
+              50.5
+            ],
+            [
+              120.0,
+              40.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "MNG_MONGOLIA",
+        "label": "Монголия",
+        "displayName": "Монголия",
+        "ownerTag": "MNG",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 103.0,
+        "centerLat": 47.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              87.0,
+              42.0
+            ],
+            [
+              119.0,
+              42.0
+            ],
+            [
+              119.0,
+              52.0
+            ],
+            [
+              87.0,
+              52.0
+            ],
+            [
+              87.0,
+              42.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "JAP_HOME_ISLANDS",
+        "label": "Японские острова",
+        "displayName": "Японские острова",
+        "ownerTag": "JAP",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 138.0,
+        "centerLat": 38.25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              130.0,
+              31.0
+            ],
+            [
+              146.0,
+              31.0
+            ],
+            [
+              146.0,
+              45.5
+            ],
+            [
+              130.0,
+              45.5
+            ],
+            [
+              130.0,
+              31.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "regionId": "JAP_KOREA",
+        "label": "Корея",
+        "displayName": "Корея",
+        "ownerTag": "JAP",
+        "isGenerated": false,
+        "isPlayerVisible": true,
+        "centerLon": 127.75,
+        "centerLat": 38.75
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              125.0,
+              34.0
+            ],
+            [
+              130.5,
+              34.0
+            ],
+            [
+              130.5,
+              43.5
+            ],
+            [
+              125.0,
+              43.5
+            ],
+            [
+              125.0,
+              34.0
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
