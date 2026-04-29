@@ -1,4 +1,5 @@
 import type { GameState } from './types'
+import type { OverlayData } from './map/overlayTypes'
 
 export const API_BASE = 'http://127.0.0.1:8000'
 
@@ -37,6 +38,10 @@ export async function fetchMap1933CurrentLabels(): Promise<GeoJSON.FeatureCollec
   return fetchJson('/api/map/1933/current-labels')
 }
 
+export async function fetchMap1933OverlayData(): Promise<OverlayData> {
+  return fetchJson('/api/map/1933/overlay-data')
+}
+
 export async function fetchMap1933RegionsGeojson(): Promise<GeoJSON.FeatureCollection> {
   return fetchJson('/api/map/1933/regions-geojson')
 }
@@ -63,6 +68,10 @@ export async function fetchVisualOrders(): Promise<GeoJSON.FeatureCollection> {
 
 export async function debugTransferProvinces(provinceIds: string[], newOwner: string) {
   return postJson('/api/debug/transfer-provinces', { provinceIds, newOwner })
+}
+
+export async function debugTransferRegions(regionIds: string[], newOwner: string) {
+  return postJson('/api/debug/transfer-regions', { regionIds, newOwner })
 }
 
 export async function debugMoveDivision(divisionId: string, toProvinceId: string) {

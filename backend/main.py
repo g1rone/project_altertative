@@ -12,7 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 try:
-    from shapely.geometry import shape
+    from shapely.geometry import mapping, shape
     from shapely.validation import make_valid
 
     HAS_SHAPELY = True
@@ -35,6 +35,7 @@ MICROSTATE_POINTS_PATH = BASE_DATA_DIR / "microstate_points_1933.geojson"
 MANUAL_REGIONS_PATH = BASE_DATA_DIR / "manual_regions_1933.json"
 REGIONS_GEOJSON_PATH = BASE_DATA_DIR / "regions_1933.geojson"
 PROCESSED_REGIONS_GEOJSON_PATH = PROCESSED_DATA_DIR / "regions_1933.geojson"
+PROCESSED_COUNTRIES_GEOJSON_PATH = PROCESSED_DATA_DIR / "countries_1933.geojson"
 PROCESSED_REGION_LABELS_PATH = PROCESSED_DATA_DIR / "region_label_points_1933.geojson"
 PROCESSED_MICROSTATES_PATH = PROCESSED_DATA_DIR / "microstates_1933.geojson"
 PROCESSED_MICROSTATE_LABELS_PATH = PROCESSED_DATA_DIR / "microstate_label_points_1933.geojson"
@@ -138,6 +139,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+        "http://localhost:5174",
+        "http://127.0.0.1:5174",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -193,6 +196,11 @@ class TurnResponse(BaseModel):
 
 class TransferProvincesRequest(BaseModel):
     provinceIds: List[str]
+    newOwner: str
+
+
+class TransferRegionsRequest(BaseModel):
+    regionIds: List[str]
     newOwner: str
 
 
@@ -551,6 +559,9 @@ def build_region_geometries_from_provinces() -> dict:
                 "geoboundaries-adm1",
                 "natural-earth-admin1-grid-aggregate",
                 "natural-earth-admin1-grid-split",
+                "admin1-aggregate",
+                "admin1-split",
+                "fallback-split",
                 "country-geometry-single",
             }
             and feature.get("properties", {}).get("isPlayerVisible") is True
@@ -561,6 +572,149 @@ def build_region_geometries_from_provinces() -> dict:
         return {"type": "FeatureCollection", "features": features}
     print("WARNING: regions_1933.geojson is missing; run scripts/prepare_admin1_regions.py")
     return {"type": "FeatureCollection", "features": []}
+
+
+def load_region_ownership() -> dict[str, str]:
+    campaign_state = load_campaign_state()
+    overrides = campaign_state.get("regionOwnership", {})
+    if not isinstance(overrides, dict):
+        overrides = {}
+
+    regions = read_json(PROCESSED_REGIONS_GEOJSON_PATH if PROCESSED_REGIONS_GEOJSON_PATH.exists() else REGIONS_GEOJSON_PATH)
+    ownership: dict[str, str] = {}
+    for feature in regions.get("features", []):
+        props = feature.get("properties", {})
+        region_id = props.get("regionId")
+        if not region_id:
+            continue
+        override = overrides.get(region_id, {})
+        if isinstance(override, dict):
+            owner = override.get("ownerTag")
+        else:
+            owner = override
+        ownership[region_id] = str(owner or props.get("ownerTag") or props.get("countryTag") or "UNK")
+    return ownership
+
+
+def build_country_overlay_metadata() -> dict[str, dict]:
+    state = load_state()
+    processed = read_json_if_exists(PROCESSED_COUNTRIES_GEOJSON_PATH) or {"features": []}
+    metadata: dict[str, dict] = {}
+
+    for tag, country in state.countries.items():
+        metadata[tag] = {
+            "tag": tag,
+            "displayName": LABEL_NAMES.get(tag, country.name.upper()),
+            "color": country.color,
+            "importance": 3 if tag in {"GER", "FRA", "GBR", "ITA", "POL", "SOV", "UNI", "CHI", "JAP", "IND"} else 1,
+        }
+
+    for feature in processed.get("features", []):
+        props = feature.get("properties", {})
+        for tag in {props.get("tag"), props.get("ownerTag"), props.get("labelOwnerTag")}:
+            if not tag:
+                continue
+            state_country = state.countries.get(str(tag))
+            metadata.setdefault(
+                str(tag),
+                {
+                    "tag": str(tag),
+                    "displayName": LABEL_NAMES.get(str(tag), str(props.get("displayName") or tag).upper()),
+                    "color": state_country.color if state_country else stable_color(str(tag)),
+                    "importance": 2 if str(tag) in SAFE_LABEL_TAGS else 1,
+                },
+            )
+
+    return metadata
+
+
+def country_label_eligibility_by_tag() -> dict[str, dict]:
+    processed = read_json_if_exists(PROCESSED_COUNTRIES_GEOJSON_PATH) or {"features": []}
+    result: dict[str, dict] = {}
+    for feature in processed.get("features", []):
+        props = feature.get("properties", {})
+        tag = props.get("tag")
+        if not tag:
+            continue
+        result[str(tag)] = {
+            "isMainland": bool(props.get("isMainland", True)),
+            "isColony": bool(props.get("isColony", False)),
+            "isDetachedTerritory": bool(props.get("isDetachedTerritory", False)),
+            "isLabelEligible": bool(props.get("isLabelEligible", True)),
+            "labelOwnerTag": str(props.get("labelOwnerTag") or props.get("ownerTag") or tag),
+        }
+    return result
+
+
+def simplified_overlay_geometry(geometry: dict | None, tolerance: float = 0.18) -> dict | None:
+    if not geometry:
+        return None
+    if not HAS_SHAPELY:
+        return geometry
+    try:
+        parsed = shape(geometry)
+        if not parsed.is_valid:
+            parsed = make_valid(parsed)
+        if parsed.is_empty:
+            return None
+        simplified = parsed.simplify(tolerance, preserve_topology=True)
+        if simplified.is_empty:
+            simplified = parsed
+        mapped = mapping(simplified)
+        mapped["coordinates"] = rounded_coordinates(mapped.get("coordinates"))
+        return mapped
+    except Exception:
+        return geometry
+
+
+def rounded_coordinates(value: Any, precision: int = 4) -> Any:
+    if isinstance(value, (int, float)):
+        return round(float(value), precision)
+    if isinstance(value, (list, tuple)):
+        return [rounded_coordinates(item, precision) for item in value]
+    return value
+
+
+def build_map_overlay_data() -> dict:
+    regions_path = PROCESSED_REGIONS_GEOJSON_PATH if PROCESSED_REGIONS_GEOJSON_PATH.exists() else REGIONS_GEOJSON_PATH
+    regions = read_json(regions_path)
+    ownership = load_region_ownership()
+    eligibility = country_label_eligibility_by_tag()
+    features = []
+
+    for feature in regions.get("features", []):
+        props = feature.get("properties", {})
+        region_id = props.get("regionId")
+        if not region_id or props.get("isPlayerVisible") is not True:
+            continue
+        geometry = simplified_overlay_geometry(feature.get("geometry"))
+        if not geometry or geometry.get("type") not in {"Polygon", "MultiPolygon"}:
+            continue
+        country_tag = str(props.get("countryTag") or props.get("ownerTag") or "UNK")
+        territory = eligibility.get(country_tag, {})
+        owner_tag = ownership.get(region_id, str(props.get("ownerTag") or country_tag))
+        is_self_owned = owner_tag == country_tag
+        copied_props = {
+            "regionId": region_id,
+            "countryTag": country_tag,
+            "ownerTag": owner_tag,
+            "defaultOwnerTag": props.get("ownerTag") or country_tag,
+            "displayName": props.get("displayName") or props.get("name") or region_id,
+            "isMainland": territory.get("isMainland", True) or is_self_owned,
+            "isColony": bool(territory.get("isColony", False)) and not is_self_owned,
+            "isDetachedTerritory": bool(territory.get("isDetachedTerritory", False)) and not is_self_owned,
+            "isLabelEligible": bool(territory.get("isLabelEligible", True)) or is_self_owned,
+            "labelOwnerTag": owner_tag,
+            "labelSize": props.get("labelSize", 11),
+            "minZoom": props.get("minZoom", 4.7),
+        }
+        features.append({"type": "Feature", "properties": copied_props, "geometry": geometry})
+
+    return {
+        "countries": build_country_overlay_metadata(),
+        "ownership": ownership,
+        "regions": {"type": "FeatureCollection", "features": features},
+    }
 
 
 def build_region_labels() -> dict:
@@ -761,6 +915,7 @@ def build_map_payload() -> dict:
         "regionLabels": build_region_labels(),
         "microstates": build_microstate_points(),
         "visualOrders": build_visual_orders(),
+        "overlayData": build_map_overlay_data(),
         "state": load_campaign_state(),
     }
 
@@ -775,6 +930,24 @@ def transfer_provinces(province_ids: list[str], new_owner: str) -> dict:
     for province_id in province_ids:
         ownership[province_id]["ownerTag"] = new_owner
         ownership[province_id]["controllerTag"] = new_owner
+
+    save_campaign_state(campaign_state)
+    return build_map_payload()
+
+
+def transfer_regions(region_ids: list[str], new_owner: str) -> dict:
+    known_regions = load_region_ownership()
+    missing = [region_id for region_id in region_ids if region_id not in known_regions]
+    if missing:
+        raise HTTPException(status_code=404, detail=f"Unknown regionIds: {missing}")
+
+    campaign_state = load_campaign_state()
+    ownership = campaign_state.setdefault("regionOwnership", {})
+    for region_id in region_ids:
+        ownership[region_id] = {
+            "ownerTag": new_owner,
+            "controllerTag": new_owner,
+        }
 
     save_campaign_state(campaign_state)
     return build_map_payload()
@@ -1067,6 +1240,11 @@ def get_map_1933_current_labels() -> dict:
     return build_current_country_label_lines()
 
 
+@app.get("/api/map/1933/overlay-data")
+def get_map_1933_overlay_data() -> dict:
+    return build_map_overlay_data()
+
+
 @app.get("/api/map/1933/regions-geojson")
 def get_map_1933_regions_geojson() -> dict:
     return build_region_geometries_from_provinces()
@@ -1103,6 +1281,11 @@ def get_map_1933_visual_orders() -> dict:
 @app.post("/api/debug/transfer-provinces")
 def debug_transfer_provinces(req: TransferProvincesRequest) -> dict:
     return transfer_provinces(req.provinceIds, req.newOwner)
+
+
+@app.post("/api/debug/transfer-regions")
+def debug_transfer_regions(req: TransferRegionsRequest) -> dict:
+    return transfer_regions(req.regionIds, req.newOwner)
 
 
 @app.post("/api/debug/move-division")

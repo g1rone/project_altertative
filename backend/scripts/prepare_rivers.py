@@ -60,6 +60,7 @@ def main() -> None:
                     "name": name,
                     "rank": scalerank,
                     "scalerank": scalerank,
+                    "length": round(float(geometry.length), 3),
                     "importance": importance,
                     "widthClass": width_class,
                     "minZoom": river_min_zoom(width_class),

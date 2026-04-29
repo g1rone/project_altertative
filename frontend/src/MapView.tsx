@@ -6,11 +6,14 @@ import { Protocol } from 'pmtiles'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import {
   API_BASE,
+  fetchMap1933OverlayData,
   fetchMap1933Provinces,
   fetchMap1933TileMetadata,
   fetchVisualOrders,
 } from './api'
 import type { GameState } from './types'
+import MapOverlay from './map/MapOverlay'
+import type { OverlayData } from './map/overlayTypes'
 
 const WORLD_BOUNDS: maplibregl.LngLatBoundsLike = [
   [-180, -60],
@@ -34,10 +37,12 @@ type Props = {
 
 let protocolRegistered = false
 
-export default function MapView({ selectedTag, onSelectCountry }: Props) {
+export default function MapView({ state, selectedTag, onSelectCountry }: Props) {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
   const provincesLoadedRef = useRef(false)
+  const [mapInstance, setMapInstance] = useState<maplibregl.Map | null>(null)
+  const [overlayData, setOverlayData] = useState<OverlayData | null>(null)
   const [showProvinces, setShowProvinces] = useState(false)
 
   useEffect(() => {
@@ -72,6 +77,7 @@ export default function MapView({ selectedTag, onSelectCountry }: Props) {
     })
 
     mapRef.current = map
+    setMapInstance(map)
     map.addControl(new maplibregl.NavigationControl(), 'top-left')
 
     map.on('load', async () => {
@@ -79,10 +85,12 @@ export default function MapView({ selectedTag, onSelectCountry }: Props) {
         map.resize()
         setTimeout(() => map.resize(), 0)
 
-        const [metadata, visualOrders] = await Promise.all([
+        const [metadata, visualOrders, nextOverlayData] = await Promise.all([
           fetchMap1933TileMetadata(),
           fetchVisualOrders(),
+          fetchMap1933OverlayData(),
         ])
+        setOverlayData(nextOverlayData)
 
         if (!metadata.exists) {
           console.error('PMTiles missing, run backend/scripts/build_pmtiles.py')
@@ -94,6 +102,7 @@ export default function MapView({ selectedTag, onSelectCountry }: Props) {
         const pmtilesUrl = new URL(metadata.pmtilesUrl, API_BASE).toString()
         addSources(map, pmtilesUrl, visualOrders)
         addLayers(map, selectedTag)
+        updateSelectedOwnedRegions(map, nextOverlayData, selectedTag)
         addInteractions(map, onSelectCountry)
 
         map.fitBounds(START_BOUNDS, { padding: 24, duration: 0 })
@@ -111,6 +120,7 @@ export default function MapView({ selectedTag, onSelectCountry }: Props) {
     return () => {
       map.remove()
       mapRef.current = null
+      setMapInstance(null)
     }
   }, [])
 
@@ -118,12 +128,29 @@ export default function MapView({ selectedTag, onSelectCountry }: Props) {
     const map = mapRef.current
     if (!map) return
 
-    for (const layerId of ['selected-country-border-glow', 'selected-country-border-main']) {
+    for (const layerId of [
+      'selected-country-border-glow',
+      'selected-country-border-main',
+      'selected-microstate-border-glow',
+      'selected-microstate-border-main',
+    ]) {
       if (map.getLayer(layerId)) {
         map.setFilter(layerId, selectedCountryFilter(selectedTag))
       }
     }
-  }, [selectedTag])
+    updateSelectedOwnedRegions(map, overlayData, selectedTag)
+  }, [overlayData, selectedTag])
+
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !state) return
+    fetchMap1933OverlayData()
+      .then((nextOverlayData) => {
+        setOverlayData(nextOverlayData)
+        updateSelectedOwnedRegions(map, nextOverlayData, selectedTag)
+      })
+      .catch((error) => console.error('Failed to refresh map overlay data:', error))
+  }, [state?.turn])
 
   useEffect(() => {
     const map = mapRef.current
@@ -142,7 +169,10 @@ export default function MapView({ selectedTag, onSelectCountry }: Props) {
 
   return (
     <>
-      <div ref={containerRef} className="map-container" />
+      <div className="map-stack">
+        <div ref={containerRef} className="map-container" />
+        <MapOverlay map={mapInstance} overlayData={overlayData} selectedTag={selectedTag} />
+      </div>
       <button className="map-debug-toggle" onClick={() => setShowProvinces((value) => !value)}>
         {showProvinces ? 'Hide provinces' : 'Show provinces'}
       </button>
@@ -174,6 +204,10 @@ function addSources(map: maplibregl.Map, pmtilesUrl: string, visualOrders: GeoJS
     type: 'geojson',
     data: visualOrders,
   })
+  map.addSource('selected-owned-regions', {
+    type: 'geojson',
+    data: EMPTY_GEOJSON,
+  })
 }
 
 function addLayers(map: maplibregl.Map, selectedTag: string) {
@@ -200,7 +234,7 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
   } as any)
 
   map.addLayer({
-    id: 'rivers-line-casing',
+    id: 'rivers-casing',
     type: 'line',
     source: 'pax1933',
     'source-layer': 'rivers',
@@ -248,11 +282,11 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     type: 'line',
     source: 'pax1933',
     'source-layer': 'regions',
-    minzoom: 4.4,
+    minzoom: 3.8,
     paint: {
-      'line-color': '#dbeafe',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 4.5, 0.25, 6, 0.65, 8, 0.9],
-      'line-opacity': ['interpolate', ['linear'], ['zoom'], 4.5, 0.12, 6, 0.32, 8, 0.55],
+      'line-color': '#cbd5e1',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 3.8, 0, 4.5, 0.18, 6, 0.38, 8, 0.65],
+      'line-opacity': ['interpolate', ['linear'], ['zoom'], 3.8, 0, 4.5, 0.14, 6, 0.28, 8, 0.45],
     },
   } as any)
 
@@ -322,6 +356,56 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
   } as any)
 
   map.addLayer({
+    id: 'selected-owned-regions-glow',
+    type: 'line',
+    source: 'selected-owned-regions',
+    paint: {
+      'line-color': '#facc15',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 2, 2.8, 6, 5],
+      'line-opacity': 0.34,
+      'line-blur': 1.4,
+    },
+  } as any)
+
+  map.addLayer({
+    id: 'selected-owned-regions-main',
+    type: 'line',
+    source: 'selected-owned-regions',
+    paint: {
+      'line-color': '#fde047',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 2, 1.2, 6, 2.2],
+      'line-opacity': 0.92,
+    },
+  } as any)
+
+  map.addLayer({
+    id: 'selected-microstate-border-glow',
+    type: 'line',
+    source: 'pax1933',
+    'source-layer': 'microstates',
+    filter: selectedCountryFilter(selectedTag),
+    paint: {
+      'line-color': '#facc15',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 3, 2.8, 7, 5],
+      'line-opacity': 0.38,
+      'line-blur': 1.2,
+    },
+  } as any)
+
+  map.addLayer({
+    id: 'selected-microstate-border-main',
+    type: 'line',
+    source: 'pax1933',
+    'source-layer': 'microstates',
+    filter: selectedCountryFilter(selectedTag),
+    paint: {
+      'line-color': '#fde047',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 3, 1.4, 7, 2.3],
+      'line-opacity': 0.95,
+    },
+  } as any)
+
+  map.addLayer({
     id: 'microstate-hitbox',
     type: 'circle',
     source: 'pax1933',
@@ -334,78 +418,20 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
   } as any)
 
   map.addLayer({
-    id: 'country-label-lines',
-    type: 'symbol',
-    source: 'pax1933',
-    'source-layer': 'country_label_lines',
-    layout: {
-      'symbol-placement': 'line',
-      'text-field': ['get', 'label'],
-      'text-size': [
-        'interpolate',
-        ['linear'],
-        ['zoom'],
-        2,
-        ['*', ['coalesce', ['get', 'labelSize'], 22], 0.72],
-        4.7,
-        ['coalesce', ['get', 'labelSize'], 22],
-        6.8,
-        ['*', ['coalesce', ['get', 'labelSize'], 22], 0.9],
-      ],
-      'text-letter-spacing': ['coalesce', ['get', 'labelSpacing'], 0.16],
-      'text-font': ['Open Sans Bold'],
-      'text-keep-upright': true,
-      'text-allow-overlap': false,
-      'text-ignore-placement': false,
-      'text-max-angle': 32,
-      'symbol-sort-key': ['coalesce', ['get', 'labelPriority'], 1000],
-    },
-    paint: countryLabelPaint(0.98),
-  } as any)
-
-  map.addLayer({
-    id: 'country-label-points',
-    type: 'symbol',
-    source: 'pax1933',
-    'source-layer': 'country_label_points',
-    layout: {
-      'symbol-placement': 'point',
-      'text-field': ['get', 'label'],
-      'text-size': [
-        'interpolate',
-        ['linear'],
-        ['zoom'],
-        2,
-        ['*', ['coalesce', ['get', 'labelSize'], 16], 0.75],
-        5,
-        ['coalesce', ['get', 'labelSize'], 16],
-      ],
-      'text-letter-spacing': ['coalesce', ['get', 'labelSpacing'], 0.12],
-      'text-font': ['Open Sans Bold'],
-      'text-allow-overlap': false,
-      'text-ignore-placement': false,
-      'text-variable-anchor': ['center', 'top', 'bottom'],
-      'text-radial-offset': 0.25,
-      'symbol-sort-key': ['coalesce', ['get', 'labelPriority'], 1000],
-    },
-    paint: countryLabelPaint(0.88),
-  } as any)
-
-  map.addLayer({
     id: 'region-labels',
     type: 'symbol',
     source: 'pax1933',
     'source-layer': 'region_label_points',
-    minzoom: 4.7,
+    minzoom: 4.35,
     layout: {
       'text-field': ['get', 'label'],
       'text-size': [
         'interpolate',
         ['linear'],
         ['zoom'],
-        4.7,
-        9,
-        5.5,
+        4.35,
+        8.5,
+        5.3,
         ['coalesce', ['get', 'labelSize'], 10],
         7,
         ['+', ['coalesce', ['get', 'labelSize'], 10], 2],
@@ -419,11 +445,11 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
       'symbol-sort-key': ['coalesce', ['get', 'labelPriority'], 1000],
     },
     paint: {
-      'text-color': '#dbeafe',
+      'text-color': '#e5e7eb',
       'text-halo-color': '#020617',
-      'text-halo-width': 1.6,
+      'text-halo-width': 1.4,
       'text-halo-blur': 0.35,
-      'text-opacity': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5.0, 0.45, 5.7, 0.85, 7, 1],
+      'text-opacity': ['interpolate', ['linear'], ['zoom'], 4.3, 0, 4.8, 0.34, 5.4, 0.82, 7, 1],
     },
   } as any)
 
@@ -460,16 +486,6 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
   } as any)
 }
 
-function countryLabelPaint(baseOpacity: number) {
-  return {
-    'text-color': '#f8fafc',
-    'text-halo-color': '#020617',
-    'text-halo-width': 3.0,
-    'text-halo-blur': 0.6,
-    'text-opacity': ['interpolate', ['linear'], ['zoom'], 2, baseOpacity, 5.8, 0.82, 6.8, 0.45, 7.2, 0],
-  }
-}
-
 function addInteractions(map: maplibregl.Map, onSelectCountry: (tag: string) => void) {
   const selectableLayers = [
     'country-fill',
@@ -504,6 +520,35 @@ async function ensureProvinceDebugData(
   const source = map.getSource('provinces-debug-1933') as maplibregl.GeoJSONSource | undefined
   source?.setData(provinces)
   provincesLoadedRef.current = true
+}
+
+function updateSelectedOwnedRegions(
+  map: maplibregl.Map,
+  overlayData: OverlayData | null,
+  selectedTag: string,
+) {
+  const source = map.getSource('selected-owned-regions') as maplibregl.GeoJSONSource | undefined
+  source?.setData(selectedOwnedRegions(overlayData, selectedTag))
+}
+
+function selectedOwnedRegions(overlayData: OverlayData | null, selectedTag: string): GeoJSON.FeatureCollection {
+  if (!overlayData || !selectedTag) return EMPTY_GEOJSON
+
+  return {
+    type: 'FeatureCollection',
+    features: overlayData.regions.features
+      .filter((feature) => {
+        const owner = overlayData.ownership[feature.properties.regionId] ?? feature.properties.ownerTag
+        return owner === selectedTag
+      })
+      .map((feature) => ({
+        ...feature,
+        properties: {
+          ...feature.properties,
+          ownerTag: selectedTag,
+        },
+      })),
+  }
 }
 
 function selectedCountryFilter(selectedTag: string): FilterSpecification {

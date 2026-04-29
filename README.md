@@ -4,7 +4,8 @@ Browser grand-strategy sandbox prototype.
 
 - Backend: Python + FastAPI
 - Frontend: React + TypeScript + Vite + MapLibre GL JS
-- Main map renderer: PMTiles/vector tiles generated from processed Cartography V1 layers
+- Main map renderer: PMTiles/vector tiles generated from processed Cartography V2 base layers
+- Game overlay: Canvas/Pixi-ready layer above MapLibre for dynamic country labels and selection glow
 - GeoJSON files: preparation, diagnostics, and debug/fallback endpoints only
 - Not included yet: AI, combat, politics, statistics, pathfinding, users/sessions
 
@@ -58,7 +59,7 @@ Frontend usually runs at:
 http://localhost:5173
 ```
 
-## Cartography V1
+## Cartography V2
 
 The frontend's normal map path uses a MapLibre vector source:
 
@@ -79,22 +80,22 @@ backend/data/processed/region_label_points_1933.geojson
 backend/data/processed/microstate_label_points_1933.geojson
 ```
 
-Source layers inside `pax1933_map.pmtiles`:
+Normal mode reads these PMTiles source layers for the base map:
 
 ```text
 countries
 regions
 microstates
 rivers
-country_label_lines
-country_label_points
 region_label_points
 microstate_label_points
 ```
 
+The static `country_label_lines` and `country_label_points` layers may still be built for fallback/debug, but normal country labels are drawn by the overlay from `/api/map/1933/overlay-data`.
+
 `backend/data/raw` is intentionally not committed. Put large CShapes and Natural Earth source files there locally. The preparation scripts can auto-download the Natural Earth Admin-0, Admin-1, and river files when the network is available.
 
-Old GeoJSON endpoints are still available for debug/fallback, but the normal frontend route does not load the huge `regions_1933.geojson`. Province borders are lazy-loaded only when the debug toggle is enabled.
+Old GeoJSON endpoints are still available for debug/fallback, but the normal frontend route does not load the huge `regions_1933.geojson`. Province borders are lazy-loaded only when the debug toggle is enabled. The overlay endpoint returns simplified label geometry and current region ownership, not the full base map.
 
 ## Data Notes
 
@@ -102,6 +103,6 @@ Countries come from the CShapes-derived 1933 country map, with Natural Earth Adm
 
 Microstates are polygons when Natural Earth or CShapes has polygon geometry. Labels and hitboxes are separate point layers so tiny states remain readable and clickable.
 
-Country labels are generated from current country geometry into line labels where safe, otherwise representative-point labels. Region labels use readable title-case names and hide technical IDs such as `TAG_STATE_001`.
+Country labels are generated dynamically from current owner geometry into line labels where safe, otherwise representative-point labels. Region labels use readable title-case names and hide technical IDs such as `TAG_STATE_001`.
 
-Dynamic ownership overlay is planned later. AI, combat, politics, statistics, full pathfinding, and user/session isolation are later systems, not part of Cartography V1.
+Future arrows/fronts can be added to the same overlay. AI, combat, politics, statistics, full pathfinding, and user/session isolation are later systems, not part of Cartography V2.
