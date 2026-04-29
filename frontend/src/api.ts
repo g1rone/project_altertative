@@ -1,6 +1,13 @@
 import type { GameState } from './types'
 
-const API_BASE = 'http://127.0.0.1:8000'
+export const API_BASE = 'http://127.0.0.1:8000'
+
+export type TileMetadata = {
+  pmtilesUrl: string
+  exists: boolean
+  layers?: string[]
+  error?: string
+}
 
 export async function fetchState(): Promise<GameState> {
   const res = await fetch(`${API_BASE}/api/state`)
@@ -12,6 +19,10 @@ export async function fetchMap1933(): Promise<GeoJSON.FeatureCollection> {
   const res = await fetch(`${API_BASE}/api/map/1933`)
   if (!res.ok) throw new Error('Failed to fetch map')
   return res.json()
+}
+
+export async function fetchMap1933TileMetadata(): Promise<TileMetadata> {
+  return fetchJson('/api/map/1933/tile-metadata')
 }
 
 export async function fetchMap1933Provinces(): Promise<GeoJSON.FeatureCollection> {

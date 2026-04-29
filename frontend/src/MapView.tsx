@@ -1,18 +1,16 @@
 import { useEffect, useRef, useState } from 'react'
+import type { MutableRefObject } from 'react'
 import maplibregl from 'maplibre-gl'
+import type { FilterSpecification } from 'maplibre-gl'
+import { Protocol } from 'pmtiles'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import {
-  fetchMap1933,
-  fetchMap1933CurrentCountries,
-  fetchMap1933CurrentLabels,
-  fetchMap1933Microstates,
+  API_BASE,
   fetchMap1933Provinces,
-  fetchMap1933RegionLabels,
-  fetchMap1933RegionsGeojson,
+  fetchMap1933TileMetadata,
   fetchVisualOrders,
 } from './api'
 import type { GameState } from './types'
-import type { FilterSpecification } from 'maplibre-gl'
 
 const WORLD_BOUNDS: maplibregl.LngLatBoundsLike = [
   [-180, -60],
@@ -34,24 +32,18 @@ type Props = {
   onSelectCountry: (tag: string) => void
 }
 
-type MapData = {
-  provinces: GeoJSON.FeatureCollection
-  countries: GeoJSON.FeatureCollection
-  countryLabels: GeoJSON.FeatureCollection
-  regions: GeoJSON.FeatureCollection
-  regionLabels: GeoJSON.FeatureCollection
-  microstates: GeoJSON.FeatureCollection
-  visualOrders: GeoJSON.FeatureCollection
-}
+let protocolRegistered = false
 
-export default function MapView({ state, selectedTag, onSelectCountry }: Props) {
+export default function MapView({ selectedTag, onSelectCountry }: Props) {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
-  const mapDataRef = useRef<MapData | null>(null)
+  const provincesLoadedRef = useRef(false)
   const [showProvinces, setShowProvinces] = useState(false)
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return
+
+    ensurePmtilesProtocol()
 
     const rect = containerRef.current.getBoundingClientRect()
     if (rect.width === 0 || rect.height === 0) {
@@ -87,15 +79,20 @@ export default function MapView({ state, selectedTag, onSelectCountry }: Props) 
         map.resize()
         setTimeout(() => map.resize(), 0)
 
-        const data = await fetchAllMapData()
-        mapDataRef.current = data
-        console.log('Grand strategy map data loaded', {
-          provinces: data.provinces.features.length,
-          countries: data.countries.features.length,
-          regions: data.regions.features.length,
-        })
+        const [metadata, visualOrders] = await Promise.all([
+          fetchMap1933TileMetadata(),
+          fetchVisualOrders(),
+        ])
 
-        addSources(map, data)
+        if (!metadata.exists) {
+          console.error('PMTiles missing, run backend/scripts/build_pmtiles.py')
+          if (metadata.error) console.error(metadata.error)
+          map.fitBounds(START_BOUNDS, { padding: 24, duration: 0 })
+          return
+        }
+
+        const pmtilesUrl = new URL(metadata.pmtilesUrl, API_BASE).toString()
+        addSources(map, pmtilesUrl, visualOrders)
         addLayers(map, selectedTag)
         addInteractions(map, onSelectCountry)
 
@@ -128,22 +125,16 @@ export default function MapView({ state, selectedTag, onSelectCountry }: Props) 
 
   useEffect(() => {
     const map = mapRef.current
-    const data = mapDataRef.current
-    if (!map || !data) return
-
-    updateSource(map, 'provinces-1933', colorProvinces(data.provinces, state))
-    updateSource(map, 'current-countries-1933', colorCountries(data.countries, state))
-  }, [state])
-
-  useEffect(() => {
-    const map = mapRef.current
     if (!map) return
 
-    if (map.getLayer('province-fill')) {
-      map.setLayoutProperty('province-fill', 'visibility', 'none')
+    if (showProvinces) {
+      ensureProvinceDebugData(map, provincesLoadedRef).catch((error) => {
+        console.error('Failed to load province debug layer:', error)
+      })
     }
-    if (map.getLayer('province-border')) {
-      map.setLayoutProperty('province-border', 'visibility', showProvinces ? 'visible' : 'none')
+
+    if (map.getLayer('province-border-debug')) {
+      map.setLayoutProperty('province-border-debug', 'visibility', showProvinces ? 'visible' : 'none')
     }
   }, [showProvinces])
 
@@ -157,248 +148,231 @@ export default function MapView({ state, selectedTag, onSelectCountry }: Props) 
   )
 }
 
-async function fetchAllMapData(): Promise<MapData> {
-  const [
-    provinces,
-    currentCountries,
-    fallbackCountries,
-    countryLabels,
-    regions,
-    regionLabels,
-    microstates,
-    visualOrders,
-  ] = await Promise.all([
-    fetchMap1933Provinces(),
-    fetchMap1933CurrentCountries(),
-    fetchMap1933(),
-    fetchMap1933CurrentLabels(),
-    fetchMap1933RegionsGeojson(),
-    fetchMap1933RegionLabels(),
-    fetchMap1933Microstates(),
-    fetchVisualOrders(),
-  ])
-
-  if (regions.features.length === 0) {
-    console.warn('Region layer is empty. Run prepare_admin1_regions.py.')
+function ensurePmtilesProtocol() {
+  if (protocolRegistered) return
+  const protocol = new Protocol()
+  try {
+    maplibregl.addProtocol('pmtiles', protocol.tile)
+  } catch (error) {
+    console.warn('PMTiles protocol registration was skipped:', error)
   }
-
-  return {
-    provinces,
-    countries: shouldUseCountryFallback(currentCountries) ? fallbackCountries : currentCountries,
-    countryLabels,
-    regions,
-    regionLabels,
-    microstates,
-    visualOrders,
-  }
+  protocolRegistered = true
 }
 
-function addSources(map: maplibregl.Map, data: MapData) {
-  map.addSource('provinces-1933', {
-    type: 'geojson',
-    data: data.provinces,
+function addSources(map: maplibregl.Map, pmtilesUrl: string, visualOrders: GeoJSON.FeatureCollection) {
+  map.addSource('pax1933', {
+    type: 'vector',
+    url: `pmtiles://${pmtilesUrl}`,
   })
-  map.addSource('current-countries-1933', {
+  map.addSource('provinces-debug-1933', {
     type: 'geojson',
-    data: data.countries,
-  })
-  map.addSource('country-labels-1933', {
-    type: 'geojson',
-    data: data.countryLabels,
-  })
-  map.addSource('regions-1933', {
-    type: 'geojson',
-    data: data.regions,
-  })
-  map.addSource('region-labels-1933', {
-    type: 'geojson',
-    data: data.regionLabels,
-  })
-  map.addSource('microstates-1933', {
-    type: 'geojson',
-    data: data.microstates,
+    data: EMPTY_GEOJSON,
   })
   map.addSource('visual-orders-1933', {
     type: 'geojson',
-    data: data.visualOrders,
+    data: visualOrders,
   })
 }
 
 function addLayers(map: maplibregl.Map, selectedTag: string) {
   map.addLayer({
-    id: 'province-fill',
+    id: 'country-fill',
     type: 'fill',
-    source: 'provinces-1933',
-    layout: {
-      visibility: 'none',
-    },
+    source: 'pax1933',
+    'source-layer': 'countries',
     paint: {
-      'fill-color': ['get', 'color'],
-      'fill-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0, 5, 0.12, 7, 0.35],
+      'fill-color': ['coalesce', ['get', 'color'], '#64748b'],
+      'fill-opacity': 0.74,
     },
   } as any)
 
   map.addLayer({
-    id: 'province-border',
+    id: 'microstate-fill',
+    type: 'fill',
+    source: 'pax1933',
+    'source-layer': 'microstates',
+    paint: {
+      'fill-color': ['coalesce', ['get', 'color'], '#facc15'],
+      'fill-opacity': ['interpolate', ['linear'], ['zoom'], 2, 0.82, 6, 0.92],
+    },
+  } as any)
+
+  map.addLayer({
+    id: 'rivers-line',
     type: 'line',
-    source: 'provinces-1933',
-    layout: {
-      visibility: 'none',
-    },
+    source: 'pax1933',
+    'source-layer': 'rivers',
+    minzoom: 3.5,
     paint: {
-      'line-color': '#0f172a',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 3, 0.4, 7, 0.8],
-      'line-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0.35, 7, 0.55],
-    },
-  } as any)
-
-  map.addLayer({
-    id: 'current-country-fill',
-    type: 'fill',
-    source: 'current-countries-1933',
-    paint: {
-      'fill-color': ['get', 'color'],
-      'fill-opacity': 0.72,
+      'line-color': '#38bdf8',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 3.5, 0.45, 6, 0.9],
+      'line-opacity': ['interpolate', ['linear'], ['zoom'], 3.5, 0.2, 6, 0.42],
     },
   } as any)
 
   map.addLayer({
     id: 'region-border',
     type: 'line',
-    source: 'regions-1933',
-    minzoom: 4.5,
+    source: 'pax1933',
+    'source-layer': 'regions',
+    minzoom: 4.6,
     paint: {
       'line-color': '#e5e7eb',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 4, 0, 5, 0.7, 7, 1.4],
-      'line-opacity': ['interpolate', ['linear'], ['zoom'], 4, 0, 5, 0.45, 7, 0.75],
+      'line-width': ['interpolate', ['linear'], ['zoom'], 4.6, 0.35, 7, 1.15],
+      'line-opacity': ['interpolate', ['linear'], ['zoom'], 4.6, 0.22, 7, 0.66],
+    },
+  } as any)
+
+  map.addLayer({
+    id: 'province-border-debug',
+    type: 'line',
+    source: 'provinces-debug-1933',
+    layout: {
+      visibility: 'none',
+    },
+    paint: {
+      'line-color': '#0f172a',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 4, 0.35, 7, 0.75],
+      'line-opacity': ['interpolate', ['linear'], ['zoom'], 4, 0.22, 7, 0.52],
     },
   } as any)
 
   map.addLayer({
     id: 'country-border',
     type: 'line',
-    source: 'current-countries-1933',
+    source: 'pax1933',
+    'source-layer': 'countries',
     paint: {
       'line-color': '#020617',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 2, 1, 5, 1.6],
+      'line-width': ['interpolate', ['linear'], ['zoom'], 2, 0.9, 5, 1.65],
+      'line-opacity': 0.92,
+    },
+  } as any)
+
+  map.addLayer({
+    id: 'microstate-border',
+    type: 'line',
+    source: 'pax1933',
+    'source-layer': 'microstates',
+    paint: {
+      'line-color': '#f8fafc',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 3, 0.8, 7, 1.6],
+      'line-opacity': 0.92,
     },
   } as any)
 
   map.addLayer({
     id: 'selected-country-border',
     type: 'line',
-    source: 'current-countries-1933',
+    source: 'pax1933',
+    'source-layer': 'countries',
     filter: selectedCountryFilter(selectedTag),
     paint: {
       'line-color': '#facc15',
-      'line-width': 3,
+      'line-width': ['interpolate', ['linear'], ['zoom'], 2, 2.4, 6, 3.6],
+    },
+  } as any)
+
+  map.addLayer({
+    id: 'microstate-hitbox',
+    type: 'circle',
+    source: 'pax1933',
+    'source-layer': 'microstate_label_points',
+    paint: {
+      'circle-radius': ['interpolate', ['linear'], ['zoom'], 3, 8, 7, 15],
+      'circle-color': '#ffffff',
+      'circle-opacity': 0,
     },
   } as any)
 
   map.addLayer({
     id: 'country-label-lines',
     type: 'symbol',
-    source: 'country-labels-1933',
-    filter: ['==', ['get', 'labelKind'], 'line'],
+    source: 'pax1933',
+    'source-layer': 'country_label_lines',
     layout: {
       'symbol-placement': 'line',
       'text-field': ['get', 'label'],
-      'text-size': ['get', 'labelSize'],
-      'text-letter-spacing': ['get', 'labelSpacing'],
-      'text-font': ['Open Sans Regular'],
+      'text-size': ['coalesce', ['get', 'labelSize'], 18],
+      'text-letter-spacing': ['coalesce', ['get', 'labelSpacing'], 0.16],
+      'text-font': ['Open Sans Bold'],
       'text-keep-upright': true,
       'text-allow-overlap': false,
       'text-ignore-placement': false,
       'text-max-angle': 45,
     },
-    paint: {
-      'text-color': '#f8fafc',
-      'text-halo-color': '#111827',
-      'text-halo-width': 2,
-      'text-halo-blur': 0.5,
-      'text-opacity': ['interpolate', ['linear'], ['zoom'], 2, 0.95, 4, 0.9, 5.5, 0.55, 6.7, 0],
-    },
+    paint: countryLabelPaint(0.95),
   } as any)
 
   map.addLayer({
     id: 'country-label-points',
     type: 'symbol',
-    source: 'country-labels-1933',
-    filter: ['==', ['get', 'labelKind'], 'point'],
+    source: 'pax1933',
+    'source-layer': 'country_label_points',
     layout: {
       'symbol-placement': 'point',
       'text-field': ['get', 'label'],
-      'text-size': ['get', 'labelSize'],
-      'text-font': ['Open Sans Regular'],
+      'text-size': ['coalesce', ['get', 'labelSize'], 15],
+      'text-letter-spacing': ['coalesce', ['get', 'labelSpacing'], 0.12],
+      'text-font': ['Open Sans Bold'],
       'text-allow-overlap': false,
       'text-ignore-placement': false,
+      'text-variable-anchor': ['center', 'top', 'bottom'],
+      'text-radial-offset': 0.25,
     },
-    paint: {
-      'text-color': '#f8fafc',
-      'text-halo-color': '#111827',
-      'text-halo-width': 2,
-      'text-halo-blur': 0.5,
-      'text-opacity': ['interpolate', ['linear'], ['zoom'], 2, 0.8, 4, 0.75, 5.5, 0.4, 6.7, 0],
-    },
+    paint: countryLabelPaint(0.85),
   } as any)
 
   map.addLayer({
     id: 'region-labels',
     type: 'symbol',
-    source: 'region-labels-1933',
-    minzoom: 5,
+    source: 'pax1933',
+    'source-layer': 'region_label_points',
+    minzoom: 5.8,
     layout: {
       'text-field': ['get', 'label'],
       'text-size': [
         'interpolate',
         ['linear'],
         ['zoom'],
-        5,
-        ['get', 'labelSize'],
+        5.8,
+        ['coalesce', ['get', 'labelSize'], 10],
         7,
-        ['+', ['get', 'labelSize'], 2],
+        ['+', ['coalesce', ['get', 'labelSize'], 10], 1.5],
       ],
       'text-font': ['Open Sans Regular'],
       'text-allow-overlap': false,
       'text-ignore-placement': false,
       'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
-      'text-radial-offset': 0.4,
+      'text-radial-offset': 0.35,
     },
     paint: {
-      'text-color': '#f8fafc',
+      'text-color': '#cbd5e1',
       'text-halo-color': '#020617',
-      'text-halo-width': 1.5,
-      'text-opacity': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5, 0.75, 7, 1],
+      'text-halo-width': 1.7,
+      'text-halo-blur': 0.4,
+      'text-opacity': ['interpolate', ['linear'], ['zoom'], 5.6, 0, 5.8, 0.78, 7, 1],
     },
   } as any)
 
   map.addLayer({
-    id: 'microstate-marker',
-    type: 'circle',
-    source: 'microstates-1933',
-    paint: {
-      'circle-radius': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5, 4, 8, 6],
-      'circle-color': ['get', 'color'],
-      'circle-stroke-color': '#f8fafc',
-      'circle-stroke-width': 1,
-    },
-  } as any)
-
-  map.addLayer({
-    id: 'microstate-label',
+    id: 'microstate-labels',
     type: 'symbol',
-    source: 'microstates-1933',
+    source: 'pax1933',
+    'source-layer': 'microstate_label_points',
+    minzoom: 5.7,
     layout: {
       'text-field': ['get', 'label'],
-      'text-font': ['Open Sans Regular'],
-      'text-size': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5, 10, 8, 12],
-      'text-offset': [0, 0.8],
+      'text-font': ['Open Sans Bold'],
+      'text-size': ['interpolate', ['linear'], ['zoom'], 5.7, 11, 8, ['coalesce', ['get', 'labelSize'], 13]],
+      'text-offset': [0, 0.75],
       'text-allow-overlap': true,
     },
     paint: {
       'text-color': '#f8fafc',
       'text-halo-color': '#020617',
-      'text-halo-width': 1.5,
+      'text-halo-width': 2,
+      'text-halo-blur': 0.35,
     },
   } as any)
 
@@ -414,28 +388,32 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
   } as any)
 }
 
+function countryLabelPaint(baseOpacity: number) {
+  return {
+    'text-color': '#f8fafc',
+    'text-halo-color': '#020617',
+    'text-halo-width': 2.4,
+    'text-halo-blur': 0.35,
+    'text-opacity': ['interpolate', ['linear'], ['zoom'], 2, baseOpacity, 5.8, 0.55, 6.8, 0],
+  }
+}
+
 function addInteractions(map: maplibregl.Map, onSelectCountry: (tag: string) => void) {
-  map.on('click', 'current-country-fill', (event) => {
-    const tag = event.features?.[0]?.properties?.tag
-    if (typeof tag === 'string') onSelectCountry(tag)
-  })
+  const selectableLayers = [
+    'country-fill',
+    'country-border',
+    'microstate-fill',
+    'microstate-border',
+    'microstate-labels',
+    'microstate-hitbox',
+  ]
 
-  map.on('click', 'province-fill', (event) => {
-    const tag = event.features?.[0]?.properties?.ownerTag
-    if (typeof tag === 'string') onSelectCountry(tag)
-  })
-
-  map.on('click', 'microstate-marker', (event) => {
-    const tag = event.features?.[0]?.properties?.tag
-    if (typeof tag === 'string') onSelectCountry(tag)
-  })
-
-  map.on('click', 'microstate-label', (event) => {
-    const tag = event.features?.[0]?.properties?.tag
-    if (typeof tag === 'string') onSelectCountry(tag)
-  })
-
-  for (const layer of ['current-country-fill', 'province-fill', 'microstate-marker', 'microstate-label']) {
+  for (const layer of selectableLayers) {
+    map.on('click', layer, (event) => {
+      const properties = event.features?.[0]?.properties
+      const tag = properties?.tag || properties?.ownerTag
+      if (typeof tag === 'string') onSelectCountry(tag)
+    })
     map.on('mousemove', layer, () => {
       map.getCanvas().style.cursor = 'pointer'
     })
@@ -445,48 +423,15 @@ function addInteractions(map: maplibregl.Map, onSelectCountry: (tag: string) => 
   }
 }
 
-function shouldUseCountryFallback(geojson: GeoJSON.FeatureCollection) {
-  if (!geojson.features.length) return true
-
-  const rectangular = geojson.features.filter((feature: any) => {
-    const geometry = feature.geometry
-    const coordinates = geometry?.type === 'Polygon' ? geometry.coordinates : null
-    const ring = coordinates?.[0]
-    return Array.isArray(ring) && ring.length === 5
-  })
-
-  return rectangular.length / geojson.features.length > 0.5
-}
-
-function updateSource(map: maplibregl.Map, sourceId: string, data: GeoJSON.FeatureCollection) {
-  const source = map.getSource(sourceId) as maplibregl.GeoJSONSource | undefined
-  source?.setData(data)
-}
-
-function colorProvinces(geojson: GeoJSON.FeatureCollection, state: GameState | null) {
-  return {
-    ...geojson,
-    features: geojson.features.map((feature: any) => ({
-      ...feature,
-      properties: {
-        ...feature.properties,
-        color: state?.countries?.[feature.properties?.ownerTag]?.color ?? feature.properties?.color ?? '#64748b',
-      },
-    })),
-  }
-}
-
-function colorCountries(geojson: GeoJSON.FeatureCollection, state: GameState | null) {
-  return {
-    ...geojson,
-    features: geojson.features.map((feature: any) => ({
-      ...feature,
-      properties: {
-        ...feature.properties,
-        color: state?.countries?.[feature.properties?.tag]?.color ?? feature.properties?.color ?? '#64748b',
-      },
-    })),
-  }
+async function ensureProvinceDebugData(
+  map: maplibregl.Map,
+  provincesLoadedRef: MutableRefObject<boolean>,
+) {
+  if (provincesLoadedRef.current) return
+  const provinces = await fetchMap1933Provinces()
+  const source = map.getSource('provinces-debug-1933') as maplibregl.GeoJSONSource | undefined
+  source?.setData(provinces)
+  provincesLoadedRef.current = true
 }
 
 function selectedCountryFilter(selectedTag: string): FilterSpecification {

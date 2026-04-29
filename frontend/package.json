@@ -6,11 +6,12 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "typescript": "latest",
+    "maplibre-gl": "latest",
+    "pmtiles": "^4.4.1",
     "react": "latest",
     "react-dom": "latest",
-    "maplibre-gl": "latest"
+    "typescript": "latest",
+    "vite": "latest"
   },
   "devDependencies": {
     "@types/react": "latest",

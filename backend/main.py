@@ -8,6 +8,7 @@ from typing import Any, Dict, List
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 try:
@@ -22,7 +23,9 @@ except ImportError:
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 BASE_DATA_DIR = DATA_DIR / "base"
+PROCESSED_DATA_DIR = DATA_DIR / "processed"
 SAVE_DATA_DIR = DATA_DIR / "save"
+TILES_DIR = BASE_DIR / "data" / "tiles"
 STATE_PATH = DATA_DIR / "game_state_1933.json"
 MAP_PATH = DATA_DIR / "europe_1933.geojson"
 BASE_PROVINCES_PATH = BASE_DATA_DIR / "provinces_1933.geojson"
@@ -31,7 +34,24 @@ PROVINCE_ADJACENCY_PATH = BASE_DATA_DIR / "province_adjacency_1933.json"
 MICROSTATE_POINTS_PATH = BASE_DATA_DIR / "microstate_points_1933.geojson"
 MANUAL_REGIONS_PATH = BASE_DATA_DIR / "manual_regions_1933.json"
 REGIONS_GEOJSON_PATH = BASE_DATA_DIR / "regions_1933.geojson"
+PROCESSED_REGIONS_GEOJSON_PATH = PROCESSED_DATA_DIR / "regions_1933.geojson"
+PROCESSED_REGION_LABELS_PATH = PROCESSED_DATA_DIR / "region_label_points_1933.geojson"
+PROCESSED_MICROSTATES_PATH = PROCESSED_DATA_DIR / "microstates_1933.geojson"
+PROCESSED_MICROSTATE_LABELS_PATH = PROCESSED_DATA_DIR / "microstate_label_points_1933.geojson"
+PROCESSED_COUNTRY_LABEL_LINES_PATH = PROCESSED_DATA_DIR / "country_label_lines_1933.geojson"
+PROCESSED_COUNTRY_LABEL_POINTS_PATH = PROCESSED_DATA_DIR / "country_label_points_1933.geojson"
+PMTILES_PATH = TILES_DIR / "pax1933_map.pmtiles"
 CAMPAIGN_STATE_PATH = SAVE_DATA_DIR / "campaign_state.json"
+PMTILES_SOURCE_LAYERS = [
+    "countries",
+    "regions",
+    "microstates",
+    "rivers",
+    "country_label_lines",
+    "country_label_points",
+    "region_label_points",
+    "microstate_label_points",
+]
 # TODO: campaign state is currently global. Later store it per campaignId/user/session.
 SAFE_LABEL_TAGS = {
     "GER",
@@ -110,6 +130,7 @@ SAFE_REGION_LABEL_IDS = {
 
 
 app = FastAPI(title="Pax 1933 Backend", version="0.1.0")
+TILES_DIR.mkdir(parents=True, exist_ok=True)
 
 # На старте разрешаем локальный frontend Vite.
 app.add_middleware(
@@ -122,6 +143,15 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.mount("/tiles", StaticFiles(directory=str(TILES_DIR)), name="tiles")
+
+
+@app.on_event("startup")
+def log_tile_diagnostics() -> None:
+    print("[tiles] dir:", TILES_DIR)
+    print("[tiles] pmtiles exists:", PMTILES_PATH.exists())
+    print("[tiles] pmtiles path:", PMTILES_PATH)
 
 
 class CountryState(BaseModel):
@@ -201,6 +231,13 @@ def save_state(state: GameState) -> None:
 def read_json(path: Path) -> Any:
     if not path.exists():
         raise HTTPException(status_code=500, detail=f"Missing data file: {path.name}")
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def read_json_if_exists(path: Path) -> Any | None:
+    if not path.exists():
+        return None
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -347,6 +384,20 @@ def country_data_looks_suspicious(countries: dict) -> bool:
 
 
 def build_current_country_label_lines() -> dict:
+    processed_lines = read_json_if_exists(PROCESSED_COUNTRY_LABEL_LINES_PATH)
+    processed_points = read_json_if_exists(PROCESSED_COUNTRY_LABEL_POINTS_PATH)
+    if processed_lines is not None or processed_points is not None:
+        features = []
+        for feature in (processed_lines or {}).get("features", []):
+            copied = json.loads(json.dumps(feature))
+            copied.setdefault("properties", {})["labelKind"] = "line"
+            features.append(copied)
+        for feature in (processed_points or {}).get("features", []):
+            copied = json.loads(json.dumps(feature))
+            copied.setdefault("properties", {})["labelKind"] = "point"
+            features.append(copied)
+        return {"type": "FeatureCollection", "features": features}
+
     countries = build_current_countries_from_provinces()
     features = []
 
@@ -489,23 +540,34 @@ def safe_label_point(geometry: dict | None, bbox: tuple[float, float, float, flo
 
 
 def build_region_geometries_from_provinces() -> dict:
-    if REGIONS_GEOJSON_PATH.exists():
-        regions = read_json(REGIONS_GEOJSON_PATH)
+    regions_path = PROCESSED_REGIONS_GEOJSON_PATH if PROCESSED_REGIONS_GEOJSON_PATH.exists() else REGIONS_GEOJSON_PATH
+    if regions_path.exists():
+        regions = read_json(regions_path)
         features = [
             feature
             for feature in regions.get("features", [])
-            if feature.get("properties", {}).get("source") in {"natural-earth-admin1", "geoboundaries-adm1"}
+            if feature.get("properties", {}).get("source") in {
+                "natural-earth-admin1",
+                "geoboundaries-adm1",
+                "natural-earth-admin1-grid-aggregate",
+                "natural-earth-admin1-grid-split",
+                "country-geometry-single",
+            }
             and feature.get("properties", {}).get("isPlayerVisible") is True
             and feature.get("geometry", {}).get("type") in {"Polygon", "MultiPolygon"}
         ]
         if not features:
-            print("WARNING: regions_1933.geojson is empty; run scripts/prepare_admin1_regions.py")
+            print(f"WARNING: {regions_path.name} is empty; run scripts/prepare_admin1_regions.py")
         return {"type": "FeatureCollection", "features": features}
     print("WARNING: regions_1933.geojson is missing; run scripts/prepare_admin1_regions.py")
     return {"type": "FeatureCollection", "features": []}
 
 
 def build_region_labels() -> dict:
+    processed = read_json_if_exists(PROCESSED_REGION_LABELS_PATH)
+    if processed is not None:
+        return processed
+
     regions_geojson = build_region_geometries_from_provinces()
     if not regions_geojson.get("features"):
         print("WARNING: region labels are empty because regions_1933.geojson has no features")
@@ -548,6 +610,10 @@ def build_region_labels() -> dict:
 
 
 def build_microstate_points() -> dict:
+    processed = read_json_if_exists(PROCESSED_MICROSTATES_PATH)
+    if processed is not None:
+        return processed
+
     provinces = apply_campaign_ownership_to_provinces()
     features = []
 
@@ -928,6 +994,33 @@ def fake_adjudicate(
 @app.get("/api/health")
 def health() -> dict:
     return {"status": "ok", "service": "pax-1933-backend"}
+
+
+@app.get("/api/map/1933/tile-metadata")
+def get_map_1933_tile_metadata() -> dict:
+    pmtiles_url = "/tiles/pax1933_map.pmtiles"
+    if PMTILES_PATH.exists():
+        return {
+            "pmtilesUrl": pmtiles_url,
+            "exists": True,
+            "layers": PMTILES_SOURCE_LAYERS,
+        }
+    return {
+        "pmtilesUrl": pmtiles_url,
+        "exists": False,
+        "error": "PMTiles file is missing. Run python scripts/build_pmtiles.py",
+    }
+
+
+@app.get("/api/map/1933/tile-status")
+def get_map_1933_tile_status() -> dict:
+    exists = PMTILES_PATH.exists()
+    return {
+        "tilesDir": str(TILES_DIR),
+        "pmtilesPath": str(PMTILES_PATH),
+        "exists": exists,
+        "sizeBytes": PMTILES_PATH.stat().st_size if exists else 0,
+    }
 
 
 @app.get("/api/state", response_model=GameState)

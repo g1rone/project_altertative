@@ -1,0 +1,185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "AND",
+        "ownerTag": "AND",
+        "label": "Andorra",
+        "labelSize": 12,
+        "labelRank": 1,
+        "color": "#7c3aed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5617364127533406,
+          42.5360355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "MCO",
+        "ownerTag": "MCO",
+        "label": "Monaco",
+        "labelSize": 12,
+        "labelRank": 1,
+        "color": "#7c3aed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.399808059518895,
+          43.738743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "LIE",
+        "ownerTag": "LIE",
+        "label": "Liechtenstein",
+        "labelSize": 12,
+        "labelRank": 1,
+        "color": "#16a34a"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.535102727896733,
+          47.1573555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "SMR",
+        "ownerTag": "SMR",
+        "label": "San Marino",
+        "labelSize": 12,
+        "labelRank": 1,
+        "color": "#0891b2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.436691680222868,
+          43.9318465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "VAT",
+        "ownerTag": "VAT",
+        "label": "Vatican",
+        "labelSize": 12,
+        "labelRank": 1,
+        "color": "#64748b"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.453782438521067,
+          41.903307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "LUX",
+        "ownerTag": "LUX",
+        "label": "Luxembourg",
+        "labelSize": 12,
+        "labelRank": 1,
+        "color": "#38bdf8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.065110034559645,
+          49.8070385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "DAN",
+        "ownerTag": "DAN",
+        "label": "Danzig",
+        "labelSize": 12,
+        "labelRank": 1,
+        "color": "#f59e0b"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.754608699663212,
+          54.2120865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "MLT",
+        "ownerTag": "MLT",
+        "label": "Malta",
+        "labelSize": 12,
+        "labelRank": 1,
+        "color": "#64748b"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4367985,
+          35.8954325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "GRL",
+        "ownerTag": "GRL",
+        "label": "Greenland",
+        "labelSize": 16,
+        "labelRank": 1,
+        "color": "#16a34a"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -40.33342367787426,
+          71.811001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "CYP",
+        "ownerTag": "CYP",
+        "label": "Cyprus",
+        "labelSize": 12,
+        "labelRank": 1,
+        "color": "#2563eb"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.97994708282481,
+          34.9048935
+        ]
+      }
+    }
+  ]
+}
