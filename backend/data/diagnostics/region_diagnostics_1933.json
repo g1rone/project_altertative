@@ -1,33 +1,48 @@
 {
   "source": "D:\\pax-1933-starter\\backend\\data\\raw\\ne_10m_admin_1_states_provinces.geojson",
   "loadedAdmin1Features": 4596,
-  "matchedAdmin1Features": 2435,
-  "skippedTinyOrInvalid": 221,
+  "matchedAdmin1Features": 2820,
+  "skippedTinyOrInvalid": 258,
   "countries": {
     "AFG": {
       "countryName": "Afghanistan",
       "inputAdmin1Regions": 34,
-      "outputRegions": 8,
+      "outputRegions": 14,
+      "regionCountBeforeSplit": 34,
+      "regionCountAfterSplit": 14,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "ALA": {
       "countryName": "Alaska",
       "inputAdmin1Regions": 0,
-      "outputRegions": 8,
-      "mode": "grid-split",
+      "outputRegions": 15,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 15,
+      "targetRegionCount": 14,
+      "largeRegionsSplit": 15,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        8,
-        24
+        14,
+        30
       ]
     },
     "ALB": {
       "countryName": "Albania",
       "inputAdmin1Regions": 12,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 12,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -37,47 +52,87 @@
     "ALG": {
       "countryName": "Algeria",
       "inputAdmin1Regions": 0,
-      "outputRegions": 9,
-      "mode": "grid-split",
+      "outputRegions": 14,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 14,
+      "targetRegionCount": 14,
+      "largeRegionsSplit": 14,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        8,
-        24
+        14,
+        30
       ]
     },
     "ANG": {
       "countryName": "Angola",
       "inputAdmin1Regions": 0,
-      "outputRegions": 4,
-      "mode": "grid-split",
+      "outputRegions": 9,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 9,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 9,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "ARG": {
       "countryName": "Argentina",
       "inputAdmin1Regions": 24,
-      "outputRegions": 24,
-      "mode": "admin1",
+      "outputRegions": 26,
+      "regionCountBeforeSplit": 24,
+      "regionCountAfterSplit": 26,
+      "targetRegionCount": 14,
+      "largeRegionsSplit": 4,
+      "status": "ok",
+      "mode": "admin1-split",
       "targetRange": [
-        8,
-        24
+        14,
+        30
+      ]
+    },
+    "AST": {
+      "countryName": "Australia",
+      "inputAdmin1Regions": 8,
+      "outputRegions": 20,
+      "regionCountBeforeSplit": 8,
+      "regionCountAfterSplit": 20,
+      "targetRegionCount": 14,
+      "largeRegionsSplit": 17,
+      "status": "ok",
+      "mode": "admin1-split",
+      "targetRange": [
+        14,
+        30
       ]
     },
     "AUS": {
       "countryName": "Austria",
-      "inputAdmin1Regions": 17,
-      "outputRegions": 17,
-      "mode": "admin1",
+      "inputAdmin1Regions": 9,
+      "outputRegions": 5,
+      "regionCountBeforeSplit": 9,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "grid-aggregate",
       "targetRange": [
-        8,
-        24
+        1,
+        5
       ]
     },
     "BAH": {
       "countryName": "Bahamas",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -88,6 +143,11 @@
       "countryName": "Barbados",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -95,9 +155,14 @@
       ]
     },
     "BEL": {
-      "countryName": "Belize",
+      "countryName": "Belgium",
       "inputAdmin1Regions": 11,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 11,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -108,6 +173,11 @@
       "countryName": "Benin",
       "inputAdmin1Regions": 12,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 12,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -118,7 +188,27 @@
       "countryName": "Bhutan",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
+      "targetRange": [
+        1,
+        5
+      ]
+    },
+    "BLZ": {
+      "countryName": "Belize",
+      "inputAdmin1Regions": 6,
+      "outputRegions": 5,
+      "regionCountBeforeSplit": 6,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "grid-aggregate",
       "targetRange": [
         1,
         5
@@ -127,47 +217,57 @@
     "BOL": {
       "countryName": "Bolivia",
       "inputAdmin1Regions": 9,
-      "outputRegions": 9,
-      "mode": "admin1",
+      "outputRegions": 12,
+      "regionCountBeforeSplit": 9,
+      "regionCountAfterSplit": 12,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 4,
+      "status": "ok",
+      "mode": "admin1-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "BOT": {
       "countryName": "Botswana",
       "inputAdmin1Regions": 0,
-      "outputRegions": 4,
-      "mode": "grid-split",
+      "outputRegions": 9,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 9,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 9,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "BRA": {
       "countryName": "Brazil",
       "inputAdmin1Regions": 27,
-      "outputRegions": 27,
-      "mode": "admin1",
+      "outputRegions": 51,
+      "regionCountBeforeSplit": 27,
+      "regionCountAfterSplit": 51,
+      "targetRegionCount": 40,
+      "largeRegionsSplit": 32,
+      "status": "ok",
+      "mode": "admin1-split",
       "targetRange": [
-        25,
+        40,
         80
-      ]
-    },
-    "BRI": {
-      "countryName": "British Togoland",
-      "inputAdmin1Regions": 0,
-      "outputRegions": 2,
-      "mode": "grid-split",
-      "targetRange": [
-        1,
-        5
       ]
     },
     "BRU": {
       "countryName": "Brunei",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -178,29 +278,29 @@
       "countryName": "Bulgaria",
       "inputAdmin1Regions": 27,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 27,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
         5
       ]
     },
-    "CAM": {
-      "countryName": "Cameroon",
-      "inputAdmin1Regions": 0,
-      "outputRegions": 2,
-      "mode": "grid-split",
-      "targetRange": [
-        4,
-        12
-      ]
-    },
     "CAN": {
       "countryName": "Canada",
       "inputAdmin1Regions": 13,
-      "outputRegions": 26,
-      "mode": "grid-split",
+      "outputRegions": 48,
+      "regionCountBeforeSplit": 13,
+      "regionCountAfterSplit": 48,
+      "targetRegionCount": 40,
+      "largeRegionsSplit": 44,
+      "status": "ok",
+      "mode": "admin1-split",
       "targetRange": [
-        25,
+        40,
         80
       ]
     },
@@ -208,6 +308,11 @@
       "countryName": "Cape Verde",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -217,57 +322,132 @@
     "CEN": {
       "countryName": "Central African Republic",
       "inputAdmin1Regions": 0,
-      "outputRegions": 4,
-      "mode": "grid-split",
+      "outputRegions": 9,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 9,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 9,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "CHA": {
       "countryName": "Chad",
       "inputAdmin1Regions": 0,
-      "outputRegions": 4,
-      "mode": "grid-split",
+      "outputRegions": 8,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 8,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 8,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "CHI": {
-      "countryName": "Chile",
+      "countryName": "China",
       "inputAdmin1Regions": 31,
-      "outputRegions": 31,
-      "mode": "admin1",
+      "outputRegions": 51,
+      "regionCountBeforeSplit": 31,
+      "regionCountAfterSplit": 51,
+      "targetRegionCount": 50,
+      "largeRegionsSplit": 26,
+      "status": "ok",
+      "mode": "admin1-split",
       "targetRange": [
-        25,
+        50,
         80
+      ]
+    },
+    "CHL": {
+      "countryName": "Chile",
+      "inputAdmin1Regions": 16,
+      "outputRegions": 17,
+      "regionCountBeforeSplit": 16,
+      "regionCountAfterSplit": 17,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 2,
+      "status": "ok",
+      "mode": "admin1-split",
+      "targetRange": [
+        8,
+        18
+      ]
+    },
+    "CMR": {
+      "countryName": "Cameroon",
+      "inputAdmin1Regions": 10,
+      "outputRegions": 13,
+      "regionCountBeforeSplit": 10,
+      "regionCountAfterSplit": 13,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 4,
+      "status": "ok",
+      "mode": "admin1-split",
+      "targetRange": [
+        8,
+        18
+      ]
+    },
+    "COD": {
+      "countryName": "Congo, Democratic Republic of (Zaire)",
+      "inputAdmin1Regions": 11,
+      "outputRegions": 21,
+      "regionCountBeforeSplit": 11,
+      "regionCountAfterSplit": 21,
+      "targetRegionCount": 14,
+      "largeRegionsSplit": 14,
+      "status": "ok",
+      "mode": "admin1-split",
+      "targetRange": [
+        14,
+        30
+      ]
+    },
+    "COG": {
+      "countryName": "Congo",
+      "inputAdmin1Regions": 12,
+      "outputRegions": 5,
+      "regionCountBeforeSplit": 12,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "grid-aggregate",
+      "targetRange": [
+        1,
+        5
       ]
     },
     "COL": {
       "countryName": "Colombia",
       "inputAdmin1Regions": 32,
-      "outputRegions": 9,
+      "outputRegions": 13,
+      "regionCountBeforeSplit": 32,
+      "regionCountAfterSplit": 13,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
-        4,
-        12
-      ]
-    },
-    "CON": {
-      "countryName": "Congo",
-      "inputAdmin1Regions": 0,
-      "outputRegions": 9,
-      "mode": "grid-split",
-      "targetRange": [
         8,
-        24
+        18
       ]
     },
     "COS": {
       "countryName": "Costa Rica",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -277,17 +457,27 @@
     "COT": {
       "countryName": "Cote D'Ivoire",
       "inputAdmin1Regions": 0,
-      "outputRegions": 4,
-      "mode": "grid-split",
+      "outputRegions": 8,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 8,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 8,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "CUB": {
       "countryName": "Cuba",
       "inputAdmin1Regions": 16,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 16,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -298,6 +488,11 @@
       "countryName": "Cyprus",
       "inputAdmin1Regions": 5,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 5,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "admin1",
       "targetRange": [
         1,
@@ -308,6 +503,11 @@
       "countryName": "Czechoslovakia",
       "inputAdmin1Regions": 14,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 14,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -318,6 +518,11 @@
       "countryName": "Denmark",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -328,6 +533,11 @@
       "countryName": "Djibouti",
       "inputAdmin1Regions": 6,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 6,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -338,6 +548,11 @@
       "countryName": "Dominican Republic",
       "inputAdmin1Regions": 32,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 32,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -348,6 +563,11 @@
       "countryName": "East Timor",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -358,6 +578,11 @@
       "countryName": "Ecuador",
       "inputAdmin1Regions": 24,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 24,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -367,17 +592,27 @@
     "EGY": {
       "countryName": "Egypt",
       "inputAdmin1Regions": 26,
-      "outputRegions": 8,
+      "outputRegions": 10,
+      "regionCountBeforeSplit": 26,
+      "regionCountAfterSplit": 10,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "ELS": {
       "countryName": "El Salvador",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -388,6 +623,11 @@
       "countryName": "Equatorial Guinea",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -398,7 +638,27 @@
       "countryName": "Eritrea",
       "inputAdmin1Regions": 6,
       "outputRegions": 3,
+      "regionCountBeforeSplit": 6,
+      "regionCountAfterSplit": 3,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
+      "targetRange": [
+        1,
+        5
+      ]
+    },
+    "ESM": {
+      "countryName": "Spanish Morocco",
+      "inputAdmin1Regions": 0,
+      "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "single-country",
       "targetRange": [
         1,
         5
@@ -407,18 +667,43 @@
     "ESP": {
       "countryName": "Spain",
       "inputAdmin1Regions": 50,
-      "outputRegions": 11,
-      "mode": "grid-aggregate",
+      "outputRegions": 25,
+      "regionCountBeforeSplit": 50,
+      "regionCountAfterSplit": 25,
+      "targetRegionCount": 18,
+      "largeRegionsSplit": 18,
+      "status": "ok",
+      "mode": "grid-aggregate-split",
       "targetRange": [
-        8,
-        25
+        18,
+        30
       ]
     },
     "EST": {
       "countryName": "Estonia",
       "inputAdmin1Regions": 15,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 15,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
+      "targetRange": [
+        1,
+        5
+      ]
+    },
+    "ESW": {
+      "countryName": "Spanish West Africa",
+      "inputAdmin1Regions": 0,
+      "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 1,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
@@ -427,17 +712,27 @@
     "ETH": {
       "countryName": "Ethiopia",
       "inputAdmin1Regions": 11,
-      "outputRegions": 11,
-      "mode": "admin1",
+      "outputRegions": 17,
+      "regionCountBeforeSplit": 11,
+      "regionCountAfterSplit": 17,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 8,
+      "status": "ok",
+      "mode": "admin1-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "FED": {
       "countryName": "Federated Malay States",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -448,6 +743,11 @@
       "countryName": "Fiji",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -457,37 +757,42 @@
     "FIN": {
       "countryName": "Finland",
       "inputAdmin1Regions": 18,
-      "outputRegions": 7,
-      "mode": "grid-aggregate",
+      "outputRegions": 18,
+      "regionCountBeforeSplit": 18,
+      "regionCountAfterSplit": 18,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "admin1",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "FRA": {
       "countryName": "France",
       "inputAdmin1Regions": 96,
-      "outputRegions": 21,
+      "outputRegions": 23,
+      "regionCountBeforeSplit": 96,
+      "regionCountAfterSplit": 23,
+      "targetRegionCount": 18,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
-        8,
-        25
-      ]
-    },
-    "FRE": {
-      "countryName": "French Guyana",
-      "inputAdmin1Regions": 0,
-      "outputRegions": 1,
-      "mode": "single-country",
-      "targetRange": [
-        1,
-        5
+        18,
+        30
       ]
     },
     "GAB": {
       "countryName": "Gabon",
       "inputAdmin1Regions": 9,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 9,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -498,6 +803,11 @@
       "countryName": "Gambia",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -507,27 +817,132 @@
     "GBR": {
       "countryName": "United Kingdom",
       "inputAdmin1Regions": 226,
-      "outputRegions": 10,
+      "outputRegions": 15,
+      "regionCountBeforeSplit": 226,
+      "regionCountAfterSplit": 15,
+      "targetRegionCount": 12,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
-        4,
-        12
+        12,
+        20
+      ]
+    },
+    "GBR_CMR": {
+      "countryName": "British Cameroons",
+      "inputAdmin1Regions": 0,
+      "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "single-country",
+      "targetRange": [
+        1,
+        5
+      ]
+    },
+    "GBR_SOM": {
+      "countryName": "British Somaliland (Somaliland Republic)",
+      "inputAdmin1Regions": 0,
+      "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 1,
+      "status": "ok",
+      "mode": "fallback-split",
+      "targetRange": [
+        1,
+        5
+      ]
+    },
+    "GBR_TOG": {
+      "countryName": "British Togoland",
+      "inputAdmin1Regions": 0,
+      "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "single-country",
+      "targetRange": [
+        1,
+        5
       ]
     },
     "GER": {
       "countryName": "Germany (Prussia)",
       "inputAdmin1Regions": 16,
-      "outputRegions": 16,
-      "mode": "admin1",
+      "outputRegions": 20,
+      "regionCountBeforeSplit": 16,
+      "regionCountAfterSplit": 20,
+      "targetRegionCount": 18,
+      "largeRegionsSplit": 6,
+      "status": "ok",
+      "mode": "admin1-split",
       "targetRange": [
-        8,
-        25
+        18,
+        30
       ]
     },
     "GHA": {
       "countryName": "Ghana",
       "inputAdmin1Regions": 10,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 10,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "grid-aggregate",
+      "targetRange": [
+        1,
+        5
+      ]
+    },
+    "GIN": {
+      "countryName": "Guinea",
+      "inputAdmin1Regions": 33,
+      "outputRegions": 5,
+      "regionCountBeforeSplit": 33,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "grid-aggregate",
+      "targetRange": [
+        1,
+        5
+      ]
+    },
+    "GLP": {
+      "countryName": "Guadeloupe",
+      "inputAdmin1Regions": 0,
+      "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "single-country",
+      "targetRange": [
+        1,
+        5
+      ]
+    },
+    "GNB": {
+      "countryName": "Guinea-Bissau",
+      "inputAdmin1Regions": 9,
+      "outputRegions": 5,
+      "regionCountBeforeSplit": 9,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -538,6 +953,11 @@
       "countryName": "Greece",
       "inputAdmin1Regions": 14,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 14,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -547,28 +967,43 @@
     "GRL": {
       "countryName": "Greenland",
       "inputAdmin1Regions": 6,
-      "outputRegions": 9,
-      "mode": "grid-split",
+      "outputRegions": 20,
+      "regionCountBeforeSplit": 6,
+      "regionCountAfterSplit": 20,
+      "targetRegionCount": 14,
+      "largeRegionsSplit": 17,
+      "status": "ok",
+      "mode": "admin1-split",
       "targetRange": [
-        8,
-        24
+        14,
+        30
       ]
     },
     "GUA": {
-      "countryName": "Guadeloupe",
+      "countryName": "Guatemala",
       "inputAdmin1Regions": 0,
-      "outputRegions": 2,
-      "mode": "grid-split",
+      "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 1,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
       ]
     },
-    "GUI": {
-      "countryName": "Guinea-Bissau",
+    "GUF": {
+      "countryName": "French Guyana",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "single-country",
       "targetRange": [
         1,
         5
@@ -578,6 +1013,11 @@
       "countryName": "Guyana",
       "inputAdmin1Regions": 10,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 10,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -588,6 +1028,11 @@
       "countryName": "Haiti",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -598,6 +1043,11 @@
       "countryName": "Hawaii",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -608,7 +1058,12 @@
       "countryName": "Honduras",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 1,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
@@ -618,6 +1073,11 @@
       "countryName": "Hungary",
       "inputAdmin1Regions": 43,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 43,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -628,26 +1088,56 @@
       "countryName": "Iceland",
       "inputAdmin1Regions": 0,
       "outputRegions": 2,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 2,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 2,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
       ]
     },
+    "IDN": {
+      "countryName": "Indonesia",
+      "inputAdmin1Regions": 33,
+      "outputRegions": 14,
+      "regionCountBeforeSplit": 33,
+      "regionCountAfterSplit": 14,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "grid-aggregate",
+      "targetRange": [
+        8,
+        18
+      ]
+    },
     "IND": {
       "countryName": "India",
       "inputAdmin1Regions": 49,
-      "outputRegions": 49,
-      "mode": "admin1",
+      "outputRegions": 60,
+      "regionCountBeforeSplit": 49,
+      "regionCountAfterSplit": 60,
+      "targetRegionCount": 40,
+      "largeRegionsSplit": 16,
+      "status": "ok",
+      "mode": "admin1-split",
       "targetRange": [
-        25,
-        80
+        40,
+        60
       ]
     },
     "INI": {
       "countryName": "Inini",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -658,6 +1148,11 @@
       "countryName": "Ireland",
       "inputAdmin1Regions": 34,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 34,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -667,37 +1162,72 @@
     "IRN": {
       "countryName": "Iran (Persia)",
       "inputAdmin1Regions": 0,
-      "outputRegions": 4,
-      "mode": "grid-split",
+      "outputRegions": 9,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 9,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 9,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "IRQ": {
       "countryName": "Iraq",
       "inputAdmin1Regions": 18,
-      "outputRegions": 7,
-      "mode": "grid-aggregate",
+      "outputRegions": 18,
+      "regionCountBeforeSplit": 18,
+      "regionCountAfterSplit": 18,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "admin1",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "ITA": {
       "countryName": "Italy/Sardinia",
       "inputAdmin1Regions": 110,
-      "outputRegions": 17,
+      "outputRegions": 20,
+      "regionCountBeforeSplit": 110,
+      "regionCountAfterSplit": 20,
+      "targetRegionCount": 18,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
+        18,
+        30
+      ]
+    },
+    "ITA_SOM": {
+      "countryName": "Italian Somaliland",
+      "inputAdmin1Regions": 0,
+      "outputRegions": 6,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 6,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 6,
+      "status": "ok",
+      "mode": "fallback-split",
+      "targetRange": [
         8,
-        25
+        18
       ]
     },
     "JAM": {
       "countryName": "Jamaica",
       "inputAdmin1Regions": 14,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 14,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -707,17 +1237,27 @@
     "JAP": {
       "countryName": "Japan",
       "inputAdmin1Regions": 47,
-      "outputRegions": 7,
+      "outputRegions": 8,
+      "regionCountBeforeSplit": 47,
+      "regionCountAfterSplit": 8,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "JOR": {
       "countryName": "Jordan",
       "inputAdmin1Regions": 12,
       "outputRegions": 4,
+      "regionCountBeforeSplit": 12,
+      "regionCountAfterSplit": 4,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -727,18 +1267,43 @@
     "KEN": {
       "countryName": "Kenya",
       "inputAdmin1Regions": 8,
-      "outputRegions": 8,
-      "mode": "admin1",
+      "outputRegions": 13,
+      "regionCountBeforeSplit": 8,
+      "regionCountAfterSplit": 13,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 8,
+      "status": "ok",
+      "mode": "admin1-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
+      ]
+    },
+    "KHM": {
+      "countryName": "Cambodia (Kampuchea)",
+      "inputAdmin1Regions": 24,
+      "outputRegions": 5,
+      "regionCountBeforeSplit": 24,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "grid-aggregate",
+      "targetRange": [
+        1,
+        5
       ]
     },
     "KOR": {
       "countryName": "Korea",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 1,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
@@ -748,6 +1313,11 @@
       "countryName": "Laos",
       "inputAdmin1Regions": 17,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 17,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -758,16 +1328,56 @@
       "countryName": "Latvia",
       "inputAdmin1Regions": 0,
       "outputRegions": 2,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 2,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 2,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
+      ]
+    },
+    "LBR": {
+      "countryName": "Liberia",
+      "inputAdmin1Regions": 15,
+      "outputRegions": 4,
+      "regionCountBeforeSplit": 15,
+      "regionCountAfterSplit": 4,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "grid-aggregate",
+      "targetRange": [
+        1,
+        5
+      ]
+    },
+    "LBY": {
+      "countryName": "Libya",
+      "inputAdmin1Regions": 22,
+      "outputRegions": 12,
+      "regionCountBeforeSplit": 22,
+      "regionCountAfterSplit": 12,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "grid-aggregate",
+      "targetRange": [
+        8,
+        18
       ]
     },
     "LEB": {
       "countryName": "Lebanon",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -778,26 +1388,26 @@
       "countryName": "Lesotho",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
         5
       ]
     },
-    "LIB": {
-      "countryName": "Liberia",
-      "inputAdmin1Regions": 0,
-      "outputRegions": 2,
-      "mode": "grid-split",
-      "targetRange": [
-        4,
-        12
-      ]
-    },
     "LIT": {
       "countryName": "Lithuania",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -807,137 +1417,282 @@
     "MAD": {
       "countryName": "Madagascar (Malagasy)",
       "inputAdmin1Regions": 0,
-      "outputRegions": 4,
-      "mode": "grid-split",
+      "outputRegions": 8,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 8,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 8,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        4,
-        12
-      ]
-    },
-    "MAL": {
-      "countryName": "Malta",
-      "inputAdmin1Regions": 0,
-      "outputRegions": 2,
-      "mode": "grid-split",
-      "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "MAR": {
       "countryName": "Martinique",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
         5
       ]
     },
-    "MAU": {
-      "countryName": "Mauritania",
+    "MDV": {
+      "countryName": "Maldives",
       "inputAdmin1Regions": 0,
-      "outputRegions": 2,
-      "mode": "grid-split",
+      "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "single-country",
       "targetRange": [
-        4,
-        12
+        1,
+        5
       ]
     },
     "MEX": {
       "countryName": "Mexico",
       "inputAdmin1Regions": 32,
-      "outputRegions": 12,
+      "outputRegions": 14,
+      "regionCountBeforeSplit": 32,
+      "regionCountAfterSplit": 14,
+      "targetRegionCount": 14,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
+        14,
+        30
+      ]
+    },
+    "MLI": {
+      "countryName": "Mali",
+      "inputAdmin1Regions": 9,
+      "outputRegions": 11,
+      "regionCountBeforeSplit": 9,
+      "regionCountAfterSplit": 11,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 3,
+      "status": "ok",
+      "mode": "admin1-split",
+      "targetRange": [
         8,
-        24
+        18
       ]
     },
     "MNG": {
       "countryName": "Mongolia",
       "inputAdmin1Regions": 22,
       "outputRegions": 22,
+      "regionCountBeforeSplit": 22,
+      "regionCountAfterSplit": 22,
+      "targetRegionCount": 14,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "admin1",
       "targetRange": [
-        8,
-        24
+        14,
+        30
       ]
     },
     "MOR": {
       "countryName": "Morocco",
       "inputAdmin1Regions": 0,
-      "outputRegions": 4,
-      "mode": "grid-split",
+      "outputRegions": 8,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 8,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 8,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "MOZ": {
       "countryName": "Mozambique",
       "inputAdmin1Regions": 11,
       "outputRegions": 11,
+      "regionCountBeforeSplit": 11,
+      "regionCountAfterSplit": 11,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "admin1",
       "targetRange": [
-        4,
-        12
+        8,
+        18
+      ]
+    },
+    "MRT": {
+      "countryName": "Mauritania",
+      "inputAdmin1Regions": 13,
+      "outputRegions": 18,
+      "regionCountBeforeSplit": 13,
+      "regionCountAfterSplit": 18,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 8,
+      "status": "ok",
+      "mode": "admin1-split",
+      "targetRange": [
+        8,
+        18
+      ]
+    },
+    "MUS": {
+      "countryName": "Mauritius",
+      "inputAdmin1Regions": 11,
+      "outputRegions": 2,
+      "regionCountBeforeSplit": 11,
+      "regionCountAfterSplit": 2,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "grid-aggregate",
+      "targetRange": [
+        1,
+        5
+      ]
+    },
+    "MWI": {
+      "countryName": "Malawi",
+      "inputAdmin1Regions": 27,
+      "outputRegions": 5,
+      "regionCountBeforeSplit": 27,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "grid-aggregate",
+      "targetRange": [
+        1,
+        5
       ]
     },
     "NAM": {
       "countryName": "Namibia",
       "inputAdmin1Regions": 13,
-      "outputRegions": 7,
-      "mode": "grid-aggregate",
+      "outputRegions": 14,
+      "regionCountBeforeSplit": 13,
+      "regionCountAfterSplit": 14,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 2,
+      "status": "ok",
+      "mode": "admin1-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
+      ]
+    },
+    "NCL": {
+      "countryName": "New Caledonia and Dependencies",
+      "inputAdmin1Regions": 3,
+      "outputRegions": 3,
+      "regionCountBeforeSplit": 3,
+      "regionCountAfterSplit": 3,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "admin1",
+      "targetRange": [
+        1,
+        5
       ]
     },
     "NEP": {
       "countryName": "Nepal",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 1,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
       ]
     },
-    "NEW": {
+    "NER": {
+      "countryName": "Niger",
+      "inputAdmin1Regions": 8,
+      "outputRegions": 11,
+      "regionCountBeforeSplit": 8,
+      "regionCountAfterSplit": 11,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 4,
+      "status": "ok",
+      "mode": "admin1-split",
+      "targetRange": [
+        8,
+        18
+      ]
+    },
+    "NFL": {
       "countryName": "Newfoundland",
       "inputAdmin1Regions": 0,
-      "outputRegions": 3,
-      "mode": "grid-split",
+      "outputRegions": 7,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 7,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 7,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
+      ]
+    },
+    "NGA": {
+      "countryName": "Nigeria",
+      "inputAdmin1Regions": 37,
+      "outputRegions": 16,
+      "regionCountBeforeSplit": 37,
+      "regionCountAfterSplit": 16,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "grid-aggregate",
+      "targetRange": [
+        8,
+        18
       ]
     },
     "NIC": {
       "countryName": "Nicaragua",
       "inputAdmin1Regions": 17,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 17,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
         5
       ]
     },
-    "NIG": {
-      "countryName": "Niger",
-      "inputAdmin1Regions": 0,
-      "outputRegions": 9,
-      "mode": "grid-split",
-      "targetRange": [
-        8,
-        24
-      ]
-    },
     "NLD": {
       "countryName": "Netherlands",
       "inputAdmin1Regions": 12,
       "outputRegions": 4,
+      "regionCountBeforeSplit": 12,
+      "regionCountAfterSplit": 4,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -947,18 +1702,43 @@
     "NOR": {
       "countryName": "Norway",
       "inputAdmin1Regions": 19,
-      "outputRegions": 6,
+      "outputRegions": 10,
+      "regionCountBeforeSplit": 19,
+      "regionCountAfterSplit": 10,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 5,
+      "status": "ok",
+      "mode": "grid-aggregate-split",
+      "targetRange": [
+        8,
+        18
+      ]
+    },
+    "NZL": {
+      "countryName": "New Zealand",
+      "inputAdmin1Regions": 20,
+      "outputRegions": 2,
+      "regionCountBeforeSplit": 20,
+      "regionCountAfterSplit": 2,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
-        4,
-        12
+        1,
+        5
       ]
     },
     "OMA": {
       "countryName": "Oman",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 1,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
@@ -968,6 +1748,11 @@
       "countryName": "Palestine",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -978,6 +1763,11 @@
       "countryName": "Panama",
       "inputAdmin1Regions": 12,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 12,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -988,7 +1778,12 @@
       "countryName": "Papua",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 1,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
@@ -998,7 +1793,12 @@
       "countryName": "Paraguay",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 1,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
@@ -1007,18 +1807,43 @@
     "PER": {
       "countryName": "Peru",
       "inputAdmin1Regions": 26,
-      "outputRegions": 9,
+      "outputRegions": 10,
+      "regionCountBeforeSplit": 26,
+      "regionCountAfterSplit": 10,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "PHI": {
       "countryName": "Philippines",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 1,
+      "status": "ok",
+      "mode": "fallback-split",
+      "targetRange": [
+        1,
+        5
+      ]
+    },
+    "PNG": {
+      "countryName": "New Guinea (German New Guinea) (Kaiser Wilhelmsland)",
+      "inputAdmin1Regions": 16,
+      "outputRegions": 5,
+      "regionCountBeforeSplit": 16,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "grid-aggregate",
       "targetRange": [
         1,
         5
@@ -1027,18 +1852,28 @@
     "POL": {
       "countryName": "Poland",
       "inputAdmin1Regions": 14,
-      "outputRegions": 14,
-      "mode": "admin1",
+      "outputRegions": 18,
+      "regionCountBeforeSplit": 14,
+      "regionCountAfterSplit": 18,
+      "targetRegionCount": 18,
+      "largeRegionsSplit": 8,
+      "status": "ok",
+      "mode": "admin1-split",
       "targetRange": [
-        8,
-        25
+        18,
+        30
       ]
     },
     "POR": {
       "countryName": "Portugal",
       "inputAdmin1Regions": 0,
       "outputRegions": 2,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 2,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 2,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
@@ -1048,7 +1883,27 @@
       "countryName": "Puerto Rico",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
+      "targetRange": [
+        1,
+        5
+      ]
+    },
+    "PYF": {
+      "countryName": "French Polynesia",
+      "inputAdmin1Regions": 4,
+      "outputRegions": 4,
+      "regionCountBeforeSplit": 4,
+      "regionCountAfterSplit": 4,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "admin1",
       "targetRange": [
         1,
         5
@@ -1058,6 +1913,11 @@
       "countryName": "Qatar",
       "inputAdmin1Regions": 7,
       "outputRegions": 4,
+      "regionCountBeforeSplit": 7,
+      "regionCountAfterSplit": 4,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -1068,6 +1928,11 @@
       "countryName": "Reunion",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -1077,17 +1942,27 @@
     "ROM": {
       "countryName": "Rumania",
       "inputAdmin1Regions": 42,
-      "outputRegions": 12,
+      "outputRegions": 14,
+      "regionCountBeforeSplit": 42,
+      "regionCountAfterSplit": 14,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "RWA": {
       "countryName": "Rwanda-Urundi",
       "inputAdmin1Regions": 5,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 5,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "admin1",
       "targetRange": [
         1,
@@ -1098,6 +1973,41 @@
       "countryName": "Sabah (North Borneo)",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
+      "mode": "single-country",
+      "targetRange": [
+        1,
+        5
+      ]
+    },
+    "SAF": {
+      "countryName": "South Africa",
+      "inputAdmin1Regions": 9,
+      "outputRegions": 12,
+      "regionCountBeforeSplit": 9,
+      "regionCountAfterSplit": 12,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 4,
+      "status": "ok",
+      "mode": "admin1-split",
+      "targetRange": [
+        8,
+        18
+      ]
+    },
+    "SAK": {
+      "countryName": "Southern Sakhalin Island",
+      "inputAdmin1Regions": 0,
+      "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -1108,7 +2018,12 @@
       "countryName": "Sarawak",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 1,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
@@ -1117,17 +2032,27 @@
     "SAU": {
       "countryName": "Saudi Arabia",
       "inputAdmin1Regions": 13,
-      "outputRegions": 13,
-      "mode": "admin1",
+      "outputRegions": 19,
+      "regionCountBeforeSplit": 13,
+      "regionCountAfterSplit": 19,
+      "targetRegionCount": 14,
+      "largeRegionsSplit": 8,
+      "status": "ok",
+      "mode": "admin1-split",
       "targetRange": [
-        8,
-        24
+        14,
+        30
       ]
     },
     "SEN": {
       "countryName": "Senegal",
       "inputAdmin1Regions": 14,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 14,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -1138,6 +2063,11 @@
       "countryName": "Sierra Leone",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -1148,46 +2078,41 @@
       "countryName": "Solomon Islands",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
         5
       ]
     },
-    "SOU": {
-      "countryName": "South Africa",
-      "inputAdmin1Regions": 0,
-      "outputRegions": 2,
-      "mode": "grid-split",
-      "targetRange": [
-        4,
-        12
-      ]
-    },
     "SOV": {
       "countryName": "Russia (Soviet Union)",
       "inputAdmin1Regions": 215,
-      "outputRegions": 25,
-      "mode": "grid-aggregate",
+      "outputRegions": 71,
+      "regionCountBeforeSplit": 215,
+      "regionCountAfterSplit": 71,
+      "targetRegionCount": 60,
+      "largeRegionsSplit": 58,
+      "status": "ok",
+      "mode": "grid-aggregate-split",
       "targetRange": [
-        25,
-        80
-      ]
-    },
-    "SPA": {
-      "countryName": "Spanish Morocco",
-      "inputAdmin1Regions": 0,
-      "outputRegions": 1,
-      "mode": "grid-split",
-      "targetRange": [
-        1,
-        5
+        60,
+        100
       ]
     },
     "SRI": {
       "countryName": "Sri Lanka (Ceylon)",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -1198,6 +2123,11 @@
       "countryName": "Straits Settlements",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -1207,17 +2137,27 @@
     "SUD": {
       "countryName": "Sudan",
       "inputAdmin1Regions": 0,
-      "outputRegions": 9,
-      "mode": "grid-split",
+      "outputRegions": 15,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 15,
+      "targetRegionCount": 14,
+      "largeRegionsSplit": 15,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        8,
-        24
+        14,
+        30
       ]
     },
     "SUR": {
       "countryName": "Surinam",
       "inputAdmin1Regions": 10,
       "outputRegions": 3,
+      "regionCountBeforeSplit": 10,
+      "regionCountAfterSplit": 3,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -1228,6 +2168,11 @@
       "countryName": "Swaziland (Eswatini)",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -1237,17 +2182,27 @@
     "SWE": {
       "countryName": "Sweden",
       "inputAdmin1Regions": 21,
-      "outputRegions": 7,
+      "outputRegions": 10,
+      "regionCountBeforeSplit": 21,
+      "regionCountAfterSplit": 10,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "SWI": {
       "countryName": "Switzerland",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -1258,6 +2213,11 @@
       "countryName": "Syria",
       "inputAdmin1Regions": 15,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 15,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -1268,6 +2228,11 @@
       "countryName": "Taiwan",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -1277,37 +2242,57 @@
     "TAN": {
       "countryName": "Tanzania (Tanganyika)",
       "inputAdmin1Regions": 0,
-      "outputRegions": 4,
-      "mode": "grid-split",
+      "outputRegions": 9,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 9,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 9,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "THA": {
       "countryName": "Thailand",
       "inputAdmin1Regions": 77,
-      "outputRegions": 10,
+      "outputRegions": 14,
+      "regionCountBeforeSplit": 77,
+      "regionCountAfterSplit": 14,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "TIB": {
       "countryName": "Tibet",
       "inputAdmin1Regions": 0,
-      "outputRegions": 8,
-      "mode": "grid-split",
+      "outputRegions": 15,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 15,
+      "targetRegionCount": 14,
+      "largeRegionsSplit": 15,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        8,
-        24
+        14,
+        30
       ]
     },
     "TOG": {
       "countryName": "Togo",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -1318,6 +2303,11 @@
       "countryName": "Trinidad and Tobago",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -1328,6 +2318,11 @@
       "countryName": "Tunisia",
       "inputAdmin1Regions": 23,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 23,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -1337,17 +2332,27 @@
     "TUR": {
       "countryName": "Turkey (Ottoman Empire)",
       "inputAdmin1Regions": 81,
-      "outputRegions": 25,
+      "outputRegions": 29,
+      "regionCountBeforeSplit": 81,
+      "regionCountAfterSplit": 29,
+      "targetRegionCount": 18,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
-        8,
-        25
+        18,
+        30
       ]
     },
     "UAE": {
       "countryName": "United Arab Emirates",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -1358,6 +2363,11 @@
       "countryName": "Uganda",
       "inputAdmin1Regions": 112,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 112,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -1368,6 +2378,11 @@
       "countryName": "Unfederated Malay States",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -1377,10 +2392,15 @@
     "UNI": {
       "countryName": "United States",
       "inputAdmin1Regions": 48,
-      "outputRegions": 48,
-      "mode": "admin1",
+      "outputRegions": 65,
+      "regionCountBeforeSplit": 48,
+      "regionCountAfterSplit": 65,
+      "targetRegionCount": 50,
+      "largeRegionsSplit": 29,
+      "status": "ok",
+      "mode": "admin1-split",
       "targetRange": [
-        25,
+        50,
         80
       ]
     },
@@ -1388,7 +2408,12 @@
       "countryName": "Uruguay",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 1,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
@@ -1397,18 +2422,28 @@
     "VEN": {
       "countryName": "Venezuela",
       "inputAdmin1Regions": 25,
-      "outputRegions": 8,
+      "outputRegions": 11,
+      "regionCountBeforeSplit": 25,
+      "regionCountAfterSplit": 11,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "VIE": {
       "countryName": "Vietnam (Annam/Cochin China/Tonkin)",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 1,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
@@ -1418,6 +2453,11 @@
       "countryName": "Yemen (Arab Republic of Yemen)",
       "inputAdmin1Regions": 17,
       "outputRegions": 5,
+      "regionCountBeforeSplit": 17,
+      "regionCountAfterSplit": 5,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "grid-aggregate",
       "targetRange": [
         1,
@@ -1428,7 +2468,12 @@
       "countryName": "Yugoslavia",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
-      "mode": "grid-split",
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 1,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
         1,
         5
@@ -1437,17 +2482,27 @@
     "ZAM": {
       "countryName": "Zambia",
       "inputAdmin1Regions": 0,
-      "outputRegions": 4,
-      "mode": "grid-split",
+      "outputRegions": 9,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 9,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 9,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     },
     "ZAN": {
       "countryName": "Zanzibar",
       "inputAdmin1Regions": 0,
       "outputRegions": 1,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 1,
+      "targetRegionCount": 1,
+      "largeRegionsSplit": 0,
+      "status": "ok",
       "mode": "single-country",
       "targetRange": [
         1,
@@ -1457,11 +2512,16 @@
     "ZIM": {
       "countryName": "Zimbabwe (Rhodesia)",
       "inputAdmin1Regions": 0,
-      "outputRegions": 4,
-      "mode": "grid-split",
+      "outputRegions": 9,
+      "regionCountBeforeSplit": 0,
+      "regionCountAfterSplit": 9,
+      "targetRegionCount": 8,
+      "largeRegionsSplit": 9,
+      "status": "ok",
+      "mode": "fallback-split",
       "targetRange": [
-        4,
-        12
+        8,
+        18
       ]
     }
   }

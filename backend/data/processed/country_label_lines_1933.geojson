@@ -5,22 +5,26 @@
       "type": "Feature",
       "properties": {
         "tag": "UNI",
+        "ownerTag": "UNI",
         "label": "UNITED STATES",
-        "labelClass": "continental",
-        "labelSize": 28,
-        "labelSpacing": 0.18,
-        "labelRank": 0
+        "labelClass": "country-continental",
+        "labelSize": 29.2,
+        "labelSpacing": 0.3,
+        "labelRank": 0,
+        "minZoom": 2.0,
+        "maxZoom": 6.9,
+        "labelPriority": 165
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -118.34051516829611,
-            38.49394506645011
+            -115.95650850655383,
+            38.33378451580087
           ],
           [
-            -81.34649548647408,
-            36.00864053351768
+            -83.72787890895648,
+            36.16862485167097
           ]
         ]
       }
@@ -29,22 +33,26 @@
       "type": "Feature",
       "properties": {
         "tag": "CAN",
+        "ownerTag": "CAN",
         "label": "CANADA",
-        "labelClass": "continental",
-        "labelSize": 28,
-        "labelSpacing": 0.18,
-        "labelRank": 0
+        "labelClass": "country-continental",
+        "labelSize": 30.3,
+        "labelSpacing": 0.3,
+        "labelRank": 0,
+        "minZoom": 2.0,
+        "maxZoom": 6.9,
+        "labelPriority": 1
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -134.45073127404632,
-            60.463046265368355
+            -131.48066282448767,
+            60.013991742152285
           ],
           [
-            -88.17740855598271,
-            53.46682876274775
+            -91.16604580886708,
+            53.91869076507272
           ]
         ]
       }
@@ -53,22 +61,26 @@
       "type": "Feature",
       "properties": {
         "tag": "BRA",
+        "ownerTag": "BRA",
         "label": "BRAZIL",
-        "labelClass": "continental",
-        "labelSize": 27.28,
-        "labelSpacing": 0.18,
-        "labelRank": 0
+        "labelClass": "country-continental",
+        "labelSize": 28.77,
+        "labelSpacing": 0.3,
+        "labelRank": 0,
+        "minZoom": 2.0,
+        "maxZoom": 6.9,
+        "labelPriority": 297
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -55.392773744662954,
-            -0.910849595418195
+            -54.84420495069914,
+            -2.2019892340509344
           ],
           [
-            -46.88434999281007,
-            -20.936711965245614
+            -47.4328693673765,
+            -19.6456886426403
           ]
         ]
       }
@@ -76,23 +88,27 @@
     {
       "type": "Feature",
       "properties": {
-        "tag": "CHI",
-        "label": "CHINA",
-        "labelClass": "continental",
-        "labelSize": 27.69,
-        "labelSpacing": 0.18,
-        "labelRank": 0
+        "tag": "GBR",
+        "ownerTag": "GBR",
+        "label": "UNITED KINGDOM",
+        "labelClass": "country-major",
+        "labelSize": 27.38,
+        "labelSpacing": 0.28,
+        "labelRank": 1,
+        "minZoom": 2.2,
+        "maxZoom": 6.8,
+        "labelPriority": 1070
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            103.01548363845669,
-            36.6381499332831
+            -2.3919882870890867,
+            55.15575660170674
           ],
           [
-            117.20823965085573,
-            37.06992663678463
+            -0.4074154670977381,
+            51.63664290792594
           ]
         ]
       }
@@ -101,22 +117,26 @@
       "type": "Feature",
       "properties": {
         "tag": "FRA",
+        "ownerTag": "FRA",
         "label": "FRANCE",
-        "labelClass": "major",
-        "labelSize": 18.58,
-        "labelSpacing": 0.16,
-        "labelRank": 1
+        "labelClass": "country-major",
+        "labelSize": 29.37,
+        "labelSpacing": 0.28,
+        "labelRank": 1,
+        "minZoom": 2.2,
+        "maxZoom": 6.8,
+        "labelPriority": 1036
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -3.0432372298341313,
-            47.865762951708284
+            -2.4844935399837933,
+            47.743635783267294
           ],
           [
-            5.580040382934091,
-            45.98093365223109
+            5.017084474016995,
+            46.103981504693785
           ]
         ]
       }
@@ -125,22 +145,26 @@
       "type": "Feature",
       "properties": {
         "tag": "ESP",
+        "ownerTag": "ESP",
         "label": "SPAIN",
-        "labelClass": "major",
-        "labelSize": 18.26,
-        "labelSpacing": 0.16,
-        "labelRank": 1
+        "labelClass": "country-major",
+        "labelSize": 28.79,
+        "labelSpacing": 0.28,
+        "labelRank": 1,
+        "minZoom": 2.2,
+        "maxZoom": 6.8,
+        "labelPriority": 1047
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -6.196212918283191,
-            39.79036637188291
+            -5.84710908131325,
+            39.79355809482165
           ],
           [
-            -0.8594749316649981,
-            39.8391581273611
+            -1.2112365011441923,
+            39.83594210578993
           ]
         ]
       }
@@ -149,22 +173,26 @@
       "type": "Feature",
       "properties": {
         "tag": "GER",
+        "ownerTag": "GER",
         "label": "GERMANY",
-        "labelClass": "major",
-        "labelSize": 18.36,
-        "labelSpacing": 0.16,
-        "labelRank": 1
+        "labelClass": "country-major",
+        "labelSize": 28.98,
+        "labelSpacing": 0.28,
+        "labelRank": 1,
+        "minZoom": 2.2,
+        "maxZoom": 6.8,
+        "labelPriority": 1044
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            7.356461542563268,
-            50.92389671173299
+            7.935669103214758,
+            50.95383404325068
           ],
           [
-            16.292959188529984,
-            51.3857948477542
+            15.707936086563532,
+            51.35555693005614
           ]
         ]
       }
@@ -173,22 +201,26 @@
       "type": "Feature",
       "properties": {
         "tag": "POL",
+        "ownerTag": "POL",
         "label": "POLAND",
-        "labelClass": "major",
-        "labelSize": 18.2,
-        "labelSpacing": 0.16,
-        "labelRank": 1
+        "labelClass": "country-major",
+        "labelSize": 28.7,
+        "labelSpacing": 0.28,
+        "labelRank": 1,
+        "minZoom": 2.2,
+        "maxZoom": 6.8,
+        "labelPriority": 1049
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            17.770211071456178,
-            51.80696666933137
+            18.330222406023,
+            51.81195548908972
           ],
           [
-            26.29002393066277,
-            51.88286479514762
+            25.737634831882154,
+            51.87794387751579
           ]
         ]
       }
@@ -197,22 +229,26 @@
       "type": "Feature",
       "properties": {
         "tag": "ITA",
+        "ownerTag": "ITA",
         "label": "ITALY",
-        "labelClass": "major",
-        "labelSize": 17.77,
-        "labelSpacing": 0.16,
-        "labelRank": 1
+        "labelClass": "country-major",
+        "labelSize": 27.23,
+        "labelSpacing": 0.28,
+        "labelRank": 1,
+        "minZoom": 2.2,
+        "maxZoom": 6.8,
+        "labelPriority": 1072
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            42.36297092941452,
-            -0.014478380085548137
+            9.532401090218734,
+            44.93717387023642
           ],
           [
-            49.80847020079062,
-            8.700053804426219
+            15.649722228349102,
+            40.20129439355884
           ]
         ]
       }
@@ -221,22 +257,26 @@
       "type": "Feature",
       "properties": {
         "tag": "SOV",
+        "ownerTag": "SOV",
         "label": "SOVIET UNION",
-        "labelClass": "continental",
-        "labelSize": 28,
-        "labelSpacing": 0.18,
-        "labelRank": 0
+        "labelClass": "country-continental",
+        "labelSize": 34,
+        "labelSpacing": 0.3,
+        "labelRank": 0,
+        "minZoom": 2.0,
+        "maxZoom": 6.9,
+        "labelPriority": 1
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            41.01807945714853,
-            53.93143621120765
+            47.47793357418236,
+            54.31633623241298
           ],
           [
-            141.68079663250458,
-            59.92926236539515
+            135.21439534709205,
+            59.54397224168871
           ]
         ]
       }
@@ -245,22 +285,54 @@
       "type": "Feature",
       "properties": {
         "tag": "TUR",
+        "ownerTag": "TUR",
         "label": "TURKEY",
-        "labelClass": "major",
-        "labelSize": 18.99,
-        "labelSpacing": 0.16,
-        "labelRank": 1
+        "labelClass": "country-major",
+        "labelSize": 30,
+        "labelSpacing": 0.28,
+        "labelRank": 1,
+        "minZoom": 2.2,
+        "maxZoom": 6.8,
+        "labelPriority": 1021
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            28.703519814264368,
-            38.67937522172862
+            29.577378667283355,
+            38.713720919359645
           ],
           [
-            42.182042738807624,
-            39.2091281346617
+            41.31013359249621,
+            39.17485906729746
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "CHI",
+        "ownerTag": "CHI",
+        "label": "CHINA",
+        "labelClass": "country-continental",
+        "labelSize": 28.98,
+        "labelSpacing": 0.3,
+        "labelRank": 0,
+        "minZoom": 2.0,
+        "maxZoom": 6.9,
+        "labelPriority": 234
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            103.92991633530652,
+            36.66606075601928
+          ],
+          [
+            116.27806706404326,
+            37.041569284045174
           ]
         ]
       }
@@ -269,22 +341,54 @@
       "type": "Feature",
       "properties": {
         "tag": "MNG",
+        "ownerTag": "MNG",
         "label": "MONGOLIA",
-        "labelClass": "major",
-        "labelSize": 21.11,
-        "labelSpacing": 0.16,
-        "labelRank": 1
+        "labelClass": "country-major",
+        "labelSize": 30,
+        "labelSpacing": 0.28,
+        "labelRank": 1,
+        "minZoom": 2.2,
+        "maxZoom": 6.8,
+        "labelPriority": 915
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            92.9892990220536,
-            47.67985634003725
+            94.31013625223609,
+            47.59054293494955
           ],
           [
-            113.46544349881161,
-            46.295284384843264
+            112.14496655503511,
+            46.38457342780291
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "tag": "JAP",
+        "ownerTag": "JAP",
+        "label": "JAPAN",
+        "labelClass": "country-major",
+        "labelSize": 26.84,
+        "labelSpacing": 0.28,
+        "labelRank": 1,
+        "minZoom": 2.2,
+        "maxZoom": 6.8,
+        "labelPriority": 1076
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            136.33455033235987,
+            35.10359747402488
+          ],
+          [
+            140.09276603774683,
+            37.65471268144972
           ]
         ]
       }
@@ -293,22 +397,26 @@
       "type": "Feature",
       "properties": {
         "tag": "IND",
+        "ownerTag": "IND",
         "label": "INDIA",
-        "labelClass": "continental",
-        "labelSize": 25.31,
-        "labelSpacing": 0.18,
-        "labelRank": 0
+        "labelClass": "country-continental",
+        "labelSize": 28,
+        "labelSpacing": 0.3,
+        "labelRank": 0,
+        "minZoom": 2.0,
+        "maxZoom": 6.9,
+        "labelPriority": 564
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            65.89670655062977,
-            26.54463591115671
+            67.08278526180523,
+            26.234700700080293
           ],
           [
-            84.24290643155123,
-            21.751903820884944
+            83.05959330403122,
+            22.061048109166105
           ]
         ]
       }

@@ -67,7 +67,12 @@ ISO_TO_TAG = {
     "JPN": "JAP",
     "BRA": "BRA",
     "IND": "IND",
+    "IDN": "IDN",
     "AUT": "AUS",
+    "AUS": "AST",
+    "BEL": "BEL",
+    "BLZ": "BLZ",
+    "CHL": "CHL",
     "CZE": "CZE",
     "HUN": "HUN",
     "ROU": "ROM",
@@ -78,6 +83,14 @@ ISO_TO_TAG = {
     "SYR": "SYR",
     "EGY": "EGY",
     "MNG": "MNG",
+    "MRT": "MRT",
+    "MUS": "MUS",
+    "NER": "NER",
+    "NGA": "NGA",
+    "NZL": "NZL",
+    "ZAF": "SAF",
+    "LBY": "LBY",
+    "LBR": "LBR",
     "IRL": "IRE",
     "YUG": "YUG",
     "UKR": "SOV",
@@ -115,12 +128,18 @@ COUNTRY_NAME_TO_TAG = {
     "turkey": "TUR",
     "united states": "UNI",
     "united states of america": "UNI",
+    "alaska": "ALA",
+    "hawaii": "HAW",
+    "puerto rico": "PUE",
     "canada": "CAN",
     "china": "CHI",
+    "chile": "CHL",
     "japan": "JAP",
     "brazil": "BRA",
     "india": "IND",
+    "indonesia": "IDN",
     "austria": "AUS",
+    "australia": "AST",
     "czechoslovakia": "CZE",
     "hungary": "HUN",
     "romania": "ROM",
@@ -131,6 +150,7 @@ COUNTRY_NAME_TO_TAG = {
     "syria": "SYR",
     "egypt": "EGY",
     "mongolia": "MNG",
+    "south africa": "SAF",
     "ireland": "IRE",
     "yugoslavia": "YUG",
     "cyprus": "CYP",
@@ -157,6 +177,16 @@ COUNTRY_NAMES = {
     "IND": "India",
 }
 
+REGION_NAME_OVERRIDES = {
+    "Bayern": "Bavaria",
+    "Sachsen": "Saxony",
+    "Thüringen": "Thuringia",
+    "Thueringen": "Thuringia",
+    "Niedersachsen": "Lower Saxony",
+    "Nordrhein-Westfalen": "North Rhine-Westphalia",
+    "Rheinland-Pfalz": "Rhineland-Palatinate",
+}
+
 
 def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
@@ -164,7 +194,7 @@ def main() -> None:
 
     admin1_path = first_existing(ADMIN1_SOURCE_PATHS) or download_admin1_source()
     countries = ensure_processed_countries()
-    country_geometries, country_names = build_country_geometries(countries)
+    country_geometries, country_names, country_owners = build_country_geometries(countries)
     admin1 = read_json(admin1_path)
 
     grouped: dict[str, list[dict[str, Any]]] = {tag: [] for tag in country_geometries}
@@ -194,16 +224,17 @@ def main() -> None:
             diagnostics["skippedTinyOrInvalid"] += 1
             continue
 
-        name = admin1_name(props) or f"{country_names.get(tag, tag)} Region"
+        name = readable_region_name(admin1_name(props) or f"{country_names.get(tag, tag)} Region")
         display_name = clean_name(name)
         center = clipped.representative_point()
+        min_zoom = region_min_zoom(display_name, clipped.area)
         grouped.setdefault(tag, []).append(
             {
                 "regionId": f"{tag}_{slug(display_name)}_{index:04d}",
                 "name": display_name,
                 "displayName": display_name,
                 "englishName": display_name,
-                "ownerTag": tag,
+                "ownerTag": country_owners.get(tag, tag),
                 "countryTag": tag,
                 "isGenerated": False,
                 "isPlayerVisible": True,
@@ -211,6 +242,9 @@ def main() -> None:
                 "centerLat": center.y,
                 "labelSize": label_size_from_area(clipped.area, base=10, cap=13),
                 "labelRank": 1,
+                "minZoom": min_zoom,
+                "maxZoom": 9.0,
+                "labelPriority": region_label_priority(display_name, clipped.area),
                 "aliases": unique_aliases([name, props.get("name_en"), props.get("gn_name")]),
                 "source": "natural-earth-admin1" if "ne_" in admin1_path.name else "geoboundaries-adm1",
                 "_geometry": clipped,
@@ -223,18 +257,52 @@ def main() -> None:
             continue
         raw_regions = grouped.get(tag, [])
         target_min, target_max = target_range_for_country(tag, country_geometry)
+        owner_tag = country_owners.get(tag, tag)
         mode = "admin1"
 
         if len(raw_regions) > target_max:
-            final_regions = grid_aggregate_regions(tag, country_names.get(tag, tag), raw_regions, target_max)
+            final_regions = grid_aggregate_regions(tag, owner_tag, country_names.get(tag, tag), raw_regions, target_max)
             mode = "grid-aggregate"
+            if len(final_regions) < target_min:
+                final_regions = split_oversized_regions(
+                    tag,
+                    owner_tag,
+                    country_names.get(tag, tag),
+                    final_regions,
+                    country_geometry,
+                    target_min,
+                    target_max,
+                )
+                mode = "grid-aggregate-split"
         elif len(raw_regions) < target_min and country_geometry.area > 8.0:
-            final_regions = grid_split_country(tag, country_names.get(tag, tag), country_geometry, target_min)
-            mode = "grid-split"
+            if raw_regions:
+                final_regions = split_oversized_regions(
+                    tag,
+                    owner_tag,
+                    country_names.get(tag, tag),
+                    raw_regions,
+                    country_geometry,
+                    target_min,
+                    target_max,
+                )
+                mode = "admin1-split"
+            else:
+                final_regions = grid_split_country(tag, owner_tag, country_names.get(tag, tag), country_geometry, target_min)
+                mode = "fallback-split"
         elif raw_regions:
-            final_regions = raw_regions
+            final_regions = split_oversized_regions(
+                tag,
+                owner_tag,
+                country_names.get(tag, tag),
+                raw_regions,
+                country_geometry,
+                target_min,
+                target_max,
+            )
+            if len(final_regions) > len(raw_regions):
+                mode = "admin1-split"
         else:
-            final_regions = single_country_region(tag, country_names.get(tag, tag), country_geometry)
+            final_regions = single_country_region(tag, owner_tag, country_names.get(tag, tag), country_geometry)
             mode = "single-country"
 
         features = [region_feature(region) for region in final_regions]
@@ -243,6 +311,11 @@ def main() -> None:
             "countryName": country_names.get(tag, tag),
             "inputAdmin1Regions": len(raw_regions),
             "outputRegions": len(features),
+            "regionCountBeforeSplit": len(raw_regions),
+            "regionCountAfterSplit": len(features),
+            "targetRegionCount": target_min,
+            "largeRegionsSplit": sum(1 for region in final_regions if str(region.get("source", "")).endswith("-split")),
+            "status": "ok",
             "mode": mode,
             "targetRange": [target_min, target_max],
         }
@@ -290,9 +363,10 @@ def download_admin1_source() -> Path:
     return DEFAULT_ADMIN1_PATH
 
 
-def build_country_geometries(countries: dict[str, Any]) -> tuple[dict[str, Any], dict[str, str]]:
+def build_country_geometries(countries: dict[str, Any]) -> tuple[dict[str, Any], dict[str, str], dict[str, str]]:
     grouped: dict[str, list[Any]] = {}
     names: dict[str, str] = {}
+    owners: dict[str, str] = {}
     for feature in countries.get("features", []):
         props = feature.get("properties", {})
         tag = props.get("tag")
@@ -300,13 +374,14 @@ def build_country_geometries(countries: dict[str, Any]) -> tuple[dict[str, Any],
         if tag and geometry is not None and not geometry.is_empty:
             grouped.setdefault(tag, []).append(geometry)
             names.setdefault(tag, str(props.get("displayName") or props.get("name") or tag))
+            owners.setdefault(tag, str(props.get("ownerTag") or tag))
 
     result = {}
     for tag, geometries in grouped.items():
         geometry = clean_feature_geometry(unary_union(geometries), simplify=0.003)
         if geometry is not None and not geometry.is_empty:
             result[tag] = geometry
-    return result, names
+    return result, names, owners
 
 
 def admin1_country_tag(props: dict[str, Any]) -> str | None:
@@ -344,18 +419,30 @@ def admin1_name(props: dict[str, Any]) -> str | None:
     return None
 
 
+def readable_region_name(name: str) -> str:
+    return REGION_NAME_OVERRIDES.get(name, name)
+
+
 def target_range_for_country(tag: str, geometry: Any) -> tuple[int, int]:
     if tag in MID_COUNTRIES:
-        return 8, 25
-    if tag in LARGE_COUNTRIES:
-        return 25, 80
+        return 18, 30
+    if tag == "GBR":
+        return 12, 20
+    if tag == "SOV":
+        return 60, 100
+    if tag in {"UNI", "USA", "CHI", "CHN"}:
+        return 50, 80
+    if tag == "IND":
+        return 40, 60
+    if tag in {"CAN", "BRA"}:
+        return 40, 80
     area = geometry.area
     if area > 900:
-        return 18, 55
+        return 40, 80
     if area > 160:
-        return 8, 24
+        return 14, 30
     if area > 30:
-        return 4, 12
+        return 8, 18
     return 1, 5
 
 
@@ -386,7 +473,7 @@ def directional_name(country_name: str, lon: float, lat: float, bounds: tuple[fl
     return f"{vertical} {country_name}"
 
 
-def grid_split_country(tag: str, country_name: str, country_geometry: Any, target: int) -> list[dict[str, Any]]:
+def grid_split_country(tag: str, owner_tag: str, country_name: str, country_geometry: Any, target: int) -> list[dict[str, Any]]:
     bounds = country_geometry.bounds
     columns, rows = desired_grid_dimensions(bounds, target)
     minx, miny, maxx, maxy = bounds
@@ -407,12 +494,104 @@ def grid_split_country(tag: str, country_name: str, country_geometry: Any, targe
                 continue
             center = clipped.representative_point()
             name = directional_name(COUNTRY_NAMES.get(tag, country_name), center.x, center.y, bounds)
-            regions.append(region_record(tag, name, clipped, "natural-earth-admin1-grid-split", len(regions) + 1))
+            regions.append(region_record(tag, owner_tag, name, clipped, "fallback-split", len(regions) + 1))
 
-    return regions or single_country_region(tag, country_name, country_geometry)
+    return regions or single_country_region(tag, owner_tag, country_name, country_geometry)
 
 
-def grid_aggregate_regions(tag: str, country_name: str, regions: list[dict[str, Any]], target_max: int) -> list[dict[str, Any]]:
+def split_oversized_regions(
+    tag: str,
+    owner_tag: str,
+    country_name: str,
+    regions: list[dict[str, Any]],
+    country_geometry: Any,
+    target_min: int,
+    target_max: int,
+) -> list[dict[str, Any]]:
+    if not regions:
+        return grid_split_country(tag, owner_tag, country_name, country_geometry, target_min)
+
+    ideal_area = country_geometry.area / max(target_min, 1)
+    output: list[dict[str, Any]] = []
+    remaining = sorted(regions, key=lambda item: item["_geometry"].area, reverse=True)
+
+    for index, region in enumerate(remaining):
+        remaining_after = len(remaining) - index - 1
+        current_count = len(output) + 1 + remaining_after
+        deficit = max(0, target_min - current_count)
+        region_area = region["_geometry"].area
+        should_split = region_area > ideal_area * 1.45 or deficit > 0
+        if not should_split or len(output) >= target_max:
+            output.append(region)
+            continue
+
+        capacity = target_max - len(output) - max(0, remaining_after)
+        if capacity < 2:
+            output.append(region)
+            continue
+        desired = max(2, min(6, math.ceil(region_area / max(ideal_area, 0.001))))
+        desired = min(desired, capacity)
+        pieces = split_region_geometry(region["_geometry"], desired, country_geometry)
+        if len(pieces) < 2:
+            output.append(region)
+            continue
+
+        base_name = readable_region_name(str(region.get("displayName") or region.get("name") or country_name))
+        for piece in pieces:
+            center = piece.representative_point()
+            piece_name = split_piece_name(base_name, center.x, center.y, region["_geometry"].bounds)
+            output.append(region_record(tag, owner_tag, piece_name, piece, "admin1-split", len(output) + 1))
+
+    if len(output) > target_max:
+        output = merge_smallest_regions(tag, owner_tag, COUNTRY_NAMES.get(tag, country_name), output, target_max)
+    return ensure_unique_region_ids(tag, output)
+
+
+def split_region_geometry(region_geometry: Any, desired: int, country_geometry: Any) -> list[Any]:
+    bounds = region_geometry.bounds
+    columns, rows = desired_grid_dimensions(bounds, desired)
+    minx, miny, maxx, maxy = bounds
+    cell_width = (maxx - minx) / max(columns, 1)
+    cell_height = (maxy - miny) / max(rows, 1)
+    pieces: list[Any] = []
+
+    for row in range(rows):
+        for column in range(columns):
+            cell = box(
+                minx + column * cell_width,
+                miny + row * cell_height,
+                minx + (column + 1) * cell_width,
+                miny + (row + 1) * cell_height,
+            )
+            clipped = clean_feature_geometry(region_geometry.intersection(cell), simplify=0.002)
+            if clipped is None or clipped.area < tiny_threshold(country_geometry):
+                continue
+            pieces.append(clipped)
+
+    return sorted(pieces, key=lambda item: item.area, reverse=True)
+
+
+def split_piece_name(base_name: str, lon: float, lat: float, bounds: tuple[float, float, float, float]) -> str:
+    minx, miny, maxx, maxy = bounds
+    x = (lon - minx) / max(maxx - minx, 0.1)
+    y = (lat - miny) / max(maxy - miny, 0.1)
+    if y > 0.62:
+        vertical = "North"
+    elif y < 0.38:
+        vertical = "South"
+    else:
+        vertical = ""
+    if x < 0.38:
+        horizontal = "West"
+    elif x > 0.62:
+        horizontal = "East"
+    else:
+        horizontal = ""
+    suffix = f"{vertical} {horizontal}".strip() or "Central"
+    return f"{base_name} {suffix}"
+
+
+def grid_aggregate_regions(tag: str, owner_tag: str, country_name: str, regions: list[dict[str, Any]], target_max: int) -> list[dict[str, Any]]:
     combined = unary_union([region["_geometry"] for region in regions])
     bounds = combined.bounds
     columns, rows = desired_grid_dimensions(bounds, target_max)
@@ -434,14 +613,14 @@ def grid_aggregate_regions(tag: str, country_name: str, regions: list[dict[str, 
             continue
         center = geometry.representative_point()
         name = directional_name(COUNTRY_NAMES.get(tag, country_name), center.x, center.y, bounds)
-        output.append(region_record(tag, name, geometry, "natural-earth-admin1-grid-aggregate", len(output) + 1))
+        output.append(region_record(tag, owner_tag, name, geometry, "admin1-aggregate", len(output) + 1))
 
     if len(output) > target_max:
-        output = merge_smallest_regions(tag, COUNTRY_NAMES.get(tag, country_name), output, target_max)
+        output = merge_smallest_regions(tag, owner_tag, COUNTRY_NAMES.get(tag, country_name), output, target_max)
     return output or regions[:target_max]
 
 
-def merge_smallest_regions(tag: str, country_name: str, regions: list[dict[str, Any]], target_max: int) -> list[dict[str, Any]]:
+def merge_smallest_regions(tag: str, owner_tag: str, country_name: str, regions: list[dict[str, Any]], target_max: int) -> list[dict[str, Any]]:
     merged = list(regions)
     while len(merged) > target_max:
         smallest_index = min(range(len(merged)), key=lambda index: merged[index]["_geometry"].area)
@@ -456,26 +635,27 @@ def merge_smallest_regions(tag: str, country_name: str, regions: list[dict[str, 
             continue
         combined_center = combined.representative_point()
         name = directional_name(country_name, combined_center.x, combined_center.y, combined.bounds)
-        merged[nearest_index] = region_record(tag, name, combined, "natural-earth-admin1-grid-aggregate", nearest_index + 1)
+        merged[nearest_index] = region_record(tag, owner_tag, name, combined, "admin1-aggregate", nearest_index + 1)
 
     for index, region in enumerate(merged, start=1):
         region["regionId"] = f"{tag}_{slug(region['displayName'])}_{index:03d}"
     return merged
 
 
-def single_country_region(tag: str, country_name: str, geometry: Any) -> list[dict[str, Any]]:
-    return [region_record(tag, country_name, geometry, "country-geometry-single", 1)]
+def single_country_region(tag: str, owner_tag: str, country_name: str, geometry: Any) -> list[dict[str, Any]]:
+    return [region_record(tag, owner_tag, country_name, geometry, "country-geometry-single", 1)]
 
 
-def region_record(tag: str, name: str, geometry: Any, source: str, index: int) -> dict[str, Any]:
+def region_record(tag: str, owner_tag: str, name: str, geometry: Any, source: str, index: int) -> dict[str, Any]:
     display_name = clean_name(name)
     center = geometry.representative_point()
+    min_zoom = region_min_zoom(display_name, geometry.area)
     return {
         "regionId": f"{tag}_{slug(display_name)}_{index:03d}",
         "name": display_name,
         "displayName": display_name,
         "englishName": display_name,
-        "ownerTag": tag,
+        "ownerTag": owner_tag,
         "countryTag": tag,
         "isGenerated": source != "natural-earth-admin1",
         "isPlayerVisible": True,
@@ -483,10 +663,36 @@ def region_record(tag: str, name: str, geometry: Any, source: str, index: int) -
         "centerLat": center.y,
         "labelSize": label_size_from_area(geometry.area, base=10, cap=13),
         "labelRank": 1,
+        "minZoom": min_zoom,
+        "maxZoom": 9.0,
+        "labelPriority": region_label_priority(display_name, geometry.area),
         "aliases": unique_aliases([display_name]),
         "source": source,
         "_geometry": geometry,
     }
+
+
+def ensure_unique_region_ids(tag: str, regions: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    seen: dict[str, int] = {}
+    for index, region in enumerate(regions, start=1):
+        display_name = str(region.get("displayName") or region.get("name") or f"{tag} Region")
+        key = slug(display_name)
+        seen[key] = seen.get(key, 0) + 1
+        suffix = seen[key] if seen[key] > 1 else index
+        region["regionId"] = f"{tag}_{key}_{suffix:03d}"
+    return regions
+
+
+def region_min_zoom(label: str, area: float) -> float:
+    if len(label) > 24 or area < 0.2:
+        return 5.6
+    if len(label) > 18 or area < 0.65:
+        return 5.1
+    return 4.7
+
+
+def region_label_priority(label: str, area: float) -> int:
+    return max(1, int(10000 - min(area, 200) * 25 + len(label) * 20))
 
 
 def region_feature(region: dict[str, Any]) -> dict[str, Any]:
@@ -518,6 +724,9 @@ def build_region_label_points(features: list[dict[str, Any]]) -> dict[str, Any]:
                     "label": label,
                     "labelSize": props.get("labelSize", 11),
                     "labelRank": props.get("labelRank", 1),
+                    "minZoom": props.get("minZoom", region_min_zoom(label, geometry.area)),
+                    "maxZoom": props.get("maxZoom", 9.0),
+                    "labelPriority": props.get("labelPriority", region_label_priority(label, geometry.area)),
                 },
                 "geometry": {"type": "Point", "coordinates": [point.x, point.y]},
             }

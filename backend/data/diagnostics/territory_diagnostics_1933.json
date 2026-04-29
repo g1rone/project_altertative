@@ -1,0 +1,1772 @@
+{
+  "source": "D:\\pax-1933-starter\\backend\\data\\base\\countries_1933.geojson",
+  "features": [
+    {
+      "tag": "ALA",
+      "originalTag": "ALA",
+      "name": "Alaska",
+      "ownerTag": "UNI",
+      "labelOwnerTag": "UNI",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -178.216536,
+        51.584436,
+        -129.993655,
+        71.351436
+      ],
+      "area": 279.29089
+    },
+    {
+      "tag": "HAW",
+      "originalTag": "HAW",
+      "name": "Hawaii",
+      "ownerTag": "UNI",
+      "labelOwnerTag": "UNI",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -160.2464,
+        18.925482,
+        -154.797818,
+        22.239154
+      ],
+      "area": 1.438115
+    },
+    {
+      "tag": "PUE",
+      "originalTag": "PUE",
+      "name": "Puerto Rico",
+      "ownerTag": "UNI",
+      "labelOwnerTag": "UNI",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -67.266396,
+        17.922222,
+        -65.301117,
+        18.519444
+      ],
+      "area": 0.776269
+    },
+    {
+      "tag": "BAH",
+      "originalTag": "BAH",
+      "name": "Bahamas",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -78.9789,
+        20.916523,
+        -72.739241,
+        26.92875
+      ],
+      "area": 1.065157
+    },
+    {
+      "tag": "JAM",
+      "originalTag": "JAM",
+      "name": "Jamaica",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -78.368968,
+        17.698054,
+        -76.221118,
+        18.522082
+      ],
+      "area": 0.939317
+    },
+    {
+      "tag": "TRI",
+      "originalTag": "TRI",
+      "name": "Trinidad and Tobago",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -61.9216,
+        10.040345,
+        -60.525213,
+        11.338054
+      ],
+      "area": 0.409
+    },
+    {
+      "tag": "BAR",
+      "originalTag": "BAR",
+      "name": "Barbados",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -59.658891,
+        13.057223,
+        -59.428682,
+        13.332359
+      ],
+      "area": 0.035665
+    },
+    {
+      "tag": "GLP",
+      "originalTag": "GUA",
+      "name": "Guadeloupe",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -61.796112,
+        15.869999,
+        -61.187084,
+        16.512915
+      ],
+      "area": 0.133696
+    },
+    {
+      "tag": "MAR",
+      "originalTag": "MAR",
+      "name": "Martinique",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -61.231533,
+        14.402777,
+        -60.816948,
+        14.877777
+      ],
+      "area": 0.094534
+    },
+    {
+      "tag": "BLZ",
+      "originalTag": "BEL",
+      "name": "Belize",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -89.216173,
+        15.889854,
+        -87.779591,
+        18.483709
+      ],
+      "area": 1.875562
+    },
+    {
+      "tag": "GUY",
+      "originalTag": "GUY",
+      "name": "Guyana",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -61.389727,
+        1.186873,
+        -56.470636,
+        8.535273
+      ],
+      "area": 17.166079
+    },
+    {
+      "tag": "SUR",
+      "originalTag": "SUR",
+      "name": "Surinam",
+      "ownerTag": "NLD",
+      "labelOwnerTag": "NLD",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -58.0714,
+        1.837636,
+        -53.986118,
+        6.001809
+      ],
+      "area": 11.810101
+    },
+    {
+      "tag": "GUF",
+      "originalTag": "FRE",
+      "name": "French Guyana",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -54.347782,
+        4.131631,
+        -51.638016,
+        5.75098
+      ],
+      "area": 1.064595
+    },
+    {
+      "tag": "LUX",
+      "originalTag": "LUX",
+      "name": "Luxembourg",
+      "ownerTag": "LUX",
+      "labelOwnerTag": "LUX",
+      "isDetachedTerritory": false,
+      "isColony": false,
+      "isMainland": true,
+      "isLabelEligible": false,
+      "reason": "small state / non-main country label",
+      "bounds": [
+        5.734445,
+        49.448464,
+        6.524027,
+        50.181532
+      ],
+      "area": 0.323366
+    },
+    {
+      "tag": "DAN",
+      "originalTag": "DAN",
+      "name": "Danzig",
+      "ownerTag": "DAN",
+      "labelOwnerTag": "DAN",
+      "isDetachedTerritory": false,
+      "isColony": false,
+      "isMainland": true,
+      "isLabelEligible": false,
+      "reason": "small state / non-main country label",
+      "bounds": [
+        18.210062,
+        53.922781,
+        19.651109,
+        54.481598
+      ],
+      "area": 0.280596
+    },
+    {
+      "tag": "MLT",
+      "originalTag": "MAL",
+      "name": "Malta",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        14.3291,
+        35.8,
+        14.566946,
+        35.991382
+      ],
+      "area": 0.028307
+    },
+    {
+      "tag": "CYP",
+      "originalTag": "CYP",
+      "name": "Cyprus",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        32.270068,
+        34.641246,
+        34.586036,
+        35.688609
+      ],
+      "area": 0.90127
+    },
+    {
+      "tag": "CAP",
+      "originalTag": "CAP",
+      "name": "Cape Verde",
+      "ownerTag": "POR",
+      "labelOwnerTag": "POR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -25.360277,
+        14.812172,
+        -22.666109,
+        17.186945
+      ],
+      "area": 0.332565
+    },
+    {
+      "tag": "GNB",
+      "originalTag": "GUI",
+      "name": "Guinea-Bissau",
+      "ownerTag": "POR",
+      "labelOwnerTag": "POR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -16.722432,
+        10.9251,
+        -13.643891,
+        12.684718
+      ],
+      "area": 2.755008
+    },
+    {
+      "tag": "EQU",
+      "originalTag": "EQU",
+      "name": "Equatorial Guinea",
+      "ownerTag": "ESP",
+      "labelOwnerTag": "ESP",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        5.60985,
+        -1.457282,
+        11.353891,
+        3.763336
+      ],
+      "area": 2.186784
+    },
+    {
+      "tag": "GAM",
+      "originalTag": "GAM",
+      "name": "Gambia",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -16.82,
+        13.054982,
+        -13.798609,
+        13.826391
+      ],
+      "area": 0.887117
+    },
+    {
+      "tag": "MLI",
+      "originalTag": "MAL",
+      "name": "Mali",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -12.244592,
+        10.142154,
+        4.251391,
+        26.16745
+      ],
+      "area": 128.822886
+    },
+    {
+      "tag": "SEN",
+      "originalTag": "SEN",
+      "name": "Senegal",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -17.532782,
+        12.301745,
+        -11.369927,
+        16.690618
+      ],
+      "area": 16.439365
+    },
+    {
+      "tag": "BEN",
+      "originalTag": "BEN",
+      "name": "Benin",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        0.776663,
+        6.227203,
+        3.855,
+        12.396654
+      ],
+      "area": 9.571261
+    },
+    {
+      "tag": "MRT",
+      "originalTag": "MAU",
+      "name": "Mauritania",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -17.075555,
+        14.725636,
+        -6.353666,
+        27.290454
+      ],
+      "area": 71.756896
+    },
+    {
+      "tag": "NER",
+      "originalTag": "NIG",
+      "name": "Niger",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -1.318891,
+        10.936945,
+        15.996663,
+        23.522309
+      ],
+      "area": 107.076501
+    },
+    {
+      "tag": "COT",
+      "originalTag": "COT",
+      "name": "Cote D'Ivoire",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -8.60465,
+        4.344718,
+        0.050282,
+        13.936508
+      ],
+      "area": 38.455461
+    },
+    {
+      "tag": "GIN",
+      "originalTag": "GUI",
+      "name": "Guinea",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -15.075073,
+        7.200894,
+        -7.653373,
+        12.677218
+      ],
+      "area": 20.23978
+    },
+    {
+      "tag": "SIE",
+      "originalTag": "SIE",
+      "name": "Sierra Leone",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -13.293223,
+        6.915832,
+        -10.266655,
+        9.9975
+      ],
+      "area": 5.955225
+    },
+    {
+      "tag": "GHA",
+      "originalTag": "GHA",
+      "name": "Ghana",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -3.248891,
+        4.727082,
+        1.201109,
+        11.155691
+      ],
+      "area": 17.428604
+    },
+    {
+      "tag": "TOG",
+      "originalTag": "TOG",
+      "name": "Togo",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -0.145622,
+        6.109159,
+        1.7978,
+        11.131249
+      ],
+      "area": 4.693738
+    },
+    {
+      "tag": "GBR_TOG",
+      "originalTag": "BRI",
+      "name": "British Togoland",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -0.173605,
+        6.212212,
+        1.066839,
+        11.101784
+      ],
+      "area": 2.177789
+    },
+    {
+      "tag": "CMR",
+      "originalTag": "CAM",
+      "name": "Cameroon",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        9.456638,
+        1.654164,
+        16.205476,
+        13.085
+      ],
+      "area": 34.560931
+    },
+    {
+      "tag": "GBR_CMR",
+      "originalTag": "BRI",
+      "name": "British Cameroons",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        8.5084,
+        3.9025,
+        14.649654,
+        13.074802
+      ],
+      "area": 7.173799
+    },
+    {
+      "tag": "NGA",
+      "originalTag": "NIG",
+      "name": "Nigeria",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        2.6925,
+        4.272845,
+        14.102921,
+        13.8915
+      ],
+      "area": 71.098249
+    },
+    {
+      "tag": "GAB",
+      "originalTag": "GAB",
+      "name": "Gabon",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        8.704445,
+        -3.921945,
+        14.519582,
+        2.3179
+      ],
+      "area": 21.184256
+    },
+    {
+      "tag": "CEN",
+      "originalTag": "CEN",
+      "name": "Central African Republic",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        14.418891,
+        2.217868,
+        27.459718,
+        11.000836
+      ],
+      "area": 50.607601
+    },
+    {
+      "tag": "CHA",
+      "originalTag": "CHA",
+      "name": "Chad",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        13.461945,
+        7.458536,
+        24.001859,
+        23.450554
+      ],
+      "area": 107.290345
+    },
+    {
+      "tag": "COG",
+      "originalTag": "CON",
+      "name": "Congo",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        11.141304,
+        -5.015,
+        18.6418,
+        3.711109
+      ],
+      "area": 27.969317
+    },
+    {
+      "tag": "COD",
+      "originalTag": "CON",
+      "name": "Congo, Democratic Republic of (Zaire)",
+      "ownerTag": "BEL",
+      "labelOwnerTag": "BEL",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        12.214554,
+        -13.458055,
+        31.302773,
+        5.380691
+      ],
+      "area": 189.804507
+    },
+    {
+      "tag": "UGA",
+      "originalTag": "UGA",
+      "name": "Uganda",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        29.5743,
+        -1.475972,
+        35.009718,
+        4.222782
+      ],
+      "area": 19.671985
+    },
+    {
+      "tag": "KEN",
+      "originalTag": "KEN",
+      "name": "Kenya",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        33.907218,
+        -4.669618,
+        41.899817,
+        4.621977
+      ],
+      "area": 47.312507
+    },
+    {
+      "tag": "TAN",
+      "originalTag": "TAN",
+      "name": "Tanzania (Tanganyika)",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        29.341945,
+        -11.740418,
+        40.442291,
+        -0.997755
+      ],
+      "area": 76.803473
+    },
+    {
+      "tag": "ZAN",
+      "originalTag": "ZAN",
+      "name": "Zanzibar",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        39.187663,
+        -6.469514,
+        39.871386,
+        -4.901109
+      ],
+      "area": 0.211197
+    },
+    {
+      "tag": "RWA",
+      "originalTag": "RWA",
+      "name": "Rwanda-Urundi",
+      "ownerTag": "BEL",
+      "labelOwnerTag": "BEL",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        28.854445,
+        -4.450323,
+        30.893263,
+        -1.060973
+      ],
+      "area": 4.258045
+    },
+    {
+      "tag": "GBR_SOM",
+      "originalTag": "BRI",
+      "name": "British Somaliland (Somaliland Republic)",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        42.664791,
+        8.001109,
+        49.038158,
+        11.469536
+      ],
+      "area": 14.141815
+    },
+    {
+      "tag": "DJI",
+      "originalTag": "DJI",
+      "name": "Djibouti",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        41.759854,
+        10.944718,
+        43.420409,
+        12.708327
+      ],
+      "area": 1.781523
+    },
+    {
+      "tag": "ERI",
+      "originalTag": "ERI",
+      "name": "Eritrea",
+      "ownerTag": "ITA",
+      "labelOwnerTag": "ITA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        36.443282,
+        12.363891,
+        43.121382,
+        18.002855
+      ],
+      "area": 10.170113
+    },
+    {
+      "tag": "ANG",
+      "originalTag": "ANG",
+      "name": "Angola",
+      "ownerTag": "POR",
+      "labelOwnerTag": "POR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        11.731245,
+        -18.016391,
+        24.084445,
+        -4.391441
+      ],
+      "area": 103.7909
+    },
+    {
+      "tag": "MOZ",
+      "originalTag": "MOZ",
+      "name": "Mozambique",
+      "ownerTag": "POR",
+      "labelOwnerTag": "POR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        30.213018,
+        -26.860282,
+        40.846109,
+        -10.474641
+      ],
+      "area": 66.978751
+    },
+    {
+      "tag": "MAD",
+      "originalTag": "MAD",
+      "name": "Madagascar (Malagasy)",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        43.219718,
+        -25.588336,
+        50.501391,
+        -11.367641
+      ],
+      "area": 51.201107
+    },
+    {
+      "tag": "REU",
+      "originalTag": "REU",
+      "name": "Reunion",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        55.220551,
+        -21.37389,
+        55.85305,
+        -20.856531
+      ],
+      "area": 0.228054
+    },
+    {
+      "tag": "MOR",
+      "originalTag": "MOR",
+      "name": "Morocco",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -11.200397,
+        28.22558,
+        -1.011809,
+        35.106859
+      ],
+      "area": 33.429537
+    },
+    {
+      "tag": "ESM",
+      "originalTag": "SPA",
+      "name": "Spanish Morocco",
+      "ownerTag": "ESP",
+      "labelOwnerTag": "ESP",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -13.170879,
+        27.666663,
+        -2.310237,
+        35.91775
+      ],
+      "area": 5.014382
+    },
+    {
+      "tag": "ESW",
+      "originalTag": "SPA",
+      "name": "Spanish West Africa",
+      "ownerTag": "ESP",
+      "labelOwnerTag": "ESP",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -17.101527,
+        20.764831,
+        -8.666664,
+        27.674486
+      ],
+      "area": 24.022217
+    },
+    {
+      "tag": "ALG",
+      "originalTag": "ALG",
+      "name": "Algeria",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -8.667218,
+        18.976391,
+        11.986473,
+        37.089854
+      ],
+      "area": 213.589318
+    },
+    {
+      "tag": "TUN",
+      "originalTag": "TUN",
+      "name": "Tunisia",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        7.4925,
+        30.241364,
+        11.58,
+        37.340409
+      ],
+      "area": 15.196999
+    },
+    {
+      "tag": "LBY",
+      "originalTag": "LIB",
+      "name": "Libya",
+      "ownerTag": "ITA",
+      "labelOwnerTag": "ITA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        9.311391,
+        21.999691,
+        25.151038,
+        33.171136
+      ],
+      "area": 139.315097
+    },
+    {
+      "tag": "SUD",
+      "originalTag": "SUD",
+      "name": "Sudan",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        19.070741,
+        3.493391,
+        38.604096,
+        22.232218
+      ],
+      "area": 216.747637
+    },
+    {
+      "tag": "SYR",
+      "originalTag": "SYR",
+      "name": "Syria",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        35.620559,
+        32.313609,
+        42.371752,
+        37.290545
+      ],
+      "area": 18.57963
+    },
+    {
+      "tag": "LEB",
+      "originalTag": "LEB",
+      "name": "Lebanon",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        35.103251,
+        33.0625,
+        36.623745,
+        34.6475
+      ],
+      "area": 0.994433
+    },
+    {
+      "tag": "JOR",
+      "originalTag": "JOR",
+      "name": "Jordan",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        34.95606,
+        29.188891,
+        39.301109,
+        33.379905
+      ],
+      "area": 8.454692
+    },
+    {
+      "tag": "PAL",
+      "originalTag": "PAL",
+      "name": "Palestine",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        34.216758,
+        29.486709,
+        35.681109,
+        33.270273
+      ],
+      "area": 2.564097
+    },
+    {
+      "tag": "TAI",
+      "originalTag": "TAI",
+      "name": "Taiwan",
+      "ownerTag": "JAP",
+      "labelOwnerTag": "JAP",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        120.049145,
+        21.927773,
+        121.997696,
+        25.283609
+      ],
+      "area": 3.188062
+    },
+    {
+      "tag": "KOR",
+      "originalTag": "KOR",
+      "name": "Korea",
+      "ownerTag": "JAP",
+      "labelOwnerTag": "JAP",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        124.323954,
+        33.192209,
+        130.697418,
+        43.0061
+      ],
+      "area": 22.682083
+    },
+    {
+      "tag": "SRI",
+      "originalTag": "SRI",
+      "name": "Sri Lanka (Ceylon)",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        79.6979,
+        5.918054,
+        81.891104,
+        9.824305
+      ],
+      "area": 5.405216
+    },
+    {
+      "tag": "KHM",
+      "originalTag": "CAM",
+      "name": "Cambodia (Kampuchea)",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        102.346509,
+        10.422737,
+        107.633135,
+        14.705697
+      ],
+      "area": 15.133191
+    },
+    {
+      "tag": "LAO",
+      "originalTag": "LAO",
+      "name": "Laos",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        100.088254,
+        13.926465,
+        107.695253,
+        22.499927
+      ],
+      "area": 19.689094
+    },
+    {
+      "tag": "VIE",
+      "originalTag": "VIE",
+      "name": "Vietnam (Annam/Cochin China/Tonkin)",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        102.146868,
+        8.559236,
+        109.464844,
+        23.324164
+      ],
+      "area": 27.540004
+    },
+    {
+      "tag": "FED",
+      "originalTag": "FED",
+      "name": "Federated Malay States",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        100.362318,
+        2.396207,
+        104.218446,
+        5.915209
+      ],
+      "area": 5.820487
+    },
+    {
+      "tag": "UNF",
+      "originalTag": "UNF",
+      "name": "Unfederated Malay States",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        99.642073,
+        1.269527,
+        104.2933,
+        6.710237
+      ],
+      "area": 4.641572
+    },
+    {
+      "tag": "SAB",
+      "originalTag": "SAB",
+      "name": "Sabah (North Borneo)",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        115.359709,
+        4.168336,
+        119.275818,
+        7.352773
+      ],
+      "area": 5.92017
+    },
+    {
+      "tag": "SAR",
+      "originalTag": "SAR",
+      "name": "Sarawak",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        109.547336,
+        0.852782,
+        115.778745,
+        5.041945
+      ],
+      "area": 10.104111
+    },
+    {
+      "tag": "STR",
+      "originalTag": "STR",
+      "name": "Straits Settlements",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        100.1858,
+        1.259027,
+        103.994241,
+        5.577784
+      ],
+      "area": 0.290522
+    },
+    {
+      "tag": "BRU",
+      "originalTag": "BRU",
+      "name": "Brunei",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        114.159846,
+        4.02625,
+        115.358459,
+        5.048887
+      ],
+      "area": 0.463246
+    },
+    {
+      "tag": "PHI",
+      "originalTag": "PHI",
+      "name": "Philippines",
+      "ownerTag": "UNI",
+      "labelOwnerTag": "UNI",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        116.952218,
+        5.049164,
+        126.598036,
+        19.391109
+      ],
+      "area": 24.251906
+    },
+    {
+      "tag": "IDN",
+      "originalTag": "IND",
+      "name": "Indonesia",
+      "ownerTag": "NLD",
+      "labelOwnerTag": "NLD",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        95.214482,
+        -10.929655,
+        141.008869,
+        5.913473
+      ],
+      "area": 152.832161
+    },
+    {
+      "tag": "EAS",
+      "originalTag": "EAS",
+      "name": "East Timor",
+      "ownerTag": "POR",
+      "labelOwnerTag": "POR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        124.0461,
+        -9.463627,
+        127.306509,
+        -8.14
+      ],
+      "area": 1.231026
+    },
+    {
+      "tag": "PAP",
+      "originalTag": "PAP",
+      "name": "Papua",
+      "ownerTag": "AST",
+      "labelOwnerTag": "AST",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        140.859409,
+        -11.6425,
+        154.297763,
+        -5.156757
+      ],
+      "area": 18.383908
+    },
+    {
+      "tag": "PNG",
+      "originalTag": "NEW",
+      "name": "New Guinea (German New Guinea) (Kaiser Wilhelmsland)",
+      "ownerTag": "AST",
+      "labelOwnerTag": "AST",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        141.004286,
+        -8.05322,
+        155.966845,
+        -1.355282
+      ],
+      "area": 19.371735
+    },
+    {
+      "tag": "NCL",
+      "originalTag": "NEW",
+      "name": "New Caledonia and Dependencies",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        164.029626,
+        -22.818055,
+        167.865231,
+        -19.810344
+      ],
+      "area": 2.077755
+    },
+    {
+      "tag": "SOL",
+      "originalTag": "SOL",
+      "name": "Solomon Islands",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        155.6713,
+        -11.845836,
+        166.931836,
+        -6.605518
+      ],
+      "area": 2.185833
+    },
+    {
+      "tag": "FIJ",
+      "originalTag": "FIJ",
+      "name": "Fiji",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -180.0,
+        -19.161041,
+        180.0,
+        -16.153473
+      ],
+      "area": 1.530828
+    },
+    {
+      "tag": "PYF",
+      "originalTag": "FRE",
+      "name": "French Polynesia",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -152.222223,
+        -23.84246,
+        -135.453276,
+        -8.019679
+      ],
+      "area": 1.059515
+    },
+    {
+      "tag": "INI",
+      "originalTag": "INI",
+      "name": "Inini",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -54.597694,
+        2.113473,
+        -51.644542,
+        5.263794
+      ],
+      "area": 5.746346
+    },
+    {
+      "tag": "ITA_SOM",
+      "originalTag": "ITA",
+      "name": "Italian Somaliland",
+      "ownerTag": "ITA",
+      "labelOwnerTag": "ITA",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        40.991354,
+        -1.674873,
+        51.411318,
+        11.979164
+      ],
+      "area": 37.899762
+    },
+    {
+      "tag": "SAK",
+      "originalTag": "SOU",
+      "name": "Southern Sakhalin Island",
+      "ownerTag": "JAP",
+      "labelOwnerTag": "JAP",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        141.813718,
+        45.891654,
+        144.740691,
+        49.897224
+      ],
+      "area": 3.891303
+    },
+    {
+      "tag": "GRL",
+      "originalTag": "GRL",
+      "name": "Greenland",
+      "ownerTag": "DEN",
+      "labelOwnerTag": "DEN",
+      "isDetachedTerritory": true,
+      "isColony": true,
+      "isMainland": false,
+      "isLabelEligible": false,
+      "reason": "detached territory / colony / non-mainland",
+      "bounds": [
+        -73.05724,
+        59.792629,
+        -11.37682,
+        83.634101
+      ],
+      "area": 659.65176
+    },
+    {
+      "tag": "AND",
+      "originalTag": "AND",
+      "name": "Andorra",
+      "ownerTag": "AND",
+      "labelOwnerTag": "AND",
+      "isDetachedTerritory": false,
+      "isColony": false,
+      "isMainland": true,
+      "isLabelEligible": false,
+      "reason": "small state / non-main country label",
+      "bounds": [
+        1.406456,
+        42.428677,
+        1.765091,
+        42.649362
+      ],
+      "area": 0.049622
+    },
+    {
+      "tag": "MCO",
+      "originalTag": "MCO",
+      "name": "Monaco",
+      "ownerTag": "MCO",
+      "labelOwnerTag": "MCO",
+      "isDetachedTerritory": false,
+      "isColony": false,
+      "isMainland": true,
+      "isLabelEligible": false,
+      "reason": "small state / non-main country label",
+      "bounds": [
+        7.36575,
+        43.717969,
+        7.437454,
+        43.763506
+      ],
+      "area": 0.002088
+    },
+    {
+      "tag": "LIE",
+      "originalTag": "LIE",
+      "name": "Liechtenstein",
+      "ownerTag": "LIE",
+      "labelOwnerTag": "LIE",
+      "isDetachedTerritory": false,
+      "isColony": false,
+      "isMainland": true,
+      "isLabelEligible": false,
+      "reason": "small state / non-main country label",
+      "bounds": [
+        9.475886,
+        47.0524,
+        9.615723,
+        47.262801
+      ],
+      "area": 0.016208
+    },
+    {
+      "tag": "SMR",
+      "originalTag": "SMR",
+      "name": "San Marino",
+      "ownerTag": "SMR",
+      "labelOwnerTag": "SMR",
+      "isDetachedTerritory": false,
+      "isColony": false,
+      "isMainland": true,
+      "isLabelEligible": false,
+      "reason": "small state / non-main country label",
+      "bounds": [
+        12.385629,
+        43.892056,
+        12.492392,
+        43.982567
+      ],
+      "area": 0.006761
+    },
+    {
+      "tag": "VAT",
+      "originalTag": "VAT",
+      "name": "Vatican",
+      "ownerTag": "VAT",
+      "labelOwnerTag": "VAT",
+      "isDetachedTerritory": false,
+      "isColony": false,
+      "isMainland": true,
+      "isLabelEligible": false,
+      "reason": "small state / non-main country label",
+      "bounds": [
+        12.453031,
+        41.902752,
+        12.454035,
+        41.903915
+      ],
+      "area": 1e-06
+    }
+  ]
+}

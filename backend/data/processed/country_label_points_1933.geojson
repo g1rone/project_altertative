@@ -4,30 +4,16 @@
     {
       "type": "Feature",
       "properties": {
-        "tag": "ALA",
-        "label": "ALASKA",
-        "labelClass": "standard",
-        "labelSize": 18,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -152.0130521826768,
-          63.0763135
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "NEW",
-        "label": "NEW CALEDONIA AND DEPENDENCIES",
-        "labelClass": "standard",
-        "labelSize": 14.5,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "tag": "NFL",
+        "ownerTag": "NFL",
+        "label": "NEWFOUNDLAND",
+        "labelClass": "country-standard",
+        "labelSize": 15.13,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1260
       },
       "geometry": {
         "type": "Point",
@@ -41,11 +27,15 @@
       "type": "Feature",
       "properties": {
         "tag": "MEX",
+        "ownerTag": "MEX",
         "label": "MEXICO",
-        "labelClass": "standard",
-        "labelSize": 17.27,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 18.59,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1126
       },
       "geometry": {
         "type": "Point",
@@ -59,11 +49,15 @@
       "type": "Feature",
       "properties": {
         "tag": "COL",
+        "ownerTag": "COL",
         "label": "COLOMBIA",
-        "labelClass": "standard",
-        "labelSize": 15.85,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 16.81,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1207
       },
       "geometry": {
         "type": "Point",
@@ -77,11 +71,15 @@
       "type": "Feature",
       "properties": {
         "tag": "VEN",
+        "ownerTag": "VEN",
         "label": "VENEZUELA",
-        "labelClass": "standard",
-        "labelSize": 15.45,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 16.31,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1225
       },
       "geometry": {
         "type": "Point",
@@ -95,11 +93,15 @@
       "type": "Feature",
       "properties": {
         "tag": "ECU",
+        "ownerTag": "ECU",
         "label": "ECUADOR",
-        "labelClass": "standard",
-        "labelSize": 14.08,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 14.6,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1272
       },
       "geometry": {
         "type": "Point",
@@ -113,11 +115,15 @@
       "type": "Feature",
       "properties": {
         "tag": "PER",
+        "ownerTag": "PER",
         "label": "PERU",
-        "labelClass": "standard",
-        "labelSize": 15.99,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 16.99,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1200
       },
       "geometry": {
         "type": "Point",
@@ -131,11 +137,15 @@
       "type": "Feature",
       "properties": {
         "tag": "BOL",
+        "ownerTag": "BOL",
         "label": "BOLIVIA",
-        "labelClass": "standard",
-        "labelSize": 16.03,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 17.03,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1198
       },
       "geometry": {
         "type": "Point",
@@ -149,11 +159,15 @@
       "type": "Feature",
       "properties": {
         "tag": "PAR",
+        "ownerTag": "PAR",
         "label": "PARAGUAY",
-        "labelClass": "standard",
-        "labelSize": 14.04,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 14.55,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1273
       },
       "geometry": {
         "type": "Point",
@@ -166,12 +180,38 @@
     {
       "type": "Feature",
       "properties": {
+        "tag": "CHL",
+        "ownerTag": "CHL",
+        "label": "CHILE",
+        "labelClass": "country-standard",
+        "labelSize": 16.06,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1233
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.50340622106914,
+          -35.684727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "tag": "ARG",
+        "ownerTag": "ARG",
         "label": "ARGENTINA",
-        "labelClass": "standard",
-        "labelSize": 18,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 20.3,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1024
       },
       "geometry": {
         "type": "Point",
@@ -184,66 +224,16 @@
     {
       "type": "Feature",
       "properties": {
-        "tag": "GBR",
-        "label": "UNITED KINGDOM",
-        "labelClass": "major",
-        "labelSize": 17.46,
-        "labelSpacing": 0.16,
-        "labelRank": 1
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.9104093242089903,
-          54.301804
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "AUS",
-        "label": "AUSTRALIA",
-        "labelClass": "standard",
-        "labelSize": 18,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          133.06763998308998,
-          -24.9434685
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "MAL",
-        "label": "MALDIVES",
-        "labelClass": "standard",
-        "labelSize": 16.54,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.077735238092744,
-          18.3885285
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "tag": "YUG",
+        "ownerTag": "YUG",
         "label": "YUGOSLAVIA",
-        "labelClass": "standard",
-        "labelSize": 14.13,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 14.67,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1271
       },
       "geometry": {
         "type": "Point",
@@ -257,11 +247,15 @@
       "type": "Feature",
       "properties": {
         "tag": "ROM",
+        "ownerTag": "ROM",
         "label": "RUMANIA",
-        "labelClass": "standard",
-        "labelSize": 14.35,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 14.93,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1265
       },
       "geometry": {
         "type": "Point",
@@ -275,11 +269,15 @@
       "type": "Feature",
       "properties": {
         "tag": "FIN",
+        "ownerTag": "FIN",
         "label": "FINLAND",
-        "labelClass": "standard",
-        "labelSize": 15.4,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 16.25,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1227
       },
       "geometry": {
         "type": "Point",
@@ -293,11 +291,15 @@
       "type": "Feature",
       "properties": {
         "tag": "SWE",
+        "ownerTag": "SWE",
         "label": "SWEDEN",
-        "labelClass": "standard",
-        "labelSize": 15.53,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 16.41,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1222
       },
       "geometry": {
         "type": "Point",
@@ -311,11 +313,15 @@
       "type": "Feature",
       "properties": {
         "tag": "NOR",
+        "ownerTag": "NOR",
         "label": "NORWAY",
-        "labelClass": "standard",
-        "labelSize": 14.99,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 15.74,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1243
       },
       "geometry": {
         "type": "Point",
@@ -329,11 +335,15 @@
       "type": "Feature",
       "properties": {
         "tag": "ICE",
+        "ownerTag": "ICE",
         "label": "ICELAND",
-        "labelClass": "standard",
-        "labelSize": 13.77,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 14.21,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1280
       },
       "geometry": {
         "type": "Point",
@@ -346,246 +356,16 @@
     {
       "type": "Feature",
       "properties": {
-        "tag": "GUI",
-        "label": "GUINEA",
-        "labelClass": "standard",
-        "labelSize": 13.91,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -9.655606244636623,
-          9.943767999999999
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "MAU",
-        "label": "MAURITIUS",
-        "labelClass": "standard",
-        "labelSize": 15.39,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -12.015033148762823,
-          20.995721500000002
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "NIG",
-        "label": "NIGERIA",
-        "labelClass": "standard",
-        "labelSize": 17.34,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          6.443881943609811,
-          13.84910285161003
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "COT",
-        "label": "COTE D'IVOIRE",
-        "labelClass": "standard",
-        "labelSize": 14.48,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -5.294189362083702,
-          9.150623
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "LIB",
-        "label": "LIBYA",
-        "labelClass": "standard",
-        "labelSize": 16.72,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          17.42666175290981,
-          27.593191
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "CAM",
-        "label": "CAMBODIA (KAMPUCHEA)",
-        "labelClass": "standard",
-        "labelSize": 14.35,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.600819243036767,
-          7.343527
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "GAB",
-        "label": "GABON",
-        "labelClass": "standard",
-        "labelSize": 13.84,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.743894722923297,
-          -0.785
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "CEN",
-        "label": "CENTRAL AFRICAN REPUBLIC",
-        "labelClass": "standard",
-        "labelSize": 14.85,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.613046814583075,
-          6.552595
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "CHA",
-        "label": "CHAD",
-        "labelClass": "standard",
-        "labelSize": 16.14,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          18.561235058693644,
-          15.450727
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "CON",
-        "label": "CONGO, DEMOCRATIC REPUBLIC OF (ZAIRE)",
-        "labelClass": "standard",
-        "labelSize": 17.9,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.32937250796226,
-          -4.0649999999999995
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "UGA",
-        "label": "UGANDA",
-        "labelClass": "standard",
-        "labelSize": 13.77,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          32.69102909533612,
-          1.3654035
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "KEN",
-        "label": "KENYA",
-        "labelClass": "standard",
-        "labelSize": 14.75,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.46919188143758,
-          -0.015555
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "TAN",
-        "label": "TANZANIA (TANGANYIKA)",
-        "labelClass": "standard",
-        "labelSize": 15.5,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.22055642293914,
-          -6.3541685
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "tag": "ETH",
+        "ownerTag": "ETH",
         "label": "ETHIOPIA",
-        "labelClass": "standard",
-        "labelSize": 15.85,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 16.81,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1207
       },
       "geometry": {
         "type": "Point",
@@ -598,48 +378,16 @@
     {
       "type": "Feature",
       "properties": {
-        "tag": "ANG",
-        "label": "ANGOLA",
-        "labelClass": "standard",
-        "labelSize": 16.06,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          18.876848715162506,
-          -11.909168000000001
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "MOZ",
-        "label": "MOZAMBIQUE",
-        "labelClass": "standard",
-        "labelSize": 15.27,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.68565884618981,
-          -18.633614
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "tag": "ZAM",
+        "ownerTag": "ZAM",
         "label": "ZAMBIA",
-        "labelClass": "standard",
-        "labelSize": 15.17,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 15.96,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1237
       },
       "geometry": {
         "type": "Point",
@@ -653,11 +401,15 @@
       "type": "Feature",
       "properties": {
         "tag": "ZIM",
+        "ownerTag": "ZIM",
         "label": "ZIMBABWE (RHODESIA)",
-        "labelClass": "standard",
-        "labelSize": 14.31,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 14.89,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1266
       },
       "geometry": {
         "type": "Point",
@@ -670,12 +422,16 @@
     {
       "type": "Feature",
       "properties": {
-        "tag": "SOU",
-        "label": "SOUTHERN SAKHALIN ISLAND",
-        "labelClass": "standard",
-        "labelSize": 16.25,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "tag": "SAF",
+        "ownerTag": "SAF",
+        "label": "SOUTH AFRICA",
+        "labelClass": "country-standard",
+        "labelSize": 17.32,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1186
       },
       "geometry": {
         "type": "Point",
@@ -689,11 +445,15 @@
       "type": "Feature",
       "properties": {
         "tag": "NAM",
+        "ownerTag": "NAM",
         "label": "NAMIBIA",
-        "labelClass": "standard",
-        "labelSize": 15.4,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 16.25,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1227
       },
       "geometry": {
         "type": "Point",
@@ -707,11 +467,15 @@
       "type": "Feature",
       "properties": {
         "tag": "BOT",
+        "ownerTag": "BOT",
         "label": "BOTSWANA",
-        "labelClass": "standard",
-        "labelSize": 14.85,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 15.56,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1249
       },
       "geometry": {
         "type": "Point",
@@ -724,102 +488,16 @@
     {
       "type": "Feature",
       "properties": {
-        "tag": "MAD",
-        "label": "MADAGASCAR (MALAGASY)",
-        "labelClass": "standard",
-        "labelSize": 14.86,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          46.72142221080429,
-          -18.701391
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "MOR",
-        "label": "MOROCCO",
-        "labelClass": "standard",
-        "labelSize": 14.31,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.758492932453273,
-          31.650178
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "SPA",
-        "label": "SPANISH WEST AFRICA",
-        "labelClass": "standard",
-        "labelSize": 14.06,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -13.485242406086417,
-          24.615654499999998
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "ALG",
-        "label": "ALGERIA",
-        "labelClass": "standard",
-        "labelSize": 17.85,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0.6030184556700853,
-          28.0583995
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "SUD",
-        "label": "SUDAN",
-        "labelClass": "standard",
-        "labelSize": 17.89,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          29.001391849784486,
-          12.8392955
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "tag": "IRN",
+        "ownerTag": "IRN",
         "label": "IRAN (PERSIA)",
-        "labelClass": "standard",
-        "labelSize": 17.0,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 18.24,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1144
       },
       "geometry": {
         "type": "Point",
@@ -833,11 +511,15 @@
       "type": "Feature",
       "properties": {
         "tag": "IRQ",
+        "ownerTag": "IRQ",
         "label": "IRAQ",
-        "labelClass": "standard",
-        "labelSize": 14.6,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 15.25,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1257
       },
       "geometry": {
         "type": "Point",
@@ -851,11 +533,15 @@
       "type": "Feature",
       "properties": {
         "tag": "EGY",
+        "ownerTag": "EGY",
         "label": "EGYPT",
-        "labelClass": "standard",
-        "labelSize": 15.8,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 16.76,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1209
       },
       "geometry": {
         "type": "Point",
@@ -868,30 +554,16 @@
     {
       "type": "Feature",
       "properties": {
-        "tag": "SYR",
-        "label": "SYRIA",
-        "labelClass": "standard",
-        "labelSize": 13.72,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          38.561153006198964,
-          34.847495499999994
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "tag": "SAU",
+        "ownerTag": "SAU",
         "label": "SAUDI ARABIA",
-        "labelClass": "standard",
-        "labelSize": 17.27,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 18.59,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1126
       },
       "geometry": {
         "type": "Point",
@@ -905,11 +577,15 @@
       "type": "Feature",
       "properties": {
         "tag": "OMA",
+        "ownerTag": "OMA",
         "label": "OMAN",
-        "labelClass": "standard",
-        "labelSize": 14.06,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 14.58,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1273
       },
       "geometry": {
         "type": "Point",
@@ -923,11 +599,15 @@
       "type": "Feature",
       "properties": {
         "tag": "AFG",
+        "ownerTag": "AFG",
         "label": "AFGHANISTAN",
-        "labelClass": "standard",
-        "labelSize": 15.16,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 15.96,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1237
       },
       "geometry": {
         "type": "Point",
@@ -941,11 +621,15 @@
       "type": "Feature",
       "properties": {
         "tag": "TIB",
+        "ownerTag": "TIB",
         "label": "TIBET",
-        "labelClass": "standard",
-        "labelSize": 17.3,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 18.62,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1124
       },
       "geometry": {
         "type": "Point",
@@ -958,48 +642,16 @@
     {
       "type": "Feature",
       "properties": {
-        "tag": "KOR",
-        "label": "KOREA",
-        "labelClass": "standard",
-        "labelSize": 13.89,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.99867398185737,
-          38.653254000000004
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "JAP",
-        "label": "JAPAN",
-        "labelClass": "major",
-        "labelSize": 17.16,
-        "labelSpacing": 0.16,
-        "labelRank": 1
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.84815542639683,
-          37.4886685
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "tag": "THA",
+        "ownerTag": "THA",
         "label": "THAILAND",
-        "labelClass": "standard",
-        "labelSize": 14.62,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "labelClass": "country-standard",
+        "labelSize": 15.28,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 1256
       },
       "geometry": {
         "type": "Point",
@@ -1012,54 +664,22 @@
     {
       "type": "Feature",
       "properties": {
-        "tag": "LAO",
-        "label": "LAOS",
-        "labelClass": "standard",
-        "labelSize": 13.77,
-        "labelSpacing": 0.12,
-        "labelRank": 3
+        "tag": "AST",
+        "ownerTag": "AST",
+        "label": "AUSTRALIA",
+        "labelClass": "country-standard",
+        "labelSize": 21,
+        "labelSpacing": 0.18,
+        "labelRank": 3,
+        "minZoom": 2.8,
+        "maxZoom": 6.7,
+        "labelPriority": 613
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          104.69643075746588,
-          18.207349999999998
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "VIE",
-        "label": "VIETNAM (ANNAM/COCHIN CHINA/TONKIN)",
-        "labelClass": "standard",
-        "labelSize": 14.1,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          107.86517708940681,
-          15.9333995
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "tag": "GRL",
-        "label": "GREENLAND",
-        "labelClass": "standard",
-        "labelSize": 18,
-        "labelSpacing": 0.12,
-        "labelRank": 3
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -40.35211727323926,
-          71.81348299999999
+          133.06763998308998,
+          -24.9434685
         ]
       }
     }

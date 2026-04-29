@@ -1,0 +1,2222 @@
+{
+  "countryLabels": {
+    "UNI": {
+      "label": "UNITED STATES",
+      "method": "line",
+      "labelClass": "country-continental",
+      "labelSize": 29.2,
+      "componentArea": 834.5684,
+      "componentPoint": [
+        -99.6575,
+        37.2388
+      ],
+      "parts": [
+        {
+          "tag": "UNI",
+          "name": "United States of America",
+          "area": 835.4457
+        }
+      ]
+    },
+    "CAN": {
+      "label": "CANADA",
+      "method": "line",
+      "labelClass": "country-continental",
+      "labelSize": 30.3,
+      "componentArea": 1225.1611,
+      "componentPoint": [
+        -110.4277,
+        56.8309
+      ],
+      "parts": [
+        {
+          "tag": "CAN",
+          "name": "Canada",
+          "area": 1639.9068
+        }
+      ]
+    },
+    "NFL": {
+      "label": "NEWFOUNDLAND",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 15.13,
+      "componentArea": 39.1721,
+      "componentPoint": [
+        -62.1992,
+        55.7637
+      ],
+      "parts": [
+        {
+          "tag": "NFL",
+          "name": "Newfoundland",
+          "area": 53.1856
+        }
+      ]
+    },
+    "CUB": {
+      "label": "CUBA",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 9.203,
+      "parts": [
+        {
+          "tag": "CUB",
+          "name": "Cuba",
+          "area": 9.5159
+        }
+      ]
+    },
+    "HAI": {
+      "label": "HAITI",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 2.2494,
+      "parts": [
+        {
+          "tag": "HAI",
+          "name": "Haiti",
+          "area": 2.3238
+        }
+      ]
+    },
+    "DOM": {
+      "label": "DOMINICAN REPUBLIC",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 4.1336,
+      "parts": [
+        {
+          "tag": "DOM",
+          "name": "Dominican Republic",
+          "area": 4.1445
+        }
+      ]
+    },
+    "MEX": {
+      "label": "MEXICO",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 18.59,
+      "componentArea": 173.6268,
+      "componentPoint": [
+        -102.2693,
+        23.6448
+      ],
+      "parts": [
+        {
+          "tag": "MEX",
+          "name": "Mexico",
+          "area": 174.0908
+        }
+      ]
+    },
+    "GUA": {
+      "label": "GUATEMALA",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 9.201,
+      "parts": [
+        {
+          "tag": "GUA",
+          "name": "Guatemala",
+          "area": 9.201
+        }
+      ]
+    },
+    "HON": {
+      "label": "HONDURAS",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 9.4145,
+      "parts": [
+        {
+          "tag": "HON",
+          "name": "Honduras",
+          "area": 9.4279
+        }
+      ]
+    },
+    "ELS": {
+      "label": "EL SALVADOR",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 1.718,
+      "parts": [
+        {
+          "tag": "ELS",
+          "name": "El Salvador",
+          "area": 1.718
+        }
+      ]
+    },
+    "NIC": {
+      "label": "NICARAGUA",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 10.6664,
+      "parts": [
+        {
+          "tag": "NIC",
+          "name": "Nicaragua",
+          "area": 10.6664
+        }
+      ]
+    },
+    "COS": {
+      "label": "COSTA RICA",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 4.2171,
+      "parts": [
+        {
+          "tag": "COS",
+          "name": "Costa Rica",
+          "area": 4.2171
+        }
+      ]
+    },
+    "PAN": {
+      "label": "PANAMA",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 6.0183,
+      "parts": [
+        {
+          "tag": "PAN",
+          "name": "Panama",
+          "area": 6.0813
+        }
+      ]
+    },
+    "COL": {
+      "label": "COLOMBIA",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 16.81,
+      "componentArea": 92.557,
+      "componentPoint": [
+        -72.596,
+        4.131
+      ],
+      "parts": [
+        {
+          "tag": "COL",
+          "name": "Colombia",
+          "area": 92.5845
+        }
+      ]
+    },
+    "VEN": {
+      "label": "VENEZUELA",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 16.31,
+      "componentArea": 74.4083,
+      "componentPoint": [
+        -65.4516,
+        6.4933
+      ],
+      "parts": [
+        {
+          "tag": "VEN",
+          "name": "Venezuela",
+          "area": 74.6111
+        }
+      ]
+    },
+    "ECU": {
+      "label": "ECUADOR",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 14.6,
+      "componentArea": 27.0957,
+      "componentPoint": [
+        -77.1113,
+        -1.7878
+      ],
+      "parts": [
+        {
+          "tag": "ECU",
+          "name": "Ecuador",
+          "area": 27.7799
+        }
+      ]
+    },
+    "PER": {
+      "label": "PERU",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 16.99,
+      "componentArea": 99.467,
+      "componentPoint": [
+        -74.384,
+        -10.1622
+      ],
+      "parts": [
+        {
+          "tag": "PER",
+          "name": "Peru",
+          "area": 99.467
+        }
+      ]
+    },
+    "BRA": {
+      "label": "BRAZIL",
+      "method": "line",
+      "labelClass": "country-continental",
+      "labelSize": 28.77,
+      "componentArea": 702.3582,
+      "componentPoint": [
+        -49.7276,
+        -14.2448
+      ],
+      "parts": [
+        {
+          "tag": "BRA",
+          "name": "Brazil",
+          "area": 707.0067
+        }
+      ]
+    },
+    "BOL": {
+      "label": "BOLIVIA",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 17.03,
+      "componentArea": 101.3152,
+      "componentPoint": [
+        -64.1567,
+        -16.2906
+      ],
+      "parts": [
+        {
+          "tag": "BOL",
+          "name": "Bolivia",
+          "area": 101.3152
+        }
+      ]
+    },
+    "PAR": {
+      "label": "PARAGUAY",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 14.55,
+      "componentArea": 26.0824,
+      "componentPoint": [
+        -57.0302,
+        -24.1949
+      ],
+      "parts": [
+        {
+          "tag": "PAR",
+          "name": "Paraguay",
+          "area": 26.0824
+        }
+      ]
+    },
+    "CHL": {
+      "label": "CHILE",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 16.06,
+      "componentArea": 66.008,
+      "componentPoint": [
+        -71.5034,
+        -35.6847
+      ],
+      "parts": [
+        {
+          "tag": "CHL",
+          "name": "Chile",
+          "area": 77.4617
+        }
+      ]
+    },
+    "ARG": {
+      "label": "ARGENTINA",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 20.3,
+      "componentArea": 275.4125,
+      "componentPoint": [
+        -63.9441,
+        -36.9917
+      ],
+      "parts": [
+        {
+          "tag": "ARG",
+          "name": "Argentina",
+          "area": 278.3193
+        }
+      ]
+    },
+    "URU": {
+      "label": "URUGUAY",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 17.1267,
+      "parts": [
+        {
+          "tag": "URU",
+          "name": "Uruguay",
+          "area": 17.1267
+        }
+      ]
+    },
+    "GBR": {
+      "label": "UNITED KINGDOM",
+      "method": "line",
+      "labelClass": "country-major",
+      "labelSize": 27.38,
+      "componentArea": 29.9271,
+      "componentPoint": [
+        -1.9104,
+        54.3018
+      ],
+      "parts": [
+        {
+          "tag": "GBR",
+          "name": "United Kingdom",
+          "area": 33.5744
+        }
+      ]
+    },
+    "IRE": {
+      "label": "IRELAND",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 9.3249,
+      "parts": [
+        {
+          "tag": "IRE",
+          "name": "Ireland",
+          "area": 9.3497
+        }
+      ]
+    },
+    "NLD": {
+      "label": "NETHERLANDS",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 4.3093,
+      "parts": [
+        {
+          "tag": "NLD",
+          "name": "Netherlands",
+          "area": 4.5879
+        }
+      ]
+    },
+    "BEL": {
+      "label": "BELGIUM",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 3.9007,
+      "parts": [
+        {
+          "tag": "BEL",
+          "name": "Belgium",
+          "area": 3.9007
+        }
+      ]
+    },
+    "FRA": {
+      "label": "FRANCE",
+      "method": "line",
+      "labelClass": "country-major",
+      "labelSize": 29.37,
+      "componentArea": 63.354,
+      "componentPoint": [
+        2.1968,
+        46.7204
+      ],
+      "parts": [
+        {
+          "tag": "FRA",
+          "name": "France",
+          "area": 64.3488
+        }
+      ]
+    },
+    "SWI": {
+      "label": "SWITZERLAND",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 4.8872,
+      "parts": [
+        {
+          "tag": "SWI",
+          "name": "Switzerland",
+          "area": 4.8872
+        }
+      ]
+    },
+    "ESP": {
+      "label": "SPAIN",
+      "method": "line",
+      "labelClass": "country-major",
+      "labelSize": 28.79,
+      "componentArea": 52.3841,
+      "componentPoint": [
+        -3.5327,
+        39.8147
+      ],
+      "parts": [
+        {
+          "tag": "ESP",
+          "name": "Spain",
+          "area": 53.6031
+        }
+      ]
+    },
+    "POR": {
+      "label": "PORTUGAL",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 9.3021,
+      "parts": [
+        {
+          "tag": "POR",
+          "name": "Portugal",
+          "area": 9.6309
+        }
+      ]
+    },
+    "GER": {
+      "label": "GERMANY",
+      "method": "line",
+      "labelClass": "country-major",
+      "labelSize": 28.98,
+      "componentArea": 55.8422,
+      "componentPoint": [
+        11.9569,
+        51.1617
+      ],
+      "parts": [
+        {
+          "tag": "GER",
+          "name": "Germany (Prussia)",
+          "area": 61.0673
+        }
+      ]
+    },
+    "POL": {
+      "label": "POLAND",
+      "method": "line",
+      "labelClass": "country-major",
+      "labelSize": 28.7,
+      "componentArea": 50.705,
+      "componentPoint": [
+        21.9286,
+        51.844
+      ],
+      "parts": [
+        {
+          "tag": "POL",
+          "name": "Poland",
+          "area": 50.705
+        }
+      ]
+    },
+    "AUS": {
+      "label": "AUSTRIA",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 10.0485,
+      "parts": [
+        {
+          "tag": "AUS",
+          "name": "Austria",
+          "area": 10.0485
+        }
+      ]
+    },
+    "HUN": {
+      "label": "HUNGARY",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 11.0344,
+      "parts": [
+        {
+          "tag": "HUN",
+          "name": "Hungary",
+          "area": 11.0344
+        }
+      ]
+    },
+    "CZE": {
+      "label": "CZECHOSLOVAKIA",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 17.3356,
+      "parts": [
+        {
+          "tag": "CZE",
+          "name": "Czechoslovakia",
+          "area": 17.3356
+        }
+      ]
+    },
+    "ITA": {
+      "label": "ITALY",
+      "method": "line",
+      "labelClass": "country-major",
+      "labelSize": 27.23,
+      "componentArea": 27.9121,
+      "componentPoint": [
+        12.6837,
+        42.4975
+      ],
+      "parts": [
+        {
+          "tag": "ITA",
+          "name": "Italy/Sardinia",
+          "area": 33.0805
+        }
+      ]
+    },
+    "ALB": {
+      "label": "ALBANIA",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 3.0703,
+      "parts": [
+        {
+          "tag": "ALB",
+          "name": "Albania",
+          "area": 3.0703
+        }
+      ]
+    },
+    "YUG": {
+      "label": "YUGOSLAVIA",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 14.67,
+      "componentArea": 28.4286,
+      "componentPoint": [
+        18.9753,
+        43.861
+      ],
+      "parts": [
+        {
+          "tag": "YUG",
+          "name": "Yugoslavia",
+          "area": 28.7148
+        }
+      ]
+    },
+    "GRE": {
+      "label": "GREECE",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 11.1442,
+      "parts": [
+        {
+          "tag": "GRE",
+          "name": "Greece",
+          "area": 13.5204
+        }
+      ]
+    },
+    "BUL": {
+      "label": "BULGARIA",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 11.343,
+      "parts": [
+        {
+          "tag": "BUL",
+          "name": "Bulgaria",
+          "area": 11.343
+        }
+      ]
+    },
+    "ROM": {
+      "label": "RUMANIA",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 14.93,
+      "componentArea": 34.4031,
+      "componentPoint": [
+        25.3847,
+        46.0257
+      ],
+      "parts": [
+        {
+          "tag": "ROM",
+          "name": "Rumania",
+          "area": 34.4031
+        }
+      ]
+    },
+    "SOV": {
+      "label": "SOVIET UNION",
+      "method": "line",
+      "labelClass": "country-continental",
+      "labelSize": 34,
+      "componentArea": 3362.5328,
+      "componentPoint": [
+        83.1407,
+        56.4412
+      ],
+      "parts": [
+        {
+          "tag": "SOV",
+          "name": "Russia (Soviet Union)",
+          "area": 3441.4875
+        }
+      ]
+    },
+    "EST": {
+      "label": "ESTONIA",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 6.967,
+      "parts": [
+        {
+          "tag": "EST",
+          "name": "Estonia",
+          "area": 7.6268
+        }
+      ]
+    },
+    "LAT": {
+      "label": "LATVIA",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 9.7128,
+      "parts": [
+        {
+          "tag": "LAT",
+          "name": "Latvia",
+          "area": 9.7128
+        }
+      ]
+    },
+    "LIT": {
+      "label": "LITHUANIA",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 7.914,
+      "parts": [
+        {
+          "tag": "LIT",
+          "name": "Lithuania",
+          "area": 7.9332
+        }
+      ]
+    },
+    "FIN": {
+      "label": "FINLAND",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 16.25,
+      "componentArea": 72.2448,
+      "componentPoint": [
+        27.5312,
+        64.9489
+      ],
+      "parts": [
+        {
+          "tag": "FIN",
+          "name": "Finland",
+          "area": 72.5471
+        }
+      ]
+    },
+    "SWE": {
+      "label": "SWEDEN",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 16.41,
+      "componentArea": 77.7907,
+      "componentPoint": [
+        14.8649,
+        62.1044
+      ],
+      "parts": [
+        {
+          "tag": "SWE",
+          "name": "Sweden",
+          "area": 78.5516
+        }
+      ]
+    },
+    "NOR": {
+      "label": "NORWAY",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 15.74,
+      "componentArea": 56.049,
+      "componentPoint": [
+        12.6679,
+        64.5479
+      ],
+      "parts": [
+        {
+          "tag": "NOR",
+          "name": "Norway",
+          "area": 59.7863
+        }
+      ]
+    },
+    "DEN": {
+      "label": "DENMARK",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 3.4757,
+      "parts": [
+        {
+          "tag": "DEN",
+          "name": "Denmark",
+          "area": 6.1328
+        }
+      ]
+    },
+    "ICE": {
+      "label": "ICELAND",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 14.21,
+      "componentArea": 19.5315,
+      "componentPoint": [
+        -18.6175,
+        64.9646
+      ],
+      "parts": [
+        {
+          "tag": "ICE",
+          "name": "Iceland",
+          "area": 19.5315
+        }
+      ]
+    },
+    "LBR": {
+      "label": "LIBERIA",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 7.8477,
+      "parts": [
+        {
+          "tag": "LBR",
+          "name": "Liberia",
+          "area": 7.8477
+        }
+      ]
+    },
+    "ETH": {
+      "label": "ETHIOPIA",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 16.81,
+      "componentArea": 92.7218,
+      "componentPoint": [
+        38.9731,
+        9.1717
+      ],
+      "parts": [
+        {
+          "tag": "ETH",
+          "name": "Ethiopia",
+          "area": 92.7218
+        }
+      ]
+    },
+    "ZAM": {
+      "label": "ZAMBIA",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 15.96,
+      "componentArea": 62.8271,
+      "componentPoint": [
+        25.4397,
+        -13.0956
+      ],
+      "parts": [
+        {
+          "tag": "ZAM",
+          "name": "Zambia",
+          "area": 62.8271
+        }
+      ]
+    },
+    "ZIM": {
+      "label": "ZIMBABWE (RHODESIA)",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 14.89,
+      "componentArea": 33.4509,
+      "componentPoint": [
+        29.3481,
+        -19.0056
+      ],
+      "parts": [
+        {
+          "tag": "ZIM",
+          "name": "Zimbabwe (Rhodesia)",
+          "area": 33.4509
+        }
+      ]
+    },
+    "MWI": {
+      "label": "MALAWI",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 9.8739,
+      "parts": [
+        {
+          "tag": "MWI",
+          "name": "Malawi",
+          "area": 9.8756
+        }
+      ]
+    },
+    "SAF": {
+      "label": "SOUTH AFRICA",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 17.32,
+      "componentArea": 113.1032,
+      "componentPoint": [
+        26.1314,
+        -28.4749
+      ],
+      "parts": [
+        {
+          "tag": "SAF",
+          "name": "South Africa",
+          "area": 113.1359
+        }
+      ]
+    },
+    "NAM": {
+      "label": "NAMIBIA",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 16.25,
+      "componentArea": 72.3219,
+      "componentPoint": [
+        17.2531,
+        -22.9247
+      ],
+      "parts": [
+        {
+          "tag": "NAM",
+          "name": "Namibia",
+          "area": 72.3219
+        }
+      ]
+    },
+    "LES": {
+      "label": "LESOTHO",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 2.8403,
+      "parts": [
+        {
+          "tag": "LES",
+          "name": "Lesotho",
+          "area": 2.8403
+        }
+      ]
+    },
+    "BOT": {
+      "label": "BOTSWANA",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 15.56,
+      "componentArea": 50.6849,
+      "componentPoint": [
+        24.4809,
+        -22.3574
+      ],
+      "parts": [
+        {
+          "tag": "BOT",
+          "name": "Botswana",
+          "area": 50.6849
+        }
+      ]
+    },
+    "SWA": {
+      "label": "SWAZILAND (ESWATINI)",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 1.5493,
+      "parts": [
+        {
+          "tag": "SWA",
+          "name": "Swaziland (Eswatini)",
+          "area": 1.5493
+        }
+      ]
+    },
+    "MUS": {
+      "label": "MAURITIUS",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 0.1729,
+      "parts": [
+        {
+          "tag": "MUS",
+          "name": "Mauritius",
+          "area": 0.182
+        }
+      ]
+    },
+    "IRN": {
+      "label": "IRAN (PERSIA)",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 18.24,
+      "componentArea": 155.9971,
+      "componentPoint": [
+        54.099,
+        32.4239
+      ],
+      "parts": [
+        {
+          "tag": "IRN",
+          "name": "Iran (Persia)",
+          "area": 155.9971
+        }
+      ]
+    },
+    "TUR": {
+      "label": "TURKEY",
+      "method": "line",
+      "labelClass": "country-major",
+      "labelSize": 30,
+      "componentArea": 78.6407,
+      "componentPoint": [
+        35.5004,
+        38.9465
+      ],
+      "parts": [
+        {
+          "tag": "TUR",
+          "name": "Turkey (Ottoman Empire)",
+          "area": 81.2197
+        }
+      ]
+    },
+    "IRQ": {
+      "label": "IRAQ",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 15.25,
+      "componentArea": 42.1341,
+      "componentPoint": [
+        42.5196,
+        33.2291
+      ],
+      "parts": [
+        {
+          "tag": "IRQ",
+          "name": "Iraq",
+          "area": 42.1341
+        }
+      ]
+    },
+    "EGY": {
+      "label": "EGYPT",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 16.76,
+      "componentArea": 90.4843,
+      "componentPoint": [
+        29.47,
+        26.7955
+      ],
+      "parts": [
+        {
+          "tag": "EGY",
+          "name": "Egypt",
+          "area": 90.4843
+        }
+      ]
+    },
+    "SAU": {
+      "label": "SAUDI ARABIA",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 18.59,
+      "componentArea": 173.7458,
+      "componentPoint": [
+        45.0232,
+        23.9148
+      ],
+      "parts": [
+        {
+          "tag": "SAU",
+          "name": "Saudi Arabia",
+          "area": 173.8017
+        }
+      ]
+    },
+    "YEM": {
+      "label": "YEMEN (ARAB REPUBLIC OF YEMEN)",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 11.4854,
+      "parts": [
+        {
+          "tag": "YEM",
+          "name": "Yemen (Arab Republic of Yemen)",
+          "area": 11.5047
+        }
+      ]
+    },
+    "QAT": {
+      "label": "QATAR",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 0.9918,
+      "parts": [
+        {
+          "tag": "QAT",
+          "name": "Qatar",
+          "area": 0.9918
+        }
+      ]
+    },
+    "UAE": {
+      "label": "UNITED ARAB EMIRATES",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 6.2095,
+      "parts": [
+        {
+          "tag": "UAE",
+          "name": "United Arab Emirates",
+          "area": 6.2435
+        }
+      ]
+    },
+    "OMA": {
+      "label": "OMAN",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 14.58,
+      "componentArea": 26.5702,
+      "componentPoint": [
+        56.9935,
+        20.8037
+      ],
+      "parts": [
+        {
+          "tag": "OMA",
+          "name": "Oman",
+          "area": 26.7642
+        }
+      ]
+    },
+    "AFG": {
+      "label": "AFGHANISTAN",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 15.96,
+      "componentArea": 62.5723,
+      "componentPoint": [
+        65.2015,
+        33.9401
+      ],
+      "parts": [
+        {
+          "tag": "AFG",
+          "name": "Afghanistan",
+          "area": 62.5723
+        }
+      ]
+    },
+    "CHI": {
+      "label": "CHINA",
+      "method": "line",
+      "labelClass": "country-continental",
+      "labelSize": 28.98,
+      "componentArea": 765.913,
+      "componentPoint": [
+        111.4254,
+        36.894
+      ],
+      "parts": [
+        {
+          "tag": "CHI",
+          "name": "China",
+          "area": 769.1934
+        }
+      ]
+    },
+    "TIB": {
+      "label": "TIBET",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 18.62,
+      "componentArea": 175.3128,
+      "componentPoint": [
+        90.1601,
+        33.2839
+      ],
+      "parts": [
+        {
+          "tag": "TIB",
+          "name": "Tibet",
+          "area": 175.3128
+        }
+      ]
+    },
+    "MNG": {
+      "label": "MONGOLIA",
+      "method": "line",
+      "labelClass": "country-major",
+      "labelSize": 30,
+      "componentArea": 184.4432,
+      "componentPoint": [
+        105.4524,
+        46.8371
+      ],
+      "parts": [
+        {
+          "tag": "MNG",
+          "name": "Mongolia",
+          "area": 184.4432
+        }
+      ]
+    },
+    "JAP": {
+      "label": "JAPAN",
+      "method": "line",
+      "labelClass": "country-major",
+      "labelSize": 26.84,
+      "componentArea": 23.0413,
+      "componentPoint": [
+        139.8482,
+        37.4887
+      ],
+      "parts": [
+        {
+          "tag": "JAP",
+          "name": "Japan",
+          "area": 37.9387
+        }
+      ]
+    },
+    "IND": {
+      "label": "INDIA",
+      "method": "line",
+      "labelClass": "country-continental",
+      "labelSize": 28,
+      "componentArea": 435.7884,
+      "componentPoint": [
+        80.3621,
+        22.7657
+      ],
+      "parts": [
+        {
+          "tag": "IND",
+          "name": "India",
+          "area": 437.1207
+        }
+      ]
+    },
+    "BHU": {
+      "label": "BHUTAN",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 3.6321,
+      "parts": [
+        {
+          "tag": "BHU",
+          "name": "Bhutan",
+          "area": 3.6321
+        }
+      ]
+    },
+    "MDV": {
+      "label": "MALDIVES",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 0.0003,
+      "parts": [
+        {
+          "tag": "MDV",
+          "name": "Maldives",
+          "area": 0.002
+        }
+      ]
+    },
+    "NEP": {
+      "label": "NEPAL",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 13.5418,
+      "parts": [
+        {
+          "tag": "NEP",
+          "name": "Nepal",
+          "area": 13.5418
+        }
+      ]
+    },
+    "THA": {
+      "label": "THAILAND",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 15.28,
+      "componentArea": 43.008,
+      "componentPoint": [
+        101.694,
+        13.0146
+      ],
+      "parts": [
+        {
+          "tag": "THA",
+          "name": "Thailand",
+          "area": 43.1317
+        }
+      ]
+    },
+    "AST": {
+      "label": "AUSTRALIA",
+      "method": "point",
+      "labelClass": "country-standard",
+      "labelSize": 21,
+      "componentArea": 686.1889,
+      "componentPoint": [
+        133.0676,
+        -24.9435
+      ],
+      "parts": [
+        {
+          "tag": "AST",
+          "name": "Australia",
+          "area": 695.5506
+        }
+      ]
+    },
+    "NZL": {
+      "label": "NEW ZEALAND",
+      "method": "hidden",
+      "reason": "label component too small",
+      "area": 16.899,
+      "parts": [
+        {
+          "tag": "NZL",
+          "name": "New Zealand",
+          "area": 29.1684
+        }
+      ]
+    }
+  },
+  "skippedTerritories": [
+    {
+      "tag": "ALA",
+      "ownerTag": "UNI",
+      "labelOwnerTag": "UNI",
+      "name": "Alaska",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "HAW",
+      "ownerTag": "UNI",
+      "labelOwnerTag": "UNI",
+      "name": "Hawaii",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "PUE",
+      "ownerTag": "UNI",
+      "labelOwnerTag": "UNI",
+      "name": "Puerto Rico",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "BAH",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Bahamas",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "JAM",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Jamaica",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "TRI",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Trinidad and Tobago",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "BAR",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Barbados",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "GLP",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Guadeloupe",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "MAR",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Martinique",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "BLZ",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Belize",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "GUY",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Guyana",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "SUR",
+      "ownerTag": "NLD",
+      "labelOwnerTag": "NLD",
+      "name": "Surinam",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "GUF",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "French Guyana",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "MLT",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Malta",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "CYP",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Cyprus",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "CAP",
+      "ownerTag": "POR",
+      "labelOwnerTag": "POR",
+      "name": "Cape Verde",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "GNB",
+      "ownerTag": "POR",
+      "labelOwnerTag": "POR",
+      "name": "Guinea-Bissau",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "EQU",
+      "ownerTag": "ESP",
+      "labelOwnerTag": "ESP",
+      "name": "Equatorial Guinea",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "GAM",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Gambia",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "MLI",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Mali",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "SEN",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Senegal",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "BEN",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Benin",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "MRT",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Mauritania",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "NER",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Niger",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "COT",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Cote D'Ivoire",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "GIN",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Guinea",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "SIE",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Sierra Leone",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "GHA",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Ghana",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "TOG",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Togo",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "GBR_TOG",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "British Togoland",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "CMR",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Cameroon",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "GBR_CMR",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "British Cameroons",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "NGA",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Nigeria",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "GAB",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Gabon",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "CEN",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Central African Republic",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "CHA",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Chad",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "COG",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Congo",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "COD",
+      "ownerTag": "BEL",
+      "labelOwnerTag": "BEL",
+      "name": "Congo, Democratic Republic of (Zaire)",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "UGA",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Uganda",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "KEN",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Kenya",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "TAN",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Tanzania (Tanganyika)",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "ZAN",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Zanzibar",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "RWA",
+      "ownerTag": "BEL",
+      "labelOwnerTag": "BEL",
+      "name": "Rwanda-Urundi",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "GBR_SOM",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "British Somaliland (Somaliland Republic)",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "DJI",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Djibouti",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "ERI",
+      "ownerTag": "ITA",
+      "labelOwnerTag": "ITA",
+      "name": "Eritrea",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "ANG",
+      "ownerTag": "POR",
+      "labelOwnerTag": "POR",
+      "name": "Angola",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "MOZ",
+      "ownerTag": "POR",
+      "labelOwnerTag": "POR",
+      "name": "Mozambique",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "MAD",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Madagascar (Malagasy)",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "REU",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Reunion",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "MOR",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Morocco",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "ESM",
+      "ownerTag": "ESP",
+      "labelOwnerTag": "ESP",
+      "name": "Spanish Morocco",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "ESW",
+      "ownerTag": "ESP",
+      "labelOwnerTag": "ESP",
+      "name": "Spanish West Africa",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "ALG",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Algeria",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "TUN",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Tunisia",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "LBY",
+      "ownerTag": "ITA",
+      "labelOwnerTag": "ITA",
+      "name": "Libya",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "SUD",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Sudan",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "SYR",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Syria",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "LEB",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Lebanon",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "JOR",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Jordan",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "PAL",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Palestine",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "TAI",
+      "ownerTag": "JAP",
+      "labelOwnerTag": "JAP",
+      "name": "Taiwan",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "KOR",
+      "ownerTag": "JAP",
+      "labelOwnerTag": "JAP",
+      "name": "Korea",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "SRI",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Sri Lanka (Ceylon)",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "KHM",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Cambodia (Kampuchea)",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "LAO",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Laos",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "VIE",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Vietnam (Annam/Cochin China/Tonkin)",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "FED",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Federated Malay States",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "UNF",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Unfederated Malay States",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "SAB",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Sabah (North Borneo)",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "SAR",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Sarawak",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "STR",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Straits Settlements",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "BRU",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Brunei",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "PHI",
+      "ownerTag": "UNI",
+      "labelOwnerTag": "UNI",
+      "name": "Philippines",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "IDN",
+      "ownerTag": "NLD",
+      "labelOwnerTag": "NLD",
+      "name": "Indonesia",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "EAS",
+      "ownerTag": "POR",
+      "labelOwnerTag": "POR",
+      "name": "East Timor",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "PAP",
+      "ownerTag": "AST",
+      "labelOwnerTag": "AST",
+      "name": "Papua",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "PNG",
+      "ownerTag": "AST",
+      "labelOwnerTag": "AST",
+      "name": "New Guinea (German New Guinea) (Kaiser Wilhelmsland)",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "NCL",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "New Caledonia and Dependencies",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "SOL",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Solomon Islands",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "FIJ",
+      "ownerTag": "GBR",
+      "labelOwnerTag": "GBR",
+      "name": "Fiji",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "PYF",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "French Polynesia",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "INI",
+      "ownerTag": "FRA",
+      "labelOwnerTag": "FRA",
+      "name": "Inini",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "ITA_SOM",
+      "ownerTag": "ITA",
+      "labelOwnerTag": "ITA",
+      "name": "Italian Somaliland",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "SAK",
+      "ownerTag": "JAP",
+      "labelOwnerTag": "JAP",
+      "name": "Southern Sakhalin Island",
+      "reason": "detached territory / colony / non-mainland"
+    },
+    {
+      "tag": "GRL",
+      "ownerTag": "DEN",
+      "labelOwnerTag": "DEN",
+      "name": "Greenland",
+      "reason": "detached territory / colony / non-mainland"
+    }
+  ],
+  "regionLabels": {
+    "written": 1357,
+    "skipped": [
+      {
+        "regionId": "CEN_SOUTHERN_WESTERN_CENTRAL_AFRICAN_REPUBLIC_001",
+        "label": "Southern Western Central African Republic",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "CEN_SOUTHERN_EASTERN_CENTRAL_AFRICAN_REPUBLIC_003",
+        "label": "Southern Eastern Central African Republic",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "CEN_NORTHERN_WESTERN_CENTRAL_AFRICAN_REPUBLIC_007",
+        "label": "Northern Western Central African Republic",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "CEN_NORTHERN_EASTERN_CENTRAL_AFRICAN_REPUBLIC_009",
+        "label": "Northern Eastern Central African Republic",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "CHL_MAGALLANES_Y_ANT_RTICA_CHILENA_NORTH_WEST_001",
+        "label": "Magallanes Y Antártica Chilena North West",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "CHL_MAGALLANES_Y_ANT_RTICA_CHILENA_SOUTH_EAST_002",
+        "label": "Magallanes Y Antártica Chilena South East",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "CHL_AIS_N_DEL_GENERAL_CARLOS_IB_EZ_DEL_CAMPO_003",
+        "label": "Aisén Del General Carlos Ibáñez Del Campo",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "CHL_LIBERTADOR_GENERAL_BERNARDO_O_HIGGINS_013",
+        "label": "Libertador General Bernardo O'Higgins",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "DOM_SOUTHERN_WESTERN_DOMINICAN_REPUBLIC_001",
+        "label": "Southern Western Dominican Republic",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "DOM_NORTHERN_WESTERN_DOMINICAN_REPUBLIC_003",
+        "label": "Northern Western Dominican Republic",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "ETH_SOUTHERN_NATIONS_NATIONALITIES_AND_PEOPLES_010",
+        "label": "Southern Nations, Nationalities And Peoples",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "GBR_SOM_CENTRAL_BRITISH_SOMALILAND_SOMALILAND_REPUBL_001",
+        "label": "Central British Somaliland (Somaliland Republic)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "GRL_KOMMUNEQARFIK_SERMERSOOQ_NORTH_WEST_016",
+        "label": "Kommuneqarfik Sermersooq North West",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "GRL_KOMMUNEQARFIK_SERMERSOOQ_NORTH_EAST_017",
+        "label": "Kommuneqarfik Sermersooq North East",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "IND_DADRA_AND_NAGAR_HAVELI_AND_DAMAN_AND_DIU_060",
+        "label": "Dadra And Nagar Haveli And Daman And Diu",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "ITA_SOM_SOUTHERN_WESTERN_ITALIAN_SOMALILAND_001",
+        "label": "Southern Western Italian Somaliland",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "ITA_SOM_NORTHERN_EASTERN_ITALIAN_SOMALILAND_006",
+        "label": "Northern Eastern Italian Somaliland",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "KHM_NORTHERN_WESTERN_CAMBODIA_KAMPUCHEA_004",
+        "label": "Northern Western Cambodia (Kampuchea)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "KHM_NORTHERN_EASTERN_CAMBODIA_KAMPUCHEA_005",
+        "label": "Northern Eastern Cambodia (Kampuchea)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "MAD_SOUTHERN_WESTERN_MADAGASCAR_MALAGASY_001",
+        "label": "Southern Western Madagascar (Malagasy)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "MAD_NORTHERN_WESTERN_MADAGASCAR_MALAGASY_007",
+        "label": "Northern Western Madagascar (Malagasy)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "MAD_NORTHERN_EASTERN_MADAGASCAR_MALAGASY_008",
+        "label": "Northern Eastern Madagascar (Malagasy)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "MDV_MALDIVES_001",
+        "label": "Maldives",
+        "reason": "tiny or invalid geometry"
+      },
+      {
+        "regionId": "MOZ_MAPUTO_002",
+        "label": "Maputo",
+        "reason": "tiny or invalid geometry"
+      },
+      {
+        "regionId": "MUS_NORTHERN_EASTERN_MAURITIUS_002",
+        "label": "Northern Eastern Mauritius",
+        "reason": "tiny or invalid geometry"
+      },
+      {
+        "regionId": "PNG_WESTERN_NEW_GUINEA_GERMAN_NEW_GUINEA_KAISER__001",
+        "label": "Western New Guinea (German New Guinea) (Kaiser Wilhelmsland)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "PNG_CENTRAL_NEW_GUINEA_GERMAN_NEW_GUINEA_KAISER__002",
+        "label": "Central New Guinea (German New Guinea) (Kaiser Wilhelmsland)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "PNG_EASTERN_NEW_GUINEA_GERMAN_NEW_GUINEA_KAISER__003",
+        "label": "Eastern New Guinea (German New Guinea) (Kaiser Wilhelmsland)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "PNG_WESTERN_NEW_GUINEA_GERMAN_NEW_GUINEA_KAISER__004",
+        "label": "Western New Guinea (German New Guinea) (Kaiser Wilhelmsland)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "PNG_NORTHERN_NEW_GUINEA_GERMAN_NEW_GUINEA_KAISER_005",
+        "label": "Northern New Guinea (German New Guinea) (Kaiser Wilhelmsland)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "POL_OPOLE_018",
+        "label": "Opole",
+        "reason": "tiny or invalid geometry"
+      },
+      {
+        "regionId": "SOV_NORTHERN_EASTERN_SOVIET_UNION_SOUTH_WEST_001",
+        "label": "Northern Eastern Soviet Union South West",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "SOV_NORTHERN_EASTERN_SOVIET_UNION_NORTH_WEST_004",
+        "label": "Northern Eastern Soviet Union North West",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "SOV_NORTHERN_EASTERN_SOVIET_UNION_SOUTH_WEST_002",
+        "label": "Northern Eastern Soviet Union South West",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "SOV_NORTHERN_EASTERN_SOVIET_UNION_SOUTH_006",
+        "label": "Northern Eastern Soviet Union South",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "SOV_NORTHERN_EASTERN_SOVIET_UNION_NORTH_EAST_007",
+        "label": "Northern Eastern Soviet Union North East",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "SOV_NORTHERN_EASTERN_SOVIET_UNION_NORTH_009",
+        "label": "Northern Eastern Soviet Union North",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "SOV_NORTHERN_EASTERN_SOVIET_UNION_SOUTH_002",
+        "label": "Northern Eastern Soviet Union South",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "SOV_NORTHERN_EASTERN_SOVIET_UNION_NORTH_EAST_002",
+        "label": "Northern Eastern Soviet Union North East",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "SOV_NORTHERN_EASTERN_SOVIET_UNION_NORTH_WEST_002",
+        "label": "Northern Eastern Soviet Union North West",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "SOV_NORTHERN_EASTERN_SOVIET_UNION_SOUTH_WEST_003",
+        "label": "Northern Eastern Soviet Union South West",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "SOV_NORTHERN_EASTERN_SOVIET_UNION_SOUTH_EAST_014",
+        "label": "Northern Eastern Soviet Union South East",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "SOV_NORTHERN_EASTERN_SOVIET_UNION_SOUTH_003",
+        "label": "Northern Eastern Soviet Union South",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "SOV_SOUTHERN_EASTERN_SOVIET_UNION_NORTH_EAST_048",
+        "label": "Southern Eastern Soviet Union North East",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "SOV_SOUTHERN_EASTERN_SOVIET_UNION_SOUTH_049",
+        "label": "Southern Eastern Soviet Union South",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "SOV_SOUTHERN_EASTERN_SOVIET_UNION_NORTH_EAST_002",
+        "label": "Southern Eastern Soviet Union North East",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "TAN_SOUTHERN_WESTERN_TANZANIA_TANGANYIKA_001",
+        "label": "Southern Western Tanzania (Tanganyika)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "TAN_SOUTHERN_EASTERN_TANZANIA_TANGANYIKA_003",
+        "label": "Southern Eastern Tanzania (Tanganyika)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "TAN_NORTHERN_WESTERN_TANZANIA_TANGANYIKA_007",
+        "label": "Northern Western Tanzania (Tanganyika)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "TAN_NORTHERN_EASTERN_TANZANIA_TANGANYIKA_009",
+        "label": "Northern Eastern Tanzania (Tanganyika)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "VIE_EASTERN_VIETNAM_ANNAM_COCHIN_CHINA_TONKIN_001",
+        "label": "Eastern Vietnam (Annam/Cochin China/Tonkin)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "YEM_CENTRAL_YEMEN_ARAB_REPUBLIC_OF_YEMEN_001",
+        "label": "Central Yemen (Arab Republic Of Yemen)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "YEM_CENTRAL_YEMEN_ARAB_REPUBLIC_OF_YEMEN_002",
+        "label": "Central Yemen (Arab Republic Of Yemen)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "YEM_EASTERN_YEMEN_ARAB_REPUBLIC_OF_YEMEN_003",
+        "label": "Eastern Yemen (Arab Republic Of Yemen)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "YEM_NORTHERN_WESTERN_YEMEN_ARAB_REPUBLIC_OF_YEME_004",
+        "label": "Northern Western Yemen (Arab Republic Of Yemen)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "YEM_NORTHERN_EASTERN_YEMEN_ARAB_REPUBLIC_OF_YEME_005",
+        "label": "Northern Eastern Yemen (Arab Republic Of Yemen)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "ZIM_SOUTHERN_WESTERN_ZIMBABWE_RHODESIA_001",
+        "label": "Southern Western Zimbabwe (Rhodesia)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "ZIM_SOUTHERN_EASTERN_ZIMBABWE_RHODESIA_003",
+        "label": "Southern Eastern Zimbabwe (Rhodesia)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "ZIM_NORTHERN_WESTERN_ZIMBABWE_RHODESIA_007",
+        "label": "Northern Western Zimbabwe (Rhodesia)",
+        "reason": "ugly label"
+      },
+      {
+        "regionId": "ZIM_NORTHERN_EASTERN_ZIMBABWE_RHODESIA_009",
+        "label": "Northern Eastern Zimbabwe (Rhodesia)",
+        "reason": "ugly label"
+      }
+    ]
+  }
+}

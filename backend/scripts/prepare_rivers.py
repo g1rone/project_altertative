@@ -50,14 +50,19 @@ def main() -> None:
         geometry = geometry.simplify(simplify, preserve_topology=True)
         if geometry.is_empty:
             continue
+        importance = river_importance(scalerank, geometry.length)
+        width_class = river_width_class(importance)
 
         features.append(
             {
                 "type": "Feature",
                 "properties": {
                     "name": name,
+                    "rank": scalerank,
                     "scalerank": scalerank,
-                    "minzoom": 3.5 if scalerank <= 4 else 4.8,
+                    "importance": importance,
+                    "widthClass": width_class,
+                    "minZoom": river_min_zoom(width_class),
                     "source": "natural-earth-rivers-lake-centerlines",
                 },
                 "geometry": mapping(geometry),
@@ -115,6 +120,26 @@ def as_int(value: Any, default: int) -> int:
         return int(value)
     except (TypeError, ValueError):
         return default
+
+
+def river_importance(scalerank: int, length: float) -> int:
+    if scalerank <= 3 or length >= 45:
+        return 3
+    if scalerank <= 5 or length >= 18:
+        return 2
+    return 1
+
+
+def river_width_class(importance: int) -> int:
+    return max(1, min(3, importance))
+
+
+def river_min_zoom(width_class: int) -> float:
+    if width_class >= 3:
+        return 3.4
+    if width_class == 2:
+        return 4.2
+    return 5.0
 
 
 if __name__ == "__main__":

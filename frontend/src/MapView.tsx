@@ -118,8 +118,10 @@ export default function MapView({ selectedTag, onSelectCountry }: Props) {
     const map = mapRef.current
     if (!map) return
 
-    if (map.getLayer('selected-country-border')) {
-      map.setFilter('selected-country-border', selectedCountryFilter(selectedTag))
+    for (const layerId of ['selected-country-border-glow', 'selected-country-border-main']) {
+      if (map.getLayer(layerId)) {
+        map.setFilter(layerId, selectedCountryFilter(selectedTag))
+      }
     }
   }, [selectedTag])
 
@@ -198,15 +200,46 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
   } as any)
 
   map.addLayer({
+    id: 'rivers-line-casing',
+    type: 'line',
+    source: 'pax1933',
+    'source-layer': 'rivers',
+    minzoom: 3.5,
+    paint: {
+      'line-color': '#0f172a',
+      'line-width': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        3.5,
+        ['match', ['get', 'widthClass'], 3, 1.5, 2, 1.0, 0.55],
+        7,
+        ['match', ['get', 'widthClass'], 3, 2.8, 2, 1.8, 1.0],
+      ],
+      'line-opacity': ['interpolate', ['linear'], ['zoom'], 3.5, 0.06, 5, 0.14, 7, 0.22],
+      'line-blur': 0.35,
+    },
+  } as any)
+
+  map.addLayer({
     id: 'rivers-line',
     type: 'line',
     source: 'pax1933',
     'source-layer': 'rivers',
     minzoom: 3.5,
     paint: {
-      'line-color': '#38bdf8',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 3.5, 0.45, 6, 0.9],
-      'line-opacity': ['interpolate', ['linear'], ['zoom'], 3.5, 0.2, 6, 0.42],
+      'line-color': '#60a5fa',
+      'line-width': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        3.5,
+        ['match', ['get', 'widthClass'], 3, 1.15, 2, 0.65, 0.32],
+        7,
+        ['match', ['get', 'widthClass'], 3, 2.2, 2, 1.35, 0.75],
+      ],
+      'line-opacity': ['interpolate', ['linear'], ['zoom'], 3.5, 0.18, 5, 0.42, 7, 0.7],
+      'line-blur': 0.25,
     },
   } as any)
 
@@ -215,11 +248,11 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     type: 'line',
     source: 'pax1933',
     'source-layer': 'regions',
-    minzoom: 4.6,
+    minzoom: 4.4,
     paint: {
-      'line-color': '#e5e7eb',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 4.6, 0.35, 7, 1.15],
-      'line-opacity': ['interpolate', ['linear'], ['zoom'], 4.6, 0.22, 7, 0.66],
+      'line-color': '#dbeafe',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 4.5, 0.25, 6, 0.65, 8, 0.9],
+      'line-opacity': ['interpolate', ['linear'], ['zoom'], 4.5, 0.12, 6, 0.32, 8, 0.55],
     },
   } as any)
 
@@ -244,8 +277,8 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     'source-layer': 'countries',
     paint: {
       'line-color': '#020617',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 2, 0.9, 5, 1.65],
-      'line-opacity': 0.92,
+      'line-width': ['interpolate', ['linear'], ['zoom'], 2, 1.0, 5, 1.55, 8, 1.85],
+      'line-opacity': 0.95,
     },
   } as any)
 
@@ -262,14 +295,29 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
   } as any)
 
   map.addLayer({
-    id: 'selected-country-border',
+    id: 'selected-country-border-glow',
     type: 'line',
     source: 'pax1933',
     'source-layer': 'countries',
     filter: selectedCountryFilter(selectedTag),
     paint: {
       'line-color': '#facc15',
-      'line-width': ['interpolate', ['linear'], ['zoom'], 2, 2.4, 6, 3.6],
+      'line-width': ['interpolate', ['linear'], ['zoom'], 2, 2.6, 6, 4.0],
+      'line-opacity': 0.28,
+      'line-blur': 1.2,
+    },
+  } as any)
+
+  map.addLayer({
+    id: 'selected-country-border-main',
+    type: 'line',
+    source: 'pax1933',
+    'source-layer': 'countries',
+    filter: selectedCountryFilter(selectedTag),
+    paint: {
+      'line-color': '#fde047',
+      'line-width': ['interpolate', ['linear'], ['zoom'], 2, 1.4, 6, 2.25],
+      'line-opacity': 0.95,
     },
   } as any)
 
@@ -293,15 +341,26 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     layout: {
       'symbol-placement': 'line',
       'text-field': ['get', 'label'],
-      'text-size': ['coalesce', ['get', 'labelSize'], 18],
+      'text-size': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        2,
+        ['*', ['coalesce', ['get', 'labelSize'], 22], 0.72],
+        4.7,
+        ['coalesce', ['get', 'labelSize'], 22],
+        6.8,
+        ['*', ['coalesce', ['get', 'labelSize'], 22], 0.9],
+      ],
       'text-letter-spacing': ['coalesce', ['get', 'labelSpacing'], 0.16],
       'text-font': ['Open Sans Bold'],
       'text-keep-upright': true,
       'text-allow-overlap': false,
       'text-ignore-placement': false,
-      'text-max-angle': 45,
+      'text-max-angle': 32,
+      'symbol-sort-key': ['coalesce', ['get', 'labelPriority'], 1000],
     },
-    paint: countryLabelPaint(0.95),
+    paint: countryLabelPaint(0.98),
   } as any)
 
   map.addLayer({
@@ -312,15 +371,24 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     layout: {
       'symbol-placement': 'point',
       'text-field': ['get', 'label'],
-      'text-size': ['coalesce', ['get', 'labelSize'], 15],
+      'text-size': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        2,
+        ['*', ['coalesce', ['get', 'labelSize'], 16], 0.75],
+        5,
+        ['coalesce', ['get', 'labelSize'], 16],
+      ],
       'text-letter-spacing': ['coalesce', ['get', 'labelSpacing'], 0.12],
       'text-font': ['Open Sans Bold'],
       'text-allow-overlap': false,
       'text-ignore-placement': false,
       'text-variable-anchor': ['center', 'top', 'bottom'],
       'text-radial-offset': 0.25,
+      'symbol-sort-key': ['coalesce', ['get', 'labelPriority'], 1000],
     },
-    paint: countryLabelPaint(0.85),
+    paint: countryLabelPaint(0.88),
   } as any)
 
   map.addLayer({
@@ -328,30 +396,34 @@ function addLayers(map: maplibregl.Map, selectedTag: string) {
     type: 'symbol',
     source: 'pax1933',
     'source-layer': 'region_label_points',
-    minzoom: 5.8,
+    minzoom: 4.7,
     layout: {
       'text-field': ['get', 'label'],
       'text-size': [
         'interpolate',
         ['linear'],
         ['zoom'],
-        5.8,
+        4.7,
+        9,
+        5.5,
         ['coalesce', ['get', 'labelSize'], 10],
         7,
-        ['+', ['coalesce', ['get', 'labelSize'], 10], 1.5],
+        ['+', ['coalesce', ['get', 'labelSize'], 10], 2],
       ],
       'text-font': ['Open Sans Regular'],
       'text-allow-overlap': false,
       'text-ignore-placement': false,
       'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
       'text-radial-offset': 0.35,
+      'text-letter-spacing': 0.02,
+      'symbol-sort-key': ['coalesce', ['get', 'labelPriority'], 1000],
     },
     paint: {
-      'text-color': '#cbd5e1',
+      'text-color': '#dbeafe',
       'text-halo-color': '#020617',
-      'text-halo-width': 1.7,
-      'text-halo-blur': 0.4,
-      'text-opacity': ['interpolate', ['linear'], ['zoom'], 5.6, 0, 5.8, 0.78, 7, 1],
+      'text-halo-width': 1.6,
+      'text-halo-blur': 0.35,
+      'text-opacity': ['interpolate', ['linear'], ['zoom'], 4.5, 0, 5.0, 0.45, 5.7, 0.85, 7, 1],
     },
   } as any)
 
@@ -392,9 +464,9 @@ function countryLabelPaint(baseOpacity: number) {
   return {
     'text-color': '#f8fafc',
     'text-halo-color': '#020617',
-    'text-halo-width': 2.4,
-    'text-halo-blur': 0.35,
-    'text-opacity': ['interpolate', ['linear'], ['zoom'], 2, baseOpacity, 5.8, 0.55, 6.8, 0],
+    'text-halo-width': 3.0,
+    'text-halo-blur': 0.6,
+    'text-opacity': ['interpolate', ['linear'], ['zoom'], 2, baseOpacity, 5.8, 0.82, 6.8, 0.45, 7.2, 0],
   }
 }
 
@@ -411,7 +483,7 @@ function addInteractions(map: maplibregl.Map, onSelectCountry: (tag: string) => 
   for (const layer of selectableLayers) {
     map.on('click', layer, (event) => {
       const properties = event.features?.[0]?.properties
-      const tag = properties?.tag || properties?.ownerTag
+      const tag = properties?.ownerTag || properties?.tag
       if (typeof tag === 'string') onSelectCountry(tag)
     })
     map.on('mousemove', layer, () => {
@@ -435,7 +507,7 @@ async function ensureProvinceDebugData(
 }
 
 function selectedCountryFilter(selectedTag: string): FilterSpecification {
-  return ['==', ['get', 'tag'], selectedTag]
+  return ['any', ['==', ['get', 'ownerTag'], selectedTag], ['==', ['get', 'tag'], selectedTag]]
 }
 
 export { EUROPE_BOUNDS, WORLD_BOUNDS }

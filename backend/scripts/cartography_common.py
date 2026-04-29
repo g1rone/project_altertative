@@ -68,7 +68,144 @@ NAME_TAG_OVERRIDES = {
     "free city of danzig": "DAN",
     "danzig": "DAN",
     "mongolia": "MNG",
+    "austria": "AUS",
+    "australia": "AST",
+    "belize": "BLZ",
+    "belgium": "BEL",
+    "cameroon": "CMR",
+    "cambodia (kampuchea)": "KHM",
+    "chile": "CHL",
+    "china": "CHI",
+    "congo": "COG",
+    "congo, democratic republic of (zaire)": "COD",
+    "french guyana": "GUF",
+    "french polynesia": "PYF",
+    "guadeloupe": "GLP",
+    "guatemala": "GUA",
+    "guinea-bissau": "GNB",
+    "guinea": "GIN",
+    "india": "IND",
+    "indonesia": "IDN",
+    "italy/sardinia": "ITA",
+    "italian somaliland": "ITA_SOM",
+    "liberia": "LBR",
+    "libya": "LBY",
+    "malta": "MLT",
+    "mali": "MLI",
+    "malawi": "MWI",
+    "maldives": "MDV",
+    "mauritania": "MRT",
+    "mauritius": "MUS",
+    "newfoundland": "NFL",
+    "new guinea (german new guinea) (kaiser wilhelmsland)": "PNG",
+    "new zealand": "NZL",
+    "new caledonia and dependencies": "NCL",
+    "niger": "NER",
+    "nigeria": "NGA",
+    "south africa": "SAF",
+    "southern sakhalin island": "SAK",
+    "spanish morocco": "ESM",
+    "spanish west africa": "ESW",
+    "british togoland": "GBR_TOG",
+    "british cameroons": "GBR_CMR",
+    "british somaliland (somaliland republic)": "GBR_SOM",
 }
+
+OWNER_TAG_BY_NAME = {
+    "alaska": "UNI",
+    "hawaii": "UNI",
+    "puerto rico": "UNI",
+    "philippines": "UNI",
+    "bahamas": "GBR",
+    "jamaica": "GBR",
+    "trinidad and tobago": "GBR",
+    "barbados": "GBR",
+    "belize": "GBR",
+    "guyana": "GBR",
+    "gambia": "GBR",
+    "sierra leone": "GBR",
+    "ghana": "GBR",
+    "nigeria": "GBR",
+    "kenya": "GBR",
+    "uganda": "GBR",
+    "tanzania (tanganyika)": "GBR",
+    "zanzibar": "GBR",
+    "british togoland": "GBR",
+    "british cameroons": "GBR",
+    "british somaliland (somaliland republic)": "GBR",
+    "sudan": "GBR",
+    "palestine": "GBR",
+    "jordan": "GBR",
+    "cyprus": "GBR",
+    "malta": "GBR",
+    "sri lanka (ceylon)": "GBR",
+    "federated malay states": "GBR",
+    "unfederated malay states": "GBR",
+    "sabah (north borneo)": "GBR",
+    "sarawak": "GBR",
+    "straits settlements": "GBR",
+    "brunei": "GBR",
+    "fiji": "GBR",
+    "solomon islands": "GBR",
+    "guadeloupe": "FRA",
+    "martinique": "FRA",
+    "french guyana": "FRA",
+    "french polynesia": "FRA",
+    "inini": "FRA",
+    "algeria": "FRA",
+    "tunisia": "FRA",
+    "morocco": "FRA",
+    "senegal": "FRA",
+    "benin": "FRA",
+    "mauritania": "FRA",
+    "niger": "FRA",
+    "cote d'ivoire": "FRA",
+    "guinea": "FRA",
+    "mali": "FRA",
+    "cameroon": "FRA",
+    "togo": "FRA",
+    "gabon": "FRA",
+    "central african republic": "FRA",
+    "chad": "FRA",
+    "congo": "FRA",
+    "madagascar (malagasy)": "FRA",
+    "reunion": "FRA",
+    "djibouti": "FRA",
+    "syria": "FRA",
+    "lebanon": "FRA",
+    "cambodia (kampuchea)": "FRA",
+    "laos": "FRA",
+    "vietnam (annam/cochin china/tonkin)": "FRA",
+    "eritrea": "ITA",
+    "libya": "ITA",
+    "italian somaliland": "ITA",
+    "spanish morocco": "ESP",
+    "spanish west africa": "ESP",
+    "equatorial guinea": "ESP",
+    "cape verde": "POR",
+    "guinea-bissau": "POR",
+    "angola": "POR",
+    "mozambique": "POR",
+    "east timor": "POR",
+    "congo, democratic republic of (zaire)": "BEL",
+    "rwanda-urundi": "BEL",
+    "surinam": "NLD",
+    "indonesia": "NLD",
+    "taiwan": "JAP",
+    "korea": "JAP",
+    "southern sakhalin island": "JAP",
+    "papua": "AST",
+    "new guinea (german new guinea) (kaiser wilhelmsland)": "AST",
+    "new caledonia and dependencies": "FRA",
+    "greenland": "DEN",
+}
+
+COLONY_REASON_BY_NAME = {
+    name: "detached territory / colony / non-mainland"
+    for name in OWNER_TAG_BY_NAME
+}
+
+NON_LABEL_OWNER_TAGS = {"AND", "MCO", "LIE", "SMR", "VAT", "LUX", "DAN", "DNZ", "MLT"}
 
 MICROSTATE_TARGETS = {
     "AND": {"label": "Andorra", "names": ["andorra"]},
@@ -139,6 +276,30 @@ def normalized_country_tag(original_tag: str, name: str) -> str:
     if override:
         return override
     return original_tag
+
+
+def territory_classification(tag: str, original_tag: str, name: str, geometry: Any) -> dict[str, Any]:
+    normalized_name = name.strip().lower()
+    owner_tag = OWNER_TAG_BY_NAME.get(normalized_name, tag)
+    is_colony = owner_tag != tag
+    is_detached = is_colony
+    is_mainland = not is_colony
+    is_label_eligible = is_mainland and tag not in NON_LABEL_OWNER_TAGS
+    reason = "" if is_label_eligible else COLONY_REASON_BY_NAME.get(normalized_name, "small state / non-main country label")
+
+    return {
+        "originalTag": original_tag,
+        "ownerTag": owner_tag,
+        "controllerTag": owner_tag,
+        "sovereignTag": owner_tag,
+        "labelOwnerTag": owner_tag,
+        "isMainland": is_mainland,
+        "isColony": is_colony,
+        "isDetachedTerritory": is_detached,
+        "isLabelEligible": is_label_eligible,
+        "territoryReason": reason,
+        "area": float(geometry.area) if geometry is not None else 0.0,
+    }
 
 
 def fixed_shape(geometry: dict[str, Any] | None) -> Any | None:
@@ -301,22 +462,38 @@ def ensure_processed_countries() -> dict[str, Any]:
     state_countries = load_state_countries()
     countries = read_json(source_path)
     features: list[dict[str, Any]] = []
+    territory_diagnostics: list[dict[str, Any]] = []
 
     for feature in countries.get("features", []):
         props = feature.get("properties", {})
         name = str(props.get("name") or props.get("displayName") or props.get("tag") or "Unknown")
-        tag = normalized_country_tag(str(props.get("tag") or "UNK"), name)
+        original_tag = str(props.get("tag") or "UNK")
+        tag = normalized_country_tag(original_tag, name)
         geometry = clean_feature_geometry(fixed_shape(feature.get("geometry")), simplify=0.01)
         if geometry is None:
             continue
+        classification = territory_classification(tag, original_tag, name, geometry)
+        owner_tag = str(props.get("ownerTag") or classification["ownerTag"])
+        classification["ownerTag"] = owner_tag
+        classification["controllerTag"] = str(props.get("controllerTag") or props.get("ownerTag") or classification["controllerTag"])
+        classification["sovereignTag"] = str(props.get("sovereignTag") or classification["sovereignTag"])
+        classification["labelOwnerTag"] = str(props.get("labelOwnerTag") or classification["labelOwnerTag"])
         min_lon, min_lat, max_lon, max_lat = feature_bbox(geometry)
         out_props = {
             "tag": tag,
+            "originalTag": original_tag,
             "name": name,
             "displayName": country_display_name(tag, name),
-            "ownerTag": str(props.get("ownerTag") or tag),
-            "controllerTag": str(props.get("controllerTag") or props.get("ownerTag") or tag),
-            "color": country_color(tag, state_countries),
+            "ownerTag": classification["ownerTag"],
+            "controllerTag": classification["controllerTag"],
+            "sovereignTag": classification["sovereignTag"],
+            "labelOwnerTag": classification["labelOwnerTag"],
+            "isMainland": classification["isMainland"],
+            "isColony": classification["isColony"],
+            "isDetachedTerritory": classification["isDetachedTerritory"],
+            "isLabelEligible": classification["isLabelEligible"],
+            "territoryReason": classification["territoryReason"],
+            "color": country_color(classification["ownerTag"], state_countries),
             "isMicrostate": bool(props.get("isMicrostate")) or tag in EUROPE_MICROSTATE_TAGS,
             "smallCountry": bool(props.get("smallCountry")) or geometry.area < 2.0,
             "minLon": min_lon,
@@ -328,6 +505,23 @@ def ensure_processed_countries() -> dict[str, Any]:
             "source": props.get("source") or "cshapes-1933",
         }
         features.append({"type": "Feature", "properties": out_props, "geometry": mapping(geometry)})
+        if classification["isDetachedTerritory"] or not classification["isLabelEligible"]:
+            territory_diagnostics.append(
+                {
+                    "tag": tag,
+                    "originalTag": original_tag,
+                    "name": name,
+                    "ownerTag": classification["ownerTag"],
+                    "labelOwnerTag": classification["labelOwnerTag"],
+                    "isDetachedTerritory": classification["isDetachedTerritory"],
+                    "isColony": classification["isColony"],
+                    "isMainland": classification["isMainland"],
+                    "isLabelEligible": classification["isLabelEligible"],
+                    "reason": classification["territoryReason"],
+                    "bounds": [min_lon, min_lat, max_lon, max_lat],
+                    "area": round(float(geometry.area), 6),
+                }
+            )
 
     admin0 = read_json(find_admin0_source())
     existing_tags = {feature["properties"]["tag"] for feature in features}
@@ -343,18 +537,27 @@ def ensure_processed_countries() -> dict[str, Any]:
         geometry = clean_feature_geometry(fixed_shape(source_feature.get("geometry")), simplify=0.002)
         if geometry is None:
             continue
-        min_lon, min_lat, max_lon, max_lat = feature_bbox(geometry)
         name = spec["label"]
+        classification = territory_classification(canonical, canonical, name, geometry)
+        min_lon, min_lat, max_lon, max_lat = feature_bbox(geometry)
         features.append(
             {
                 "type": "Feature",
                 "properties": {
                     "tag": canonical,
+                    "originalTag": canonical,
                     "name": name,
                     "displayName": name,
-                    "ownerTag": canonical,
-                    "controllerTag": canonical,
-                    "color": country_color(canonical, state_countries),
+                    "ownerTag": classification["ownerTag"],
+                    "controllerTag": classification["controllerTag"],
+                    "sovereignTag": classification["sovereignTag"],
+                    "labelOwnerTag": classification["labelOwnerTag"],
+                    "isMainland": classification["isMainland"],
+                    "isColony": classification["isColony"],
+                    "isDetachedTerritory": classification["isDetachedTerritory"],
+                    "isLabelEligible": classification["isLabelEligible"],
+                    "territoryReason": classification["territoryReason"],
+                    "color": country_color(classification["ownerTag"], state_countries),
                     "isMicrostate": canonical in EUROPE_MICROSTATE_TAGS,
                     "smallCountry": geometry.area < 8.0,
                     "minLon": min_lon,
@@ -368,8 +571,32 @@ def ensure_processed_countries() -> dict[str, Any]:
                 "geometry": mapping(geometry),
             }
         )
+        if classification["isDetachedTerritory"] or not classification["isLabelEligible"]:
+            territory_diagnostics.append(
+                {
+                    "tag": canonical,
+                    "originalTag": canonical,
+                    "name": name,
+                    "ownerTag": classification["ownerTag"],
+                    "labelOwnerTag": classification["labelOwnerTag"],
+                    "isDetachedTerritory": classification["isDetachedTerritory"],
+                    "isColony": classification["isColony"],
+                    "isMainland": classification["isMainland"],
+                    "isLabelEligible": classification["isLabelEligible"],
+                    "reason": classification["territoryReason"],
+                    "bounds": [min_lon, min_lat, max_lon, max_lat],
+                    "area": round(float(geometry.area), 6),
+                }
+            )
         existing_tags.add(canonical)
 
     processed = {"type": "FeatureCollection", "features": features}
     write_json(PROCESSED_COUNTRIES_PATH, processed)
+    write_json(
+        DIAGNOSTICS_DIR / "territory_diagnostics_1933.json",
+        {
+            "source": str(source_path),
+            "features": territory_diagnostics,
+        },
+    )
     return processed
